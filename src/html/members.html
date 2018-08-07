@@ -1,0 +1,28 @@
+<h2>People</h2>
+
+<div id="members">
+  {{#members people}}
+    <a onmouseover="showMember('{{name}}', '{{title}}')"
+       onmouseout="hideMember()" href="{{url}}">
+      <img src="/imgs/people/{{handle}}.jpg" alt="{{name}}" />
+    </a>
+  {{/members}}
+
+  <div id="member-caption">
+    <h3></h3>
+    <h4></h4>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function showMember(name, title) {
+    var caption = d3.select('#member-caption');
+    caption.select('h3').text(name);
+    caption.select('h4').text(title);
+    caption.style('visibility', 'visible');
+  }
+
+  function hideMember() {
+    d3.select('#member-caption').style('visibility', 'hidden');
+  }
+</script>

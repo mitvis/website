@@ -1,0 +1,65 @@
+#ribbon {
+  margin: 0 0 15px 0;
+  padding: 0;
+
+  div {
+    display: block;
+    height: 10px;
+    text-indent: -999em;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.red { background: $mit-red; }
+  div.grey { background: $mit-dgrey; }
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid $mit-lgrey;
+
+  #logo {
+    height: 28px;
+    margin: -3px 10px 0 0;
+
+    svg {
+      height: 100%;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    font-weight: 500;
+    span.red { color: $mit-red; }
+    span.grey { color: $mit-dgrey; }
+  }
+
+  #links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 18px;
+
+    a.selected {
+      font-weight: 500;
+      color: #000;
+    }
+
+    a.external {
+      display: flex;
+      svg {
+        height: 18px;
+        margin-left: 10px;
+      }
+
+      &:hover svg { fill: $mit-red; }
+    }
+  }
+}
+
+#mission {
+  font-size: 22px;
+  margin: 20px 0;
+}
