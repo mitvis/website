@@ -1,13 +1,14 @@
 #members {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
 
   a {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     margin-right: 7px;
-    border: 1px solid $mit-lgrey;
+    border: 2px solid $mit-lgrey;
     border-radius: 50px;
     overflow: hidden;
 
@@ -18,8 +19,10 @@
     &:before {
       content: "";
       position: absolute;
-      left: 0; right: 0;
-      top: 0; bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
     }
 
     &:hover {
@@ -32,8 +35,14 @@
   }
 }
 
-#member-caption {
-  margin-left: 3px;
+#members-header {
+  display: flex;
+  align-items: center;
+}
+
+#members-caption {
+  margin-left: auto;
+  text-align: right;
 
   h3 {
     margin: 0;
