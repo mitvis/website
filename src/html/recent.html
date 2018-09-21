@@ -1,6 +1,19 @@
 <h2>Recent Publications</h2>
 <div>
-  {{#first papers 5}}
-    {{this}}
-  {{/first}}
+  <ul>
+   {{#each papers}}
+      <li{{#if hidden}} class="hidden-pubs"{{/if}}><a href="{{url}}">{{title}}</a><br />
+
+      <span class="collaborators">
+        {{#authorList authors ..}}
+          <a href="{{url}}">{{name}}</a>
+        {{/authorList}}.
+      </span>
+
+      <span class="venue">{{venueName venue 'short' ..}} {{year}}.</span>
+
+      {{#if bestPaper}}<span class="best-paper">Best Paper Award.</span>{{/if}}
+      </li>
+    {{/each}}
+  </ul>
 </div>

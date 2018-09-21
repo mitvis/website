@@ -2,14 +2,14 @@ module.exports = [
   {
     slug: 'interpretability-building-blocks',
     title: 'The Building Blocks of Interpretability',
-    authors: ['colah', 'me', 'enjalot', 'shancarter', 'ludwigschubert', 'kqy', 'znah'],
+    authors: ['colah', 'arvindsatya', 'enjalot', 'shancarter', 'ludwigschubert', 'kqy', 'znah'],
     venue: 'distill',
     url: 'https://distill.pub/2018/building-blocks/'
   },
   {
     slug: 'insitu-vis-debugging',
     title: 'Augmenting Code with In Situ Visualizations to Aid Program Understanding',
-    authors: ['jhoffs', 'me', 'jheer'],
+    authors: ['jhoffs', 'arvindsatya', 'jheer'],
     venue: 'chi',
     year: 2018,
     url: 'http://idl.cs.washington.edu/files/2018-InSituCodeVis-CHI.pdf',
@@ -19,7 +19,7 @@ module.exports = [
   {
     slug: 'vega-lite',
     title: 'Vega-Lite: A Grammar of Interactive Graphics',
-    authors: ['me', 'domoritz', 'kanitw', 'jheer'],
+    authors: ['arvindsatya', 'domoritz', 'kanitw', 'jheer'],
     venue: 'infovis',
     year: 2017,
     bestPaper: true,
@@ -30,7 +30,7 @@ module.exports = [
     slug: 'vega-debugging',
     title: 'Visual Debugging Techniques for Reactive Data Visualization.',
     featTitle: 'Visual Debugging Techniques',
-    authors: ['jhoffs', 'me', 'jheer'],
+    authors: ['jhoffs', 'arvindsatya', 'jheer'],
     venue: 'eurovis',
     year: 2016,
     url: 'http://idl.cs.washington.edu/files/2016-VegaDebugging-EuroVis.pdf',
@@ -40,7 +40,7 @@ module.exports = [
     slug: 'reactive-vega',
     title: 'Reactive Vega: A Streaming Dataflow Architecture  for Declarative Interactive Visualization',
     featTitle: 'Reactive Vega: Declarative Interactive Visualization',
-    authors: ['me', 'ryanrussell', 'jhoffs', 'jheer'],
+    authors: ['arvindsatya', 'ryanrussell', 'jhoffs', 'jheer'],
     venue: 'infovis',
     year: 2015,
     url: 'http://idl.cs.washington.edu/files/2015-ReactiveVega-InfoVis.pdf',
@@ -49,7 +49,7 @@ module.exports = [
   {
     slug: 'reactive-vega-model',
     title: 'Declarative Interaction Design for Data Visualization',
-    authors: ['me', 'kanitw', 'jheer'],
+    authors: ['arvindsatya', 'kanitw', 'jheer'],
     venue: 'uist',
     year: 2014,
     hidden: true,
@@ -61,7 +61,7 @@ module.exports = [
     slug: 'lyra',
     title: 'Lyra: An Interactive Visualization Design Environment',
     featTitle: 'Lyra: A Visualization Design Environment',
-    authors: ['me', 'jheer'],
+    authors: ['arvindsatya', 'jheer'],
     venue: 'eurovis',
     year: 2014,
     url: 'http://idl.cs.washington.edu/files/2014-Lyra-EuroVis.pdf',
@@ -70,7 +70,7 @@ module.exports = [
   {
     slug: 'ellipsis',
     title: 'Authoring Narrative Visualizations with Ellipsis',
-    authors: ['me', 'jheer'],
+    authors: ['arvindsatya', 'jheer'],
     venue: 'eurovis',
     year: 2014,
     url: 'http://idl.cs.washington.edu/files/2014-Ellipsis-EuroVis.pdf',
@@ -80,7 +80,7 @@ module.exports = [
   {
     slug: 'webzeitgeist',
     title: 'Webzeitgeist: Design Mining the Web',
-    authors: ['oranju', 'me', 'cearto', 'maxinelim', 'saahmad', 'srk', 'jtalton'],
+    authors: ['oranju', 'arvindsatya', 'cearto', 'maxinelim', 'saahmad', 'srk', 'jtalton'],
     venue: 'chi',
     year: 2013,
     bestPaper: true,
@@ -91,7 +91,7 @@ module.exports = [
   {
     slug: 'chi-schedule',
     title: 'The CHI 2013 Interactive Schedule',
-    authors: ['me', 'strazzulla', 'clemens', 'mbl', 'mackay'],
+    authors: ['arvindsatya', 'strazzulla', 'clemens', 'mbl', 'mackay'],
     venue: 'chi-ea',
     year: 2013,
     url: 'http://arvindsatya.com/papers/chi2013-ischedule.pdf',
@@ -101,7 +101,7 @@ module.exports = [
   {
     slug: 'web-structural-semantics',
     title: 'Learning Structural Semantics for the Web',
-    authors: ['maxinelim', 'oranju', 'me', 'cearto', 'jtalton', 'srk'],
+    authors: ['maxinelim', 'oranju', 'arvindsatya', 'cearto', 'jtalton', 'srk'],
     venue: 'stanford-cstr',
     year: '2012-02',
     url: 'http://hci.stanford.edu/cstr/reports/2012-03.pdf',
@@ -111,7 +111,7 @@ module.exports = [
   {
     slug: 'ml4design',
     title: 'A Platform for Large Scale Machine Learning on Web Design',
-    authors: ['me', 'maxinelim', 'srk'],
+    authors: ['arvindsatya', 'maxinelim', 'srk'],
     venue: 'chi-ea',
     year: '2012',
     url: 'http://hci.stanford.edu/publications/2012/ML4WebDesign.pdf',
@@ -121,7 +121,7 @@ module.exports = [
   {
     slug: 'wall-overlays',
     title: 'Using Overlays to Support Collaborative Interaction with Display Walls',
-    authors: ['me', 'weibel', 'hollan'],
+    authors: ['arvindsatya', 'weibel', 'hollan'],
     venue: 'iui',
     year: 2012,
     url: '/papers/2012-Overlays-IUI.pdf',
