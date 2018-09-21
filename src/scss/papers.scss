@@ -1,0 +1,21 @@
+.papersList {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin: 1em auto;
+  }
+
+  .hidden-pubs {
+    display: none;
+  }
+
+  .title {
+    font-weight: bold;
+    color: $mit-red;
+  }
+
+  .venue {
+    font-style: italic;
+  }
+}

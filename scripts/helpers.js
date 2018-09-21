@@ -35,4 +35,3 @@ hb.registerHelper('members', function(people, opts) {
     .map(p => opts.fn(p))
     .join('');
 });
-

@@ -1,0 +1,37 @@
+<ul class="papersList">
+  {{#if recent}}
+    {{#each (first papers recent)}}
+      <li{{#if hidden}} class="hidden-pubs"{{/if}}><a class="title" href="{{url}}">{{title}}</a><br />
+
+      <span class="collaborators">
+        {{#authorList authors ..}}
+          <a href="{{url}}">{{name}}</a>
+        {{/authorList}}.
+      </span>
+
+      <span class="venue">
+        {{venueName venue 'short' ..}}{{#if year}} {{year}}.{{else}}.{{/if}}
+      </span>
+
+      {{#if bestPaper}}<span class="best-paper">Best Paper Award.</span>{{/if}}
+      </li>
+    {{/each}}
+  {{else}}
+    {{#each papers}}
+      <li{{#if hidden}} class="hidden-pubs"{{/if}}><a class="title" href="{{url}}">{{title}}</a><br />
+
+      <span class="collaborators">
+        {{#authorList authors ..}}
+          <a href="{{url}}">{{name}}</a>
+        {{/authorList}}.
+      </span>
+
+      <span class="venue">
+        {{venueName venue 'short' ..}}{{#if year}} {{year}}.{{else}}.{{/if}}
+      </span>
+
+      {{#if bestPaper}}<span class="best-paper">Best Paper Award.</span>{{/if}}
+      </li>
+    {{/each}}
+  {{/if}}
+</ul>
