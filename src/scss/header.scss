@@ -17,15 +17,17 @@
 #header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0;
   padding-bottom: 10px;
   border-bottom: 1px solid $mit-lgrey;
 
   #logo {
-    height: 36px;
-    margin-top: -7px;
-    margin-left: -4px;
-    margin-right: 15px;
+    height: 30px;
+    margin-top: -8.5px;
+    margin-left: -9px;
+    margin-right: 10px;
+    display: inline-block;
 
     svg {
       height: 100%;
@@ -34,25 +36,30 @@
 
   h1 {
     margin: 0;
-    margin-bottom: 1px;
     font-size: 24px;
     font-weight: 500;
     span.red { color: $mit-red; }
     span.grey { color: $mit-dgrey; }
     white-space: nowrap;
 
-    display: none;
-    @media screen and (min-width: 35.5em) {
-      // sm
-      display: block;
-    }
+    display: inline-block;
+  }
+
+  #wordmark {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
   }
 
   #links {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     font-size: 18px;
+
+    @media screen and (min-width: 48em) {
+      //md
+      justify-content: flex-end;
+    }
 
     a.selected {
       font-weight: 500;
