@@ -1,11 +1,13 @@
 <div class="pure-g">
   <div class="pure-u-1 pure-u-sm-2-3">
     <div id="featured-0" class="featured">
-      <img src="/imgs/featured/vega-lite.png" alt="">
-      <div class="overlay"></div>
-      <p class="caption">
-        Vega-Lite: A Grammar of Interactive Graphics &rarr;
-      </p>
+      <a class="url" href="http://idl.cs.washington.edu/files/2017-VegaLite-InfoVis.pdf">
+        <img src="/imgs/featured/vega-lite.png" alt="">
+        <div class="overlay"></div>
+        <p class="caption">
+          Vega-Lite: A Grammar of Interactive Graphics &rarr;
+        </p>
+      </a>
     </div>
   </div>
 
@@ -13,21 +15,25 @@
     <div class="pure-g">
       <div class="pure-u-1-2 pure-u-sm-1">
         <div id="featured-1" class="featured">
-          <img src="/imgs/featured/interpretability-building-blocks.png" alt="">
-          <div class="overlay"></div>
-          <p class="caption">
-            The Building Blocks of Interpretability &rarr;
-          </p>
+          <a class="url" href="https://distill.pub/2018/building-blocks/">
+            <img src="/imgs/featured/interpretability-building-blocks.png" alt="">
+            <div class="overlay"></div>
+            <p class="caption">
+              The Building Blocks of Interpretability &rarr;
+            </p>
+        </a>
         </div>
       </div>
 
       <div class="pure-u-1-2 pure-u-sm-1">
         <div id="featured-2" class="featured">
-          <img src="/imgs/featured/lyra.png" alt="">
-          <div class="overlay"></div>
-          <p class="caption">
-            Lyra: A Visualization Design Environment &rarr;
-          </p>
+          <a class="url" href="http://idl.cs.washington.edu/files/2014-Lyra-EuroVis.pdf">
+            <img src="/imgs/featured/lyra.png" alt="">
+            <div class="overlay"></div>
+            <p class="caption">
+              Lyra: A Visualization Design Environment &rarr;
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -54,11 +60,18 @@
       return paper.featTitle || paper.title;
     }
 
+    function url(paper) {
+      return paper.url;
+    }
+
     function loadFeatured() {
       var paper = data[counter],
-          el = d3.select(`#featured-${spot}`),
+          id = d3.select(`#featured-${spot}`),
+          el = id.select('.url'),
           img = new Image(),
           src = imgsrc(paper);
+
+      console.log({el});
 
       img.src = src;
       img.onload = function() {
@@ -68,6 +81,7 @@
           .on('end', function() {
             el.select('img').attr('src', src);
             el.select('.caption').html(caption(paper));
+            el.attr('href', url(paper));
             el.style('opacity', 0.0)
               .transition().duration(FADE/2)
               .style('opacity', 1.0)
@@ -79,12 +93,14 @@
       };
     }
 
-    var paper, el;
+    var paper, id, el;
     for(; counter < numSpots(); counter++) {
       paper = data[counter];
-      el = d3.select(`#featured-${spot++}`);
+      id = d3.select(`#featured-${spot++}`);
+      el = id.select('.url');
       el.select('img').attr('src', imgsrc(paper));
       el.select('.caption').html(caption(paper));
+      el.attr('href', url(paper));
     }
 
     if (spot >= numSpots()) spot = 0;
