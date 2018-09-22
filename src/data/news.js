@@ -1,16 +1,20 @@
 module.exports = [
   {
+    date: '2018-09-01',
+    desc: 'Launching the MIT Visualization Group!'
+  },
+  {
     date: '2018-03-06',
     desc: 'Excited to publish <a href="https://distill.pub/2018/building-blocks">The Building Blocks of Interpretability</a>, a Distill article that explores interfaces for understanding neural networks.'
   },
-  {
-    date: '2017-09-01',
-    desc: 'That\'s a wrap! Officially submitted my thesis, <a href="/files/thesis-augmented.pdf">The Reactive Vega Stack: Declarative Interaction Design for Data Visualization</a>.'
-  },
-  {
-    date: '2017-05-30',
-    desc: 'Thrilled to announce I\'ll be joining <a href="https://www.csail.mit.edu">MIT CSAIL</a> as an Assistant Professor in July \'18.'
-  },
+  // {
+  //   date: '2017-09-01',
+  //   desc: 'That\'s a wrap! Officially submitted my thesis, <a href="/files/thesis-augmented.pdf">The Reactive Vega Stack: Declarative Interaction Design for Data Visualization</a>.'
+  // },
+  // {
+  //   date: '2017-05-30',
+  //   desc: 'Thrilled to announce I\'ll be joining <a href="https://www.csail.mit.edu">MIT CSAIL</a> as an Assistant Professor in July \'18.'
+  // },
   // {
   //   date: '2016-11-15',
   //   desc: 'I am on the academic job market! My materials include a <a href="/files/research-statement.pdf">research statement</a>, <a href="/files/teaching-statement.pdf">teaching statement</a>, and <a href="/files/cv.pdf">curriculum vitae</a>.'

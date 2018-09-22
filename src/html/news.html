@@ -1,0 +1,14 @@
+
+<div id="news-header">
+  <h2>News</h2>
+</div>
+
+<div id="news">
+    <ul id="news">
+        {{#each news}}
+            <li>{{{this.desc}}} <br class="pure-hidden-xs" />
+            <span class="date">{{timeF '%b %e, %y' this.date}}</span>
+            </li>
+        {{/each}}
+    </ul>
+</div>
