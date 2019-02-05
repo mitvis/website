@@ -19,6 +19,7 @@ a {
 
 a:hover {
   color: $mit-red;
+  .csail-url & { color: $csail-orange; }
 }
 
 #center {

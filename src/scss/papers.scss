@@ -13,6 +13,7 @@
   .title {
     font-weight: bold;
     color: $mit-red;
+    .csail-url & { color: $csail-orange; }
   }
 
   .venue {

@@ -9,6 +9,7 @@
     height: 55px;
     margin-right: 7px;
     border: 2px solid $mit-lgrey;
+    .csail-url & { border: 2px solid $csail-lgrey; }
     border-radius: 50px;
     overflow: hidden;
 
@@ -27,9 +28,11 @@
 
     &:hover {
       border-color: $border-red;
+      .csail-url & { border-color: $border-orange; }
 
       &:before {
         background: $grad-red;
+        .csail-url & { background: $grad-orange; }
       }
     }
   }
