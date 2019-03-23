@@ -22,6 +22,11 @@ module.exports = {
     url: "http://jonathanzong.com/",
     title: "PhD Student"
   },
+  allenlee: {
+    name: "Allen Lee",
+    url: "https://allenjlee.github.io",
+    title: "UROP"
+  },
   jheer: {
     name: "Jeffrey Heer",
     url: "http://jheer.org",
