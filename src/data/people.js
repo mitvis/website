@@ -24,8 +24,13 @@ module.exports = {
   },
   crystallee: {
     name: "Crystal Lee",
-    url: "http://web.mit.edu/crystall/www/ ",
+    url: "http://web.mit.edu/crystall/www/",
     title: "PhD Student, HASTS"
+  },
+  rupayanneogy: {
+    name: "Rupayan Neogy",
+    url: "http://rneogy.github.io",
+    title: "Undergraduate Researcher"
   },
   allenlee: {
     name: "Allen Lee",
