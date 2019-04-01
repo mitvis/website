@@ -35,7 +35,7 @@ module.exports = {
   allenlee: {
     name: "Allen Lee",
     url: "https://allenjlee.github.io",
-    title: "UROP"
+    title: "Undergraduate Researcher"
   },
   jheer: {
     name: "Jeffrey Heer",
