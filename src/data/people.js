@@ -27,6 +27,11 @@ module.exports = {
     url: "http://web.mit.edu/crystall/www/",
     title: "PhD Student, HASTS"
   },
+  navahaghighi: {
+    name: "Nava Haghighi",
+    url: "http://navahaghighi.com",
+    title: "Masters Student"
+  },
   rupayanneogy: {
     name: "Rupayan Neogy",
     url: "http://rneogy.github.io",
