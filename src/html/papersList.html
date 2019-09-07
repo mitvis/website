@@ -5,7 +5,11 @@
 
       <span class="collaborators">
         {{#authorList authors ..}}
-          <a href="{{url}}">{{name}}</a>
+          {{#if url}}
+            <a href="{{url}}">{{name}}</a>
+          {{else}}
+            {{name}}
+          {{/if}}
         {{/authorList}}.
       </span>
 

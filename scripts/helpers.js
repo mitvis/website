@@ -2,7 +2,7 @@ var hb = require('handlebars'),
     timeF = require('d3-time-format').timeFormat;
 
 hb.registerHelper('authorList', function(authors, data, opts) {
-  return authors.map((a) => opts.fn(data.people[a]).trim()).join(', ');
+  return authors.map((a) => opts.fn(data.people[a] || {name: a, url: null}).trim()).join(', ');
 });
 
 hb.registerHelper('paperList', function(papers, data, opts) {

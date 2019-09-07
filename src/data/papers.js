@@ -1,5 +1,42 @@
 module.exports = [
   {
+    slug: 'sociotechnical-vis-access',
+    title: 'Sociotechnical Considerations for Accessible Visualization Design',
+    authors: ['alundgard', 'crystallee', 'arvindsatya'],
+    venue: 'infovis',
+    year: 2019,
+    abstract: 'Accessibility – the process of designing for people with disabilities (PWD) — is an important but under-explored challenge in the visualization research community. Without careful attention, and if PWD are not included as equal participants throughout the process, there is a danger of perpetuating a vision-first approach to accessible design that marginalizes the lived experience of disability (e.g., by creating overly simplistic “sensory translations” that map visual to non-visual modalities in a one-to-one fashion). In this paper, we present a set of sociotechnical considerations for research in accessible visualization design, drawing on literature in disability studies, tactile information systems, and participatory methods. We identify that using state-of-the-art technologies may introduce more barriers to access than they remove, and that expectations of research novelty may not produce outcomes well-aligned with the needs of disability communities. Instead, to promote a more inclusive design process, we emphasize the importance of clearly communicating goals, following existing accessibility guidelines, and treating PWD as equal participants who are compensated for their specialized skills. To illustrate how these considerations can be applied in practice, we discuss a case study of an inclusive design workshop held in collaboration with the Perkins School for the Blind.',
+    featured: true
+  },
+  {
+    slug: 'critical-reflections',
+    title: 'Critical Reflections on Visualization Authoring Systems',
+    authors: ['arvindsatya', 'Bongshin Lee', 'Donghao Ren', 'jheer', 'John Stasko', 'John Thompson', 'Matthew Brehmer', 'Zhicheng Liu'],
+    venue: 'infovis',
+    year: 2019,
+    abstract: 'An emerging generation of visualization authoring systems support expressive information visualization without textual programming. As they vary in their visualization models, system architectures, and user interfaces, it is challenging to directly compare these systems using traditional evaluative methods. Recognizing the value of contextualizing our decisions in the broader design space, we present critical reflections on three systems we developed-Lyra, Data Illustrator, and Charticulator. This paper surfaces knowledge that would have been daunting within the constituent papers of these three systems. We compare and contrast their (previously unmentioned) limitations and trade-offs between expressivity and learnability. We also reflect on common assumptions that we made during the development of our systems, thereby informing future research directions in visualization authoring systems.',
+    featured: true
+  },
+  {
+    slug: 'sherlock',
+    title: 'Sherlock: A Deep Learning Approach to Semantic Data Type Detection',
+    authors: ['Madelon Hulsebos', 'Kevin Hu', 'Michiel Bakker', 'Emanuel Zgraggen', 'arvindsatya', 'Tim Kraska', 'Çağatay Demiralp', 'César Hidalgo'],
+    venue: 'kdd',
+    year: 2019,
+    abstract: 'Correctly detecting the semantic type of data columns is crucial for data science tasks such as automated data cleaning, schema matching, and data discovery. Existing data preparation and analysis systems rely on dictionary lookups and regular expression matching to detect semantic types. However, these matching-based approaches often are not robust to dirty data and only detect a limited number of types. We introduce Sherlock, a multi-input deep neural network for detecting semantic types. We train Sherlock on 686,765 data columns retrieved from the VizNet corpus by matching 78 semantic types from DBpedia to column headers. We characterize each matched column with 1,588 features describing the statistical properties, character distributions, word embeddings, and paragraph vectors of column values. Sherlock achieves a support-weighted F1 score of 0.89, exceeding that of machine learning baselines, dictionary and regular expression benchmarks, and the consensus of crowdsourced annotations.',
+    featured: false
+  },
+  {
+    slug: 'viznet',
+    title: 'VizNet: Towards A Large-Scale Visualization Learning and Benchmarking Repository',
+    authors: ['Kevin Hu', 'Neil Gaikwad', 'Madelon Hulsebos', 'Michiel Bakker', 'Emanuel Zgraggen', 'César Hidalgo', 'Tim Kraska', 'Guoliang Li', 'arvindsatya', 'Çağatay Demiralp'],
+    venue: 'chi',
+    year: 2019,
+    abstract: 'Researchers currently rely on ad hoc datasets to train automated visualization tools and evaluate the effectiveness of visualization designs. These exemplars often lack the characteristics of real-world datasets, and their one-off nature makes it difficult to compare different techniques. In this paper, we present VizNet: a large-scale corpus of over 31 million datasets compiled from open data repositories and online visualization galleries. On average, these datasets comprise 17 records over 3 dimensions and across the corpus, we find 51% of the dimensions record categorical data, 44% quantitative, and only 5% temporal. VizNet provides the necessary common baseline for comparing visualization design techniques, and developing benchmark models and algorithms for automating visual analysis. To demonstrate VizNet\'s utility as a platform for conducting online crowdsourced experiments at scale, we replicate a prior study assessing the influence of user task and data distribution on visual encoding effectiveness, and extend it by considering an additional task: outlier detection. To contend with running such studies at scale, we demonstrate how a metric of perceptual effectiveness can be learned from experimental results, and show its predictive power across test datasets.',
+    featured: false,
+    video: 'https://www.youtube.com/watch?v=s7vKysUvQuI'
+  },
+  {
     slug: 'interpretability-building-blocks',
     title: 'The Building Blocks of Interpretability',
     authors: ['colah', 'arvindsatya', 'enjalot', 'shancarter', 'ludwigschubert', 'kqy', 'znah'],

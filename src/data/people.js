@@ -40,7 +40,8 @@ module.exports = {
   allenlee: {
     name: "Allen Lee",
     url: "https://allenjlee.github.io",
-    title: "Undergraduate Researcher"
+    title: "Undergraduate Researcher",
+    role: "alumni"
   },
   jheer: {
     name: "Jeffrey Heer",

@@ -34,5 +34,9 @@ module.exports = {
   distill: {
     short: "Distill",
     full: "Distill Journal"
+  },
+  kdd: {
+    short: 'ACM KDD',
+    full: "ACM Knowledge Discovery and Data Mining (KDD)"
   }
 };
