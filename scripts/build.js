@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var reload = require('require-reload')(require),
-    fs  = require('fs'),
+    fs  = require('fs-extra'),
     hb  = require('handlebars'),
     hbh = require('handlebars-helpers')(),
     hbh2 = require('./helpers'),
@@ -30,6 +30,11 @@ function build() {
         fs.writeFileSync('build/styles.css', css.css);
     });
 
+    // Copy contents of static
+    fs.copy('static', 'build', err => {
+      if (err) console.error(timeF(new Date), chalk.red(err), err);
+      else console.log(timeF(new Date), chalk.green('Copied static to build.'));
+    });
   } catch (e) {
     console.error(timeF(new Date), chalk.red(e), e);
   }

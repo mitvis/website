@@ -14,15 +14,15 @@
     width: 100%;
     height: 100%;
     // background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.3) 100%);
-    border: 1.5px solid $mit-dgrey;
+    border: 1px solid $mit-dgrey;
     .csail-url & { border: 1.5px solid $csail-dgrey; }
     border-radius: 5px;
   }
 
   .caption {
     position: absolute;
-    left: 2px;
-    bottom: 2px;
+    left: 1px;
+    bottom: 1px;
     margin: 0;
     padding: 5px;
     background: rgba(0, 0, 0, 0.5);
