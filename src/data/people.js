@@ -44,7 +44,12 @@ module.exports = {
   rupayanneogy: {
     name: "Rupayan Neogy",
     url: "http://rneogy.github.io",
-    title: "Undergraduate Researcher"
+    title: "Master's Student"
+  },
+  dhiraj:{
+    name: "Dhiraj Barnwal",
+    url: "https://djbarnwal.github.io/",
+    title: "Undergraduate Researcher, IIT Kharagpur"
   },
   allenlee: {
     name: "Allen Lee",
