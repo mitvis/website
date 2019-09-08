@@ -1,0 +1,24 @@
+#news {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 0.9em;
+    margin: 0;
+
+    &.date {
+      font-style: italic;
+      font-size: 0.8em;
+      color: $mit-dgrey;
+      .csail-url & { color: $csail-dgrey; }
+    }
+  }
+
+  a, strong { 
+    font-weight: 400; 
+  }
+}

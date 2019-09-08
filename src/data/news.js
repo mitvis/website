@@ -1,12 +1,28 @@
 module.exports = [
   {
-    date: '2018-09-01',
-    desc: 'Launching the MIT Visualization Group!'
+    date: '2019-08-01',
+    desc: '<a href="/pubs/sociotechnical-vis-access">Two</a> <a href="/pubs/critical-reflections">papers</a> and a <a href="/pubs/towards-visualive">poster</a> to appear at VIS \'19.'
   },
   {
-    date: '2018-03-06',
-    desc: 'Excited to publish <a href="https://distill.pub/2018/building-blocks">The Building Blocks of Interpretability</a>, a Distill article that explores interfaces for understanding neural networks.'
+    date: '2019-05-18',
+    desc: 'Data type detection with <a href="/pubs/sherlock">Sherlock</a>, to appear at KDD \'19.'
   },
+  {
+    date: '2019-05-16',
+    desc: 'Cheers to our <a href="https://twitter.com/mitvis/status/1129050927812489216">first birthday</a>!'
+  },
+  {
+    date: '2019-01-22',
+    desc: '<a href="/pubs/viznet">VizNet</a>: a new corpus of vis designs to appear at CHI \'19.'
+  },
+  {
+    date: '2018-09-01',
+    desc: '<strong>Hello world!</strong> We are the Visualization Group at MIT CSAIL.'
+  },
+  // {
+  //   date: '2018-03-06',
+  //   desc: 'Excited to publish <a href="https://distill.pub/2018/building-blocks">The Building Blocks of Interpretability</a>, a Distill article that explores interfaces for understanding neural networks.'
+  // },
   // {
   //   date: '2017-09-01',
   //   desc: 'That\'s a wrap! Officially submitted my thesis, <a href="/files/thesis-augmented.pdf">The Reactive Vega Stack: Declarative Interaction Design for Data Visualization</a>.'

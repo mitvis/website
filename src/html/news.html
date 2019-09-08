@@ -3,12 +3,11 @@
   <h2>News</h2>
 </div>
 
-<div id="news">
-    <ul id="news">
-        {{#each news}}
-            <li>{{{this.desc}}} <br class="pure-hidden-xs" />
-            <span class="date">{{timeF '%b %e, %y' this.date}}</span>
-            </li>
-        {{/each}}
-    </ul>
-</div>
+<ul id="news">
+  {{#each news}}
+    <li>
+      <p>{{{this.desc}}}</p>
+      <p class="date">{{timeF '%e %b %Y' this.date}}</p>
+    </li>
+  {{/each}}
+</ul>
