@@ -1,7 +1,7 @@
 <ul class="papersList">
   {{#each (first pubs recent)}}
     <li{{#if hidden}} class="hidden-pubs"{{/if}}>
-      <a class="thumbnail" href="{{url}}">
+      <a class="thumbnail" href="{{#if url}}{{url}}{{else}}/pubs/{{slug}}{{/if}}">
         <img src="/imgs/thumbs/{{slug}}.png" alt="{{title}}" />
       </a>
 
