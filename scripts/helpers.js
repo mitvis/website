@@ -31,7 +31,7 @@ hb.registerHelper('featured', function(papers) {
 
 hb.registerHelper('members', function(people, opts) {
   return Object.keys(people).map(handle => Object.assign({handle}, people[handle]))
-    .filter(p => p.role !== 'external' && p.role !== 'alumni')
+    .filter(p => p.role !== 'external')
     .map(p => opts.fn(p))
     .join('');
 });

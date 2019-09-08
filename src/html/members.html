@@ -9,7 +9,7 @@
 
 <div id="members">
   {{#members people}}
-  <a onmouseover="showMember('{{name}}', '{{title}}')" onmouseout="hideMember()" href="{{url}}">
+  <a onmouseover="showMember(`{{name}}`, `{{title}}{{#if alumni}}(Alumni){{/if}}`)" onmouseout="hideMember()" href="{{url}}"  {{#if alumni}}class="alumni"{{/if}}>
     <img src="/imgs/people/{{handle}}.jpg" alt="{{name}}" />
   </a>
   {{/members}}

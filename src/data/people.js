@@ -27,10 +27,19 @@ module.exports = {
     url: "http://web.mit.edu/crystall/www/",
     title: "PhD Student, HASTS"
   },
+  nathalie: {
+    name: "Nathalie Vladis",
+    title: "Postdoctoral Researcher"
+  },
   navahaghighi: {
     name: "Nava Haghighi",
     url: "http://navahaghighi.com",
-    title: "Masters Student"
+    title: "Master's Student"
+  },
+  wonyoung: {
+    name: "Wonyoung So",
+    url: "https://wonyoung.so/",
+    title: "Master's Student"
   },
   rupayanneogy: {
     name: "Rupayan Neogy",
@@ -41,7 +50,7 @@ module.exports = {
     name: "Allen Lee",
     url: "https://allenjlee.github.io",
     title: "Undergraduate Researcher",
-    role: "alumni"
+    alumni: true
   },
   jheer: {
     name: "Jeffrey Heer",
