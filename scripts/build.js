@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var reload = require('require-reload')(require),
+const reload = require('require-reload')(require),
     fs  = require('fs-extra'),
     hb  = require('handlebars'),
     hbh = require('handlebars-helpers')(),
@@ -12,28 +12,35 @@ var reload = require('require-reload')(require),
 
 function build() {
   try {
+    const data = reload('../src/data'),
+        scss = fs.readFileSync('src/scss/index.scss', {encoding: 'utf-8'}),
+        css = sass.renderSync({data: scss});
+
+    // Copy static and build css.
+    fs.copySync('static', 'build', {preserveTimestamps: true});
+    fs.writeFileSync('build/styles.css', css.css);
+
     // Register partials
-    fs.readdirSync('src/html').forEach(function(filename) {
-      var basename = path.basename(filename, '.html');
+    fs.readdirSync('src/html').forEach(filename => {
+      const basename = path.basename(filename, '.html');
       hb.registerPartial(basename,
-        fs.readFileSync('src/html/' + filename, {encoding: 'utf-8'}));
+        fs.readFileSync(`src/html/${filename}`, {encoding: 'utf-8'}));
     });
 
     // Write routes
-    fs.readdirSync('src/routes').forEach(function(filename) {
-      var data = reload('../src/data'),
-        html = fs.readFileSync('src/routes/'+filename, {encoding: 'utf-8'}),
-        scss = fs.readFileSync('src/scss/index.scss', {encoding: 'utf-8'}),
-        tmpl = hb.compile(html),
-        css = sass.renderSync({data: scss});
-        fs.writeFileSync('build/'+filename, tmpl(data));
-        fs.writeFileSync('build/styles.css', css.css);
+    fs.readdirSync('src/routes').forEach(filename => {
+      if (filename === 'paper.html') return;
+      const html = fs.readFileSync(`src/routes/${filename}`, {encoding: 'utf-8'}),
+          tmpl = hb.compile(html);
+      fs.writeFileSync(`build/${filename}`, tmpl(data));
     });
 
-    // Copy contents of static
-    fs.copy('static', 'build', err => {
-      if (err) console.error(timeF(new Date), chalk.red(err), err);
-      else console.log(timeF(new Date), chalk.green('Copied static to build.'));
+    // Create paper pages
+    const paperTmpl = hb.compile(fs.readFileSync(`src/routes/paper.html`, {encoding: 'utf-8'}));
+    const bibtex = hb.compile('{{{bibtex}}}');
+    [].concat(data.papers, data.dispatches).forEach(pub => {
+      fs.writeFileSync(`build/pubs/${pub.slug}.html`, paperTmpl(pub));
+      fs.writeFileSync(`build/pubs/${pub.slug}.bib`, bibtex(pub));
     });
   } catch (e) {
     console.error(timeF(new Date), chalk.red(e), e);

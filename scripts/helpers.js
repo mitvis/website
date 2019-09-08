@@ -1,8 +1,10 @@
 var hb = require('handlebars'),
-    timeF = require('d3-time-format').timeFormat;
+    timeF = require('d3-time-format').timeFormat,
+    data = require('../src/data');
 
-hb.registerHelper('authorList', function(authors, data, opts) {
-  return authors.map((a) => opts.fn(data.people[a] || {name: a, url: null}).trim()).join(', ');
+hb.registerHelper('authorList', function(authors, opts) {
+  const delim = opts.hash.delim || ', ';
+  return authors.map((a) => opts.fn(data.people[a] || {name: a, url: null}).trim()).join(delim);
 });
 
 hb.registerHelper('paperList', function(papers, data, opts) {
@@ -12,7 +14,7 @@ hb.registerHelper('paperList', function(papers, data, opts) {
     .join(delim || '\n');
 });
 
-hb.registerHelper('venueName', function(slug, name, data) {
+hb.registerHelper('venueName', function(slug, name) {
   return data.venues[slug][name];
 });
 
@@ -35,3 +37,28 @@ hb.registerHelper('members', function(people, opts) {
     .map(p => opts.fn(p))
     .join('');
 });
+
+hb.registerHelper('bibtex', function() {
+  const v = data.venues[this.venue],
+        b = v.bibtex,
+        authors = this.authors.map(a => bibtex_escape(data.people[a] ? data.people[a].name : a)).join(' AND ');
+
+  return `@${b.type}{${this.year}-${this.slug},\n` +
+    ` title = {{${this.title}}},\n` + 
+    ` author = {${authors}},\n` + 
+    ` ${b.venue} = {${v.full.replace('&', '\\&')}},\n` + 
+    (this.volume ? ` volume = {${this.volume}},\n` : '') + 
+    (this.number ? ` number = {${this.number}},\n` : '') + 
+    ` year = {${this.year}},\n` +
+    ` url = {http://vis.csail.mit.edu/pubs/${this.slug}}\n` + 
+  `}`
+});
+
+function bibtex_escape(str) {
+	return !str ? "" :
+	  str.replace("&", "\\&")
+	     .replace("%", "\\%")
+	     .replace("é", "\\'{e}")
+	     .replace("Ç", "\\c{C}")
+	     .replace("ğ", "\\u{g}");
+}

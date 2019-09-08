@@ -6,10 +6,10 @@
       </a>
 
       <div class="entry">
-        <p><a class="title" href="{{url}}">{{title}}</a></p>
+        <p><a class="title" href="{{#if url}}{{url}}{{else}}/pubs/{{slug}}{{/if}}">{{title}}</a></p>
 
         <p class="collaborators">
-          {{#authorList authors ..}}
+          {{#authorList authors}}
             {{#if url}}
               <a href="{{url}}">{{name}}</a>
             {{else}}
@@ -17,11 +17,15 @@
             {{/if}}
           {{/authorList}}.
 
-          <span class="venue">{{venueName venue 'short' ..}}{{#if year}} {{year}}.{{else}}.{{/if}}</span>
+          <span class="venue">{{venueName venue 'short'}}{{#if year}} {{year}}.{{else}}.{{/if}}</span>
+          {{#if bestPaper}}<span class="best-paper">Best Paper Award.</span>{{/if}}
         </p>
 
-        <p>
-          {{#if bestPaper}}<span class="best-paper">Best Paper Award.</span>{{/if}}
+        <p class="links">
+          {{#unless url}}<a href="/pubs/{{slug}}.pdf">PDF</a>{{/unless}}
+          {{#each materials}}
+            &middot; <a href="{{url}}">{{name}}</a>
+          {{/each}}
         </p>
       </div>
     </li>

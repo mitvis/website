@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head}}
+  <script src="https://kit.fontawesome.com/d0c18b213e.js"></script>
+</head>
+<body>
+  <div class="pure-g">
+    <div id="ribbon" class="pure-u-1">
+      <div class="red"></div>
+      <div class="grey"></div>
+    </div>
+
+    <div id="center" class="pure-u-1">
+      {{> header isPapers=true}}
+
+      <div id="paper" class="pure-g">
+        <div id="details" class="pure-u-1 pure-u-md-2-3">
+          <h2 class="title">{{title}}</h2>
+          <p class="collaborators">
+            {{#authorList authors}}
+              {{#if url}}
+                <a href="{{url}}">{{name}}</a>
+              {{else}}
+                {{name}}
+              {{/if}}
+            {{/authorList}}.
+          </p>
+
+          <h3>Abstract</h3>
+
+          <p class="abstract">{{{abstract}}}</p>
+
+          <h3>Citation</h3>
+
+          <div class="citation">
+            <p class="title">{{title}}</p>
+            <p class="collaborators">{{#authorList authors}}{{name}}{{/authorList}}</p>
+            <p class="venue">{{venueName venue 'full'}}{{#if year}}, {{year}}.{{else}}.{{/if}}</p>
+          </div>
+
+          <h3>Bibtex</h3>
+
+          <pre><code>{{bibtex}}</code></pre>
+
+        </div>
+
+        <div id="metadata" class="pure-u-1 pure-u-md-1-3">
+          {{#if materials}}
+          <h3>Materials</h3>
+          <ul class="materials links">
+            {{#each materials}}
+              <li><i class="fas fa-{{type}}"></i><a href="{{url}}">{{name}}</a></li>
+            {{/each}}
+          </ul>
+          {{/if}}
+
+          {{#if videos}}
+          <h3>Videos</h3>
+
+          {{#each videos}}
+            <h4>{{name}}</h4>
+            <div class="video-wrapper">
+              {{#if youtube}}<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{key}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{{/if}}
+              {{#if vimeo}}<iframe src="https://player.vimeo.com/video/{{key}}" width="640" height="401" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>{{/if}}
+            </div>
+          {{/each}}
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{> foot}}
+</body>
+</html>
