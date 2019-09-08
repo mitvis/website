@@ -14,7 +14,7 @@ module.exports = {
   },
   alundgard: {
     name: "Alan Lundgard",
-    url: "http://alundgard.com",
+    url: "https://www.alanlundgard.com/",
     title: "PhD Student"
   },
   jzong: {
