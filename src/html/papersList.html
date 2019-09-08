@@ -1,41 +1,29 @@
 <ul class="papersList">
-  {{#if recent}}
-    {{#each (first papers recent)}}
-      <li{{#if hidden}} class="hidden-pubs"{{/if}}><a class="title" href="{{url}}">{{title}}</a><br />
+  {{#each (first papers recent)}}
+    <li{{#if hidden}} class="hidden-pubs"{{/if}}>
+      <a class="thumbnail" href="{{url}}">
+        <img src="/imgs/thumbs/{{slug}}.png" alt="{{title}}" />
+      </a>
 
-      <span class="collaborators">
-        {{#authorList authors ..}}
-          {{#if url}}
-            <a href="{{url}}">{{name}}</a>
-          {{else}}
-            {{name}}
-          {{/if}}
-        {{/authorList}}.
-      </span>
+      <div class="entry">
+        <p><a class="title" href="{{url}}">{{title}}</a></p>
 
-      <span class="venue">
-        {{venueName venue 'short' ..}}{{#if year}} {{year}}.{{else}}.{{/if}}
-      </span>
+        <p class="collaborators">
+          {{#authorList authors ..}}
+            {{#if url}}
+              <a href="{{url}}">{{name}}</a>
+            {{else}}
+              {{name}}
+            {{/if}}
+          {{/authorList}}.
 
-      {{#if bestPaper}}<span class="best-paper">Best Paper Award.</span>{{/if}}
-      </li>
-    {{/each}}
-  {{else}}
-    {{#each papers}}
-      <li{{#if hidden}} class="hidden-pubs"{{/if}}><a class="title" href="{{url}}">{{title}}</a><br />
+          <span class="venue">{{venueName venue 'short' ..}}{{#if year}} {{year}}.{{else}}.{{/if}}</span>
+        </p>
 
-      <span class="collaborators">
-        {{#authorList authors ..}}
-          <a href="{{url}}">{{name}}</a>
-        {{/authorList}}.
-      </span>
-
-      <span class="venue">
-        {{venueName venue 'short' ..}}{{#if year}} {{year}}.{{else}}.{{/if}}
-      </span>
-
-      {{#if bestPaper}}<span class="best-paper">Best Paper Award.</span>{{/if}}
-      </li>
-    {{/each}}
-  {{/if}}
+        <p>
+          {{#if bestPaper}}<span class="best-paper">Best Paper Award.</span>{{/if}}
+        </p>
+      </div>
+    </li>
+  {{/each}}
 </ul>
