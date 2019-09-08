@@ -4,5 +4,6 @@ module.exports = {
   people: reload('./people'),
   venues: reload('./venues'),
   news: reload('./news'),
-  papers: reload('./papers')
+  papers: reload('./papers'),
+  dispatches: reload('./dispatches')
 };

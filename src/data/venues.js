@@ -38,5 +38,9 @@ module.exports = {
   kdd: {
     short: 'KDD',
     full: "ACM Knowledge Discovery and Data Mining (KDD)"
+  },
+  'vis-posters': {
+    short: 'VIS Posters',
+    full: 'IEEE VIS'
   }
 };

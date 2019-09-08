@@ -51,6 +51,11 @@ h2 {
   font-family: $heading-font;
   font-weight: 500;
   font-size: 20px;
+
+  .view-all {
+    margin-left: 5px;
+    font-size: 0.75em;
+  }
 }
 
 /* pure-hidden-xs */
