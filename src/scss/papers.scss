@@ -84,6 +84,16 @@
 
   h3 {
     margin-bottom: 0.25em;
+
+    a.download-bib {
+      margin-left: 5px;
+      color: $csail-dgrey;
+
+      &:hover {
+        color: $mit-red;
+        .csail-url & { color: $csail-orange; }
+      }
+    }
   }
 
   p, pre {
@@ -91,7 +101,21 @@
   }
 
   #details {
-    padding-right: 20px;
+    padding-right: 50px;
+  }
+
+  .teaser {
+    margin-top: 1em;
+
+    img {
+      width: 100%;
+    }
+
+    .caption {
+      margin-top: 0;
+      font-size: 0.85em;
+      color: $csail-dgrey;
+    }
   }
 
   .citation {
@@ -119,10 +143,11 @@
 
     i {
       width: 20px;
+      color: $csail-dgrey;
+      margin-right: 10px;
     }
 
     a {
-      margin-left: 10px;
       font-weight: 400;
     }
   }
