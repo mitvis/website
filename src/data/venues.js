@@ -1,4 +1,12 @@
 module.exports = {
+  'vis-short': {
+    short: 'VIS',
+    full: 'IEEE Visualization Conference (VIS)',
+    bibtex: {
+      type: 'inproceedings',
+      venue: 'booktitle'
+    }
+  },
   infovis: {
     short: 'InfoVis',
     full: 'IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)',

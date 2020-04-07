@@ -1,4 +1,4 @@
-var hb = require('handlebars'),
+const hb = require('handlebars'),
     timeF = require('d3-time-format').timeFormat,
     data = require('../src/data');
 
@@ -14,8 +14,14 @@ hb.registerHelper('paperList', function(papers, data, opts) {
     .join(delim || '\n');
 });
 
-hb.registerHelper('venueName', function(slug, name) {
-  return data.venues[slug][name];
+hb.registerHelper('venueName', function(slug, format, year) {
+  const prevYear = ['infovis', 'vast', 'scivis'];
+  let name = data.venues[slug][format];
+
+  if (year === undefined) return `${name}.`;
+  if (format === 'full') return `${name}, ${year}.`;
+
+  return prevYear.includes(slug) ? `${name} ${year-1}.` : `${name} ${year}.`;
 });
 
 hb.registerHelper('timeF', function(fmt, str) {

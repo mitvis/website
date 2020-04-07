@@ -46,7 +46,7 @@
           <div class="citation">
             <p class="title">{{title}}</p>
             <p class="collaborators">{{#authorList authors}}{{name}}{{/authorList}}</p>
-            <p class="venue">{{venueName venue 'full'}}{{#if year}}, {{year}}.{{else}}.{{/if}}</p>
+            <p class="venue">{{venueName venue 'full' year}}</p>
           </div>
 
           <h3>Bibtex <a class="download-bib" href="/pubs/{{slug}}.bib" title="Download Bibtex"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
