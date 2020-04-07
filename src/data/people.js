@@ -4,12 +4,9 @@ module.exports = {
     url: "http://arvindsatya.com",
     title: "Assistant Professor"
   },
-  amyshea: {
-    name: "Amy Shea-Slattery",
-    title: "Administrative Assistant"
-  },
   aspenhopkins: {
     name: "Aspen Hopkins",
+    url: "http://aspenhopkins.com",
     title: "PhD Student"
   },
   alundgard: {
@@ -36,14 +33,18 @@ module.exports = {
     url: "http://navahaghighi.com",
     title: "Master's Student"
   },
-  wonyoung: {
-    name: "Wonyoung So",
-    url: "https://wonyoung.so/",
+  houssam: {
+    name: "Houssam Kherraz",
     title: "Master's Student"
   },
   rupayanneogy: {
     name: "Rupayan Neogy",
     url: "http://rneogy.github.io",
+    title: "Master's Student"
+  },
+  wonyoung: {
+    name: "Wonyoung So",
+    url: "https://wonyoung.so/",
     title: "Master's Student"
   },
   dhiraj:{
