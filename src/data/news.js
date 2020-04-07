@@ -1,5 +1,13 @@
 module.exports = [
   {
+    date: '2020-04-06',
+    desc: 'Aspen will present her work on <a href="/pubs/visualint">VisuaLint</a> at EuroVis \'20.'
+  },
+  {
+    date: '2019-12-08',
+    desc: 'Nava will present a poster on <a href="/pubs/self-interfaces">Self Interfaces</a> at TEI \'20.'
+  },
+  {
     date: '2019-08-01',
     desc: '<a href="/pubs/sociotechnical-vis-access">Two</a> <a href="/pubs/critical-reflections">papers</a> and a <a href="/pubs/towards-visualive">poster</a> to appear at VIS \'19.'
   },

@@ -47,6 +47,14 @@ module.exports = {
       venue: 'booktitle'
     }
   },
+  'tei-wip': {
+    short: 'TEI WIP',
+    full: 'Work-in-Progress of ACM Tangible, Embedded, and Embodied Interaction (TEI)',
+    bibtex: {
+      type: 'inproceedings',
+      venue: 'booktitle'
+    }
+  },
   'stanford-cstr': {
     short: 'Stanford CSTR',
     full: 'Stanford Computer Science Technical Report',

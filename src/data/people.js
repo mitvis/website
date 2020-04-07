@@ -63,6 +63,11 @@ module.exports = {
     url: "http://jheer.org",
     role: "external"
   },
+  correll: {
+    name: "Michael Correll",
+    url: "https://correll.io",
+    role: "external"
+  },
   ryanrussell: {
     name: "Ryan Russell",
     url: "https://github.com/RussellSprouts",
