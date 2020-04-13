@@ -7,22 +7,27 @@ module.exports = {
   aspenhopkins: {
     name: "Aspen Hopkins",
     url: "http://aspenhopkins.com",
-    title: "PhD Student"
+    title: "PhD Student, EECS"
   },
   alundgard: {
     name: "Alan Lundgard",
     url: "https://www.alanlundgard.com/",
-    title: "PhD Student"
+    title: "PhD Student, EECS"
   },
   jzong: {
     name: "Jonathan Zong",
     url: "http://jonathanzong.com/",
-    title: "PhD Student"
+    title: "PhD Student, EECS"
   },
   crystallee: {
     name: "Crystal Lee",
     url: "http://web.mit.edu/crystall/www/",
-    title: "PhD Student, HASTS"
+    title: "PhD Student, STS"
+  },
+  harinisuresh: {
+    name: "Harini Suresh",
+    url: "http://harinisuresh.com",
+    title: "PhD Student, EECS"
   },
   nathalie: {
     name: "Nathalie Vladis",

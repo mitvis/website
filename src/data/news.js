@@ -4,6 +4,10 @@ module.exports = [
     desc: 'Aspen will present her work on <a href="/pubs/visualint">VisuaLint</a> at EuroVis \'20.'
   },
   {
+    date: '2020-03-23',
+    desc: 'Arvind was awarded an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1942659">NSF CAREER award</a> for studying <a href="/pubs/nsf-career.pdf">"Effective Interaction Design for Data Visualization."</a>'
+  },
+  {
     date: '2019-12-08',
     desc: 'Nava will present a poster on <a href="/pubs/self-interfaces">Self Interfaces</a> at TEI \'20.'
   },
@@ -23,10 +27,10 @@ module.exports = [
     date: '2019-01-22',
     desc: '<a href="/pubs/viznet">VizNet</a>: a new corpus of vis designs to appear at CHI \'19.'
   },
-  {
-    date: '2018-09-01',
-    desc: '<strong>Hello world!</strong> We are the Visualization Group at MIT CSAIL.'
-  },
+  // {
+  //   date: '2018-09-01',
+  //   desc: '<strong>Hello world!</strong> We are the Visualization Group at MIT CSAIL.'
+  // },
   // {
   //   date: '2018-03-06',
   //   desc: 'Excited to publish <a href="https://distill.pub/2018/building-blocks">The Building Blocks of Interpretability</a>, a Distill article that explores interfaces for understanding neural networks.'

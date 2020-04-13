@@ -41,8 +41,16 @@
 </div>
 
 <script type="text/javascript">
+  function shuffle(a) {
+      for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+  }
+
   (function() {
-    var data = {{{featured papers}}},
+    var data = shuffle({{{featured papers}}}),
         FADE = 1000, PAUSE = 5000,
         counter = 0, spot = 0;
 
