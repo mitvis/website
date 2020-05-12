@@ -1,4 +1,12 @@
 module.exports = {
+  'convivial-salon': {
+    short: 'Convivial Computing Salon',
+    full: 'The Convivial Computing Salon at The Art, Science, and Engineering of Programming',
+    bibtex: {
+      type: 'inproceedings',
+      venue: 'booktitle'
+    }
+  },
   'vis-short': {
     short: 'VIS',
     full: 'IEEE Visualization Conference (VIS)',

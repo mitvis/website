@@ -1,5 +1,9 @@
 module.exports = [
   {
+    date: '2020-05-08',
+    desc: 'Arvind and collaborators at UC San Diego and Aarhus presented their vision for a <a href="/pubs/towards-convivial-info-space">Dynamic Multiscale Personalized Information Space</a> at the Convivial Computing Salon.'
+  },
+  {
     date: '2020-04-06',
     desc: 'Aspen will present her work on <a href="/pubs/visualint">VisuaLint</a> at EuroVis \'20.'
   },
