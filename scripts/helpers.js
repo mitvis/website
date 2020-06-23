@@ -39,7 +39,18 @@ hb.registerHelper('featured', function(papers) {
 
 hb.registerHelper('members', function(people, opts) {
   return Object.keys(people).map(handle => Object.assign({handle}, people[handle]))
-    .filter(p => p.role !== 'external')
+    .filter(p => p.role !== 'external' && !p.alumni)
+    .map(p => opts.fn(p))
+    .join('');
+});
+
+hb.registerHelper('alumni', function(people, opts) {
+  return Object.keys(people).map(handle => Object.assign({handle}, people[handle]))
+    .filter(p => p.role !== 'external' && p.alumni)
+    .reduce((acc, curr) => {
+      const last = acc.length && acc[acc.length - 1].cell;
+      return (!last || last.length === 2 ? acc.push({cell: [curr]}) : last.push(curr), acc);
+    }, [])
     .map(p => opts.fn(p))
     .join('');
 });

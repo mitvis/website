@@ -36,16 +36,23 @@ module.exports = {
   navahaghighi: {
     name: "Nava Haghighi",
     url: "http://navahaghighi.com",
-    title: "Master's Student"
+    title: "Master's Student",
+    alumni: true
   },
   houssam: {
     name: "Houssam Kherraz",
-    title: "Master's Student"
+    title: "Master's Student",
+    alumni: true
   },
   rupayanneogy: {
     name: "Rupayan Neogy",
     url: "http://rneogy.github.io",
-    title: "Master's Student"
+    title: "Master's Student",
+    alumni: true
+  },
+  tanyang: {
+    name: "Tanya Yang",
+    title: "Undergraduate Researcher"
   },
   wonyoung: {
     name: "Wonyoung So",
@@ -55,7 +62,8 @@ module.exports = {
   dhiraj:{
     name: "Dhiraj Barnwal",
     url: "https://djbarnwal.github.io/",
-    title: "Undergraduate Researcher, IIT Kharagpur"
+    title: "Undergraduate Researcher, IIT Kharagpur",
+    alumni: true
   },
   allenlee: {
     name: "Allen Lee",

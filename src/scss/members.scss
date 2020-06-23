@@ -5,6 +5,7 @@
 
   a {
     position: relative;
+    display: inline-block;
     width: 55px;
     height: 55px;
     margin-right: 7px;
@@ -38,11 +39,19 @@
     }
 
     &.alumni {
-      width: 27px;
-      height: 27px;
-      margin: 4px;
+      width: 22px;
+      height: 22px;
+      margin: 3.5px;
       align-self: flex-start;
     }
+  }
+
+  .alumni-cell {
+    width: 22px;
+    margin-right: 3.5px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
