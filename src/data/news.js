@@ -1,36 +1,48 @@
 module.exports = [
   {
+    date: '2020-06-19',
+    desc: 'Arvind gave a keynote talk, <a href="https://vimeo.com/430781306">Towards Effective Interaction with Data Visualization</a>, at the <a href="http://hilda.io">Human-in-the-loop Data Analysis (HILDA)</a> workshop at SIGMOD 2020.'
+  },
+  {
+    date: '2020-05-28',
+    desc: 'Congrats to Jonathan for being awarded a <a href="https://arts.mit.edu/start/wiesner-student-art-gallery/schnitzer-2020/">Schnitzer Prize in the Visual Arts</a>!'
+  },
+  {
+    date: '2020-05-27',
+    desc: 'Aspen presented her work on <a href="/pubs/visualint">VisuaLint</a> at EuroVis \'2"0. <a href="https://vimeo.com/431838603">Watch her talk!</a>'
+  },
+  {
     date: '2020-05-08',
     desc: 'Arvind and collaborators at UC San Diego and Aarhus presented their vision for a <a href="/pubs/towards-convivial-info-space">Dynamic Multiscale Personalized Information Space</a> at the Convivial Computing Salon.'
   },
   {
-    date: '2020-04-06',
-    desc: 'Aspen will present her work on <a href="/pubs/visualint">VisuaLint</a> at EuroVis \'20.'
+    date: '2020-04-24',
+    desc: 'Jonathan talked about <a href="https://vimeo.com/430844609">Biometric Sans and Public Display: Embodied Writing in the Age of Data</a> at the <a href="Before and Beyond Typography">Before and Beyond Typograph</a> conference at Stanford.'
   },
   {
     date: '2020-03-23',
     desc: 'Arvind was awarded an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1942659">NSF CAREER award</a> for studying <a href="/pubs/nsf-career.pdf">"Effective Interaction Design for Data Visualization."</a>'
   },
-  {
-    date: '2019-12-08',
-    desc: 'Nava will present a poster on <a href="/pubs/self-interfaces">Self Interfaces</a> at TEI \'20.'
-  },
-  {
-    date: '2019-08-01',
-    desc: '<a href="/pubs/sociotechnical-vis-access">Two</a> <a href="/pubs/critical-reflections">papers</a> and a <a href="/pubs/towards-visualive">poster</a> to appear at VIS \'19.'
-  },
-  {
-    date: '2019-05-18',
-    desc: 'Data type detection with <a href="/pubs/sherlock">Sherlock</a>, to appear at KDD \'19.'
-  },
-  {
-    date: '2019-05-16',
-    desc: 'Cheers to our <a href="https://twitter.com/mitvis/status/1129050927812489216">first birthday</a>!'
-  },
-  {
-    date: '2019-01-22',
-    desc: '<a href="/pubs/viznet">VizNet</a>: a new corpus of vis designs to appear at CHI \'19.'
-  },
+  // {
+  //   date: '2019-12-08',
+  //   desc: 'Nava will present a poster on <a href="/pubs/self-interfaces">Self Interfaces</a> at TEI \'20.'
+  // },
+  // {
+  //   date: '2019-08-01',
+  //   desc: '<a href="/pubs/sociotechnical-vis-access">Two</a> <a href="/pubs/critical-reflections">papers</a> and a <a href="/pubs/towards-visualive">poster</a> to appear at VIS \'19.'
+  // },
+  // {
+  //   date: '2019-05-18',
+  //   desc: 'Data type detection with <a href="/pubs/sherlock">Sherlock</a>, to appear at KDD \'19.'
+  // },
+  // {
+  //   date: '2019-05-16',
+  //   desc: 'Cheers to our <a href="https://twitter.com/mitvis/status/1129050927812489216">first birthday</a>!'
+  // },
+  // {
+  //   date: '2019-01-22',
+  //   desc: '<a href="/pubs/viznet">VizNet</a>: a new corpus of vis designs to appear at CHI \'19.'
+  // },
   // {
   //   date: '2018-09-01',
   //   desc: '<strong>Hello world!</strong> We are the Visualization Group at MIT CSAIL.'
