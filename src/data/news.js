@@ -17,7 +17,7 @@ module.exports = [
   },
   {
     date: '2020-04-24',
-    desc: 'Jonathan talked about <a href="https://vimeo.com/430844609">Biometric Sans and Public Display: Embodied Writing in the Age of Data</a> at the <a href="Before and Beyond Typography">Before and Beyond Typograph</a> conference at Stanford.'
+    desc: 'Jonathan talked about <a href="https://vimeo.com/430844609">Biometric Sans and Public Display: Embodied Writing in the Age of Data</a> at the <a href="https://www.bbtypo.com/">Before and Beyond Typography</a> conference at Stanford.'
   },
   {
     date: '2020-03-23',
