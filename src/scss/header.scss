@@ -106,3 +106,12 @@
   font-size: 22px;
   margin: 20px 0;
 }
+
+#footer {
+  border-top: 1px solid $mit-lgrey;
+  .csail-url & {
+    border-top: 1px solid $csail-lgrey;
+  }
+  padding: 10px 0;
+  text-align: right;
+}
