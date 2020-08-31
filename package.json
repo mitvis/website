@@ -20,7 +20,7 @@
     "handlebars-helpers": "^0.7.5",
     "node-sass": "^4.12.0",
     "node-watch": "^0.4.0",
-    "reload": "^2.3.1",
+    "reload": "^3.1.0",
     "require-reload": "^0.2.2"
   }
 }

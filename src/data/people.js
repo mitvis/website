@@ -29,6 +29,11 @@ module.exports = {
     url: "http://harinisuresh.com",
     title: "PhD Student, EECS"
   },
+  angieboggust: {
+    name: "Angie Boggust",
+    url: "http://angieboggust.com",
+    title: "PhD Student, EECS"
+  },
   nathalie: {
     name: "Nathalie Vladis",
     title: "Postdoctoral Researcher"
@@ -50,6 +55,14 @@ module.exports = {
     title: "Master's Student",
     alumni: true
   },
+  ejsefah: {
+    name: "Ebenezer \"EJ\" Sefah",
+    title: "Master's (MEng) Student"
+  },
+  katiebacher: {
+    name: "Katie Bacher",
+    title: "Master's (MEng) Student"
+  },
   tanyang: {
     name: "Tanya Yang",
     title: "Undergraduate Researcher"
@@ -57,7 +70,8 @@ module.exports = {
   wonyoung: {
     name: "Wonyoung So",
     url: "https://wonyoung.so/",
-    title: "Master's Student"
+    title: "Master's Student",
+    alumni: true
   },
   dhiraj:{
     name: "Dhiraj Barnwal",

@@ -1,5 +1,53 @@
 module.exports = [
   {
+    slug: 'lyra2',
+    title: 'Lyra 2: Designing Interactive Visualizations by Demonstration',
+    authors: ['jzong', 'dhiraj', 'rupayanneogy', 'arvindsatya'],
+    venue: 'infovis',
+    year: 2021,
+    abstract: 'Recent graphical interfaces offer direct manipulation mechanisms for authoring visualizations, but are largely restricted to static output. To author interactive visualizations, users must instead turn to textual specification, but such approaches impose a higher technical burden. To bridge this gap, we introduce Lyra 2, a system that extends a prior visualization design environment with novel methods for authoring interaction techniques by demonstration. Users perform an interaction (e.g., button clicks, drags, or key presses) directly on the visualization they are editing. The system interprets this performance using a set of heuristics and enumerates suggestions of possible interaction designs. These heuristics account for the properties of the interaction (e.g., target and event type) as well as the visualization (e.g., mark and scale types, and multiple views). Interaction design suggestions are displayed as thumbnails; users can preview and test these suggestions, iteratively refine them through additional demonstrations, and finally apply and customize them via property inspectors. We evaluate our approach through a gallery of diverse examples, and evaluate its usability through a first-use study and via an analysis of its cognitive dimensions. We find that, in Lyra 2, interaction design by demonstration enables users to rapidly express a wide range of interactive visualizations.',
+    teaser: 'Creating a brush with labeled extents in Lyra 2. (1) A brushing interaction authored via demonstrations. (2) Binding signals that represent the brush’s start and end extents to the content of two text marks respectively. (3) Positioning the text marks by their horizontal position to the brush’s start andend x-coordinates. (4) The completed design: an interval selection with labeled extents.',
+    featured: true,
+    materials: [
+      // {name: 'Supplementary Material', url: 'https://osf.io/jwbn2/', type: 'file'}
+    ],
+    videos: [
+      // {name: 'EuroVis 2020 Talk', vimeo: true, key: '431838603'}
+    ]
+  },
+  {
+    slug: 'b2',
+    title: 'B2: Bridging Code and Interactive Visualization in Computational Notebooks',
+    authors: ['Yifan Wu', 'Joseph M. Hellerstein', 'arvindsatya'],
+    venue: 'uist',
+    year: 2020,
+    abstract: 'Data scientists have embraced computational notebooks to author analysis code and accompanying visualizations within a single document. Currently, although these media may be interleaved, they remain siloed: interactive visualizations must be manually specified as they are divorced from the analysis provenance expressed via dataframes, while code cells have no access to users’ interactions with visualizations, and hence no way to operate on the results of interaction. To bridge this divide, we present B2, a set of techniques grounded in treating data queries as a shared representation between the code and interactive visualizations. B2 instruments data frames to track the queries expressed in code and synthesize corresponding visualizations. These visualizations are displayed in a dashboard to facilitate interactive analysis. When an interaction occurs, B2 reifies it as a data query and generates a history log in a new code cell. Subsequent cells can use this log to further analyze interaction results and, when marked as reactive, to ensure that code is automatically recomputed when new interaction occurs. In an evaluative study with data scientists, we find that B2 promotes a tighter feedback loop between coding and interacting with visualizations. All participants frequently moved from code to visualization and vice-versa, which facilitated their exploratory data analysis in the notebook.',
+    teaser: 'An analyst\'s workflow with B2. They start by (1) importing the library which creates (2) a resizable dashboard pane to the right of the traditional notebook. The analyst can (3) click on the columns, which creates (4) code that computes and (5) visualizes corresponding distributions. The analyst can also write (6) a custom data frame query to create (7) the scatter plot. (8) B2\'s <em>reactive cells</em> automatically recompute when new interactions occur on visualizations. Interactions involve (9) <em>selections</em> of marks, which link or cross-filter the other visualizations in the dashboard, and are reified in code cells as either (10) an interaction history or by (11) copying their composed predicate definitions.',
+    featured: true,
+    materials: [
+      // {name: 'Supplementary Material', url: 'https://osf.io/jwbn2/', type: 'file'}
+    ],
+    videos: [
+      // {name: 'EuroVis 2020 Talk', vimeo: true, key: '431838603'}
+    ]
+  },
+  {
+    slug: 'multi-user-cursors',
+    title: 'Representing Real-Time Multi-User Collaboration in Visualizations',
+    authors: ['rupayanneogy', 'jzong', 'arvindsatya'],
+    venue: 'vis-short',
+    year: 2020,
+    abstract: 'Establishing common ground and maintaining shared awareness amongst participants is a key challenge in collaborative visualization. For real-time collaboration, existing work has primarily focused on synchronizing constituent visualizations — an approach that makes it difficult for users to work independently, or selectively attend to their collaborators’ activity. To address this gap, we introduce a design space for representing synchronous multi-user collaboration in visualizations defined by two orthogonal axes: <em>situatedness</em>, or whether collaborators’ interactions are overlaid on or shown outside of a user’s view, and <em>specificity</em>, or whether collaborators are depicted through abstract, generic representations or through specific means customized for the given visualization. We populate this design space with a variety of examples including generic and custom synchronized <em>cursors</em>, and <em>user legends</em> that collect these cursors together or reproduce collaborators’ views as thumbnails. To build common ground, users can interact with these representations by <em>peeking</em> to take a quick look at a collaborator’s view, <em>tracking</em> to follow along with a collaborator in real-time, and <em>forking</em> to independently explore the visualization based on a collaborator’s work. We present a reference implementation of a wrapper library that converts interactive Vega-Lite charts into collaborative visualizations. We find that our approach affords synchronous collaboration across an expressive range of visual designs and interaction techniques.',
+    teaser: 'Example gallery of user representations on collaborative visualizations. Inset views show the result of the peeking hover interaction for each example. A) Generic cursors overlay each visualization, indicating remote interaction. B) Specific cursors provide more visualization-specific information about remote user interaction. C) Cursor legends provide an external, minimal representation of remote users. D) Thumbnail legends visually communicate a specific overview of the remote interaction state.',
+    featured: true,
+    materials: [
+      // {name: 'Supplementary Material', url: 'https://osf.io/jwbn2/', type: 'file'}
+    ],
+    videos: [
+      // {name: 'EuroVis 2020 Talk', vimeo: true, key: '431838603'}
+    ]
+  },
+  {
     slug: 'visualint',
     title: 'VisuaLint: Sketchy In Situ Annotations of Chart Construction Errors',
     authors: ['aspenhopkins', 'correll', 'arvindsatya'],

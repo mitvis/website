@@ -1,5 +1,9 @@
 module.exports = [
   {
+    date: '2020-07-14',
+    desc: 'Congratulations to Crystal for being named a <a href="https://cyber.harvard.edu/story/2020-07/berkman-klein-center-announces-2020-2021-community">Berkman Klein Fellow</a>'
+  },
+  {
     date: '2020-06-19',
     desc: 'Arvind gave a keynote talk, <a href="https://vimeo.com/430781306">Towards Effective Interaction with Data Visualization</a>, at the <a href="http://hilda.io">Human-in-the-loop Data Analysis (HILDA)</a> workshop at SIGMOD 2020.'
   },
