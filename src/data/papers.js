@@ -9,10 +9,11 @@ module.exports = [
     teaser: 'Creating a brush with labeled extents in Lyra 2. (1) A brushing interaction authored via demonstrations. (2) Binding signals that represent the brush’s start and end extents to the content of two text marks respectively. (3) Positioning the text marks by their horizontal position to the brush’s start andend x-coordinates. (4) The completed design: an interval selection with labeled extents.',
     featured: true,
     materials: [
-      // {name: 'Supplementary Material', url: 'https://osf.io/jwbn2/', type: 'file'}
+      {name: 'Live Demo', url: 'https://vega.github.io/lyra', type: 'cube'},
+      {name: 'Code', url: 'https://github.com/vega/lyra', type: 'code'}
     ],
     videos: [
-      // {name: 'EuroVis 2020 Talk', vimeo: true, key: '431838603'}
+      {name: 'Video Preview', vimeo: true, key: '453645616'},
     ]
   },
   {
@@ -44,7 +45,7 @@ module.exports = [
       // {name: 'Supplementary Material', url: 'https://osf.io/jwbn2/', type: 'file'}
     ],
     videos: [
-      // {name: 'EuroVis 2020 Talk', vimeo: true, key: '431838603'}
+      {name: 'Video Preview', vimeo: true, key: '453645832'},
     ]
   },
   {

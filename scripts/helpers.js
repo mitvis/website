@@ -34,7 +34,7 @@ hb.registerHelper('pastTravel', function(travel) {
 });
 
 hb.registerHelper('featured', function(papers) {
-  return JSON.stringify(papers.filter(p => p.featured !== false));
+  return JSON.stringify(papers.filter(p => p.featured !== false).map(p => ({slug: p.slug, title: p.title, featTitle: p.featTitle})));
 });
 
 hb.registerHelper('members', function(people, opts) {
