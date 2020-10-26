@@ -1,5 +1,26 @@
 module.exports = [
   {
+    slug: 'shared-interest',
+    title: 'Shared Interest: Human Annotations vs. AI Saliency',
+    authors: ['angieboggust', 'Benjamin Hoover', 'arvindsatya', 'strobelt'],
+    venue: 'visxai',
+    year: 2020,
+    abstract: 'As deep learning is applied to high stakes scenarios, it is increasingly important that a model is not only making accurate decisions, but doing so for the right reasons. Common explainability methods provide pixel attributions as an explanation for a model\'s decision on a single image. However, using these input-level explanations to understand patterns in model behavior is challenging for large datasets as it requires selecting and analyzing an interesting subset of inputs. By utilizing the human generated bounding boxes that represent ground truth object locations, we introduce metrics for scoring and ranking inputs based on the correspondence between the input’s ground truth object location and the explainability method\'s explanation region. Our methodology is agnostic to model architecture, explanation method, and modality allowing it to be applied to many tasks and domains. By aligning model explanations with human annotations, our method surfaces patterns in model behavior when applied to two high profile case studies: a widely used image classification model and a cancer prediction model.',
+    teaser: 'Examples of correctly and incorrectly classified images identified by shared interest coverage metrics.',
+    featured: false,
+    url: 'https://shared-interest.csail.mit.edu/'
+  },
+  {
+    slug: 'data-crafting',
+    title: 'Data Crafting: Exploring Data through Craft and Play',
+    authors: ['nathalie', 'aspenhopkins', 'arvindsatya'],
+    venue: 'visactivities',
+    year: 2020,
+    abstract: 'In this full-day workshop, we introduced participants to novel, multi-sensory ways of exploring and visualizing their data through Data Crafting. Data Crafting—in which crafting by hand promotes and produces data communication–facilitates creativity through play; by emphasizing crafting, we sought to make data approachable and to build a space where experts can explore new facets of their data. Our participants thoroughly enjoyed being exposed to this new approach and shared that they were likely to apply what they learned to communicate their research, gain new perspectives on data, and build data literacy at home and in classrooms. Here, we provide instructions on how to recreate this workshop as well as strategies for adapting it to larger audiences and/or shorter sessions. Data Crafting activities can be applied across many domains and in many contexts, as shown by the diverse backgrounds of our participants. From graduate students and post-doctoral researchers to first year business undergraduates and journalist fellows, all participants benefited from attending.',
+    teaser: 'Example of productions. (a) Boston Weather with Pipe Cleaners by Gaurav P; (b) Ten Hours in Boston by Yue D; (c) Screen Time by Weather by Artemisia L; (d) Highs and Lows by Serena B.',
+    featured: false
+  },
+  {
     slug: 'towards-convivial-info-space',
     title: 'Towards a Dynamic Multiscale Personalized Information Space',
     authors: ['Amy Fox', 'Philip Guo', 'clemens', 'Peter Daalsgard', 'arvindsatya', 'Haijun Xu', 'hollan'],

@@ -1,4 +1,20 @@
 module.exports = {
+  visxai: {
+    short: 'VISxAI',
+    full: 'IEEE VIS Workshop on Visualization for AI Explainability',
+    bibtex: {
+      type: 'misc',
+      venue: 'booktitle'
+    }
+  },
+  visactivities: {
+    short: 'VIS Activities Workshop',
+    full: 'IEEE VIS Workshop on Data Vis Activities to Facilitate Learning, Reflecting, Discussing, and Designing',
+    bibtex: {
+      type: 'misc',
+      venue: 'booktitle'
+    }
+  },
   'convivial-salon': {
     short: 'Convivial Computing Salon',
     full: 'The Convivial Computing Salon at The Art, Science, and Engineering of Programming',
