@@ -1,7 +1,15 @@
 module.exports = [
   {
+    date: '2020-10-21',
+    desc: `It's a busy fall with <a href="/pubs/b2">a paper at UIST</a>, and <a href="/pubs/multi-user-cursors">two</a> <a href="/pubs/lyra2">papers</a> and two <a href="/pubs/data-crafting">workshop</a> <a href="http://shared-interest.csail.mit.edu/">submissions</a> at VIS.`
+  },
+  {
+    date: '2020-09-11',
+    desc: 'Double congratulations to Crystal for being awarded a prestigious <a href="https://t.co/NYy6WNz8DH?amp=1">Social Data Dissertation Fellowship</a> by the Social Science Research Council (SSRC)!'
+  },
+  {
     date: '2020-07-14',
-    desc: 'Congratulations to Crystal for being named a <a href="https://cyber.harvard.edu/story/2020-07/berkman-klein-center-announces-2020-2021-community">Berkman Klein Fellow</a>'
+    desc: 'Congratulations to Crystal for being named a <a href="https://cyber.harvard.edu/story/2020-07/berkman-klein-center-announces-2020-2021-community">Berkman Klein Fellow</a>!'
   },
   {
     date: '2020-06-19',
