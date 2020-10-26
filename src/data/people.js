@@ -67,6 +67,14 @@ module.exports = {
     name: "Tanya Yang",
     title: "Undergraduate Researcher"
   },
+  kathuang: {
+    name: "Katherine Huang",
+    title: "Undergraduate Researcher"
+  },
+  soominchun: {
+    name: "Soomin Chun",
+    title: "Undergraduate Researcher"
+  },
   wonyoung: {
     name: "Wonyoung So",
     url: "https://wonyoung.so/",
@@ -206,6 +214,11 @@ module.exports = {
   znah: {
     name: "Alexander Mordvintsev",
     url: "https://znah.net/",
+    role: "external"
+  },
+  strobelt: {
+    name: "Hendrik Strobelt",
+    url: "http://hendrik.strobelt.com",
     role: "external"
   }
 };
