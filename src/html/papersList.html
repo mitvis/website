@@ -23,7 +23,7 @@
         </p>
 
         <p class="links">
-          {{#unless url}}<a href="/pubs/{{slug}}.pdf">PDF</a>{{/unless}}
+          {{#if url}}<a href="{{url}}">Article</a>{{else}}<a href="/pubs/{{slug}}.pdf">PDF</a>{{/if}}
           {{#each materials}}
             &middot; <a href="{{url}}">{{name}}</a>
           {{/each}}

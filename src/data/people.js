@@ -72,8 +72,20 @@ module.exports = {
     name: "Katherine Huang",
     title: "Undergraduate Researcher"
   },
+  monterde: {
+    name: "Mateo Monterde",
+    title: "Undergraduate Researcher"
+  },
   soominchun: {
     name: "Soomin Chun",
+    title: "Undergraduate Researcher"
+  },
+  annaad: {
+    name: "Anna Arpaci-Dusseau",
+    title: "Undergraduate Researcher"
+  },
+  ajmeurer: {
+    name: "Anna Meurer",
     title: "Undergraduate Researcher"
   },
   wonyoung: {
