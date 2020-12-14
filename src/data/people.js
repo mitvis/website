@@ -36,7 +36,8 @@ module.exports = {
   },
   nathalie: {
     name: "Nathalie Vladis",
-    title: "Postdoctoral Researcher"
+    title: "Postdoctoral Researcher",
+    alumni: true
   },
   navahaghighi: {
     name: "Nava Haghighi",
