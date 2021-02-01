@@ -11,7 +11,7 @@ module.exports = [
     materials: [
     ],
     videos: [
-      // {name: 'Video Preview', vimeo: true, key: '453645616'},
+      {name: 'Video Preview', youtube: true, key: 'oLvlWG9cmXc'}
     ]
   },
   {
