@@ -78,7 +78,8 @@ module.exports = {
   },
   soominchun: {
     name: "Soomin Chun",
-    title: "Undergraduate Researcher"
+    title: "Undergraduate Researcher",
+    alumni: true
   },
   annaad: {
     name: "Anna Arpaci-Dusseau",
@@ -86,7 +87,8 @@ module.exports = {
   },
   ajmeurer: {
     name: "Anna Meurer",
-    title: "Undergraduate Researcher"
+    title: "Undergraduate Researcher",
+    alumni: true
   },
   wonyoung: {
     name: "Wonyoung So",

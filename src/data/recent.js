@@ -1,10 +1,14 @@
 module.exports = {
   work: [
-    'viral-visualizations', 'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'towards-convivial-info-space',
+    'viral-visualizations', 'beyond-expertise-roles', 'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'towards-convivial-info-space',
     'visualint', 'sociotechnical-vis-access', 'critical-reflections', 'sherlock', 'viznet',
     'interpretability-building-blocks',  'insitu-vis-debugging', 'vega-lite'
   ],
   news: [
+    {
+      date: '2020-10-27',
+      desc: 'Congratulations to Aspen for being named a <a href="https://www.eecs.mit.edu/news-events/media/five-eecs-students-named-siebel-scholars-class-2021">Siebel Scholar</a>!'
+    },
     {
       date: '2020-10-21',
       desc: `It's a busy fall with <a href="/pubs/b2">a paper at UIST</a>, and <a href="/pubs/multi-user-cursors">two</a> <a href="/pubs/lyra2">papers</a> and two <a href="/pubs/data-crafting">workshop</a> <a href="http://shared-interest.csail.mit.edu/">submissions</a> at VIS.`

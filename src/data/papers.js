@@ -6,13 +6,27 @@ module.exports = [
     venue: 'chi',
     year: 2021,
     abstract: 'Controversial understandings of the coronavirus pandemic have turned data visualizations into a battleground. Defying public health officials, coronavirus skeptics on US social media spent much of 2020 creating data visualizations showing that the government\'s pandemic response was excessive and that the crisis was over. This paper investigates how pandemic visualizations circulated on social media, and shows that people who mistrust the scientific establishment often deploy the same rhetorics of data-driven decision-making used by experts, but to advocate for radical policy changes. Using a quantitative analysis of how visualizations spread on Twitter and an ethnographic approach to analyzing conversations about COVID data on Facebook, we document an epistemological gap that leads pro- and anti-mask groups to draw drastically different inferences from similar data. Ultimately, we argue that the deployment of COVID data visualizations reflect a deeper sociopolitical rift regarding the place of science in public life.',
-    teaser: 'A network visualization of Twitter users appearing in our corpus. Color encodes community as detected by the Louvain method, and nodes are sized by their degree of connectedness (i.e., the number of other users they are connected to).',
+    teaser: ' Sample counter-visualizations from the anti-mask user network. While there are meme-based visualizations, anti-maskers on Twitter adopt the same visual vocabulary as visualization experts and the mainstream media.',
     featured: true,
     materials: [
     ],
     videos: [
       {name: 'Video Preview', youtube: true, key: 'oLvlWG9cmXc'}
     ]
+  },
+  {
+    slug: 'beyond-expertise-roles',
+    title: 'Beyond Expertise and Roles: A Framework to Characterize the Stakeholders of Interpretable Machine Learning and their Needs',
+    authors: ['harinisuresh', 'Steven R. Gomez', 'Kevin K. Nam', 'arvindsatya'],
+    venue: 'chi',
+    year: 2021,
+    abstract: 'To ensure accountability and mitigate harm, it is critical that diverse stakeholders can interrogate black-box automated systems and find information that is understandable, relevant, and useful to them. In this paper, we eschew prior expertise- and role-based categorizations of interpretability stakeholders in favor of a more granular framework that decouples stakeholders\' knowledge from their interpretability needs. We characterize stakeholders by their formal, instrumental, and personal knowledge and how it manifests in the contexts of machine learning, the data domain, and the general milieu. We additionally distill a hierarchical typology of stakeholder needs that distinguishes higher-level domain goals from lower-level interpretability tasks. In assessing the descriptive, evaluative, and generative powers of our framework, we find our more nuanced treatment of stakeholders reveals gaps and opportunities in the interpretability literature, adds precision to the design and comparison of user studies, and facilitates a more reflexive approach to conducting this research.',
+    teaser: 'A state of the <a href="/pubs/beyond-expertise-roles/framework-connections/">interactive figure</a> that visualizes the results of the analysis of ourframework’s descriptive power. We see how the two halves of the framework (knowledge-contexts and goals-objectives-tasks) provide a more granular and composable vocabulary with which to describe 58 papers from the literature on ML interpretability. Light grey links represent the set of all papers, and connect codes that appear together. The width of the link correspondsto the number of papers it represents. We use "code undetermined" to indicate cases where we were not able to code a particular category (e.g., if a paper did not explicitly specify a knowledge-context). In the interactive figure, hovering over a code selects all papers that contain the code, and highlights links to visualize the co-occurrence of other codes (e.g., "O2" shown here).',
+    featured: true,
+    materials: [
+      {name: 'Interactive Figure of Framework Connections', url: 'http://vis.csail.mit.edu/pubs/beyond-expertise-roles/framework-connections/', type: 'file'}
+    ],
+    videos: []
   },
   {
     slug: 'lyra2',
