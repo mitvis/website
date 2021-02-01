@@ -1,6 +1,6 @@
 module.exports = {
   work: [
-    'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'towards-convivial-info-space',
+    'viral-visualizations', 'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'towards-convivial-info-space',
     'visualint', 'sociotechnical-vis-access', 'critical-reflections', 'sherlock', 'viznet',
     'interpretability-building-blocks',  'insitu-vis-debugging', 'vega-lite'
   ],
