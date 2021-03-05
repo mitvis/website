@@ -9,6 +9,7 @@ module.exports = [
     teaser: ' Sample counter-visualizations from the anti-mask user network. While there are meme-based visualizations, anti-maskers on Twitter adopt the same visual vocabulary as visualization experts and the mainstream media.',
     featured: true,
     materials: [
+      {name: 'Interactive Narrative', url: '/covid-story/', type: 'book-open'},
       {name: 'Supplementary Dataset & Analysis Scripts', url: 'viral-visualizations-supplementary-material.zip', type: 'file'}
     ],
     videos: [

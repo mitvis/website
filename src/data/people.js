@@ -70,7 +70,8 @@ module.exports = {
   },
   kathuang: {
     name: "Katherine Huang",
-    title: "Undergraduate Researcher"
+    title: "Undergraduate Researcher",
+    url: "http://katmh.com"
   },
   monterde: {
     name: "Mateo Monterde",
@@ -83,7 +84,8 @@ module.exports = {
   },
   annaad: {
     name: "Anna Arpaci-Dusseau",
-    title: "Undergraduate Researcher"
+    title: "Undergraduate Researcher",
+    url: "http://annaad.github.io"
   },
   ajmeurer: {
     name: "Anna Meurer",

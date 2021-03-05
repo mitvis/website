@@ -6,6 +6,14 @@ module.exports = {
   ],
   news: [
     {
+      date: '2021-03-04',
+      desc: 'We\'re excited to publish <a href="/covid-story/">an interactive scrollytelling follow-up</a> to our CHI 2021 paper on Viral Visualizations.'
+    },
+    {
+      date: '2021-01-22',
+      desc: 'Three papers at CHI 2021 on <a href="/pubs/viral-visualizations">viral visualizations</a>, moving <a href="/pubs/beyond-expertise-roles">beyond expertise and roles for ML interpretability</a>, and assessing how automated suggestions affect domain experts.'
+    },
+    {
       date: '2020-10-27',
       desc: 'Congratulations to Aspen for being named a <a href="https://www.eecs.mit.edu/news-events/media/five-eecs-students-named-siebel-scholars-class-2021">Siebel Scholar</a>!'
     },
@@ -15,7 +23,7 @@ module.exports = {
     },
     {
       date: '2020-09-11',
-      desc: 'Double congratulations to Crystal for being awarded a prestigious <a href="https://t.co/NYy6WNz8DH?amp=1">Social Data Dissertation Fellowship</a> by the Social Science Research Council (SSRC)!'
+      desc: 'Double congratulations to Crystal for being awarded a prestigious <a href="https://www.ssrc.org/fellowships/view/social-data-research-and-dissertation-fellowships/grantees/lee/">Social Data Dissertation Fellowship</a> by the Social Science Research Council (SSRC)!'
     },
     {
       date: '2020-07-14',
