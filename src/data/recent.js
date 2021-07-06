@@ -1,6 +1,7 @@
 module.exports = {
   work: [
-    'viral-visualizations', 'beyond-expertise-roles', 'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'towards-convivial-info-space',
+    'viral-visualizations', 'beyond-expertise-roles', 'automated-suggestions-impact', 
+    'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'towards-convivial-info-space',
     'visualint', 'sociotechnical-vis-access', 'critical-reflections', 'sherlock', 'viznet',
     'interpretability-building-blocks',  'insitu-vis-debugging', 'vega-lite'
   ],
@@ -11,7 +12,7 @@ module.exports = {
     },
     {
       date: '2021-01-22',
-      desc: 'Three papers at CHI 2021 on <a href="/pubs/viral-visualizations">viral visualizations</a>, moving <a href="/pubs/beyond-expertise-roles">beyond expertise and roles for ML interpretability</a>, and assessing how automated suggestions affect domain experts.'
+      desc: 'Three papers at CHI 2021 on <a href="/pubs/viral-visualizations">viral visualizations</a>, moving <a href="/pubs/beyond-expertise-roles">beyond expertise and roles for ML interpretability</a>, and <a href="/pubs/automated-suggestions-impact">assessing how automated suggestions affect domain experts</a>.'
     },
     {
       date: '2020-10-27',

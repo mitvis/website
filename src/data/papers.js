@@ -13,7 +13,8 @@ module.exports = [
       {name: 'Supplementary Dataset & Analysis Scripts', url: 'viral-visualizations-supplementary-material.zip', type: 'file'}
     ],
     videos: [
-      {name: 'Video Preview', youtube: true, key: 'oLvlWG9cmXc'}
+      // {name: 'Video Preview', youtube: true, key: 'oLvlWG9cmXc'},
+      {name: 'CHI 2021 Talk', youtube: true, key: 'zVlwJQu8pRo'}
     ]
   },
   {
@@ -28,7 +29,23 @@ module.exports = [
     materials: [
       {name: 'Interactive Figure of Framework Connections', url: 'http://vis.csail.mit.edu/pubs/beyond-expertise-roles/framework-connections/', type: 'file'}
     ],
-    videos: []
+    videos: [
+      {name: 'CHI 2021 Talk', youtube: true, key: 'CGbKmlTzRLI'}
+    ]
+  },
+  {
+    slug: 'automated-suggestions-impact',
+    title: 'Assessing the Impact of Automated Suggestions on Decision Making: Domain Experts Mediate Model Errors but Take Less Initiative',
+    authors: ['Ariel Levy', 'Monica Agrawal', 'arvindsatya', 'David Sontag'],
+    venue: 'chi',
+    year: 2021,
+    abstract: 'Automated decision support can accelerate tedious tasks as users can focus their attention where it is needed most. However, a key concern is whether users overly trust or cede agency to automation. In this paper, we investigate the effects of introducing automation to annotating clinical texts — a multi-step, error-prone task of identifying clinical concepts (e.g., procedures) in medical notes, and mapping them to labels in a large ontology. We consider two forms of decision aid: recommending which labels to map concepts to, and pre-populating annotation suggestions. Through laboratory studies, we find that 18 clinicians generally build intuition of when to rely on automation and when to exercise their own judgement. However, when presented with fully pre-populated suggestions, these expert users exhibit less agency: accepting improper mentions, and taking less initiative in creating additional annotations. Our findings inform how systems and algorithms should be designed to mitigate the observed issues.',
+    teaser: 'Accuracy (total recall) and efficiency (time to label) results for users with label recommendations (Standard and Weakened modes) and users without (None mode).',
+    featured: false,
+    materials: [],
+    videos: [
+      {name: 'CHI 2021 Talk', youtube: true, key: 'iqahsetvD58'}
+    ]
   },
   {
     slug: 'lyra2',

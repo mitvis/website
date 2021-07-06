@@ -58,24 +58,43 @@ module.exports = {
   },
   ejsefah: {
     name: "Ebenezer \"EJ\" Sefah",
-    title: "Master's (MEng) Student"
+    title: "Master's (MEng) Student",
+    alumni: true
   },
   katiebacher: {
     name: "Katie Bacher",
-    title: "Master's (MEng) Student"
+    title: "Master's (MEng) Student",
+    alumni: true
   },
   tanyang: {
     name: "Tanya Yang",
     title: "Undergraduate Researcher"
   },
+  siyoung: {
+    name: "Siyoung Kim",
+    title: "Undergraduate Researcher",
+    url: "https://siyoung-kim.github.io/"
+  },
+  sovesh: {
+    name: "Sovesh Mohapatra",
+    title: "Research Intern",
+    url: "https://www.linkedin.com/in/sovesh/"
+  },
+  nicbk: {
+    name: "Nicolás Kennedy",
+    title: "Research Intern",
+    url: "https://nicbk.com/"
+  },
   kathuang: {
     name: "Katherine Huang",
     title: "Undergraduate Researcher",
-    url: "http://katmh.com"
+    url: "http://katmh.com",
+    alumni: true
   },
   monterde: {
     name: "Mateo Monterde",
-    title: "Undergraduate Researcher"
+    title: "Undergraduate Researcher",
+    alumni: true
   },
   soominchun: {
     name: "Soomin Chun",
@@ -85,7 +104,8 @@ module.exports = {
   annaad: {
     name: "Anna Arpaci-Dusseau",
     title: "Undergraduate Researcher",
-    url: "http://annaad.github.io"
+    url: "http://annaad.github.io",
+    alumni: true
   },
   ajmeurer: {
     name: "Anna Meurer",
@@ -101,7 +121,7 @@ module.exports = {
   dhiraj:{
     name: "Dhiraj Barnwal",
     url: "https://djbarnwal.github.io/",
-    title: "Undergraduate Researcher, IIT Kharagpur",
+    title: "Research Intern",
     alumni: true
   },
   allenlee: {

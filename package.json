@@ -18,7 +18,7 @@
     "fs-extra": "^8.1.0",
     "handlebars": "^4.0.5",
     "handlebars-helpers": "^0.7.5",
-    "node-sass": "^4.12.0",
+    "node-sass": "^6.0.1",
     "node-watch": "^0.4.0",
     "reload": "^3.1.0",
     "require-reload": "^0.2.2"
