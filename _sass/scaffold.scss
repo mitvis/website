@@ -1,0 +1,100 @@
+html, body {
+  margin:0;
+  padding:0;
+  color:#000;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: $body-font;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: $mit-red;
+  .csail-url & { color: $csail-orange; }
+}
+
+#center {
+  margin: 0 auto;
+  max-width: 950px;
+  padding: 0 20px;
+}
+
+#center * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content {
+  background: #fff;
+  border: 1px solid rgba(217, 214, 199, 0.32);
+  border-radius: 10px;
+  color: #333;
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 5px;
+  }
+}
+
+h2 {
+  font-family: $heading-font;
+  font-weight: 500;
+  font-size: 20px;
+
+  .view-all {
+    margin-left: 5px;
+    font-size: 0.75em;
+  }
+}
+
+/* pure-hidden-xs */
+@media screen and (max-width:567px) {
+  .pure-visible-sm{display:none}
+  .pure-visible-md{display:none}
+  .pure-visible-lg{display:none}
+  .pure-visible-xl{display:none}
+  .pure-hidden-xs{display:none}
+}
+/* pure-hidden-sm */
+@media screen and (min-width:568px) and (max-width:767px) {
+  .pure-visible-xs{display:none}
+  .pure-visible-md{display:none}
+  .pure-visible-lg{display:none}
+  .pure-visible-xl{display:none}
+  .pure-hidden-sm{display:none}
+}
+/* pure-hidden-md */
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .pure-visible-xs{display:none}
+  .pure-visible-sm{display:none}
+  .pure-visible-lg{display:none}
+  .pure-visible-xl{display:none}
+  .pure-hidden-md{display:none}
+}
+/* pure-hidden-lg */
+@media screen and (min-width:1024px) and (max-width:1279px) {
+  .pure-visible-xs{display:none}
+  .pure-visible-sm{display:none}
+  .pure-visible-md{display:none}
+  .pure-visible-xl{display:none}
+  .pure-hidden-lg{display:none}
+}
+/* pure-hidden-xl */
+@media screen and (min-width:1280px) {
+  .pure-visible-xs{display:none}
+  .pure-visible-sm{display:none}
+  .pure-visible-md{display:none}
+  .pure-visible-lg{display:none}
+  .pure-hidden-xl{display:none}
+}

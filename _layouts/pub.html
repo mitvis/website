@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <script src="https://kit.fontawesome.com/d0c18b213e.js"></script>
+</head>
+<body>
+  <div class="pure-g">
+    <div id="ribbon" class="pure-u-1">
+      <div class="red"></div>
+      <div class="grey"></div>
+    </div>
+
+    <div id="center" class="pure-u-1">
+      {% include header.html %}
+
+      <div id="paper" class="pure-g">
+        <div id="content" class="pure-u-1 pure-u-md-3-4">
+          <h1 class="title">{{page.title}}</h1>
+          <div id="authors">
+            {% for author in page.authors %}
+              {% assign member = site.data.members[author.key] %}
+              <p>
+                <span class="name">{{author.name | default:member.name}} {% if author.equal %}*{% endif %}</span>
+                <span class="affiliation">{{author.affiliation | default:member.affiliation}}</span>
+              </p>
+            {% endfor %}
+          </div>
+          <div id="venue" class="{{page.venue}}">
+            {{site.data.venues[page.venue].full}}, {{page.year}}
+          </div>
+
+          {{content}}
+        </div>
+
+        <div id="sidebar" class="pure-u-1 pure-u-md-1-4">
+          <h4>Materials</h4>
+          <ul id="materials" class="links">
+            <li><a href="/pubs/{{page.slug}}.pdf"><i class="far fa-file-pdf"></i>Paper PDF</a></li>
+            {% for material in page.materials %}
+              <li><a href="{{material.url}}"><i class="fas fa-{{material.type}}"></i>{{material.name}}</a></li>
+            {% endfor %}
+          </ul>
+
+          {% if page.videos %}
+            <h4>Videos</h4>
+            
+            {% for video in page.videos %}
+              <h5>{{video.name}}</h5>
+              <div class="video-wrapper">
+                {% if video.platform == 'youtube' %}<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{video.key}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{% endif %}
+                {% if video.platform == 'vimeo' %}<iframe src="https://player.vimeo.com/video/{{video.key}}" width="640" height="401" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>{% endif %}
+              </div>
+            {% endfor %}
+          {% endif %}
+
+          <div id="toc">
+            <h4>Table of Contents</h4>
+            {% include toc.html html=content h_min=2 id="contents" %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

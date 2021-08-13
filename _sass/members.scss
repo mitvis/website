@@ -1,0 +1,76 @@
+#members {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  a {
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-right: 7px;
+    margin-bottom: 7px;
+    border: 2px solid $mit-lgrey;
+    .csail-url & { border: 2px solid $csail-lgrey; }
+    border-radius: 50px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    &:hover {
+      border-color: $border-red;
+      .csail-url & { border-color: $border-orange; }
+
+      &:before {
+        background: $grad-red;
+        .csail-url & { background: $grad-orange; }
+      }
+    }
+
+    &.alumni {
+      width: 22px;
+      height: 22px;
+      margin: 3.5px;
+      align-self: flex-start;
+    }
+  }
+
+  .alumni-cell {
+    width: 22px;
+    margin-right: 3.5px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#members-header {
+  display: flex;
+  align-items: center;
+}
+
+#members-caption {
+  margin-left: auto;
+  text-align: right;
+
+  h3 {
+    margin: 0;
+  }
+
+  h4 {
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+  }
+}
