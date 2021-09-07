@@ -34,6 +34,11 @@ module.exports = {
     url: "http://angieboggust.com",
     title: "PhD Student, EECS"
   },
+  dwootton: {
+    name: "Dylan Wootton",
+    url: "https://dylanwootton.com/",
+    title: "PhD Student, EECS"
+  },
   nathalie: {
     name: "Nathalie Vladis",
     title: "Postdoctoral Researcher",
@@ -73,7 +78,8 @@ module.exports = {
   siyoung: {
     name: "Siyoung Kim",
     title: "Undergraduate Researcher",
-    url: "https://siyoung-kim.github.io/"
+    url: "https://siyoung-kim.github.io/",
+    alumni: true
   },
   sovesh: {
     name: "Sovesh Mohapatra",
@@ -83,7 +89,8 @@ module.exports = {
   nicbk: {
     name: "Nicolás Kennedy",
     title: "Research Intern",
-    url: "https://nicbk.com/"
+    url: "https://nicbk.com/",
+    alumni: true
   },
   kathuang: {
     name: "Katherine Huang",
