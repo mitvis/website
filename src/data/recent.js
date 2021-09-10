@@ -1,7 +1,7 @@
 module.exports = {
   work: [
-    'viral-visualizations', 'beyond-expertise-roles', 'automated-suggestions-impact', 
-    'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'towards-convivial-info-space',
+    'viral-visualizations', 'beyond-expertise-roles', 'automated-suggestions-impact', 'knnviz',
+    'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'embedding-comparator', 'towards-convivial-info-space',
     'visualint', 'sociotechnical-vis-access', 'critical-reflections', 'sherlock', 'viznet',
     'interpretability-building-blocks',  'insitu-vis-debugging', 'vega-lite'
   ],

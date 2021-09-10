@@ -17,9 +17,13 @@
             {{/if}}
           {{/authorList}}.
 
-          <span class="venue">{{venueName venue 'short' year}}</span>
+          {{#if preprint}}
+            <span class="venue">{{preprint}}:{{id}}</span>
+          {{else}}
+            <span class="venue">{{venueName venue 'short' year}}</span>
+          {{/if}}
           {{#if bestPaper}}<span class="award">Best Paper Award.</span>{{/if}}
-          {{#if honMention}}<span class="award">Best Paper Award.</span>{{/if}}
+          {{#if honMention}}<span class="award">Best Paper Nominee.</span>{{/if}}
         </p>
 
         <p class="links">

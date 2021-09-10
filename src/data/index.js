@@ -3,6 +3,7 @@ const reload = require('require-reload')(require),
   venues = reload('./venues'),
   recent = reload('./recent'),
   papers = reload('./papers'),
+  preprints = reload('./preprints'),
   dispatches = reload('./dispatches');
 
 const dupe = obj => JSON.parse(JSON.stringify(obj));
@@ -27,5 +28,5 @@ module.exports = {
   papers,
   dispatches,
   news: recent.news,
-  recentWork: findRecentWork(findRecentWork(dupe(recent.work), papers), dispatches)
+  recentWork: findRecentWork(findRecentWork(findRecentWork(dupe(recent.work), papers), dispatches), preprints)
 };
