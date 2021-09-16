@@ -7,6 +7,14 @@ module.exports = {
   ],
   news: [
     {
+      date: '2021-09-13',
+      desc: 'Aspen and Harini talk about <a href="https://vimeo.com/596766824">Communicating Uncertainty in Machine Learning Systems</a> at the <a href="https://informationplusconference.com/2021/">Information+ Conference</a>.'
+    },
+    {
+      date: '2021-08-14',
+      desc: 'At the inaugural <a href="http://www.visualdatascience.org/2021/">Visualization in Data Science workshop</a> at ACM KDD, Arvind gave a keynote <a href="https://vimeo.com/590958970">"From Tools to Toolkits: Towards more Reusable, Composable, and Reliable Machine Learning Interpretability"</a>.'
+    },
+    {
       date: '2021-03-04',
       desc: 'We\'re excited to publish <a href="/covid-story/">an interactive scrollytelling follow-up</a> to our CHI 2021 paper on Viral Visualizations.'
     },

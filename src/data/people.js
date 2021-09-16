@@ -77,7 +77,8 @@ module.exports = {
   },
   tanyang: {
     name: "Tanya Yang",
-    title: "Undergraduate Researcher"
+    title: "Undergraduate Researcher",
+    alumni: true
   },
   siyoung: {
     name: "Siyoung Kim",
