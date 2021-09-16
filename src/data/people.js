@@ -44,6 +44,10 @@ module.exports = {
     title: "Postdoctoral Researcher",
     alumni: true
   },
+  benjtang: {
+    name: "Ben Tang",
+    title: "Master's Student",
+  },
   navahaghighi: {
     name: "Nava Haghighi",
     url: "http://navahaghighi.com",
