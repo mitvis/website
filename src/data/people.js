@@ -91,6 +91,11 @@ module.exports = {
     title: "Research Intern",
     url: "https://www.linkedin.com/in/sovesh/"
   },
+  anniebryan: {
+    name: "Annie Bryan",
+    title: "Undergraduate Researcher",
+    url: "https://anniebryan.github.io/"
+  },
   nicbk: {
     name: "Nicolás Kennedy",
     title: "Research Intern",
