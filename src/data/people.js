@@ -75,6 +75,11 @@ module.exports = {
     title: "Master's (MEng) Student",
     alumni: true
   },
+  mattblanco: {
+    name: "Matt Blanco",
+    title: "Undergraduate Researcher",
+    url: "https://mattblanco.me/"
+  },
   tanyang: {
     name: "Tanya Yang",
     title: "Undergraduate Researcher",
@@ -89,7 +94,8 @@ module.exports = {
   sovesh: {
     name: "Sovesh Mohapatra",
     title: "Research Intern",
-    url: "https://www.linkedin.com/in/sovesh/"
+    url: "https://www.linkedin.com/in/sovesh/",
+    alumni: true
   },
   anniebryan: {
     name: "Annie Bryan",
@@ -146,6 +152,11 @@ module.exports = {
     url: "https://allenjlee.github.io",
     title: "Undergraduate Researcher",
     alumni: true
+  },
+  evanpeck: {
+    name: "Evan Peck",
+    url: "http://www.eg.bucknell.edu/~emp017/",
+    title: "Visiting Scientist"
   },
   jheer: {
     name: "Jeffrey Heer",
