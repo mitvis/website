@@ -15,7 +15,7 @@ hb.registerHelper('paperList', function(papers, data, opts) {
 });
 
 hb.registerHelper('venueName', function(slug, format, year) {
-  const prevYear = ['infovis', 'vast', 'scivis'];
+  const prevYear = ['vis-full', 'infovis', 'vast', 'scivis'];
   let name = data.venues[slug][format];
 
   if (year === undefined) return `${name}.`;

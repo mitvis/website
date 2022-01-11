@@ -31,6 +31,14 @@ module.exports = {
       venue: 'booktitle'
     }
   },
+  'vis-full': {
+    short: 'VIS',
+    full: 'IEEE Trans. Visualization & Comp. Graphics (Proc. IEEE VIS)',
+    bibtex: {
+      type: 'article',
+      venue: 'journal'
+    }
+  },
   infovis: {
     short: 'InfoVis',
     full: 'IEEE Trans. Visualization & Comp. Graphics (Proc. InfoVis)',

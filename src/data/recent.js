@@ -1,11 +1,16 @@
 module.exports = {
   work: [
+    'vis-text-model', 'diel',
     'viral-visualizations', 'beyond-expertise-roles', 'automated-suggestions-impact', 'knnviz',
     'lyra2', 'b2', 'shared-interest', 'multi-user-cursors', 'embedding-comparator', 'towards-convivial-info-space',
     'visualint', 'sociotechnical-vis-access', 'critical-reflections', 'sherlock', 'viznet',
     'interpretability-building-blocks',  'insitu-vis-debugging', 'vega-lite'
   ],
   news: [
+    {
+      date: '2021-10-12',
+      desc: 'Two papers at VIS 2021 on <a href="/pubs/vis-text-model/">accessible visualization via natural language descriptions</a> and <a href="/pubs/diel">interactive visualization beyond the here and now</a>.'
+    },
     {
       date: '2021-09-13',
       desc: 'Aspen and Harini talk about <a href="https://vimeo.com/596766824">Communicating Uncertainty in Machine Learning Systems</a> at the <a href="https://informationplusconference.com/2021/">Information+ Conference</a>.'
