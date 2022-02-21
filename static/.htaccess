@@ -1,7 +1,0 @@
-RewriteEngine On
-
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule (.*)/$ /$1 [R]
-
-RewriteCond %{THE_REQUEST} \.html
-RewriteRule ^(.*)\.html$ /$1 [R,L]

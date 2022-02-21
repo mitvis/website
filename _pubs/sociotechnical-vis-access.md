@@ -1,5 +1,5 @@
 ---
-layout: pub
+layout: paper
 title: Sociotechnical Considerations for Accessible Visualization Design
 authors:
   - key: lundgard

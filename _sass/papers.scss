@@ -166,6 +166,7 @@
     flex-wrap: wrap;
 
     p { 
+      flex: 1;
       width: 130px;
       margin: 0.5em 0;
     }
@@ -178,7 +179,7 @@
 
   #metadata {
     p {
-      margin: 0;
+      margin: 0.25em 0;
     }
 
     #venue { 
@@ -222,9 +223,9 @@
     }
 
     .caption {
-      margin-top: 0;
+      margin-top: 0.5em;
       font-size: 0.85em;
-      color: $csail-dgrey;
+      color: $csail-lgrey;
     }
   }
 

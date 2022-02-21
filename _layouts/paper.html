@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+  <script src="https://kit.fontawesome.com/d0c18b213e.js"></script>
+
+  <meta name="citation_title" content="{{page.title}}">
+  <meta name="citation_pdf_url" content="http://vis.csail.mit.edu/pubs/{{page.slug}}.pdf">
+  {% if page.doi %}
+    <meta name="citation_doi" content="{{page.doi}}">
+  {% endif %}
+
+  {% for author in page.authors %}
+    {% assign member = site.data.members[author.key] %}
+    <meta name="citation_author" content="{{author.name | default:member.name}}">
+    <meta name="citation_author_institution" content="{{author.affiliation | default:member.affiliation}}">
+  {% endfor %}
+
+  {% unless page.stub %}
+    <script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.0.4/dist/scrollspy.min.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        scrollSpy('#toc', {sectionSelector: '.ltx_title', offset: 16});
+      });
+    </script>
+  {% endunless %}
+
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      const bibtex = document.getElementById('bibtex').innerText;
+      
+      // Copy Bibtext
+      document.getElementById('bib-copy').addEventListener('click', function(evt) {
+        const setText = (txt) => () => {
+          evt.target.innerText = txt;
+          window.setTimeout(() => evt.target.innerText = '', 1500);
+        }
+
+        navigator.permissions.query({name: "clipboard-write"}).then(result => {
+          if (result.state == "granted" || result.state == "prompt") {
+            navigator.clipboard.writeText(bibtex)
+              .then(setText(' Copied!'), setText(' Failed.'));
+          }
+        });
+      });
+
+      // Download Bibtex
+      const dl = document.getElementById('bib-download');
+      dl.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(bibtex));
+      dl.setAttribute('download', '{{page.slug}}.bib');
+    });
+  </script>
+</head>
+<body>
+  <div class="pure-g">
+    <div id="center" class="pure-u-1">
+      {% include header.html %}
+
+      <div id="paper" class="pure-g">
+        <div id="content" class="{% if page.stub %}stub{% endif %} pure-u-1 pure-u-md-3-4">
+          <h1 class="title">{{page.title}}</h1>
+          <div id="authors">
+            {% for author in page.authors %}
+              {% assign member = site.data.members[author.key] %}
+              <p>
+                <span class="name">{{author.name | default:member.name}} {% if author.equal %}*{% endif %}</span>
+                <span class="affiliation">{{author.affiliation | default:member.affiliation}}</span>
+              </p>
+            {% endfor %}
+          </div>
+
+          <div id="metadata">
+            <p>
+              <span id="venue">
+                {{site.data.venues[page.venue].full}}, {{page.year}}
+              </span>
+            </p>
+            {% if page.bestPaper %}
+              <p class="award">
+                <i class="fas fa-trophy"></i> Best Paper Award
+              </p>
+            {% elsif page.honMention %}
+              <p class="award">
+                <i class="fas fa-award"></i> Best Paper Nominee
+              </p>
+            {% endif %}
+
+            {% if page.doi %}
+              <p id="doi" class="links">
+                <span>DOI:</span> <a href="https://doi.org/{{page.doi}}">{{page.doi}}</a>
+              </p>
+            {% endif %}
+          </div>
+
+          <hr>
+
+          {% unless page.stub %}
+            {{content}}
+          {% else %}
+            {% if page.teaser %}
+              <div class="teaser">
+                <img src="/imgs/teasers/{{page.slug}}.png" alt="" />
+                <p class="caption">{{page.teaser}}</p>
+              </div>
+            {% endif %}
+
+            <h3>Abstract</h3>
+
+            {{content}}
+
+          {% endunless %}
+        </div>
+
+        <div id="sidebar" class="pure-u-1 pure-u-md-1-4">
+          <h4>Materials</h4>
+          <ul id="materials" class="links">
+            <li><a href="/pubs/{{page.slug}}.pdf"><i class="far fa-file-pdf"></i>Paper PDF</a></li>
+            {% for material in page.materials %}
+              <li><a href="{{material.url}}"><i class="fas fa-{{material.type}}"></i>{{material.name}}</a></li>
+            {% endfor %}
+          </ul>
+
+          <h4>
+            Bibtex 
+            <a id="bib-copy" class="bib" href="#" title="Copy Bibtex"><i class="far fa-copy" aria-hidden="true"></i></a>
+            <a id="bib-download" class="bib" href="#" title="Download Bibtex"><i class="far fa-arrow-alt-circle-down" aria-hidden="true"></i></a>
+          </h4>
+          {% assign bib = site.data.venues[page.venue].bibtex %}
+          <pre><code id="bibtex">{% bibtex %}</code></pre>
+
+          {% if page.videos.size > 0 %}
+            <h4>Videos</h4>
+            
+            {% for video in page.videos %}
+              <h5>{{video.name}}</h5>
+              <div class="video-wrapper">
+                {% if video.platform == 'youtube' %}<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{video.key}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{% endif %}
+                {% if video.platform == 'vimeo' %}<iframe src="https://player.vimeo.com/video/{{video.key}}" width="640" height="401" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>{% endif %}
+              </div>
+            {% endfor %}
+          {% endif %}
+
+          {% unless page.stub %}
+            <div id="toc">
+              <h4>Table of Contents</h4>
+              <div id="toc-inner">
+                {% include toc.html html=content h_min=2 id="contents" %}
+              </div>
+            </div>
+          {% endunless %}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

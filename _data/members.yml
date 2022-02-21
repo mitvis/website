@@ -50,6 +50,7 @@ rneogy:
   name: Rupayan Neogy
   url: http://rneogy.github.io
   title: Master's Student
+  affiliation: MIT CSAIL
   role: alumni
 esefah:
   name: Ebenezer "EJ" Sefah
@@ -88,6 +89,7 @@ dhiraj:
   name: Dhiraj Barnwal
   url: https://djbarnwal.github.io/
   title: Undergraduate Researcher, IIT Kharagpur
+  affiliation: IIT Kharagpur
   role: alumni
 allenlee:
   name: Allen Lee
@@ -97,61 +99,72 @@ allenlee:
 jheer:
   name: Jeffrey Heer
   url: http://jheer.org
+  affiliation: University of Washington
   role: external
 correll:
   name: Michael Correll
   url: https://correll.io
+  affiliation: Tableau Research
   role: external
 ryanrussell:
   name: Ryan Russell
   url: https://github.com/RussellSprouts
+  affiliation: University of Washington
   role: external
 jhoffs:
   name: Jane Hoffswell
   url: https://homes.cs.washington.edu/~jhoffs/
+  affiliation: University of Washington
   role: external
 kanitw:
   name: Kanit Wongsuphasawat
   url: http://kanitw.github.io/
+  affiliation: University of Washington
   role: external
 domoritz:
   name: Dominik Moritz
   url: http://domoritz.de
+  affiliation: University of Washington
   role: external
 oranju:
   name: Ranjitha Kumar
   url: http://ranjithakumar.net/
+  affiliation: Stanford University
   role: external
 jtalton:
-  name: Jerry Talton
-  fullName: Jerry O. Talton
+  name: Jerry O. Talton
   url: http://jerrytalton.net
   role: external
 maxinelim:
   name: Maxine Lim
   url: http://maxinelim.com/
+  affiliation: Stanford University
   role: external
 cearto:
   name: Cesar Torres
   url: http://cearto.com/
+  affiliation: Stanford University
   role: external
 saahmad:
   name: Salman Ahmad
   url: http://salmanahmad.com/
+  affiliation: MIT Media Lab
   role: external
 srk:
-  name: Scott Klemmer
-  fullName: Scott R. Klemmer
+  name: Scott R. Klemmer  
   url: http://d.ucsd.edu/srk/
+  affiliation: Stanford University
   role: external
 weibel:
   name: Nadir Weibel
   url: http://weibel.ucsd.edu/
+  affiliation: UC San Diego
   role: external
 hollan:
   name: Jim Hollan
   fullName: James D. Hollan
   url: http://hci.ucsd.edu/hollan/
+  affiliation: UC San Diego
   role: external
 strazzulla:
   name: Daniel Strazzulla
