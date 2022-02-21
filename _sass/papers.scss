@@ -1,71 +1,132 @@
-.papersList {
-  list-style: none;
-  padding-left: 0;
-  padding-right: 20px;
+#center {
+  h1.title {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+}
 
-  p { 
-    margin: 0;
+#content {
+  padding-right: 50px;
+}
+
+#pubs {
+  .paper {
+    margin-bottom: 1.5em;
   }
 
-  li {
-    display: inline-block;
-    margin: 0.75em auto;
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3, p {
+    margin: 0;
+    font-size: 1rem;
   }
 
   .thumbnail {
-    position: relative;
-    width: 120px;
-    float: left;
-    border: 1px solid $mit-dgrey;
-    .csail-url & { border: 1px solid $csail-dgrey; }
-    border-radius: 5px;
-
     img {
-      display: block;
-      width: 100%;
+      width: 90%;
+      border: 1px solid $csail-lgrey;
+      border-radius: 5px;
     }
 
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-    }
-
-    &:hover {
-      border-color: $border-red;
-      .csail-url & { border-color: $border-orange; }
+    a {
+      position: relative; 
 
       &:before {
-        background: $grad-red;
-        .csail-url & { background: $grad-orange; }
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 5px;
+        border-radius: 5px;
+      }
+
+      &:hover {
+        img { border-color: $csail-orange; }
+        &:before { background: $grad-orange; }
       }
     }
   }
 
-  .entry {
-    margin-left: 135px;
+  .authors a {
+    color: #333;
+
+    &:hover { color: $csail-orange; }
   }
 
-  .hidden-pubs {
-    display: none;
-  }
-
-  .title {
-    font-weight: bold;
-    color: $mit-red;
-    .csail-url & { color: $csail-orange; }
-
-    &:hover { opacity: 0.7; }
-  }
-
-  .venue {
-    font-style: italic;
-    font-weight: 500;
-  }
+  .venue { font-style: italic; }
 }
+
+// .papersList {
+//   list-style: none;
+//   padding-left: 0;
+//   padding-right: 20px;
+
+//   p { 
+//     margin: 0;
+//   }
+
+//   li {
+//     display: inline-block;
+//     margin: 0.75em auto;
+//   }
+
+//   .thumbnail {
+//     position: relative;
+//     width: 120px;
+//     float: left;
+//     border: 1px solid $mit-dgrey;
+//     .csail-url & { border: 1px solid $csail-dgrey; }
+//     border-radius: 5px;
+
+//     img {
+//       display: block;
+//       width: 100%;
+//     }
+
+//     &:before {
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       right: 0;
+//       top: 0;
+//       bottom: 0;
+//     }
+
+//     &:hover {
+//       border-color: $border-red;
+//       .csail-url & { border-color: $border-orange; }
+
+//       &:before {
+//         background: $grad-red;
+//         .csail-url & { background: $grad-orange; }
+//       }
+//     }
+//   }
+
+//   .entry {
+//     margin-left: 135px;
+//   }
+
+//   .hidden-pubs {
+//     display: none;
+//   }
+
+//   .title {
+//     font-weight: bold;
+//     color: $mit-red;
+//     .csail-url & { color: $csail-orange; }
+
+//     &:hover { opacity: 0.7; }
+//   }
+
+//   .venue {
+//     font-style: italic;
+//     font-weight: 500;
+//   }
+// }
 
 .award {
   font-weight: 500;
@@ -75,23 +136,8 @@
   }
 }
 
-// #dispatches {
-//   .thumbnail {
-//     margin-right: 15px;
-//   }
-
-//   .entry { 
-//     margin-left: 0; 
-//   }
-// }
-
 #paper {
   @import './LaTeXML.scss';
-
-  h1.title {
-    font-size: 1.6rem;
-    margin-bottom: 0;
-  }
 
   h2 { 
     font-size: 1.4em;
@@ -120,8 +166,6 @@
   }
 
   #content {
-    padding-right: 50px;
-
     article {
       line-height: 1.3rem;
 

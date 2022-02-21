@@ -25,19 +25,19 @@ vis-short:
     venue: booktitle
 vis-full:
   short: VIS
-  full: IEEE Transactions on Visualization & Computer Graphics (Proceedings of IEEE VIS)
+  full: IEEE Transactions on Visualization & Computer Graphics (Proc. IEEE VIS)
   bibtex:
     type: article
     venue: journal
 infovis:
   short: InfoVis
-  full: IEEE Transactions on Visualization & Computer Graphics (Proceedings of IEEE InfoVis)
+  full: IEEE Transactions on Visualization & Computer Graphics (Proc. IEEE InfoVis)
   bibtex:
     type: article
     venue: journal
 eurovis:
   short: EuroVis
-  full: Computer Graphics Forum (Proceedings of EuroVis)
+  full: Computer Graphics Forum (Proc. EuroVis)
   bibtex:
     type: article
     venue: journal

@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'Webzeitgeist: Design Mining the Web'
 authors:

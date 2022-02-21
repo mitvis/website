@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'Lyra: An Interactive Visualization Design Environment'
 featTitle: 'Lyra: A Visualization Design Environment'

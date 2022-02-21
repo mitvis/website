@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online'
 authors:

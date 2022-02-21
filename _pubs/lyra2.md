@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'Lyra 2: Designing Interactive Visualizations by Demonstration'
 authors:

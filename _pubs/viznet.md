@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'VizNet: Towards A Large-Scale Visualization Learning and Benchmarking Repository'
 authors:

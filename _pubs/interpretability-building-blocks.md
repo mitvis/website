@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: The Building Blocks of Interpretability
 authors:
@@ -14,6 +14,6 @@ venue: distill
 volume: 3
 number: 3
 year: 2018
-url: https://distill.pub/2018/building-blocks/
+external_url: https://distill.pub/2018/building-blocks/
 ---
 undefined

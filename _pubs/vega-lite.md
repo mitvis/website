@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'Vega-Lite: A Grammar of Interactive Graphics'
 authors:

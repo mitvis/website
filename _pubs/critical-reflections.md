@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: Critical Reflections on Visualization Authoring Systems
 authors:

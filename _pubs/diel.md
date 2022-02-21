@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'DIEL: Interactive Visualization Beyond the Here and Now'
 authors:

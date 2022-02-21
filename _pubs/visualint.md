@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'VisuaLint: Sketchy In Situ Annotations of Chart Construction Errors'
 authors:

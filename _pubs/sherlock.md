@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: 'Sherlock: A Deep Learning Approach to Semantic Data Type Detection'
 authors:

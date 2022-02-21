@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: Representing Real-Time Multi-User Collaboration in Visualizations
 authors:

@@ -1,5 +1,5 @@
 ---
-layout: paper
+layout: pub
 stub: true
 title: Augmenting Code with In Situ Visualizations to Aid Program Understanding
 authors:
