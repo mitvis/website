@@ -17,7 +17,7 @@ md  = ARGV[2];
 # brew install latexml
 `latexml #{tex} --dest=scripts/out/tex2md.xml`
 `latexml #{bib} --dest=scripts/out/tex2md.bib.xml`
-`latexmlpost scripts/out/tex2md.xml --dest=scripts/out/tex2md.html`
+`latexmlpost scripts/out/tex2md.xml --dest=scripts/out/tex2md.html --bibliography=scripts/out/tex2md.bib.xml`
 
 # Parse latexmlpost output and find relevant sections
 

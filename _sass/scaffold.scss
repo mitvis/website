@@ -1,7 +1,7 @@
 html, body {
   margin:0;
   padding:0;
-  color:#000;
+  color:#333;
   font-size: 16px;
   font-weight: 300;
 }
@@ -12,18 +12,18 @@ html, button, input, select, textarea,
 }
 
 a {
-  color: #000;
+  color: $csail-orange;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  color: $mit-red;
-  .csail-url & { color: $csail-orange; }
+  color: $csail-yellow;
+  text-decoration: underline;
 }
 
 #center {
-  margin: 0 auto;
+  margin: 10px auto;
   max-width: 950px;
   padding: 0 20px;
 }

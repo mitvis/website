@@ -89,6 +89,7 @@
   @import './LaTeXML.scss';
 
   h1.title {
+    font-size: 1.6rem;
     margin-bottom: 0;
   }
 
@@ -97,29 +98,46 @@
   }
 
   h3 {
-    font-weight: 500;
+    margin-bottom: 0.25em;
   }
 
-  h4 {
-    margin-bottom: 0.25em;
+  a.bib {
+    margin-left: 5px;
+    color: $csail-lgrey;
 
-    a.download-bib {
-      margin-left: 5px;
-      color: $csail-dgrey;
-
-      &:hover {
-        color: $mit-red;
-        .csail-url & { color: $csail-orange; }
-      }
+    &:hover {
+      color: $csail-orange;
     }
+  }
+
+  .stub p {
+    margin: 0;
   }
 
   pre {
     margin: 0;
+    overflow: auto;
   }
 
   #content {
     padding-right: 50px;
+
+    article {
+      line-height: 1.3rem;
+
+      span.ltx_tag.ltx_tag_section {
+        margin-right: 10px;
+        display: inline-block;
+        background: #333;
+        color: #fff;
+        padding: 5px;
+      }
+
+      span.ltx_tag.ltx_tag_subsection, span.ltx_tag.ltx_tag_subsubsection {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
 
     figure {
       img {
@@ -131,6 +149,7 @@
         text-align: left;
         font-size: 0.8em;
         margin-top: 0.5em;
+        line-height: normal;
       }
     }
 
@@ -147,7 +166,7 @@
     flex-wrap: wrap;
 
     p { 
-      width: 150px;
+      width: 130px;
       margin: 0.5em 0;
     }
 
@@ -157,13 +176,28 @@
     }
   }
 
-  #venue { 
-    font-style: italic; 
-    padding-bottom: 0.5em;
-    border-bottom: 1px dotted $mit-lgrey;
-    .csail-url & {
-      border-bottom: 1px dotted $csail-lgrey;
+  #metadata {
+    p {
+      margin: 0;
     }
+
+    #venue { 
+      font-style: italic; 
+      margin-right: 5px;
+    }
+
+    #doi {
+      font-size: 0.8em;
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px dotted $csail-lgrey;
   }
 
   #abstract {
@@ -177,10 +211,7 @@
     }
 
     padding-bottom: 1em;
-    border-bottom: 1px solid $mit-lgrey;
-    .csail-url & {
-      border-bottom: 1px solid $csail-lgrey;
-    }
+    border-bottom: 1px solid $csail-lgrey;
   }
 
   .teaser {
@@ -198,6 +229,10 @@
   }
 
   .citation {
+    p {
+      margin: 0;
+    }
+
     .title {
       font-weight: 400;
     }
@@ -211,11 +246,29 @@
     font-size: 0.85em;
   }
 
-  #sidebar h5 {
-    margin: 0.5em 0 0em 0;
-    font-weight: normal;
-    font-style: italic;
-    font-size: 0.9em;
+  #sidebar {
+    h4 {
+      margin-top: 2em;
+      margin-bottom: 0.5em;
+
+      &:first-of-type {
+        margin-top: 1.33em;
+      }
+    }
+
+    h5 {
+      margin: 0.5em 0 0em 0;
+      font-weight: normal;
+      font-style: italic;
+      font-size: 0.9em;
+    }
+  
+    pre {
+      background: #f6f6f6;
+      padding: 10px;
+      border-radius: 10px;
+      overflow: auto;
+    }
   }
 
   #materials {
@@ -254,12 +307,38 @@
 
   #toc {
     position: sticky;
-    top: 10px;
+    top: 1em;
+
+    #toc-inner {
+      max-height: 90vh;
+      overflow: auto;
+      background: #f6f6f6;
+      padding: 0 1em;
+      border-radius: 10px;
+    }
 
     #contents {
       font-size: 0.9em;
       list-style-type: none;
       padding-left: 0;
+      margin-top: 0;
+
+      ul {
+        padding-left: 15px;
+        list-style-type: none;
+      }
+
+      li {
+        margin: 0.7em 0;
+      }
+
+      .active {
+        font-weight: bold;
+      }
+
+      .ltx_tag {
+        margin-right: 3px;
+      }
     }
   }
 
@@ -271,18 +350,10 @@
 
       list-style-type: decimal;
       font-size: 0.9em;
-      margin-bottom: 15px;
+      padding-left: 5px;
+      margin-bottom: 5px;
     }
 
     .ltx_bib_volume { font-weight: normal; }
-  }
-}
-
-.links a, #contents a, #bib a {
-  color: $mit-red;
-  .csail-url & { color: $csail-orange; }
-
-  &:hover {
-    opacity: 0.7;
   }
 }

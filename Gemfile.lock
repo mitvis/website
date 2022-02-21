@@ -36,9 +36,6 @@ GEM
       sassc (> 2.0.1, < 3.0)
     jekyll-seo-tag (2.7.1)
       jekyll (>= 3.8, < 5.0)
-    jekyll-toc (0.17.1)
-      jekyll (>= 3.9)
-      nokogiri (~> 1.11)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.3.1)
@@ -76,13 +73,13 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-darwin-21
 
 DEPENDENCIES
   htmlbeautifier
   jekyll (~> 4.2.0)
   jekyll-feed (~> 0.12)
   jekyll-seo-tag
-  jekyll-toc
   minima (~> 2.5)
   nokogumbo
   tzinfo (~> 1.2)
@@ -90,4 +87,4 @@ DEPENDENCIES
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.2.15
+   2.2.22
