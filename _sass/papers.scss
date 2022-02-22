@@ -10,7 +10,7 @@
 }
 
 #pubs {
-  .paper {
+  .pub {
     margin-bottom: 1.5em;
   }
 
@@ -59,81 +59,39 @@
   .venue { font-style: italic; }
 }
 
-// .papersList {
-//   list-style: none;
-//   padding-left: 0;
-//   padding-right: 20px;
-
-//   p { 
-//     margin: 0;
-//   }
-
-//   li {
-//     display: inline-block;
-//     margin: 0.75em auto;
-//   }
-
-//   .thumbnail {
-//     position: relative;
-//     width: 120px;
-//     float: left;
-//     border: 1px solid $mit-dgrey;
-//     .csail-url & { border: 1px solid $csail-dgrey; }
-//     border-radius: 5px;
-
-//     img {
-//       display: block;
-//       width: 100%;
-//     }
-
-//     &:before {
-//       content: "";
-//       position: absolute;
-//       left: 0;
-//       right: 0;
-//       top: 0;
-//       bottom: 0;
-//     }
-
-//     &:hover {
-//       border-color: $border-red;
-//       .csail-url & { border-color: $border-orange; }
-
-//       &:before {
-//         background: $grad-red;
-//         .csail-url & { background: $grad-orange; }
-//       }
-//     }
-//   }
-
-//   .entry {
-//     margin-left: 135px;
-//   }
-
-//   .hidden-pubs {
-//     display: none;
-//   }
-
-//   .title {
-//     font-weight: bold;
-//     color: $mit-red;
-//     .csail-url & { color: $csail-orange; }
-
-//     &:hover { opacity: 0.7; }
-//   }
-
-//   .venue {
-//     font-style: italic;
-//     font-weight: 500;
-//   }
-// }
-
 .award {
   font-weight: 500;
   color: forestgreen;
   i { 
     margin-right: 5px;
   }
+}
+
+#sidebar {
+  h4 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+
+    &:first-of-type {
+      margin-top: 1.33em;
+    }
+  }
+
+  h5 {
+    margin: 0.5em 0 0em 0;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
+  pre {
+    background: #f6f6f6;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: auto;
+  }
+
+  #search { width: 100%; }
 }
 
 #paper {
@@ -289,31 +247,6 @@
 
   code {
     font-size: 0.85em;
-  }
-
-  #sidebar {
-    h4 {
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-
-      &:first-of-type {
-        margin-top: 1.33em;
-      }
-    }
-
-    h5 {
-      margin: 0.5em 0 0em 0;
-      font-weight: normal;
-      font-style: italic;
-      font-size: 0.9em;
-    }
-  
-    pre {
-      background: #f6f6f6;
-      padding: 10px;
-      border-radius: 10px;
-      overflow: auto;
-    }
   }
 
   #materials {

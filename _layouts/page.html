@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   {% include head.html %}
+
+  {% if page.title == 'Publications' %}
+    <script src="https://unpkg.com/itemsjs@2.1.14/dist/itemsjs.min.js"></script>
+    <script type="text/javascript">
+      {% include pubsfilter.js %}
+    </script>
+  {% endif %}
 </head>
 <body>
   <div class="pure-g">
