@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: 'Assessing the Impact of Automated Suggestions on Decision Making: Domain Experts Mediate Model Errors but Take Less Initiative'
 authors:
   - name: Ariel Levy

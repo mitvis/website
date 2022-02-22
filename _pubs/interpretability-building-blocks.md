@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: The Building Blocks of Interpretability
 authors:
   - key: colah
@@ -14,6 +12,6 @@ venue: distill
 volume: 3
 number: 3
 year: 2018
-external_url: https://distill.pub/2018/building-blocks/
+url: https://distill.pub/2018/building-blocks/
 ---
 undefined

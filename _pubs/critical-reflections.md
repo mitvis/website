@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: Critical Reflections on Visualization Authoring Systems
 authors:
   - key: arvindsatya

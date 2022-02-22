@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: Visual Debugging Techniques for Reactive Data Visualization.
 featTitle: Visual Debugging Techniques
 authors:

@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: Sociotechnical Considerations for Accessible Visualization Design
 authors:
   - key: lundgard

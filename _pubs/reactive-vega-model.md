@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: Declarative Interaction Design for Data Visualization
 authors:
   - key: arvindsatya

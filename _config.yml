@@ -33,6 +33,16 @@ collections:
     output: true
     permalink: /pubs/:slug/index.html
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pubs"
+    values:
+      layout: "pub"
+      stub: true
+      type: "paper"
+
 # Build settings
 theme: minima
 sass:

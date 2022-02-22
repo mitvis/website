@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: Authoring Narrative Visualizations with Ellipsis
 authors:
   - key: arvindsatya

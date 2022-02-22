@@ -1,12 +1,11 @@
 ---
-layout: pub
+stub: false
 title: 'Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content'
 authors:
   - key: lundgard
   - key: arvindsatya
 venue: vis-full
 year: 2022
-honMention: false
 ---
 <style>
   figure#S4\.T3 tbody {

@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: 'Reactive Vega: A Streaming Dataflow Architecture  for Declarative Interactive Visualization'
 featTitle: 'Reactive Vega: Declarative Interactive Visualization'
 authors:

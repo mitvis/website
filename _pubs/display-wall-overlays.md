@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: Using Overlays to Support Collaborative Interaction with Display Walls
 authors:
   - key: arvindsatya

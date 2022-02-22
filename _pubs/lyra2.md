@@ -1,6 +1,4 @@
 ---
-layout: pub
-stub: true
 title: 'Lyra 2: Designing Interactive Visualizations by Demonstration'
 authors:
   - key: jzong
