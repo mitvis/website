@@ -29,10 +29,11 @@ layout: page
             <p class="authors">
             {% for author in pub.authors %}
               {% assign member = site.data.members[author.key] %}
+              {% assign name = author.name | default:member.name %}
               {% if member.url %}
-                <a href="{{member.url}}">{{member.name}}</a>{% unless forloop.last %}, {% endunless %}
+                <a href="{{member.url}}">{{name}}</a>{% unless forloop.last %}, {% endunless %}
               {% else %}
-                {{author.name}}{% unless forloop.last %}, {% endunless %}
+                {{name}}{% unless forloop.last %}, {% endunless %}
               {% endif %}
             {% endfor %}
             </p>
@@ -54,7 +55,9 @@ layout: page
             {% endif %}
             <p class="links">
               {% if pub.external_url %}
-                <a href="{{pub.external_url}}">Article</a>
+                <a href="{{pub.external_url}}">
+                  {% if pub.preprint %}Preprint{% else %}Article{% endif %}
+                </a>
               {% else %}
                 <a href="/pubs/{{pub.slug}}.pdf">PDF</a>
               {% endif %}
@@ -70,6 +73,6 @@ layout: page
   
   <div id="sidebar" class="pure-u-1 pure-u-md-1-4">
     <h4>Search</h4>
-    <input type="text" id="search" placeholder="Search publications...">
+    <input type="text" id="search" placeholder="Search title, abstract, or authors...">
   </div>  
 </div>

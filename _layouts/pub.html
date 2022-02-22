@@ -71,7 +71,11 @@
           <div id="metadata">
             <p>
               <span id="venue">
-                {{site.data.venues[page.venue].full}}, {{page.year}}
+                {% if page.preprint %}
+                  {{page.preprint.server}}: {{page.preprint.id}}
+                {% else %}
+                  {{site.data.venues[page.venue].full}}, {{page.year}}
+                {% endif %}
               </span>
             </p>
             {% if page.bestPaper %}
@@ -119,13 +123,15 @@
             {% endfor %}
           </ul>
 
-          <h4>
-            Bibtex 
-            <a id="bib-copy" class="bib" href="#" title="Copy Bibtex"><i class="far fa-copy" aria-hidden="true"></i></a>
-            <a id="bib-download" class="bib" href="#" title="Download Bibtex"><i class="far fa-arrow-alt-circle-down" aria-hidden="true"></i></a>
-          </h4>
-          {% assign bib = site.data.venues[page.venue].bibtex %}
-          <pre><code id="bibtex">{% bibtex %}</code></pre>
+          {% unless page.preprint %}
+            <h4>
+              Bibtex 
+              <a id="bib-copy" class="bib" href="#" title="Copy Bibtex"><i class="far fa-copy" aria-hidden="true"></i></a>
+              <a id="bib-download" class="bib" href="#" title="Download Bibtex"><i class="far fa-arrow-alt-circle-down" aria-hidden="true"></i></a>
+            </h4>
+            {% assign bib = site.data.venues[page.venue].bibtex %}
+            <pre><code id="bibtex">{% bibtex %}</code></pre>
+          {% endunless %}
 
           {% if page.videos.size > 0 %}
             <h4>Videos</h4>

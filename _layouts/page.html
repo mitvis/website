@@ -4,9 +4,9 @@
   {% include head.html %}
 
   {% if page.title == 'Publications' %}
-    <script src="https://unpkg.com/itemsjs@2.1.14/dist/itemsjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/nextapps-de/flexsearch@0.7.2/dist/flexsearch.compact.js"></script>
     <script type="text/javascript">
-      {% include pubsfilter.js %}
+      {% include pubsearch.js %}
     </script>
   {% endif %}
 </head>

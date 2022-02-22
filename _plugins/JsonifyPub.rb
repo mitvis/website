@@ -3,11 +3,17 @@ require 'nokogumbo'
 module JsonifyPub
 
   def jsonify_pub(input)
+    members = @context.registers[:site].data['members']
     pub = {
       'id': input['slug'],
       'title': input['title'], 
-      'year': input['year']
+      'year': input['year'],
+      'type': input['type'],
+      'authors': input['authors'].map { 
+        |author| author['name'] || members[author['key']]['name'] 
+      }
     }
+
 
     if input['stub'] then
       pub['caption'] = strip_html(input['teaser'])
