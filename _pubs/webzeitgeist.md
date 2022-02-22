@@ -10,7 +10,7 @@ authors:
   - key: jtalton
 venue: chi
 year: 2013
-bestPaper: true
+award: bestPaper
 teaser: Webzeitgeist, a scalable platform for Web design mining, supplements the data used in traditional Web content mining (yellow) with information about the visual appearance and structure of pages (blue) to enable a host of new design applications (green).
 videos:
   - name: Video Preview

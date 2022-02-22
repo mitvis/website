@@ -44,13 +44,13 @@ layout: page
                 {{site.data.venues[pub.venue].full}}, {{pub.year}}
               {% endif %}
             </p>
-            {% if pub.bestPaper %}
+            {% if pub.award == 'bestPaper' %}
               <p class="award">
                 <i class="fas fa-trophy"></i> Best Paper Award
               </p>
-            {% elsif pub.honMention %}
+            {% elsif pub.award == 'honMention' %}
               <p class="award">
-                <i class="fas fa-award"></i> Best Paper Nominee
+                <i class="fas fa-award"></i> Best Paper Honorable Mention
               </p>
             {% endif %}
             <p class="links">
