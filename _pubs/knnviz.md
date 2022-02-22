@@ -5,6 +5,7 @@ authors:
   - name: Kathleen M. Lewis
   - name: John V. Guttag
   - key: arvindsatya
+type: preprint
 preprint: 
   server: arxiv
   id: '2102.08540'

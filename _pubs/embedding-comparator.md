@@ -4,6 +4,7 @@ authors:
   - key: aboggust
   - name: Brandon Carter
   - key: arvindsatya
+type: preprint  
 preprint: 
   server: arxiv
   id: '1912.04853'

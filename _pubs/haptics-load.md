@@ -5,6 +5,7 @@ authors:
   - key: nathalie_vladis
   - name: Yuanbo Liu
   - key: arvindsatya
+type: preprint
 preprint: 
   server: arxiv
   id: '2006.00372'
