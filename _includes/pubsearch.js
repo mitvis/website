@@ -19,14 +19,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function toggleTag(evt) {
     const el = evt.target;
-    if (!evt.ctrlKey && !evt.metaKey) {
-      for (const tag of el.parentElement.querySelectorAll('.tag')) {
-        if (tag === el) continue;
-        tag.classList.remove('selected');
-      }
-    }
+    const parent = el.parentElement;
+    const selected = parent.querySelectorAll('.tag.selected');
 
-    el.classList.toggle('selected');
+    let toggle = evt.ctrlKey || evt.metaKey;
+    toggle = toggle || (selected.length === 1 && selected[0] === el)
+
+    if (toggle) {
+      el.classList.toggle('selected');
+    } else {
+      parent.querySelectorAll('.tag')
+        .forEach(e => e.classList.remove('selected'));
+      el.classList.add('selected');
+    }
+    
     search();
   }
 
