@@ -2,13 +2,19 @@
 title: 'Vega-Lite: A Grammar of Interactive Graphics'
 authors:
   - key: arvindsatya
-  - key: domoritz
-  - key: kanitw
-  - key: jheer
+  - name: Dominik Moritz
+    url: http://domoritz.de
+    affiliation: University of Washington
+  - name: Kanit Wongsuphasawat
+    url: http://kanitw.github.io/
+    affiliation: University of Washington
+  - name: Jeffrey Heer
+    url: http://jheer.org
+    affiliation: University of Washington
 venue: infovis
 year: 2017
-award: bestPaper
 teaser: 'Example visualizations authored with Vega-Lite. From left-to-right: layered line chart combining raw and average values, dual-axis layered bar and line chart, brushing and linking in a scatterplot matrix, layered cross-filtering, and an interactive index chart.'
+award: bestPaper
 videos:
   - name: Video Preview
     key: '177767802'

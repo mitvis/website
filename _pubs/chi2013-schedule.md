@@ -2,10 +2,14 @@
 title: The CHI 2013 Interactive Schedule
 authors:
   - key: arvindsatya
-  - key: strazzulla
-  - key: clemens
-  - key: mbl
-  - key: mackay
+  - name: Daniel Strazzulla
+    url: http://strazzulla.me/
+  - name: Clemens Klokmose
+    url: http://www.klokmose.net/
+  - name: Michel Beaudouin-Lafon
+    url: https://www.lri.fr/~mbl/
+  - name: Wendy Mackay
+    url: https://www.lri.fr/~mackay/
 type: poster
 venue: chi-ea
 year: 2013

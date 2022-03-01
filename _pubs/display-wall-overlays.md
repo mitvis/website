@@ -2,8 +2,12 @@
 title: Using Overlays to Support Collaborative Interaction with Display Walls
 authors:
   - key: arvindsatya
-  - key: weibel
-  - key: hollan
+  - name: Nadir Weibel
+    url: http://weibel.ucsd.edu/
+    affiliation: UC San Diego
+  - name: James D. Hollan
+    url: http://hci.ucsd.edu/hollan/
+    affiliation: UC San Diego
 venue: iui
 year: 2012
 videos:

@@ -3,7 +3,9 @@ title: 'Lyra: An Interactive Visualization Design Environment'
 featTitle: 'Lyra: A Visualization Design Environment'
 authors:
   - key: arvindsatya
-  - key: jheer
+  - name: Jeffrey Heer
+    url: http://jheer.org
+    affiliation: University of Washington
 venue: eurovis
 year: 2014
 teaser: William Playfair’s classic chart comparing the price of wheat and wages in England recreated in the Lyra visualization design environment (VDE).

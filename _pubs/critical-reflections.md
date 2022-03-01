@@ -4,7 +4,9 @@ authors:
   - key: arvindsatya
   - name: Bongshin Lee
   - name: Donghao Ren
-  - key: jheer
+  - name: Jeffrey Heer
+    url: http://jheer.org
+    affiliation: University of Washington
   - name: John Stasko
   - name: John Thompson
   - name: Matthew Brehmer

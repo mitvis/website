@@ -2,7 +2,9 @@
 title: 'VisuaLint: Sketchy In Situ Annotations of Chart Construction Errors'
 authors:
   - key: dataspen
-  - key: correll
+  - name: Michael Correll
+    url: https://correll.io
+    affiliation: Tableau Research
   - key: arvindsatya
 venue: eurovis
 year: 2020

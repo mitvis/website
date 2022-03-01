@@ -1,7 +1,9 @@
 ---
 title: Designing Cognitively Convivial Physics for Dynamic Visual Information Substrates
 authors:
-  - key: hollan
+  - name: James D. Hollan
+    url: http://hci.ucsd.edu/hollan/
+    affiliation: UC San Diego
   - key: arvindsatya
 type: workshop
 venue: chi-ea

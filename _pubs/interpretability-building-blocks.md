@@ -1,13 +1,19 @@
 ---
 title: The Building Blocks of Interpretability
 authors:
-  - key: colah
+  - name: Chris Olah
+    url: https://colah.github.io
   - key: arvindsatya
-  - key: enjalot
-  - key: shancarter
-  - key: ludwigschubert
-  - key: kqy
-  - key: znah
+  - name: Ian Johnson
+    url: https://github.com/enjalot
+  - name: Shan Carter
+    url: http://shancarter.com/
+  - name: Ludwig Schubert
+    url: https://schubert.io/
+  - name: Katherine Ye
+    url: https://cs.cmu.edu/~kqy/
+  - name: Alexander Mordvintsev
+    url: https://znah.net/
 venue: distill
 volume: 3
 number: 3

@@ -3,11 +3,14 @@ title: Towards a Dynamic Multiscale Personalized Information Space
 authors:
   - name: Amy Fox
   - name: Philip Guo
-  - key: clemens
+  - name: Clemens Klokmose
+    url: http://www.klokmose.net/
   - name: Peter Daalsgard
   - key: arvindsatya
   - name: Haijun Xu
-  - key: hollan
+  - name: James D. Hollan
+    url: http://hci.ucsd.edu/hollan/
+    affiliation: UC San Diego
 type: workshop
 venue: convivial-salon
 year: 2020

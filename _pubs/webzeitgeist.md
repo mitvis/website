@@ -1,17 +1,28 @@
 ---
 title: 'Webzeitgeist: Design Mining the Web'
 authors:
-  - key: oranju
+  - name: Ranjitha Kumar
+    url: http://ranjithakumar.net/
+    affiliation: Stanford University
   - key: arvindsatya
-  - key: cearto
-  - key: maxinelim
-  - key: saahmad
-  - key: srk
-  - key: jtalton
+  - name: Cesar Torres
+    url: http://cearto.com/
+    affiliation: Stanford University
+  - name: Maxine Lim
+    url: http://maxinelim.com/
+    affiliation: Stanford University
+  - name: Salman Ahmad
+    url: http://salmanahmad.com/
+    affiliation: MIT Media Lab
+  - name: Scott R. Klemmer
+    url: http://d.ucsd.edu/srk/
+    affiliation: Stanford University
+  - name: Jerry O. Talton
+    url: http://jerrytalton.net
 venue: chi
 year: 2013
-award: bestPaper
 teaser: Webzeitgeist, a scalable platform for Web design mining, supplements the data used in traditional Web content mining (yellow) with information about the visual appearance and structure of pages (blue) to enable a host of new design applications (green).
+award: bestPaper
 videos:
   - name: Video Preview
     key: 3d3ZRnuPw-0

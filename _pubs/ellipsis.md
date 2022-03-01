@@ -2,7 +2,9 @@
 title: Authoring Narrative Visualizations with Ellipsis
 authors:
   - key: arvindsatya
-  - key: jheer
+  - name: Jeffrey Heer
+    url: http://jheer.org
+    affiliation: University of Washington
 venue: eurovis
 year: 2014
 teaser: Crafting narrative visualizations by building scenes and adding annotations to existing visualizations using the Ellipsis interface.

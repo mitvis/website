@@ -4,7 +4,8 @@ authors:
   - key: aboggust
   - name: Benjamin Hoover
   - key: arvindsatya
-  - key: strobelt
+  - name: Hendrik Strobelt
+    url: http://hendrik.strobelt.com
 type: workshop
 venue: visxai
 year: 2020

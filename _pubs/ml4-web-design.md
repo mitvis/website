@@ -2,8 +2,12 @@
 title: A Platform for Large Scale Machine Learning on Web Design
 authors:
   - key: arvindsatya
-  - key: maxinelim
-  - key: srk
+  - name: Maxine Lim
+    url: http://maxinelim.com/
+    affiliation: Stanford University
+  - name: Scott R. Klemmer
+    url: http://d.ucsd.edu/srk/
+    affiliation: Stanford University
 type: poster
 venue: chi-ea
 year: '2012'

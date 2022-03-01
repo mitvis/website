@@ -2,8 +2,12 @@
 title: Declarative Interaction Design for Data Visualization
 authors:
   - key: arvindsatya
-  - key: kanitw
-  - key: jheer
+  - name: Kanit Wongsuphasawat
+    url: http://kanitw.github.io/
+    affiliation: University of Washington
+  - name: Jeffrey Heer
+    url: http://jheer.org
+    affiliation: University of Washington
 venue: uist
 year: 2014
 teaser: 'Brushing interaction expressed with our extensions to Vega: signal definitions and usage are in blue, event streams in orange, predicate definition and application in purple, rules in red, and names in green.'

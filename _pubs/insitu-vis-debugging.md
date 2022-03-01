@@ -1,9 +1,13 @@
 ---
 title: Augmenting Code with In Situ Visualizations to Aid Program Understanding
 authors:
-  - key: jhoffs
+  - name: Jane Hoffswell
+    url: https://homes.cs.washington.edu/~jhoffs/
+    affiliation: University of Washington
   - key: arvindsatya
-  - key: jheer
+  - name: Jeffrey Heer
+    url: http://jheer.org
+    affiliation: University of Washington
 venue: chi
 year: 2018
 teaser: Code augmentations visualize the runtime state of program variables in a Vega specification. A histogram shows the distribution of variables containing set data. Interacting with the year histogram filters all other histograms to only show the data values where the year is between 1995 and 2002.

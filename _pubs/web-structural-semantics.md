@@ -1,12 +1,21 @@
 ---
 title: Learning Structural Semantics for the Web
 authors:
-  - key: maxinelim
-  - key: oranju
+  - name: Maxine Lim
+    url: http://maxinelim.com/
+    affiliation: Stanford University
+  - name: Ranjitha Kumar
+    url: http://ranjithakumar.net/
+    affiliation: Stanford University
   - key: arvindsatya
-  - key: cearto
-  - key: jtalton
-  - key: srk
+  - name: Cesar Torres
+    url: http://cearto.com/
+    affiliation: Stanford University
+  - name: Jerry O. Talton
+    url: http://jerrytalton.net
+  - name: Scott R. Klemmer
+    url: http://d.ucsd.edu/srk/
+    affiliation: Stanford University
 type: preprint
 venue: stanford-cstr
 year: 2012-02

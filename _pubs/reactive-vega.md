@@ -3,9 +3,15 @@ title: 'Reactive Vega: A Streaming Dataflow Architecture  for Declarative Intera
 featTitle: 'Reactive Vega: Declarative Interactive Visualization'
 authors:
   - key: arvindsatya
-  - key: ryanrussell
-  - key: jhoffs
-  - key: jheer
+  - name: Ryan Russell
+    url: https://github.com/RussellSprouts
+    affiliation: University of Washington
+  - name: Jane Hoffswell
+    url: https://homes.cs.washington.edu/~jhoffs/
+    affiliation: University of Washington
+  - name: Jeffrey Heer
+    url: http://jheer.org
+    affiliation: University of Washington
 venue: infovis
 year: 2016
 teaser: The Reactive Vega dataflow graph created from a declarative specification for a interactive index chart of streaming financial data. As streaming data arrives from the Yahoo! Finance API, or as a user moves their mouse pointer across the chart, an update cycle propagates through the graph and triggers an efficient update and re-render of the visualization.
