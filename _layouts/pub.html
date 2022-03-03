@@ -61,9 +61,13 @@
           <div id="authors" class="pure-g">
             {% for author in page.authors %}
               {% assign member = site.data.members[author.key] %}
+              {% assign member_url = author.url | default:member.url %}
               <p class="pure-u-1-4">
+                {% if member_url %}<a href="{{member_url}}">{% endif %}
+                {% if member %}<img src="/imgs/people/{{author.key}}.jpg" alt="" />{% endif %}  
                 <span class="name">{{author.name | default:member.name}} {% if author.equal %}*{% endif %}</span>
                 <span class="affiliation">{{author.affiliation | default:member.affiliation}}</span>
+                {% if member_url %}</a>{% endif %}
               </p>
             {% endfor %}
           </div>

@@ -197,7 +197,22 @@
     gap: 0.5em 0;
     margin: 0.5em 0;
 
+    a { color: #333; }
+
     p { margin: 0; }
+
+    img {
+      width: 1.5rem;
+      float: left;
+      margin-top: 0.25em;
+      margin-right: 0.5em;
+      border-radius: 20px;
+      filter: grayscale(100%);
+    }
+
+    p:hover img {
+      filter: none;
+    }
 
     span.affiliation {
       font-size: 0.8em;
