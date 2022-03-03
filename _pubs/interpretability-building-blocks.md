@@ -18,6 +18,10 @@ venue: distill
 volume: 3
 number: 3
 year: 2018
-url: https://distill.pub/2018/building-blocks/
+external_url: https://distill.pub/2018/building-blocks/
+tags:
+  - interface
+  - machine learning interpretability
+  - qualitative methods
 ---
 undefined

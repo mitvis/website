@@ -2,6 +2,7 @@
 title: Declarative Interaction Design for Data Visualization
 authors:
   - key: arvindsatya
+    affiliation: Stanford University
   - name: Kanit Wongsuphasawat
     url: http://kanitw.github.io/
     affiliation: University of Washington
@@ -10,6 +11,12 @@ authors:
     affiliation: University of Washington
 venue: uist
 year: 2014
+doi: 10.1145/2642918.2647360
+tags:
+  - visualization design
+  - convivial interaction
+  - language
+  - qualitative methods
 teaser: 'Brushing interaction expressed with our extensions to Vega: signal definitions and usage are in blue, event streams in orange, predicate definition and application in purple, rules in red, and names in green.'
 videos:
   - name: Video Preview

@@ -5,11 +5,17 @@ authors:
     url: https://homes.cs.washington.edu/~jhoffs/
     affiliation: University of Washington
   - key: arvindsatya
+    affiliation: Stanford University
   - name: Jeffrey Heer
     url: http://jheer.org
     affiliation: University of Washington
 venue: chi
 year: 2018
+doi: 10.1145/3173574.3174106
+tags:
+  - debugging
+  - interface
+  - mixed methods
 teaser: Code augmentations visualize the runtime state of program variables in a Vega specification. A histogram shows the distribution of variables containing set data. Interacting with the year histogram filters all other histograms to only show the data values where the year is between 1995 and 2002.
 videos:
   - name: Video Preview

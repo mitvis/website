@@ -6,6 +6,11 @@ authors:
   - key: arvindsatya
 venue: vis-short
 year: 2019
+doi: 10.1109/VISUAL.2019.8933762
+tags:
+  - visualization design
+  - accessibility
+  - qualitative methods
 teaser: As part of an inclusive design workshop at the Perkins School for the Blind, we created a 3D printed tactile translation of a time-series chart by William Playfair. In this paper, we show how these one-to-one translations, while based on existing best-practice guidelines for tactile graphics, can be pedagogically ineffective and incur prohibitive costs.
 videos:
   - name: Video Preview

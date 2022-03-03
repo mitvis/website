@@ -3,12 +3,18 @@ title: 'Shared Interest: Human Annotations vs. AI Saliency'
 authors:
   - key: aboggust
   - name: Benjamin Hoover
+    affiliation: IBM Research
   - key: arvindsatya
   - name: Hendrik Strobelt
     url: http://hendrik.strobelt.com
+    affiliation: IBM Research
 type: workshop
 venue: visxai
 year: 2020
+tags:
+  - machine learning interpretability
+  - quantitative methods
+  - mixed methods
 teaser: Examples of correctly and incorrectly classified images identified by shared interest coverage metrics.
 external_url: http://shared-interest.csail.mit.edu/
 materials:

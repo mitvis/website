@@ -2,15 +2,26 @@
 title: 'Sherlock: A Deep Learning Approach to Semantic Data Type Detection'
 authors:
   - name: Madelon Hulsebos
+    affiliation: MIT Media Lab
   - name: Kevin Hu
+    affiliation: MIT Media Lab
   - name: Michiel Bakker
+    affiliation: MIT Media Lab
   - name: Emanuel Zgraggen
+    affiliation: MIT CSAIL
   - key: arvindsatya
   - name: Tim Kraska
+    affiliation: MIT CSAIL
   - name: Çağatay Demiralp
+    affiliation: MIT CSAIL
   - name: César Hidalgo
+    affiliation: MIT Media Lab
 venue: kdd
 year: 2019
+doi: 10.1145/3292500.3330993
+tags:
+  - model
+  - quantitative methods
 teaser: Data processing and analysis flow, starting from (1) a corpus of real-world datasets, proceeding to (2) feature extraction, (3) mapping extracted features to ground truth semantic types, and (4) model training and prediction.
 videos:
   - name: Video Preview

@@ -2,17 +2,33 @@
 title: 'VizNet: Towards A Large-Scale Visualization Learning and Benchmarking Repository'
 authors:
   - name: Kevin Hu
-  - name: Neil Gaikwad
+    affiliation: MIT Media Lab
+  - name: Snehalkumar "Neil" S. Gaikwad
+    affiliation: MIT Media Lab
   - name: Madelon Hulsebos
+    affiliation: MIT Media Lab
   - name: Michiel Bakker
+    affiliation: MIT Media Lab
   - name: Emanuel Zgraggen
+    affiliation:  MIT CSAIL
   - name: César Hidalgo
+    affiliation: MIT Media Lab
   - name: Tim Kraska
+    affiliation: MIT CSAIL
   - name: Guoliang Li
+    affiliation: Tsinghua University
   - key: arvindsatya
   - name: Çağatay Demiralp
+    affiliation: MIT CSAIL
 venue: chi
 year: 2019
+doi: 10.1145/3290605.3300892
+tags:
+  - dataset
+  - model
+  - quantitative methods
+  - visualization design
+  - empirical study
 teaser: VizNet enables data scientists and visualization researchers to aggregate data, enumerate visual encodings, and crowdsource efectiveness evaluations.
 videos:
   - name: Video Preview

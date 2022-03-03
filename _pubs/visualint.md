@@ -8,6 +8,12 @@ authors:
   - key: arvindsatya
 venue: eurovis
 year: 2020
+doi: 10.1111/cgf.13975
+tags:
+  - interface
+  - empirical study
+  - mixed methods
+  - computational media
 teaser: 'Examples of VisuaLint for six types of chart construction errors: (a) inexpressive size encodings; (b) dual axis charts with differing scales; (c) perceptually ineffective color encodings; (d) missing legends; and, (e) truncated axes.'
 videos:
   - name: EuroVis 2020 Talk

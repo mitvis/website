@@ -5,6 +5,7 @@ authors:
     url: http://ranjithakumar.net/
     affiliation: Stanford University
   - key: arvindsatya
+    affiliation: Stanford University
   - name: Cesar Torres
     url: http://cearto.com/
     affiliation: Stanford University
@@ -19,8 +20,14 @@ authors:
     affiliation: Stanford University
   - name: Jerry O. Talton
     url: http://jerrytalton.net
+    affiliation: Intel Corporation
 venue: chi
 year: 2013
+doi: 10.1145/2470654.2466420
+tags:
+  - web design
+  - system
+  - quantitative methods
 teaser: Webzeitgeist, a scalable platform for Web design mining, supplements the data used in traditional Web content mining (yellow) with information about the visual appearance and structure of pages (blue) to enable a host of new design applications (green).
 award: bestPaper
 videos:

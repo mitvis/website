@@ -2,6 +2,7 @@
 title: Using Overlays to Support Collaborative Interaction with Display Walls
 authors:
   - key: arvindsatya
+    affiliation: Stanford University
   - name: Nadir Weibel
     url: http://weibel.ucsd.edu/
     affiliation: UC San Diego
@@ -10,6 +11,10 @@ authors:
     affiliation: UC San Diego
 venue: iui
 year: 2012
+doi: 10.1145/2166966.2166987
+tags:
+  - interface
+  - convivial interaction
 videos:
   - name: Video Preview
     key: oazCyaTgLdA

@@ -6,6 +6,11 @@ authors:
   - key: arvindsatya
 venue: vis-short
 year: 2020
+doi: 10.1109/VIS47514.2020.00036
+tags:
+  - convivial interaction
+  - interface
+  - visualization design
 teaser: Example gallery of user representations on collaborative visualizations. Inset views show the result of the peeking hover interaction for each example. A) Generic cursors overlay each visualization, indicating remote interaction. B) Specific cursors provide more visualization-specific information about remote user interaction. C) Cursor legends provide an external, minimal representation of remote users. D) Thumbnail legends visually communicate a specific overview of the remote interaction state.
 videos:
   - name: Video Preview

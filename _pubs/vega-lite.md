@@ -2,6 +2,7 @@
 title: 'Vega-Lite: A Grammar of Interactive Graphics'
 authors:
   - key: arvindsatya
+    affiliation: Stanford University
   - name: Dominik Moritz
     url: http://domoritz.de
     affiliation: University of Washington
@@ -13,6 +14,12 @@ authors:
     affiliation: University of Washington
 venue: infovis
 year: 2017
+doi: 10.1109/TVCG.2016.2599030
+tags:
+  - language
+  - visualization design
+  - convivial interaction
+  - qualitative methods
 teaser: 'Example visualizations authored with Vega-Lite. From left-to-right: layered line chart combining raw and average values, dual-axis layered bar and line chart, brushing and linking in a scatterplot matrix, layered cross-filtering, and an interactive index chart.'
 award: bestPaper
 videos:

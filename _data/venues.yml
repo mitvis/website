@@ -13,7 +13,7 @@ visactivities:
     venue: booktitle
 convivial-salon:
   short: Convivial Computing Salon
-  full: The Convivial Computing Salon at The Art, Science, and Engineering of Programming
+  full: The Convivial Computing Salon at &lt;Programming&gt;
   bibtex:
     type: inproceedings
     venue: booktitle
@@ -95,6 +95,11 @@ kdd:
 infovis-posters:
   short: VIS Posters
   full: IEEE InfoVis Posters
+  bibtex:
+    type: inproceedings
+    venue: booktitle
+rethinking-interaction:
+  full: 'Rethinking Interaction: From Instrumental Interaction to Human-Computer Partnerships. ACM CHI'
   bibtex:
     type: inproceedings
     venue: booktitle

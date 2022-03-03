@@ -2,11 +2,19 @@
 title: Authoring Narrative Visualizations with Ellipsis
 authors:
   - key: arvindsatya
+    affiliation: Stanford University
   - name: Jeffrey Heer
     url: http://jheer.org
     affiliation: University of Washington
 venue: eurovis
 year: 2014
+doi: 10.1111/cgf.12392
+tags:
+  - language
+  - interface
+  - qualitative methods
+  - visualization design
+  - computational media
 teaser: Crafting narrative visualizations by building scenes and adding annotations to existing visualizations using the Ellipsis interface.
 videos:
   - name: EuroVis 2014 Talk
