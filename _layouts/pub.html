@@ -58,10 +58,10 @@
       <div id="paper" class="pure-g">
         <div id="content" class="{% if page.stub %}stub{% endif %} pure-u-1 pure-u-md-3-4">
           <h1 class="title">{{page.title}}</h1>
-          <div id="authors">
+          <div id="authors" class="pure-g">
             {% for author in page.authors %}
               {% assign member = site.data.members[author.key] %}
-              <p>
+              <p class="pure-u-1-4">
                 <span class="name">{{author.name | default:member.name}} {% if author.equal %}*{% endif %}</span>
                 <span class="affiliation">{{author.affiliation | default:member.affiliation}}</span>
               </p>
@@ -74,7 +74,7 @@
                 {% if page.preprint %}
                   {{page.preprint.server}}: {{page.preprint.id}}
                 {% else %}
-                  {{site.data.venues[page.venue].full}}, {{page.year}}
+                  {{site.data.venues[page.venue].full | default:page.venue}}, {{page.year}}
                 {% endif %}
               </span>
             </p>

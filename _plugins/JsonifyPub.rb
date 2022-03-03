@@ -9,11 +9,11 @@ module JsonifyPub
       'title': input['title'], 
       'year': input['year'],
       'type': input['type'],
+      'tags': input['tags'].map { |tag| tag.downcase},
       'authors': input['authors'].map { 
         |author| author['name'] || members[author['key']]['name'] 
       }
     }
-
 
     if input['stub'] then
       pub['caption'] = strip_html(input['teaser'])

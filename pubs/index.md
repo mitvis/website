@@ -79,7 +79,28 @@ layout: page
     <div id="types">
       {% assign types = site.pubs | map: 'type' | uniq %}
       {% for type in types %}
-        <a class="tag">{{type | capitalize}}</a>
+        <a id="type-{{type}}" class="tag" data-tag="{{type}}">{{type | capitalize}} <span>()</span></a>
+      {% endfor %}
+    </div>
+
+    <h4>Tags</h4>
+    <div id="tags">
+      {% for group in site.data.tags %}
+        <p>
+          {% for tag in group %}
+            <a id="tag-{{tag | replace: ' ', '-'}}" class="tag" data-tag="{{tag}}">
+              {% assign words = tag | split: ' ' %}
+              {% for word in words %}
+                {% if word == 'human-ai' %}
+                  Human-AI
+                {% else %}
+                  {{word | capitalize}}
+                {% endif %}
+              {% endfor %}
+              <span>()</span>
+            </a>
+          {% endfor %}
+        </p>
       {% endfor %}
     </div>
   </div>  

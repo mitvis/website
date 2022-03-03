@@ -5,8 +5,10 @@
   }
 }
 
-#content {
-  padding-right: 50px;
+@media screen and (min-width:568px) {
+  #content {
+    padding-right: 50px;
+  }
 }
 
 #pubs {
@@ -58,25 +60,35 @@
 
   .venue { font-style: italic; }
 
+  #sidebar p {
+    margin-bottom: 1em;
+  }
+
   .tag {
     display: inline-block;
     padding: 0.25em 0.5em;
     margin: 0.25em;
     margin-left: 0;
-    border: 1px solid $csail-lgrey;
+    border: 1px solid rgba($csail-lgrey, 0.5);
     border-radius: 20px;
-    font-weight: 500;
     color: #333;
+    font-size: 0.9em;
+    font-weight: 400;
 
     &:hover {
       text-decoration: none;
-      background: rgba($csail-yellow, 0.3);
-      border-color: rgba($csail-yellow, 0.7);
+      background: rgba($csail-lgrey, 0.3);
+      border-color: rgba($csail-lgrey, 0.75);
     }
 
     &.selected {
-      background: $csail-yellow;
+      background: rgba($csail-yellow, 0.3);
       border-color: $csail-yellow;
+    }
+
+    span {
+      color: $csail-lgrey;
+      font-weight: 300;
     }
   }
 }
@@ -136,10 +148,6 @@
     }
   }
 
-  .stub p {
-    margin: 0;
-  }
-
   pre {
     margin: 0;
     overflow: auto;
@@ -186,14 +194,10 @@
   }
 
   #authors {
-    display: flex;
-    flex-wrap: wrap;
+    gap: 0.5em 0;
+    margin: 0.5em 0;
 
-    p { 
-      flex: 1;
-      width: 130px;
-      margin: 0.5em 0;
-    }
+    p { margin: 0; }
 
     span.affiliation {
       font-size: 0.8em;
@@ -203,7 +207,7 @@
 
   #metadata {
     p {
-      margin: 0.25em 0;
+      margin: 0.5em 0;
     }
 
     #venue { 
