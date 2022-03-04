@@ -1,0 +1,104 @@
+#people-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $csail-orange;
+}
+
+#people, #alumni {
+  font-size: 0.9rem;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: 0.5em;
+
+    .headshot {
+      position: relative;
+      overflow: hidden;
+  
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0.25em;
+        border-radius: 100em;
+      }
+  
+      img {
+        width: 100%;
+        border: 1px solid $csail-orange;
+        border-radius: 100em;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-bottom: 0.25em;
+    }
+
+    .title {
+      color: #333;
+      font-style: italic;
+      font-size: 0.8rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+
+      .headshot:before {
+        background: $grad-orange;
+      }
+
+      .name {
+        color: $csail-orange;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+#alumni-header {
+  font-size: 1rem;
+  color: $csail-orange;
+  margin-bottom: 0.25em;
+}
+
+#alumni {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li a {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0.5em 0 0.25em 0;
+    border-top: 1px solid rgba($csail-orange, 0.5);
+
+    .name {
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
+
+    .title {
+      font-size: 0.9rem;
+    }
+
+    .headshot {
+      img {
+        width: 2.5em;
+        margin-right: 0.5em;
+      }
+
+      &:before {
+        right: 0.5em;
+      }
+    }
+  }
+}
