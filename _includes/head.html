@@ -17,4 +17,15 @@
 
 <script src="https://kit.fontawesome.com/d0c18b213e.js"></script>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const sess = window.sessionStorage;
+    let v = sess.getItem('visited') || false;
+    if (!v) {
+      document.querySelector('#header h1 span').classList.add('visible');
+      sess.setItem('visited', true);
+    }
+  }); 
+</script>
+
 {% seo %}
