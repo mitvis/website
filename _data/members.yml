@@ -2,98 +2,120 @@ arvindsatya:
   name: Arvind Satyanarayan
   url: http://arvindsatya.com
   title: Assistant Professor
-  affiliation: MIT CSAIL
-dataspen:
-  name: Aspen Hopkins
-  url: http://aspenhopkins.com
-  title: PhD Student, EECS
-  affiliation: MIT CSAIL
-lundgard:
-  name: Alan Lundgard
-  url: https://alanlundgard.com/
-  title: PhD Student, EECS
-  affiliation: MIT CSAIL
-jzong:
-  name: Jonathan Zong
-  url: http://jonathanzong.com/
-  title: PhD Student, EECS
-  affiliation: MIT CSAIL
-crystall:
-  name: Crystal Lee
-  url: http://web.mit.edu/crystall/www/
-  title: PhD Student, STS
-  affiliation: MIT CSAIL
-hsuresh:
-  name: Harini Suresh
-  url: http://harinisuresh.com
-  title: PhD Student, EECS
-  affiliation: MIT CSAIL
-aboggust:
-  name: Angie Boggust
-  url: http://angieboggust.com
-  title: PhD Student, EECS
-  affiliation: MIT CSAIL
+
+# Postdocs
 nathalie_vladis:
   name: Nathalie Vladis
   title: Postdoctoral Researcher
-  role: alumni
+  alumni: true
+
+# PhDs
+dataspen:
+  name: Aspen Hopkins
+  url: http://aspenhopkins.com
+  title: PhD Researcher
+lundgard:
+  name: Alan Lundgard
+  url: https://alanlundgard.com/
+  title: PhD Researcher
+jzong:
+  name: Jonathan Zong
+  url: http://jonathanzong.com/
+  title: PhD Researcher
+crystall:
+  name: Crystal Lee
+  url: http://web.mit.edu/crystall/www/
+  title: PhD Researcher
+hsuresh:
+  name: Harini Suresh
+  url: http://harinisuresh.com
+  title: PhD Researcher
+aboggust:
+  name: Angie Boggust
+  url: http://angieboggust.com
+  title: PhD Researcher
+dwootton:
+  name: Dylan Wootton
+  url: https://dylanwootton.com
+  title: PhD Researcher
+
+# Master's
+benjtang:
+  name: Ben Tang
+  title: Master's (SM) Researcher
+esefah:
+  name: Ebenezer "EJ" Sefah
+  title: Master's (MEng) Researcher
+  alumni: true
+ktbacher:
+  name: Katie Bacher
+  title: Master's (MEng) Researcher
+  alumni: true
+houssam:
+  name: Houssam Kherraz
+  title: Master's (MEng) Researcher
+  alumni: true
 nava:
   name: Nava Haghighi
   url: http://navahaghighi.com
-  title: Master's Student
-  role: alumni
-houssam:
-  name: Houssam Kherraz
-  title: Master's Student
-  role: alumni
+  title: Master's (SM) Researcher
+  alumni: true
 rneogy:
   name: Rupayan Neogy
   url: http://rneogy.github.io
-  title: Master's Student
-  affiliation: MIT CSAIL
-  role: alumni
-esefah:
-  name: Ebenezer "EJ" Sefah
-  title: Master's (MEng) Student
-ktbacher:
-  name: Katie Bacher
-  title: Master's (MEng) Student
+  title: Master's (MEng) Researcher
+  alumni: true
+wso:
+  name: Wonyoung So
+  url: https://wonyoung.so/
+  title: Master's (SM) Student
+  alumni: true
+
+# Undergrads
+mattblanco:
+  name: Matt Blanco
+  title: Undergraduate Researcher
+  url: https://mattblanco.me
 tanyang:
   name: Tanya Yang
-  affiliation: MIT CSAIL
   title: Undergraduate Researcher
+  alumni: true
 katmh:
   name: Katherine Huang
   title: Undergraduate Researcher
+  alumni: true
   url: http://katmh.com
 monterde:
   name: Mateo Monterde
   title: Undergraduate Researcher
+  alumni: true
 soominc:
   name: Soomin Chun
   title: Undergraduate Researcher
-  role: alumni
+  alumni: true
 annaad:
   name: Anna Arpaci-Dusseau
   title: Undergraduate Researcher
   url: http://annaad.github.io
+  alumni: true
 ajmeurer:
   name: Anna Meurer
   title: Undergraduate Researcher
-  role: alumni
-wso:
-  name: Wonyoung So
-  url: https://wonyoung.so/
-  title: Master's Student
-  role: alumni
+  alumni: true
 dhiraj:
   name: Dhiraj Barnwal
   url: https://djbarnwal.github.io/
-  title: Undergraduate Researcher, IIT Kharagpur
+  title: Undergraduate Researcher
   affiliation: IIT Kharagpur
-  role: alumni
+  alumni: true
 allenlee:
   name: Allen Lee
   url: https://allenjlee.github.io
   title: Undergraduate Researcher
-  role: alumni
+  alumni: true
+
+# Visitors
+peck:
+  name: Evan Peck
+  title: Visiting Scientist
+  url: http://www.eg.bucknell.edu/~emp017

@@ -66,7 +66,13 @@
                 {% if member_url %}<a href="{{member_url}}">{% endif %}
                 {% if member %}<img src="/imgs/people/{{author.key}}.jpg" alt="" />{% endif %}  
                 <span class="name">{{author.name | default:member.name}} {% if author.equal %}*{% endif %}</span>
-                <span class="affiliation">{{author.affiliation | default:member.affiliation}}</span>
+                <span class="affiliation">
+                  {% if member %}
+                    {{author.affiliation | default: member.affiliation | default: 'MIT CSAIL'}}
+                  {% else %}
+                    {{author.affiliation}}
+                  {% endif %}
+                </span>
                 {% if member_url %}</a>{% endif %}
               </p>
             {% endfor %}

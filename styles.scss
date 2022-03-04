@@ -17,11 +17,13 @@ $csail-yellow: #F0B323;
 $csail-lgrey: #898D8D;
 $csail-dgrey: #525252;
 $grad-orange: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(204, 82, 0, 0.4) 100%);
+$grad-yellow: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba($csail-yellow, 0.4) 100%);
 $border-orange: rgba(204, 82, 0, 0.5);
 
 @import 'scaffold.scss';
 @import 'header.scss';
 @import 'featured.scss';
-@import 'members.scss';
 @import 'papers.scss';
+@import 'members.scss';
 @import 'news.scss';
+@import 'themes.scss';
