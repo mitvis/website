@@ -22,14 +22,9 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const sess = window.sessionStorage;
-    let v = sess.getItem('visited') || false;
-    if (!v) {
-      document.querySelector('#header h1 span').classList.add('visible');
-      sess.setItem('visited', true);
-    }
-
     {% if page.home %}
+      document.querySelector('#header h1 span').classList.add('visible');
+
       function showAllPeople() {
         for (const person of document.querySelectorAll('.person')) {
           person.style.opacity = 1;
@@ -46,6 +41,13 @@
             person.style.opacity = 0.3;
           }
         });
+      }
+    {% else %}
+      const sess = window.sessionStorage;
+      let v = sess.getItem('visited') || false;
+      if (!v) {
+        document.querySelector('#header h1 span').classList.add('visible');
+        sess.setItem('visited', true);
       }
     {% endif %}
   }); 
