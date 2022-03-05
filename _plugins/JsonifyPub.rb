@@ -3,7 +3,7 @@ require 'nokogumbo'
 module JsonifyPub
 
   def jsonify_pub(input)
-    members = @context.registers[:site].data['members']
+    people = @context.registers[:site].data['people']
     pub = {
       'id': input['slug'],
       'title': input['title'], 
@@ -11,7 +11,7 @@ module JsonifyPub
       'type': input['type'],
       'tags': input['tags'].map { |tag| tag.downcase},
       'authors': input['authors'].map { 
-        |author| author['name'] || members[author['key']]['name'] 
+        |author| author['name'] || people[author['key']]['name'] 
       }
     }
 

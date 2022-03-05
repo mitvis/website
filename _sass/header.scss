@@ -1,7 +1,7 @@
 #header {
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid $mit-lgrey;
+  border-bottom: 1px solid $csail-lgrey;
   margin-bottom: 0.5em;
 
   #logo svg {
@@ -21,7 +21,7 @@
       margin-right: 0.15em;
       visibility: hidden;
       max-width: 0;
-      transition: all 0.5s ease-in-out;
+      transition: max-height, visibility 0.5s ease-in-out;
     }
 
     span.visible  {
@@ -74,8 +74,11 @@
 }
 
 #mission {
-  font-size: 22px;
-  margin: 20px 0;
+  font-size: 1.3rem;
+
+  strong {
+    font-weight: bold;
+  }
 }
 
 #footer {

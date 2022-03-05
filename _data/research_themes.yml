@@ -1,0 +1,25 @@
+- key: tools
+  name: Visualization Design Tools
+  url: /pubs/?tag=visualization-design
+  people: arvindsatya, jzong, allenlee, dhiraj, rneogy, ktbacher, esefah, dwootton
+  desc: >
+    We develop [languages](/pubs/?tag=language&tag=visualization-design), [systems](/pubs/?tag=system&tag=visualization-design), and [interfaces](/pubs/?tag=interface&tag=visualization-design) for creating common and custom interactive visualizations.
+- key: interpretability
+  name: Machine Learning Interpretability
+  url: /pubs/?tag=machine-learning-interpretability
+  people: arvindsatya, aboggust, hsuresh, houssam, benjtang
+  desc: >
+    We design [metrics](/pubs/shared-interest) and [interfaces](/pubs/knnviz) for [visually analyzing](/pubs/embedding-comparator/) models, and study [human-AI interaction](/pubs/?tag=human-ai-interaction).
+- key: accessibility
+  name: Accessible Visualization Design
+  url: /pubs/?tag=accessibility
+  people: arvindsatya, lundgard, crystall, jzong, mattblanco
+  desc: >
+    [In collaboration with](/pubs/sociotechnical-vis-access/) people with visual disabilities, we explore [textual](/pubs/vis-text-model/) and [screen-reader](/pubs/rich-screen-reader-vis-experiences/) modalities for representing data.
+- key: convivial-info
+  name: Cognitively Convivial Information
+  url: /pubs/?tag=computational-media
+  people: arvindsatya, dataspen, dwootton, crystall, tanyang, katmh, monterde, soominc, annaad, ajmeurer, nathalie_vladis
+  desc: >
+    We study how people [understand](/pubs/visualint/), [discuss](/pubs/viral-visualizations), and [interact with](/pubs/?tag=interaction-design) visualizations, and generalize these insights towards a dynamic [information physics](/pubs/towards-convivial-info-space/).
+  

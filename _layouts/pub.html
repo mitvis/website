@@ -10,9 +10,9 @@
   {% endif %}
 
   {% for author in page.authors %}
-    {% assign member = site.data.members[author.key] %}
-    <meta name="citation_author" content="{{author.name | default:member.name}}">
-    <meta name="citation_author_institution" content="{{author.affiliation | default:member.affiliation}}">
+    {% assign person = site.data.people[author.key] %}
+    <meta name="citation_author" content="{{author.name | default:person.name}}">
+    <meta name="citation_author_institution" content="{{author.affiliation | default:person.affiliation}}">
   {% endfor %}
 
   {% unless page.stub %}
@@ -60,20 +60,20 @@
           <h1 class="title">{{page.title}}</h1>
           <div id="authors" class="pure-g">
             {% for author in page.authors %}
-              {% assign member = site.data.members[author.key] %}
-              {% assign member_url = author.url | default:member.url %}
+              {% assign person = site.data.people[author.key] %}
+              {% assign person_url = author.url | default:person.url %}
               <p class="pure-u-1-4">
-                {% if member_url %}<a href="{{member_url}}">{% endif %}
-                {% if member %}<img src="/imgs/people/{{author.key}}.jpg" alt="" />{% endif %}  
-                <span class="name">{{author.name | default:member.name}} {% if author.equal %}*{% endif %}</span>
+                {% if person_url %}<a href="{{person_url}}">{% endif %}
+                {% if person %}<img src="/imgs/people/{{author.key}}.jpg" alt="" />{% endif %}  
+                <span class="name">{{author.name | default:person.name}} {% if author.equal %}*{% endif %}</span>
                 <span class="affiliation">
-                  {% if member %}
-                    {{author.affiliation | default: member.affiliation | default: 'MIT CSAIL'}}
+                  {% if person %}
+                    {{author.affiliation | default: person.affiliation | default: 'MIT CSAIL'}}
                   {% else %}
                     {{author.affiliation}}
                   {% endif %}
                 </span>
-                {% if member_url %}</a>{% endif %}
+                {% if person_url %}</a>{% endif %}
               </p>
             {% endfor %}
           </div>

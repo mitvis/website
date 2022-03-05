@@ -542,7 +542,7 @@ year: 2022
       </div>
       <div id="S4.SS3.p3" class="ltx_para ltx_noindent">
         <p class="ltx_p">These sentences convey the “overall gist” of complex trends and patterns (e.g., stock prices “seem to fluctuate but nevertheless increase”), synthesize multiple trends to identify exceptions (e.g., “years 2008-2009 are exceptions as we can see an extreme drop” of multiple graphed lines at that point in time), and do so in “natural”-sounding language, by referencing commonplace concepts (such as “fluctuate”, “extreme drop”, “visible gap”).
-          N.b., “natural”-sounding articulation is necessary but insufficient for Level 3 membership, as it is also possible to articulate Level 1 or 2 content in a non-templatized fashion&nbsp;(§&nbsp;<a href="#S3.SS2.SSS2" title="3.2.2 Survey Results ‣ 3.2 Gathering A Corpus ‣ 3 Constructing the Model: Employing the Grounded Theory Methodology ‣ Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>).</p>
+          N.b., “natural”-sounding articulation is necessary but insufficient for Level 3 peoplehip, as it is also possible to articulate Level 1 or 2 content in a non-templatized fashion&nbsp;(§&nbsp;<a href="#S3.SS2.SSS2" title="3.2.2 Survey Results ‣ 3.2 Gathering A Corpus ‣ 3 Constructing the Model: Employing the Grounded Theory Methodology ‣ Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>).</p>
       </div>
       <div id="S4.SS3.p4" class="ltx_para">
         <p class="ltx_p"><emph class="ltx_emph ltx_font_bold ltx_font_italic">Computational Considerations.</emph>

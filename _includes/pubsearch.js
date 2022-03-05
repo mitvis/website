@@ -85,6 +85,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Populate tag counts
+  // Populate URL tags and tag counts.
+  const params = new URLSearchParams(window.location.search);
+  for (const [key, value] of params.entries()) {
+    $(`#${key}-${value}`).classList.add('selected');
+  }
+
   search();
 });

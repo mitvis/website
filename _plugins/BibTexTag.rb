@@ -24,7 +24,7 @@ module Jekyll
     def render(context)
       # Site
       venues = lookup(context, 'site.data.venues')
-      members = lookup(context, 'site.data.members')
+      people = lookup(context, 'site.data.people')
 
       # Page
       authors = lookup(context, 'page.authors')
@@ -36,7 +36,7 @@ module Jekyll
 
       bibtex = venues[venue]['bibtex']
 
-      author_str = authors.map{|a| a['name'] || members[a['key']]['name']}.join(' AND ')
+      author_str = authors.map{|a| a['name'] || people[a['key']]['name']}.join(' AND ')
       doi_str = "\n  doi = {#{doi}},"
 
       "@#{bibtex['type']}{#{year}-#{slug},

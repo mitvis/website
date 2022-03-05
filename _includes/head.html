@@ -11,8 +11,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500;700&family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="//cdn.jsdelivr.net/combine/npm/purecss@2.0.6/build/base-min.css,npm/purecss@2.0.6/build/grids-min.css,npm/purecss@2.0.6/build/grids-responsive-min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i,500,500i,700,700i">
 <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}" type="text/css" />
 
 <script src="https://kit.fontawesome.com/d0c18b213e.js"></script>
@@ -25,6 +28,26 @@
       document.querySelector('#header h1 span').classList.add('visible');
       sess.setItem('visited', true);
     }
+
+    {% if page.home %}
+      function showAllPeople() {
+        for (const person of document.querySelectorAll('.person')) {
+          person.style.opacity = 1;
+        }
+      }
+
+      for (const theme of document.querySelectorAll('.theme')) {
+        theme.addEventListener('click', () => window.location = theme.getAttribute('data-url'));
+        theme.addEventListener('mouseout', showAllPeople);
+        theme.addEventListener('mouseover', () => {
+          const people = theme.getAttribute('data-people').split(', ');
+          for (const person of document.querySelectorAll('.person')) {
+            if (people.indexOf(person.id) >= 0) continue;
+            person.style.opacity = 0.3;
+          }
+        });
+      }
+    {% endif %}
   }); 
 </script>
 

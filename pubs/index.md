@@ -28,10 +28,10 @@ layout: page
             <h3><a href="{{url}}">{{pub.title}}</a></h3>
             <p class="authors">
             {% for author in pub.authors %}
-              {% assign member = site.data.members[author.key] %}
-              {% assign name = author.name | default:member.name %}
-              {% if member.url %}
-                <a href="{{member.url}}">{{name}}</a>{% unless forloop.last %}, {% endunless %}
+              {% assign person = site.data.people[author.key] %}
+              {% assign name = author.name | default:person.name %}
+              {% if person.url %}
+                <a href="{{person.url}}">{{name}}</a>{% unless forloop.last %}, {% endunless %}
               {% else %}
                 {{name}}{% unless forloop.last %}, {% endunless %}
               {% endif %}

@@ -34,28 +34,10 @@ a:hover {
   box-sizing: border-box;
 }
 
-.content {
-  background: #fff;
-  border: 1px solid rgba(217, 214, 199, 0.32);
-  border-radius: 10px;
-  color: #333;
-
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 5px;
-  }
-}
-
 h2 {
   font-family: $heading-font;
   font-weight: 500;
-  font-size: 20px;
-
-  .view-all {
-    margin-left: 5px;
-    font-size: 0.75em;
-  }
+  font-size: 1.3rem;
 }
 
 /* pure-hidden-xs */

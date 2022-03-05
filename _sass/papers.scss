@@ -72,7 +72,7 @@
     border: 1px solid rgba($csail-lgrey, 0.5);
     border-radius: 20px;
     color: #333;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: 400;
 
     &:hover {
@@ -115,13 +115,13 @@
     margin: 0.5em 0 0em 0;
     font-weight: normal;
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 
   pre {
     background: #f6f6f6;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: $border-radius;
     overflow: auto;
   }
 
@@ -132,7 +132,7 @@
   @import './LaTeXML.scss';
 
   h2 { 
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   h3 {
@@ -179,7 +179,7 @@
 
       figcaption {
         text-align: left;
-        font-size: 0.8em;
+        font-size: 0.8rem;
         margin-top: 0.5em;
         line-height: normal;
       }
@@ -215,7 +215,7 @@
     }
 
     span.affiliation {
-      font-size: 0.8em;
+      font-size: 0.8rem;
       display: block;
     }
   }
@@ -231,7 +231,7 @@
     }
 
     #doi {
-      font-size: 0.8em;
+      font-size: 0.8rem;
 
       span {
         font-weight: 500;
@@ -248,7 +248,7 @@
     p { display: inline; }
     h2 {
       display: inline;
-      font-size: 1em;
+      font-size: 1rem;
       &:after {
         content: ' \2014 ';
       }
@@ -267,7 +267,7 @@
 
     .caption {
       margin-top: 0.5em;
-      font-size: 0.85em;
+      font-size: 0.85rem;
       color: $csail-lgrey;
     }
   }
@@ -287,7 +287,7 @@
   }
 
   code {
-    font-size: 0.85em;
+    font-size: 0.85rem;
   }
 
   #materials {
@@ -333,11 +333,11 @@
       overflow: auto;
       background: #f6f6f6;
       padding: 0 1em;
-      border-radius: 10px;
+      border-radius: $border-radius;
     }
 
     #contents {
-      font-size: 0.9em;
+      font-size: 0.9rem;
       list-style-type: none;
       padding-left: 0;
       margin-top: 0;
@@ -368,7 +368,7 @@
       .ltx_tag { display: none; }
 
       list-style-type: decimal;
-      font-size: 0.9em;
+      font-size: 0.9rem;
       padding-left: 5px;
       margin-bottom: 5px;
     }
