@@ -4,6 +4,13 @@
   border-bottom: 1px solid $csail-lgrey;
   margin-bottom: 0.5em;
 
+  #wordmark {
+    display: flex;
+    align-items: center;
+
+    &:hover { text-decoration: none; }
+  }
+
   #logo svg {
     height: 60px;
     width: 80px;
@@ -30,11 +37,22 @@
     }
   }
 
-  #wordmark {
-    display: flex;
-    align-items: center;
+  @include for-md-down {
+    #logo svg {
+      height: 40px;
+      width: 60px;
+      margin-top: 0;
+      margin-right: 0.5em;
+    }
 
-    &:hover { text-decoration: none; }
+    h1 span.visible {
+      max-width: 0;
+      visibility: hidden;
+    }
+
+    #links {
+      margin-left: calc(60px + 0.75em);
+    }
   }
 
   a {
@@ -46,10 +64,8 @@
     display: flex;
     align-items: center;
     font-size: 1.1rem;
-    padding-left: 61px;
 
-    @media screen and (min-width: 48em) {
-      //md
+    @include for-md-up {
       justify-content: flex-end;
     }
 

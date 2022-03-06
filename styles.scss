@@ -15,6 +15,14 @@ $grad-orange: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(204, 82, 0, 0.4) 
 $grad-yellow: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba($csail-yellow, 0.4) 100%);
 $border-orange: rgba(204, 82, 0, 0.5);
 
+@mixin for-md-down {
+  @media screen and (max-width: 47.9em) { @content }
+}
+
+@mixin for-md-up {
+  @media screen and (min-width: 48em) { @content }
+}
+
 @import 'scaffold.scss';
 @import 'header.scss';
 @import 'papers.scss';

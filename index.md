@@ -57,7 +57,7 @@ home: true
     <ul id="alumni" class="pure-g">
       {% for person in site.data.people  %}
         {% if person[1].alumni == true %}
-          <li id="{{person[0]}}" class="person pure-u-1 pure-u-md-1-2">
+          <li id="{{person[0]}}" class="person pure-u-1-2">
             <a href="{{person[1].url}}">
               <span class="headshot">
                 <img src="/imgs/people/{{person[0]}}.jpg" alt="" />
