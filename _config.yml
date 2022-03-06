@@ -50,6 +50,10 @@ sass:
 plugins:
   - jekyll-seo-tag
 
+# Dates are used to sort publications, and we will likely upload 
+# publications before their conferences occur.
+future: true
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

@@ -1,5 +1,5 @@
 ---
-title: 'Teaching Humans When To Defer to a Classifier via Exemplars'
+title: Teaching Humans When To Defer to a Classifier via Exemplars
 authors:
   - name: Hussein Mozannar
     affiliation: MIT CSAIL
@@ -8,7 +8,7 @@ authors:
     affiliation: MIT CSAIL
 venue: aaai
 year: 2022
-date: 2022-02-01
+date: 2022-02-22
 tags:
   - human-ai interaction
   - empirical study
