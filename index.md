@@ -29,10 +29,10 @@ home: true
     <h2 id="news-header">News</h2>
     <div id="news">
       <div id="news-items">
-        {% for item in site.data.news %}
+        {% for item in site.data.news limit: 10 %}
           <div class="item">
             <p class="date">{{item.date}}</p>
-            <p>{{item.desc}}</p>
+            {{item.desc | markdownify}}
           </div>
         {% endfor %}
       </div>

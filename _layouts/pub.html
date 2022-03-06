@@ -11,8 +11,15 @@
 
   {% for author in page.authors %}
     {% assign person = site.data.people[author.key] %}
+    {% capture affiliation %}
+      {% if person %}
+        {{author.affiliation | default: person.affiliation | default: 'MIT CSAIL'}}
+      {% else %}
+        {{author.affiliation}}
+      {% endif %}
+    {% endcapture %}
     <meta name="citation_author" content="{{author.name | default:person.name}}">
-    <meta name="citation_author_institution" content="{{author.affiliation | default:person.affiliation}}">
+    <meta name="citation_author_institution" content="{{affiliation | strip}}">
   {% endfor %}
 
   {% unless page.stub %}
