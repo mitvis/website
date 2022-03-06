@@ -3,6 +3,7 @@
     color: $csail-lgrey;
     text-transform: uppercase;
     font-weight: bold;
+    margin-top: 0.25em;
   }
 
   .theme {
@@ -46,7 +47,7 @@
       position: absolute;
       bottom: 0em;
       padding-bottom: 0.5em;
-      background: rgba(#fff, 0.85);
+      background: rgba(#cdcdcd, 0.9);
 
       &:hover {
         h3 { text-decoration: none; }
