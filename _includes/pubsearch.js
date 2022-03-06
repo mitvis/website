@@ -33,7 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
         .forEach(e => e.classList.remove('selected'));
       el.classList.add('selected');
     }
-    
+
+    let hash = [];
+    for (const sel of $$('.tag.selected')) {
+      hash.push(sel.id.replace('-','='));
+    }
+    window.location.hash = hash.join('&');
+
     search();
   }
 
@@ -86,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   // Populate URL tags and tag counts.
-  const params = new URLSearchParams(window.location.search);
+  const params = new URLSearchParams(window.location.hash.substring(1));
   for (const [key, value] of params.entries()) {
     $(`#${key}-${value}`).classList.add('selected');
   }

@@ -26,14 +26,14 @@
     span {
       display: inline-block;
       margin-right: 0.15em;
-      visibility: hidden;
+      opacity: 0;
       max-width: 0;
-      transition: max-height, visibility 0.5s ease-in-out;
+      transition: max-width 1s ease-in-out, opacity 1s ease-in-out;
     }
 
     span.visible  {
       max-width: 100%;
-      visibility: visible;
+      opacity: 1;
     }
   }
 
@@ -47,7 +47,7 @@
 
     h1 span.visible {
       max-width: 0;
-      visibility: hidden;
+      opacity: 0;
     }
 
     #links {
