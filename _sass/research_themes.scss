@@ -10,7 +10,7 @@
     position: relative;
     border: 1px solid $csail-lgrey;
     border-radius: $border-radius;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     aspect-ratio: 16 / 9;
     overflow: hidden;
     cursor: pointer;
@@ -33,7 +33,7 @@
     // }
 
     @media screen and (min-width:568px) {
-      margin-right: 2em;
+      margin-right: 3em;
     }
 
     video {
