@@ -9,7 +9,7 @@
   url: /pubs/#tag=machine-learning-interpretability
   people: arvindsatya, aboggust, hsuresh, houssam, benjtang
   desc: >
-    We design [metrics](/pubs/shared-interest) and [interfaces](/pubs/knnviz) for [visually analyzing](/pubs/embedding-comparator/) models, and study [human-AI interaction](/pubs/#tag=human-ai-interaction).
+    We design [metrics](/pubs/shared-interest/) and [interfaces](/pubs/knnviz/) for [visually analyzing](/pubs/embedding-comparator/) models, and study [human-AI interaction](/pubs/#tag=human-ai-interaction).
 - key: accessibility
   name: Accessible Visualization Design
   url: /pubs/#tag=accessibility
@@ -21,5 +21,5 @@
   url: /pubs/#tag=convivial-information
   people: arvindsatya, dataspen, dwootton, crystall, tanyang, katmh, monterde, soominc, annaad, ajmeurer, nathalie_vladis
   desc: >
-    We study how people [understand](/pubs/visualint/), [discuss](/pubs/viral-visualizations), and [interact with](/pubs/#tag=interaction-design) visualizations, and generalize these insights to imagine a dynamic [information physics](/pubs/towards-convivial-info-space/).
+    We study how people [understand](/pubs/visualint/), [discuss](/pubs/viral-visualizations), and [interact with](/pubs/#tag=interaction-design) visualizations, and [generalize these insights](/pubs/varv/) to imagine a dynamic [information physics](/pubs/towards-convivial-info-space/).
   
