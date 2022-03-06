@@ -2,12 +2,12 @@
 title: 'Assessing the Impact of Automated Suggestions on Decision Making: Domain Experts Mediate Model Errors but Take Less Initiative'
 authors:
   - name: Ariel Levy
-    affiliation: MITCSAIL
+    affiliation: MIT CSAIL
   - name: Monica Agrawal
-    affiliation: MITCSAIL
+    affiliation: MIT CSAIL
   - key: arvindsatya
   - name: David Sontag
-    affiliation: MITCSAIL
+    affiliation: MIT CSAIL
 venue: chi
 year: 2021
 doi: 10.1145/3411764.3445522

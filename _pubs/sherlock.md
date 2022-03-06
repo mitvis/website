@@ -18,6 +18,7 @@ authors:
     affiliation: MIT Media Lab
 venue: kdd
 year: 2019
+date: 2019-08-04
 doi: 10.1145/3292500.3330993
 tags:
   - model

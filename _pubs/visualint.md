@@ -8,6 +8,7 @@ authors:
   - key: arvindsatya
 venue: eurovis
 year: 2020
+date: 2020-05-29
 doi: 10.1111/cgf.13975
 tags:
   - interface

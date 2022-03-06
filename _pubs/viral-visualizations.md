@@ -10,6 +10,7 @@ authors:
   - key: arvindsatya
 venue: chi
 year: 2021
+date: 2021-05-08
 doi: 10.1145/3411764.3445211
 tags:
   - convivial information

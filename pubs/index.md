@@ -15,7 +15,8 @@ layout: page
         </div>
       </div>
 
-      {% for pub in year.items %}
+      {% assign pubs = year.items | sort: 'date' | reverse %}
+      {% for pub in pubs %}
         {% assign url = pub.external_url | default: pub.url | relative_url | replace: 'index.html', '' %}
         <div id="{{pub.slug}}" class="pub pure-g" data-pub='{{ pub | jsonify_pub }}'>
           <div class="thumbnail pure-u-1-2 pure-u-md-1-5">

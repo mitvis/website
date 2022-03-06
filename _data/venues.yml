@@ -103,3 +103,8 @@ rethinking-interaction:
   bibtex:
     type: inproceedings
     venue: booktitle
+aaai:
+  full: AAAI Conference on Artificial Intelligence
+  bibtex:
+    type: inproceedings
+    venue: booktitle

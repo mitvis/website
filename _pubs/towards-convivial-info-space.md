@@ -19,6 +19,7 @@ authors:
 type: workshop
 venue: convivial-salon
 year: 2020
+date: 2020-05-03
 doi: 10.1145/3397537.3397542
 tags:
   - interaction design

@@ -8,6 +8,7 @@ authors:
 type: poster
 venue: infovis-posters
 year: 2019
+date: 2020-10-25
 tags:
   - visualization design
   - interaction design

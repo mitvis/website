@@ -120,7 +120,7 @@
             {% if page.teaser %}
               <div class="teaser">
                 <img src="/imgs/teasers/{{page.slug}}.png" alt="" />
-                <p class="caption">{{page.teaser}}</p>
+                {{page.teaser | markdownify}}
               </div>
             {% endif %}
 

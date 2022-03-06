@@ -12,6 +12,7 @@ preprint:
   server: arxiv
   id: '2006.00372'
 year: 2020
+date: 2020-02-27
 tags:
   - empirical study
   - quantitative methods
