@@ -20,7 +20,7 @@ venue: chi-ea
 year: 2013
 doi: 10.1145/2468356.2479591
 tags:
-  - convivial interaction
+  - interaction design
   - interface
   - system
 teaser: An overview of the system architecture for the CHI 2013 Interactive Schedule system.

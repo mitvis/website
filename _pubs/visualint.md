@@ -13,7 +13,7 @@ tags:
   - interface
   - empirical study
   - mixed methods
-  - computational media
+  - convivial information
 teaser: 'Examples of VisuaLint for six types of chart construction errors: (a) inexpressive size encodings; (b) dual axis charts with differing scales; (c) perceptually ineffective color encodings; (d) missing legends; and, (e) truncated axes.'
 videos:
   - name: EuroVis 2020 Talk

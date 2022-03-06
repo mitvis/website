@@ -86,6 +86,10 @@
       border-color: $csail-yellow;
     }
 
+    &.empty {
+      opacity: 0.3;
+    }
+
     span {
       color: $csail-lgrey;
       font-weight: 300;

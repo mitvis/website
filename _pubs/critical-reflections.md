@@ -3,16 +3,27 @@ title: Critical Reflections on Visualization Authoring Systems
 authors:
   - key: arvindsatya
   - name: Bongshin Lee
+    affiliation: Microsoft Research
   - name: Donghao Ren
+    affiliation: UC Santa Barbara
   - name: Jeffrey Heer
     url: http://jheer.org
     affiliation: University of Washington
   - name: John Stasko
+    affiliation: Georgia Institute of Technology
   - name: John Thompson
+    affiliation: Georgia Institute of Technology
   - name: Matthew Brehmer
+    affiliation: Microsoft Research
   - name: Zhicheng Liu
+    affiliation: Adobe Research
 venue: infovis
 year: 2020
+doi: 10.1109/TVCG.2019.2934281
+tags:
+  - visualization design
+  - qualitative methods
+  - interface
 teaser: Data binding via dropzones in Lyra (left), via the binding icon in Data Illustrator (middle), and via either approach in Charticulator (right).
 videos:
   - name: Video Preview

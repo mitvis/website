@@ -14,7 +14,7 @@ year: 2012
 doi: 10.1145/2166966.2166987
 tags:
   - interface
-  - convivial interaction
+  - interaction design
 videos:
   - name: Video Preview
     key: oazCyaTgLdA

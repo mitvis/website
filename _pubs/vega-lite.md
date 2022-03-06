@@ -18,7 +18,7 @@ doi: 10.1109/TVCG.2016.2599030
 tags:
   - language
   - visualization design
-  - convivial interaction
+  - interaction design
   - qualitative methods
 teaser: 'Example visualizations authored with Vega-Lite. From left-to-right: layered line chart combining raw and average values, dual-axis layered bar and line chart, brushing and linking in a scatterplot matrix, layered cross-filtering, and an interactive index chart.'
 award: bestPaper

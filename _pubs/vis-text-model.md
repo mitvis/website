@@ -6,6 +6,11 @@ authors:
   - key: arvindsatya
 venue: vis-full
 year: 2022
+doi: 10.1109/TVCG.2021.3114770
+tags:
+  - interface
+  - accessibility
+  - mixed methods
 ---
 <style>
   figure#S4\.T3 tbody {

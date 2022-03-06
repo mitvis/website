@@ -10,13 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     store: ['year', 'type', 'tags']
   });
 
-  for (const elem of $$('.pub')) {
-    index.add(JSON.parse(elem.getAttribute('data-pub')));
-  }
-
-  searchBar.addEventListener('input', search);
-  for (const t of $$('.tag')) t.addEventListener('click', toggleTag);
-
   function toggleTag(evt) {
     const el = evt.target.tagName === 'SPAN' ? evt.target.parentElement : evt.target;
     const parent = el.parentElement;
@@ -80,22 +73,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
     for (const elem of $$('.tag span')) {
       elem.innerText = '(0)';
-      elem.parentElement.style.opacity = 0.35;
+      elem.parentElement.classList.add('empty');
     }
 
     for (const [id, count] of Object.entries(counts)) {
       const elem = $(`#${id} span`);
       if (!elem) continue;
       elem.innerText = `(${count})`;
-      elem.parentElement.style.opacity = 1;
+      elem.parentElement.classList.remove('empty');
     }
   }
 
-  // Populate URL tags and tag counts.
-  const params = new URLSearchParams(window.location.hash.substring(1));
-  for (const [key, value] of params.entries()) {
-    $(`#${key}-${value}`).classList.add('selected');
+  function parseHash() {
+    const params = new URLSearchParams(window.location.hash.substring(1));
+
+    for (const sel of $$('.tag.selected')) {
+      sel.classList.remove('selected');
+    }
+
+    for (const [key, value] of params.entries()) {
+      $(`#${key}-${value}`).classList.add('selected');
+    }
+
+    search();
   }
 
-  search();
+  for (const elem of $$('.pub')) {
+    index.add(JSON.parse(elem.getAttribute('data-pub')));
+  }
+
+  searchBar.addEventListener('input', search);
+  for (const t of $$('.tag')) t.addEventListener('click', toggleTag);
+
+  window.addEventListener('hashchange', parseHash);
+
+  parseHash();
 });

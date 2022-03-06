@@ -4,10 +4,17 @@ authors:
   - key: crystall
   - key: tanyang
   - name: Gabrielle Inchoco
+    affiliation: Wellesley College
   - name: Graham M. Jones
+    affiliation: MIT Anthropology
   - key: arvindsatya
 venue: chi
 year: 2021
+doi: 10.1145/3411764.3445211
+tags:
+  - convivial information
+  - mixed methods
+  - visualization design
 teaser: ' Sample counter-visualizations from the anti-mask user network. While there are meme-based visualizations, anti-maskers on Twitter adopt the same visual vocabulary as visualization experts and the mainstream media.'
 award: honMention
 videos:

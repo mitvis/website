@@ -21,7 +21,8 @@ venue: convivial-salon
 year: 2020
 doi: 10.1145/3397537.3397542
 tags:
-  - convivial interaction
+  - interaction design
+  - convivial information
 ---
 The historical moment when a person worked in front of a single computer has passed. Computers are now ubiquitous and embedded in virtually every new device and system, connecting our personal and professional activities to ever-expanding information resources with previously unimaginable computational power. Yet with all the increases in capacity, speed, and connectivity, our experiences too often remain difficult, awkward, and frustrating. Even after six decades of design evolution there is little of the naturalness and contextual sensitivity required for convivial interaction with computer-mediated information.
 

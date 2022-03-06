@@ -13,7 +13,7 @@ venue: visxai
 year: 2020
 tags:
   - machine learning interpretability
-  - quantitative methods
+  - language
   - mixed methods
 teaser: Examples of correctly and incorrectly classified images identified by shared interest coverage metrics.
 external_url: http://shared-interest.csail.mit.edu/

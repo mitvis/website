@@ -17,6 +17,7 @@ tags:
   - debugging
   - interface
   - quantitative methods
+  - interaction design
 teaser: 'Vega’s visual debugging techniques allow users to inspect relevant data transformations and dependencies within their specification in the context of the visualization and interaction events. Signal updates are populated in a timeline, on which users can view dependencies (in red): brush depends on cell, start_coords, and end_coords, as shown in the specification above. Users can rewind the visualization to view previous states (in green) and inspect scale encodings as a tooltip in-situ.'
 videos:
   - name: EuroVis 2016 Talk
