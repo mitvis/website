@@ -40,35 +40,33 @@ home: true
 
     <h2 id="people-header">People</h2>
     <div id="people" class="pure-g">
-      {% for person in site.data.people %}
-        {% if person[1].alumni != true %}
-          <div id="{{person[0]}}" class="person pure-u-1-4">
-            <a href="{{person[1].url}}">
-              <p class="headshot"><img src="/imgs/people/{{person[0]}}.jpg" alt="" /></p>
-              <p class="name">{{person[1].name}}</p>
-              <p class="title">{{person[1].title}}</p>
-            </a>
-          </div>
-        {% endif %}
+      {% assign members = site.data.people | filter_alumni: nil | sort_people %}
+      {% for person in members %}
+        <div id="{{person[0]}}" class="person pure-u-1-4">
+          <a href="{{person[1].url}}">
+            <p class="headshot"><img src="/imgs/people/{{person[0]}}.jpg" alt="" /></p>
+            <p class="name">{{person[1].name}}</p>
+            <p class="title">{{person[1].title}}</p>
+          </a>
+        </div>
       {% endfor %}
     </div>
 
     <h3 id="alumni-header">Alumni</h3>
     <ul id="alumni" class="pure-g">
-      {% for person in site.data.people  %}
-        {% if person[1].alumni == true %}
-          <li id="{{person[0]}}" class="person pure-u-1-2">
-            <a href="{{person[1].url}}">
-              <span class="headshot">
-                <img src="/imgs/people/{{person[0]}}.jpg" alt="" />
-              </span>
-              <span>
-                <span class="name">{{person[1].name}}</span><br> 
-                <span class="title">{{person[1].title}}</span>
-              </span>
-            </a>
-          </li>
-        {% endif %}
+      {% assign alumni = site.data.people | filter_alumni: true | sort_people %}
+      {% for person in alumni  %}
+        <li id="{{person[0]}}" class="person pure-u-1-2">
+          <a href="{{person[1].url}}">
+            <span class="headshot">
+              <img src="/imgs/people/{{person[0]}}.jpg" alt="" />
+            </span>
+            <span>
+              <span class="name">{{person[1].name}}</span><br> 
+              <span class="title">{{person[1].title}}</span>
+            </span>
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </div>
