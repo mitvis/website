@@ -12,6 +12,10 @@ tags:
   - interface
   - accessibility
   - mixed methods
+videos:
+  - name: VIS 2021 Talk
+    key: xowu8EOa6NQ
+    platform: youtube
 ---
 <style>
   figure#S4\.T3 tbody {

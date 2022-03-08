@@ -24,6 +24,7 @@
   document.addEventListener('DOMContentLoaded', function() {
     {% if page.home %}
       document.querySelector('#header h1 span').classList.add('visible');
+      window.sessionStorage.setItem('visited', true);
 
       function showAllPeople() {
         for (const person of document.querySelectorAll('.person')) {

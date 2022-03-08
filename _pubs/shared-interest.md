@@ -33,7 +33,7 @@ materials:
     url: http://shared-interest.csail.mit.edu/human-annotation
     type: cube
 videos:
-  - name: NeurIPS Demo
+  - name: NeurIPS 2020 Demo
     key: -Q_8qTBsKqo
     platform: youtube
 ---
