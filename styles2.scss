@@ -23,6 +23,7 @@ $border-orange: rgba(204, 82, 0, 0.5);
   @media screen and (min-width: 48em) { @content }
 }
 
+@import 'pure.scss';
 @import 'scaffold.scss';
 @import 'header.scss';
 @import 'papers.scss';
