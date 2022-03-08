@@ -13,8 +13,8 @@ home: true
   <div id="themes" class="pure-u-1 pure-u-md-3-5">
     <h2>Research Themes</h2>
     {% for theme in site.data.research_themes %}
-      <div class="theme" data-url="{{theme.url}}" data-people="{{theme.people}}">
-        <video autoplay muted loop>
+      <div id="theme-{{theme.key}}" class="theme" data-url="{{theme.url}}" data-people="{{theme.people}}">
+        <video muted loop playsinline>
           <source src="/videos/themes/{{theme.key}}.mp4" type="video/mp4">
         </video>
         <div class="content">

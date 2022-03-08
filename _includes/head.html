@@ -26,6 +26,10 @@
       document.querySelector('#header h1 span').classList.add('visible');
       window.sessionStorage.setItem('visited', true);
 
+      const flip = ~~(Math.random() * 2);
+      const videos = document.querySelectorAll('video');
+      videos[flip].play();
+
       function showAllPeople() {
         for (const person of document.querySelectorAll('.person')) {
           person.style.opacity = 1;
@@ -40,6 +44,14 @@
           for (const person of document.querySelectorAll('.person')) {
             if (people.indexOf(person.id) >= 0) continue;
             person.style.opacity = 0.3;
+          }
+
+          for (const video of videos) {
+            if (video.parentElement === theme) {
+              video.play();
+            } else {
+              video.pause();
+            }
           }
         });
       }

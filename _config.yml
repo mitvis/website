@@ -22,7 +22,7 @@ title: MIT Visualization Group
 email: arvindsatya@mit.edu
 description: >- # this means to ignore newlines until "baseurl:"
   We use visualization as a petri dish to study intelligence augmentation:
-  how can software systems help amplify our cognition and creativity, while respecting our agency?
+  how can computation help amplify our cognition and creativity, while respecting our agency?
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vis.csail.mit.edu" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mitvis
