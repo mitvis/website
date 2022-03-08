@@ -38,6 +38,8 @@
   }
 
   @include for-md-down {
+    padding-bottom: 0.5em;
+
     #logo svg {
       height: 40px;
       width: 60px;

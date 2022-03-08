@@ -69,7 +69,7 @@
             {% for author in page.authors %}
               {% assign person = site.data.people[author.key] %}
               {% assign person_url = author.url | default:person.url %}
-              <p class="pure-u-1-4">
+              <p class="pure-u-1-2 pure-u-md-1-4">
                 {% if person_url %}<a href="{{person_url}}">{% endif %}
                 {% if person %}<img src="/imgs/people/{{author.key}}.jpg" alt="" />{% endif %}  
                 <span class="name">{{author.name | default:person.name}} {% if author.equal %}*{% endif %}</span>

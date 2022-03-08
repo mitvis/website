@@ -25,17 +25,20 @@
       document.querySelector('#header h1 span').classList.add('visible');
       window.sessionStorage.setItem('visited', true);
 
-      const flip = ~~(Math.random() * 2);
       const videos = document.querySelectorAll('video');
-      videos[flip].play();
-
-      function showAllPeople() {
-        for (const person of document.querySelectorAll('.person')) {
-          person.style.opacity = 1;
-        }
+      const sm = window.matchMedia('(max-width: 47.9em)').matches;
+      if (sm) {
+        for (const video of videos) video.play();
+      } else {
+        videos[~~(Math.random() * 2)].play();
       }
 
-      for (const theme of document.querySelectorAll('.theme')) {
+      function showAllPeople() {
+        const people = document.querySelectorAll('.person')
+        for (const person of people) person.style.opacity = 1;
+      }
+
+      if (!sm) for (const theme of document.querySelectorAll('.theme')) {
         theme.addEventListener('click', () => window.location = theme.getAttribute('data-url'));
         theme.addEventListener('mouseout', showAllPeople);
         theme.addEventListener('mouseover', () => {
@@ -46,11 +49,8 @@
           }
 
           for (const video of videos) {
-            if (video.parentElement === theme) {
-              video.play();
-            } else {
-              video.pause();
-            }
+            if (video.parentElement === theme) video.play();
+            else video.pause();
           }
         });
       }

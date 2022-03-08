@@ -9,8 +9,8 @@ layout: page
     {% assign pubYears = site.pubs | group_by:"year" | sort: "name" | reverse %}
     {% for year in pubYears %}
       <div id="year-{{year.name}}" class="year pure-g">
-        <div class="pure-u-1-2 pure-u-md-1-5"></div>
-        <div class="pure-u-1-2 pure-u-md-4-5">
+        <div class="pure-u-1-3 pure-u-md-1-5"></div>
+        <div class="pure-u-2-3 pure-u-md-4-5">
           <h2>{{year.name}}</h2>
         </div>
       </div>
@@ -19,13 +19,13 @@ layout: page
       {% for pub in pubs %}
         {% assign url = pub.external_url | default: pub.url | relative_url | replace: 'index.html', '' %}
         <div id="{{pub.slug}}" class="pub pure-g" data-pub='{{ pub | jsonify_pub }}'>
-          <div class="thumbnail pure-u-1-2 pure-u-md-1-5">
+          <div class="thumbnail pure-u-1-3 pure-u-md-1-5">
             <a href="{{url}}">
               <img src="/imgs/thumbs/{{pub.slug}}.png" alt="" />
             </a>
           </div>
 
-          <div class="pure-u-1-2 pure-u-md-4-5">
+          <div class="pure-u-2-3 pure-u-md-4-5">
             <h3><a href="{{url}}">{{pub.title}}</a></h3>
             <p class="authors">
             {% for author in pub.authors %}
