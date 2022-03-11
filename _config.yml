@@ -44,7 +44,6 @@ defaults:
       type: "paper"
 
 # Build settings
-theme: minima
 sass:
   style: compressed
 plugins:
