@@ -84,6 +84,11 @@ tiffc:
   name: Tiffany Chen
   title: Undergraduate Researcher
   url: http://tiffanychenn.me/
+ksiyoung:
+  name: Siyoung Kim
+  title: Undergraduate Researcher
+  url: https://siyoung-kim.github.io/
+  alumni: true
 tanyang:
   name: Tanya Yang
   title: Undergraduate Researcher
@@ -110,16 +115,34 @@ ajmeurer:
   name: Anna Meurer
   title: Undergraduate Researcher
   alumni: true
-dhiraj:
-  name: Dhiraj Barnwal
-  url: https://djbarnwal.github.io/
-  title: Undergraduate Researcher
-  affiliation: IIT Kharagpur
-  alumni: true
 allenlee:
   name: Allen Lee
   url: https://allenjlee.github.io
   title: Undergraduate Researcher
+  alumni: true
+
+# Interns
+jwjang:
+  name: JiWoong (Joon) Jang
+  title: Research Intern
+  affiliation: Carnegie Mellon University
+  alumni: true
+sovesh:
+  name: Sovesh Mohapatra
+  url: https://www.linkedin.com/in/sovesh/
+  title: Research Intern
+  affiliation: University of Massachusetts, Amherst
+  alumni: true
+nicbk:
+  name: Nicolás Kennedy
+  title: Research Intern
+  url: https://nicbk.com/
+  alumni: true
+dhiraj:
+  name: Dhiraj Barnwal
+  url: https://djbarnwal.github.io/
+  title: Research Intern
+  affiliation: IIT Kharagpur
   alumni: true
 
 # Visitors
