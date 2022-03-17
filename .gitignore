@@ -1,7 +1,7 @@
 _site
+_scripts/out
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
-scripts/out
 node_modules

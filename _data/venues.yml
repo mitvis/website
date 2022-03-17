@@ -108,3 +108,8 @@ aaai:
   bibtex:
     type: inproceedings
     venue: booktitle
+plateau:
+  full: PLATEAU Workshop at the Intersection of PL and HCI
+  bibtex:
+    type: inproceedings
+    venue: booktitle
