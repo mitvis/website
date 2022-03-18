@@ -66,3 +66,9 @@
 </script>
 
 {% seo %}
+{% unless page.image %}
+  {% if page.slug %}
+    <meta property="og:image" content="{{site.url}}/imgs/thumbs/{{page.slug}}.png" />
+    <meta property="twitter:image" content="{{site.url}}/imgs/thumbs/{{page.slug}}.png" />
+  {% endif %}
+{% endunless %}

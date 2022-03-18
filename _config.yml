@@ -25,6 +25,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   how can computation help amplify our cognition and creativity, while respecting our agency?
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://vis.csail.mit.edu" # the base hostname & protocol for your site, e.g. http://example.com
+logo: /imgs/logo.png
+twitter: 
+  username: mitvis
+  card: summary
 twitter_username: mitvis
 github_username:  mitvis
 
@@ -37,11 +41,11 @@ defaults:
   -
     scope:
       path: ""
-      type: "pubs"
+      type: pubs
     values:
-      layout: "pub"
+      layout: pub
       stub: true
-      type: "paper"
+      type: paper
 
 # Build settings
 sass:
