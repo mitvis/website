@@ -14,6 +14,7 @@ authors:
 venue: chi
 year: 2022
 date: 2022-05-06
+award: honMention
 tags:
   - machine learning interpretability
   - language
