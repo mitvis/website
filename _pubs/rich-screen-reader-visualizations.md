@@ -10,6 +10,8 @@ authors:
   - name: JiWoong Jang
   - name: Daniel Hajas
   - key: arvindsatya
+venue: eurovis
+year: 2022
 tags:
   - visualization design
   - interaction design
