@@ -1,4 +1,5 @@
 ---
+stub: false
 title: Rich Screen Reader Experiences for Accessible Data Visualization
 authors:
   - key: jzong
