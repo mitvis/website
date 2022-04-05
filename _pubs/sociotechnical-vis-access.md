@@ -2,7 +2,9 @@
 title: Sociotechnical Considerations for Accessible Visualization Design
 authors:
   - key: lundgard
+    equal: true
   - key: crystall
+    equal: true
   - key: arvindsatya
 venue: vis-short
 year: 2019
