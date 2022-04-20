@@ -38,21 +38,24 @@
         for (const person of people) person.style.opacity = 1;
       }
 
-      if (!sm) for (const theme of document.querySelectorAll('.theme')) {
+      for (const theme of document.querySelectorAll('.theme')) {
         theme.addEventListener('click', () => window.location = theme.getAttribute('data-url'));
-        theme.addEventListener('mouseout', showAllPeople);
-        theme.addEventListener('mouseover', () => {
-          const people = theme.getAttribute('data-people').split(', ');
-          for (const person of document.querySelectorAll('.person')) {
-            if (people.indexOf(person.id) >= 0) continue;
-            person.style.opacity = 0.3;
-          }
 
-          for (const video of videos) {
-            if (video.parentElement === theme) video.play();
-            else video.pause();
-          }
-        });
+        if (!sm) {
+          theme.addEventListener('mouseout', showAllPeople);
+          theme.addEventListener('mouseover', () => {
+            const people = theme.getAttribute('data-people').split(', ');
+            for (const person of document.querySelectorAll('.person')) {
+              if (people.indexOf(person.id) >= 0) continue;
+              person.style.opacity = 0.3;
+            }
+
+            for (const video of videos) {
+              if (video.parentElement === theme) video.play();
+              else video.pause();
+            }
+          });
+        }
       }
     {% else %}
       const sess = window.sessionStorage;
