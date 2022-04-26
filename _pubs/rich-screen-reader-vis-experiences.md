@@ -482,8 +482,65 @@ tags:
           We formulated additional questions to measure Brehmer and Munzner’s <span class="ltx_text ltx_font_typewriter">discover</span> and <span class="ltx_text ltx_font_typewriter">enjoy</span> tasks as well as more traditional aspects of technology acceptance including <emph class="ltx_emph ltx_font_italic">ease-of-use</emph> and <emph class="ltx_emph ltx_font_italic">perceived usefulness</emph>&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib174" title="The Psychological Origins of Perceived Usefulness and Ease-of-use" class="ltx_ref">37</a>]</cite>.
           Participants responded on a five point scale where 1 = Very Difficult/Unenjoyable and 5 = Very Easy/Enjoyable.</p>
       </div>
+      <div>
+        <table id="S5.T1">
+          <caption>
+            Table 1. Rating scores for each prototype (Table, Multi-view, Targeted) on a five point Likert scale where {1} = Very Difficult (Very Unenjoyable) and {5} = Very Easy (Very Enjoyable).
+            Median scores are shown in <strong>boldface</strong>, averages in brackets, standard deviations in parentheses.
+          </caption>
+          <tr style="font-weight:bold;">
+            <td>Prompt: When using this prototype ...</td>
+            <td>Task</td> 
+            <td>Table</td>
+            <td>Multi-view</td>
+            <td>Targeted</td>
+          </tr>
+          <tr>
+            <td>How enjoyable was it to interact with the data?</td>
+            <td><span class="ltx_text ltx_font_typewriter">enjoy</span></td> 
+            <td><strong>3</strong> [3.31] (0.95)</td>
+            <td><strong>4</strong> [3.77] (1.01)</td>
+            <td><strong>4</strong> [3.54] (0.97)</td>
+          </tr>
+          <tr>
+            <td>How easy was it to generate and answer questions?</td>
+            <td><span class="ltx_text ltx_font_typewriter">discover</span></td> 
+            <td><strong>4</strong> [3.15] (1.34)</td>
+            <td><strong>3</strong> [3.00] (1.08)</td>
+            <td><strong>3</strong> [3.23] (1.17)</td>
+          </tr>
+          <tr>
+            <td>If you already knew what information you were trying to find, how easy would it be to look up or locate those data?</td>
+            <td><span class="ltx_text ltx_font_typewriter">lookup-locate</span></td> 
+            <td><strong>3</strong> [3.31] (1.32)</td>
+            <td><strong>4</strong> [3.77] (1.17)</td>
+            <td><strong>4</strong> [3.38] (1.19)</td>
+          </tr>
+          <tr>
+            <td>If you didn't already know which information you were trying to find, how easy would it be to browse or explore the data?</td>
+            <td><span class="ltx_text ltx_font_typewriter">browse-explore</span></td> 
+            <td><strong>2</strong> [3.00] (1.68)</td>
+            <td><strong>2</strong> [2.69] (1.11)</td>
+            <td><strong>3</strong> [3.00] (1.29)</td>
+          </tr>
+          <tr>
+            <td>How easy was it to learn to use?</td>
+            <td>ease-of-use</td> 
+            <td><strong>4</strong> [4.15] (0.99)</td>
+            <td><strong>3</strong> [2.69] (0.75)</td>
+            <td><strong>3</strong> [3.15] (1.34)</td>
+          </tr>
+          <tr>
+            <td>How useful would it be to have access to this interaction style for engaging with data?</td>
+            <td>perceived usefulness</td> 
+            <td><strong>4</strong> [4.15] (0.80)</td>
+            <td><strong>4</strong> [4.00] (0.82)</td>
+            <td><strong>4</strong> [4.15] (1.07)</td>
+          </tr>
+        </table>
+      </div>
       <div id="S5.SS2.p2" class="ltx_para">
-        <p class="ltx_p">Table&nbsp;<span class="ltx_ref ltx_missing_label ltx_ref_self">LABEL:table:likert-ratings</span> displays the questionnaire prompts, their corresponding tasks, and statistics summarizing the participants’ ratings.
+        <p class="ltx_p">Table&nbsp;<a href="#S5.T1" title="Table 1 ‣ 5.2 Quantitative Results ‣ 5 Evaluation ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> displays the questionnaire prompts, their corresponding tasks, and statistics summarizing the participants’ ratings.
           A Friedman test
           found a significant rating difference for the ease-of-use of the prototypes <math id="S5.SS2.p2.m1" class="ltx_Math" alttext="\chi^{2}(2,N=13)=15.05,p<0.01" display="inline"><mrow><msup><mi>χ</mi><mn>2</mn></msup><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mi>N</mi><mo>=</mo><mn>13</mn><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>15.05</mn><mo>,</mo><mi>p</mi><mo>&lt;</mo><mn>0.01</mn></mrow></math>, with a large effect size (Kendall’s <math id="S5.SS2.p2.m2" class="ltx_Math" alttext="W=0.58" display="inline"><mrow><mi>W</mi><mo>=</mo><mn>0.58</mn></mrow></math>).
           Follow-up Nemenyi tests
