@@ -152,7 +152,10 @@ tags:
           Through our co-design process, we identified two components important to analyzing accessible structures: their <emph class="ltx_text ltx_font_italic">form</emph>, or the shape they organize information into; and <emph class="ltx_text ltx_font_italic">entities</emph>, or which parts of the visualization specification are used to translate a chart into a non-visual structure.
           Design decisions about form and entities are guided by considerations of <emph class="ltx_emph ltx_font_italic">information granularity</emph>, or how many levels comprise the range between a high-level overview and individual data values.</p>
       </div>
-      <figure id="S3.F1" class="ltx_figure"><img src="x7.png" id="S3.F1.g1" class="ltx_graphics ltx_centering" width="1081" height="333" alt="">
+      <figure id="S3.F1" class="ltx_figure"><img src="x7.png" id="S3.F1.g1" class="ltx_graphics ltx_centering" width="1081" height="333" 
+      alt="A graphic with two parts. Part A illustrates an accessible visualization structure for an example scatterplot, and its corresponding data and encoding entities: Chart Root, Encodings, Intervals/Categories, and Data points. Part B illustrates three different ways of navigating a visualization structure: Structural, Spatial, and Targeted navigation. A long description of this graphic is available at the following link."
+      longdesc="fig-tree-longdesc.html">
+      <a href="fig-tree-longdesc.html" class="ltx_align_center" target="_">Long Description</a>
         <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" style="font-size:90%;">Figure 1</span>: </span><span class="ltx_text" style="font-size:90%;">
             (a) An accessible visualization structure in the form of a tree and comprised of encoding entities.
             Solid <span class="ltx_text" style="color:#FF00FF;">magenta</span> outlines indicate the location of the screen reader cursor.
@@ -369,7 +372,10 @@ tags:
   <section id="S4" class="ltx_section">
     <h2 class="ltx_title ltx_title_section" id="H-S4">
       <span class="ltx_tag ltx_tag_section">4 </span>Example Gallery</h2>
-    <figure id="S4.F2" class="ltx_figure"><img src="x8.png" id="S4.F2.g1" class="ltx_graphics ltx_centering" width="1081" height="308" alt="">
+    <figure id="S4.F2" class="ltx_figure"><img src="x8.png" id="S4.F2.g1" class="ltx_graphics ltx_centering" width="1081" height="308"
+    alt="A graphic depicting five example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types. A long description of this graphic is available at the following link."
+    longdesc="fig-gallery-longdesc.html">
+    <a href="fig-gallery-longdesc.html" class="ltx_align_center" target="_">Long Description</a>
       <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" style="font-size:90%;">Figure 2</span>: </span><span class="ltx_text" style="font-size:90%;">Example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types.</span></figcaption>
     </figure>
     <div id="S4.p1" class="ltx_para">
@@ -483,7 +489,7 @@ tags:
           Participants responded on a five point scale where 1 = Very Difficult/Unenjoyable and 5 = Very Easy/Enjoyable.</p>
       </div>
       <div>
-        <table id="S5.T1">
+        <table id="S5.T1" style="border-top:1px solid black;border-bottom:1px solid black;">
           <caption>
             Table 1. Rating scores for each prototype (Table, Multi-view, Targeted) on a five point Likert scale where {1} = Very Difficult (Very Unenjoyable) and {5} = Very Easy (Very Enjoyable).
             Median scores are shown in <strong>boldface</strong>, averages in brackets, standard deviations in parentheses.
@@ -495,7 +501,7 @@ tags:
             <td>Multi-view</td>
             <td>Targeted</td>
           </tr>
-          <tr>
+          <tr style="background:#f6f6f6;">
             <td>How enjoyable was it to interact with the data?</td>
             <td><span class="ltx_text ltx_font_typewriter">enjoy</span></td> 
             <td><strong>3</strong> [3.31] (0.95)</td>
@@ -509,7 +515,7 @@ tags:
             <td><strong>3</strong> [3.00] (1.08)</td>
             <td><strong>3</strong> [3.23] (1.17)</td>
           </tr>
-          <tr>
+          <tr style="background:#f6f6f6;">
             <td>If you already knew what information you were trying to find, how easy would it be to look up or locate those data?</td>
             <td><span class="ltx_text ltx_font_typewriter">lookup-locate</span></td> 
             <td><strong>3</strong> [3.31] (1.32)</td>
@@ -523,7 +529,7 @@ tags:
             <td><strong>2</strong> [2.69] (1.11)</td>
             <td><strong>3</strong> [3.00] (1.29)</td>
           </tr>
-          <tr>
+          <tr style="background:#f6f6f6;">
             <td>How easy was it to learn to use?</td>
             <td>ease-of-use</td> 
             <td><strong>4</strong> [4.15] (0.99)</td>
