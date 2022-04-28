@@ -13,6 +13,7 @@ authors:
   - key: arvindsatya
 venue: eurovis
 year: 2022
+date: 2022-06-13
 tags:
   - visualization design
   - interaction design
