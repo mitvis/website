@@ -155,8 +155,8 @@ tags:
       <figure id="S3.F1" class="ltx_figure"><img src="x7.png" id="S3.F1.g1" class="ltx_graphics ltx_centering" width="1081" height="333" 
       alt="A graphic with two parts. Part A illustrates an accessible visualization structure for an example scatterplot, and its corresponding data and encoding entities: Chart Root, Encodings, Intervals/Categories, and Data points. Part B illustrates three different ways of navigating a visualization structure: Structural, Spatial, and Targeted navigation. A long description of this graphic is available at the following link."
       longdesc="fig-tree-longdesc.html">
-      <a href="fig-tree-longdesc.html" class="ltx_align_center" target="_">Long Description</a>
-        <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" style="font-size:90%;">Figure 1</span>: </span><span class="ltx_text" style="font-size:90%;">
+      <a href="fig-tree-longdesc.html" class="ltx_align_center longdesc" target="_">Long Description</a>
+        <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text">Figure 1</span>: </span><span class="ltx_text">
             (a) An accessible visualization structure in the form of a tree and comprised of encoding entities.
             Solid <span class="ltx_text" style="color:#FF00FF;">magenta</span> outlines indicate the location of the screen reader cursor.
             Solid <span class="ltx_text" style="color:#0000FF;">blue</span> arrows between labels indicate available next steps via keyboard navigability (up, down, left, right).
@@ -184,8 +184,7 @@ tags:
       </div>
       <div id="S3.SS1.p4" class="ltx_para">
         <ul id="S3.I1" class="ltx_itemize">
-          <li id="S3.I1.i1" class="ltx_item" style="list-style-type:none;">
-            <span class="ltx_tag ltx_tag_item">•</span>
+          <li id="S3.I1.i1" class="ltx_item">
             <div id="S3.I1.i1.p1" class="ltx_para">
               <p class="ltx_p"><emph class="ltx_text ltx_font_italic">Data</emph>, where nodes in the structure represent individual data values or different slices of the data cube (e.g., by field, bins, categories, or interval ranges).
                 For example, in a data table, every node (i.e. cell) represents a data value designated by the row and column coordinates.
@@ -195,8 +194,7 @@ tags:
               </p>
             </div>
           </li>
-          <li id="S3.I1.i2" class="ltx_item" style="list-style-type:none;">
-            <span class="ltx_tag ltx_tag_item">•</span>
+          <li id="S3.I1.i2" class="ltx_item">
             <div id="S3.I1.i2.p1" class="ltx_para">
               <p class="ltx_p"><emph class="ltx_text ltx_font_italic">Encodings,</emph> where nodes in the structure correspond to visual channels (e.g., position, color, size) that data fields map to.
                 For instance, consider Figure&nbsp;<a href="#S3.F1" title="Figure 1 ‣ 3.1 Structure ‣ 3 Design Dimensions for Rich Screen Reader Experiences ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>a which depicts the encoding structure of a Vega-Lite scatterplot.
@@ -208,8 +206,7 @@ tags:
               </p>
             </div>
           </li>
-          <li id="S3.I1.i3" class="ltx_item" style="list-style-type:none;">
-            <span class="ltx_tag ltx_tag_item">•</span>
+          <li id="S3.I1.i3" class="ltx_item">
             <div id="S3.I1.i3.p1" class="ltx_para">
               <p class="ltx_p"><emph class="ltx_text ltx_font_italic">Annotations,</emph>
                 where nodes in the structure represent the rhetorical devices a visualization author may use to to shape a visual narrative or guide reader interpretation of data (e.g., by drawing attention to specific data points or visual regions).
@@ -375,8 +372,8 @@ tags:
     <figure id="S4.F2" class="ltx_figure"><img src="x8.png" id="S4.F2.g1" class="ltx_graphics ltx_centering" width="1081" height="308"
     alt="A graphic depicting five example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types. A long description of this graphic is available at the following link."
     longdesc="fig-gallery-longdesc.html">
-    <a href="fig-gallery-longdesc.html" class="ltx_align_center" target="_">Long Description</a>
-      <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text" style="font-size:90%;">Figure 2</span>: </span><span class="ltx_text" style="font-size:90%;">Example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types.</span></figcaption>
+    <a href="fig-gallery-longdesc.html" class="ltx_align_center longdesc" target="_">Long Description</a>
+      <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text">Figure 2</span>: </span><span class="ltx_text">Example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types.</span></figcaption>
     </figure>
     <div id="S4.p1" class="ltx_para">
       <p class="ltx_p">Our co-design process yielded prototypes that demonstrate a breadth of ways to operationalize our design dimensions.
@@ -430,22 +427,19 @@ tags:
       </div>
       <div id="S5.SS1.p3" class="ltx_para">
         <ul id="S5.I1" class="ltx_itemize">
-          <li id="S5.I1.i1" class="ltx_item" style="list-style-type:none;">
-            <span class="ltx_tag ltx_tag_item">•</span>
+          <li id="S5.I1.i1" class="ltx_item">
             <div id="S5.I1.i1.p1" class="ltx_para">
               <p class="ltx_p"><span class="ltx_text ltx_font_smallcaps">table</span>: An accessible HTML data table with all rows and three columns from the classic Cars dataset, in order to compare our prototypes with existing accessibility best practice.
               </p>
             </div>
           </li>
-          <li id="S5.I1.i2" class="ltx_item" style="list-style-type:none;">
-            <span class="ltx_tag ltx_tag_item">•</span>
+          <li id="S5.I1.i2" class="ltx_item">
             <div id="S5.I1.i2.p1" class="ltx_para">
               <p class="ltx_p"><span class="ltx_text ltx_font_smallcaps">multi-view</span>: Becker’s barley yield trellis display&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib140" title="The Visual Design and Control of Trellis Display" class="ltx_ref">7</a>]</cite> as shown in Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>a. This prototype features local and lateral structural navigation via the arrow keys and with the shift modifier respectively, as well as spatial navigation via <span class="ltx_text ltx_font_typewriter">WASD</span>.
               </p>
             </div>
           </li>
-          <li id="S5.I1.i3" class="ltx_item" style="list-style-type:none;">
-            <span class="ltx_tag ltx_tag_item">•</span>
+          <li id="S5.I1.i3" class="ltx_item">
             <div id="S5.I1.i3.p1" class="ltx_para">
               <p class="ltx_p"><span class="ltx_text ltx_font_smallcaps">target</span>: A single-view scatterplot, illustrated in Fig.&nbsp;<a href="#S3.F1" title="Figure 1 ‣ 3.1 Structure ‣ 3 Design Dimensions for Rich Screen Reader Experiences ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>, depicting the Palmer Penguins dataset&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib139" title="Palmerpenguins: Palmer Archipelago (Antarctica) Penguin Data" class="ltx_ref">32</a>]</cite>. In addition to structural and spatial navigation, targeted navigation is available via three dropdown menus corresponding to the structural levels.
               </p>
@@ -489,7 +483,7 @@ tags:
           Participants responded on a five point scale where 1 = Very Difficult/Unenjoyable and 5 = Very Easy/Enjoyable.</p>
       </div>
       <div>
-        <table id="S5.T1" style="border-top:1px solid black;border-bottom:1px solid black;">
+        <table id="S5.T1" style="border-top:1px solid black;border-bottom:1px solid black;" cellspacing="0" cellpadding="0">
           <caption>
             Table 1. Rating scores for each prototype (Table, Multi-view, Targeted) on a five point Likert scale where {1} = Very Difficult (Very Unenjoyable) and {5} = Very Easy (Very Enjoyable).
             Median scores are shown in <strong>boldface</strong>, averages in brackets, standard deviations in parentheses.
@@ -625,7 +619,7 @@ tags:
           <span class="ltx_text ltx_font_smallcaps">target</span> addressed this with dropdown menus that allowed participants to navigate to any part of the visualization, explore, and then return to where they had started.
           In the words of P4, <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“[This] mode is freedom for the user. Being able to jump around and move in real time as you would with your hand gives you a new way of exploring the information.”</emph></span>
           <span class="ltx_text ltx_font_smallcaps">multi-view</span> approached this issue by allowing participants to move throughout the grid.
-          <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“With the table, I was trying to hold the numbers in my head and I wasn’t trying to visualize it or anything,”</emph></span> said P3. <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“With [<span class="ltx_text ltx_font_smallcaps">Multi-View</span>], I can sort of think about it more like a visualization since I can move up and down, left and right. Even though I can use the arrows in the table, it just doesn’t feel the same. I’m still feeling around and seeing what I can find.”</emph></span>
+          <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“With the table, I was trying to hold the numbers in my head and I wasn’t trying to visualize it or anything,”</emph></span> said P3. <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“With [<span class="ltx_text ltx_font_smallcaps">multi-view</span>], I can sort of think about it more like a visualization since I can move up and down, left and right. Even though I can use the arrows in the table, it just doesn’t feel the same. I’m still feeling around and seeing what I can find.”</emph></span>
           Without these navigation tools, P7 noted that <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“It’s too easy to get lost …I don’t know how to backtrack.”</emph></span>
           To orient herself, P13 would first test to see if she was at the corner cells in the visualizations (e.g., <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“Am I in the upper left or the bottom right cell here?”</emph></span>) so that she could contextualize her position within the visualization and return to a point of origin.
           <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“I know that I must be at the bottom left cell here because I can’t go to the left,”</emph></span> P13 said, <span class="ltx_text" style="color:#000000;background-color:#EDEBFF;"><emph class="ltx_emph ltx_font_italic">“but being able to know where that is beforehand would be very helpful.”</emph></span>

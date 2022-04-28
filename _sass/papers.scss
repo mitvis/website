@@ -173,6 +173,14 @@
         display: inline-block;
         margin-right: 10px;
       }
+
+      .ltx_font_smallcaps {
+        font-size: 1.2rem;
+      }
+
+      .ltx_Math {
+        font-family: monospace;
+      }
     }
 
     figure {
@@ -181,12 +189,16 @@
         height: 100%;
       }
 
-      figcaption {
-        text-align: left;
-        font-size: 0.8rem;
-        margin-top: 0.5em;
-        line-height: normal;
+      .longdesc {
+        font-size: 0.9rem;
       }
+    }
+
+    caption, figcaption {
+      text-align: left;
+      font-size: 0.8rem;
+      margin-top: 0.5em;
+      line-height: normal;
     }
 
     abbr[title] {
@@ -195,6 +207,18 @@
     }
 
     strong { font-weight: 500; }
+    
+    table {
+      text-align:  left;
+      font-size: 0.9rem;
+
+      th { 
+        font-weight: normal; 
+        padding: 0.25em 0.5em 0.25em 0.25em; 
+      }
+      th[scope=col] { font-weight: bold; }
+      th[scope=row] { font-style: italic;}
+    }
   }
 
   #authors {
