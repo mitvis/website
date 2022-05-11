@@ -375,6 +375,61 @@ tags:
     longdesc="fig-gallery-longdesc.html">
     <a href="fig-gallery-longdesc.html" class="ltx_align_center longdesc" target="_">Long Description</a>
       <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text">Figure 2</span>: </span><span class="ltx_text">Example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types.</span></figcaption>
+       <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      <script src="AccessibilityTree.js"></script>
+      <div>
+        <div id="visualizationExample1"></div>
+        <div id="accessibilityTree1"></div>
+          <script type="text/javascript">
+            var spec = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "name": "trellis_barley",
+              "description": "A trellis of Barley yields from the 1930s, complete with main-effects ordering to facilitate comparison.",
+              "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/barley.json"},
+              "mark": "point",
+              "height": {"step": 12},
+              "encoding": {
+                "facet": {
+                  "field": "site",
+                  "type": "ordinal",
+                  "columns": 2,
+                  "sort": {"op": "median", "field": "yield"}
+                },
+                "x": {
+                  "aggregate": "median",
+                  "field": "yield",
+                  "type": "quantitative",
+                  "scale": {"zero": false}
+                },
+                "y": {
+                  "field": "variety",
+                  "type": "ordinal",
+                  "sort": "-x"
+                },
+                "color": {"field": "year", "type": "nominal"}
+              }
+            }
+            let vegaSpec = spec.$schema.includes("vega-lite") ? vegaLite.compile(spec).spec : spec;
+            const runtime = vega.parse(vegaSpec);
+            const vegaRender = document.getElementById('visualizationExample1');
+            let view = new vega.View(runtime)
+                  .logLevel(vega.Warn)
+                  .initialize(vegaRender)
+                  .renderer('svg')
+                  .hover()
+                  .runAsync()
+                  .then(val => {
+                    window.createAccessibilityTree({
+                      adapter: "vega-lite",
+                      renderType: "tree",
+                      domId: "accessibilityTree1",
+                      visObject: val,
+                      visSpec: spec })
+                  });
+          </script>
+      </div>
     </figure>
     <div id="S4.p1" class="ltx_para">
       <p class="ltx_p">Our co-design process yielded prototypes that demonstrate a breadth of ways to operationalize our design dimensions.
