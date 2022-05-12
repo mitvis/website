@@ -24,6 +24,10 @@ tags:
   - interface
   - accessibility
   - mixed methods
+videos:
+  - name: Video Demo
+    key: JSWyT4Ttimw
+    platform: youtube
 materials:
   - name: Supplementary Material
     url: supplementary-material.zip
