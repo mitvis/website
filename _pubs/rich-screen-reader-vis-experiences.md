@@ -379,11 +379,15 @@ tags:
       <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
       <script src="AccessibilityTree.js"></script>
-      <div>
+      <link rel="stylesheet" type="text/css" href="ExampleStyles.css" />
+      <div id="accessibilityTreeExamples">
+        <div>
         <div id="visualizationExample1"></div>
         <div id="accessibilityTree1"></div>
+        <div id="visualizationExample2"></div>
+        <div id="accessibilityTree2"></div>
           <script type="text/javascript">
-            var spec = {
+            var spec1 = {
               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
               "name": "trellis_barley",
               "description": "A trellis of Barley yields from the 1930s, complete with main-effects ordering to facilitate comparison.",
@@ -411,12 +415,12 @@ tags:
                 "color": {"field": "year", "type": "nominal"}
               }
             }
-            let vegaSpec = spec.$schema.includes("vega-lite") ? vegaLite.compile(spec).spec : spec;
-            const runtime = vega.parse(vegaSpec);
-            const vegaRender = document.getElementById('visualizationExample1');
-            let view = new vega.View(runtime)
+            let barleySpec = vegaLite.compile(spec1).spec
+            const barleyRuntime = vega.parse(barleySpec);
+            const barleyRender = document.getElementById('visualizationExample1');
+            let view = new vega.View(barleyRuntime)
                   .logLevel(vega.Warn)
-                  .initialize(vegaRender)
+                  .initialize(barleyRender)
                   .renderer('svg')
                   .hover()
                   .runAsync()
@@ -426,9 +430,38 @@ tags:
                       renderType: "tree",
                       domId: "accessibilityTree1",
                       visObject: val,
-                      visSpec: spec })
+                      visSpec: spec1 })
+                  });
+            var lineSpec = {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "description": "Google's stock price over time.",
+              "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv"},
+              "transform": [{"filter": "datum.symbol==='GOOG'"}],
+              "mark": "line",
+              "encoding": {
+                "x": {"field": "date", "type": "temporal"},
+                "y": {"field": "price", "type": "quantitative"}
+              }
+            }
+            let lineVegaSpec = vegaLite.compile(lineSpec).spec;
+            const lineRuntime = vega.parse(lineVegaSpec);
+            const lineRender = document.getElementById('visualizationExample2');
+            let lineView = new vega.View(lineRuntime)
+                  .logLevel(vega.Warn)
+                  .initialize(lineRender)
+                  .renderer('svg')
+                  .hover()
+                  .runAsync()
+                  .then(val => {
+                    window.createAccessibilityTree({
+                      adapter: "vega-lite",
+                      renderType: "tree",
+                      domId: "accessibilityTree2",
+                      visObject: val,
+                      visSpec: lineSpec })
                   });
           </script>
+        </div>
       </div>
     </figure>
     <div id="S4.p1" class="ltx_para">
