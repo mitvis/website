@@ -14,6 +14,7 @@ authors:
 venue: chi
 year: 2022
 date: 2022-05-06
+doi: 10.1145/3491102.3501965
 award: honMention
 tags:
   - machine learning interpretability
@@ -34,6 +35,12 @@ materials:
     url: http://shared-interest.csail.mit.edu/human-annotation
     type: cube
 videos:
+  - name: 30s Video Preview
+    key: pdVCfENR-sA
+    platform: youtube
+  - name: CHI 2020 Talk
+    key: iDVJqmj8Mlc
+    platform: youtube
   - name: NeurIPS 2020 Demo
     key: -Q_8qTBsKqo
     platform: youtube
