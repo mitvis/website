@@ -402,7 +402,6 @@ tags:
                   "sort": {"op": "median", "field": "yield"}
                 },
                 "x": {
-                  "aggregate": "median",
                   "field": "yield",
                   "type": "quantitative",
                   "scale": {"zero": false}
