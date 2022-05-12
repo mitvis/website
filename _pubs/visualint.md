@@ -18,8 +18,8 @@ tags:
 teaser: 'Examples of VisuaLint for six types of chart construction errors: (a) inexpressive size encodings; (b) dual axis charts with differing scales; (c) perceptually ineffective color encodings; (d) missing legends; and, (e) truncated axes.'
 videos:
   - name: EuroVis 2020 Talk
-    key: '431838603'
-    platform: vimeo
+    key: M05BHF13DSE
+    platform: youtube
 materials:
   - name: Supplementary Material
     url: https://osf.io/jwbn2/
