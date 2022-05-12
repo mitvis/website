@@ -2,8 +2,10 @@
 title: 'Embedding Comparator: Visualizing Differences in Global Structure and Local Neighborhoods via Small Multiples'
 authors:
   - key: aboggust
+    equal: true
   - name: Brandon Carter
     affiliation: MIT CSAIL
+    equal: true
   - key: arvindsatya
 # type: preprint  
 # preprint: 

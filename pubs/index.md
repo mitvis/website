@@ -32,9 +32,9 @@ layout: page
               {% assign person = site.data.people[author.key] %}
               {% assign name = author.name | default:person.name %}
               {% if person.url %}
-                <a href="{{person.url}}">{{name}}</a>{% unless forloop.last %}, {% endunless %}
+                <a href="{{person.url}}">{{name}}</a>{% if author.equal %}*{% endif %}{% unless forloop.last %}, {% endunless %}
               {% else %}
-                {{name}}{% unless forloop.last %}, {% endunless %}
+                {{name}}{% if author.equal %}*{% endif %}{% unless forloop.last %}, {% endunless %}
               {% endif %}
             {% endfor %}
             </p>
