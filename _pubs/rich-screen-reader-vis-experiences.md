@@ -27,7 +27,6 @@ tags:
 videos:
   - name: Video Demo
     key: JSWyT4Ttimw
-    platform: youtube
 materials:
   - name: Supplementary Material
     url: supplementary-material.zip

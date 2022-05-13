@@ -19,7 +19,6 @@ teaser: 'Examples of VisuaLint for six types of chart construction errors: (a) i
 videos:
   - name: EuroVis 2020 Talk
     key: M05BHF13DSE
-    platform: youtube
 materials:
   - name: Supplementary Material
     url: https://osf.io/jwbn2/

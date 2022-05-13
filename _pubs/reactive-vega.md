@@ -24,7 +24,6 @@ teaser: The Reactive Vega dataflow graph created from a declarative specificatio
 videos:
   - name: OpenVis 2016 Talk
     key: Y8Fp9z-9DWc
-    platform: youtube
   - name: InfoVis 2015 Talk
     key: '236171108'
     platform: vimeo

@@ -16,7 +16,6 @@ tags:
 videos:
   - name: VIS 2021 Talk
     key: xowu8EOa6NQ
-    platform: youtube
 materials:
   - name: Supplementary Material
     url: data

@@ -17,7 +17,6 @@ teaser: A state of the <a href="/pubs/beyond-expertise-roles/framework-connectio
 videos:
   - name: CHI 2021 Talk
     key: CGbKmlTzRLI
-    platform: youtube
 materials:
   - name: Interactive Figure of Framework Connections
     url: /pubs/beyond-expertise-roles/framework-connections/

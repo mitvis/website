@@ -21,7 +21,6 @@ award: honMention
 videos:
   - name: CHI 2021 Talk
     key: zVlwJQu8pRo
-    platform: youtube
 materials:
   - name: Interactive Narrative
     url: /covid-story/

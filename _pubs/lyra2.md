@@ -18,7 +18,6 @@ teaser: 'Creating a brush with labeled extents in Lyra 2. (1) A brushing interac
 videos:
   - name: Video Preview
     key: P_xYZrMOmSo
-    platform: youtube
 materials:
   - name: Live Demo
     url: https://vega.github.io/lyra

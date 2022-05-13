@@ -156,8 +156,11 @@
             {% for video in page.videos %}
               <h5>{{video.name}}</h5>
               <div class="video-wrapper">
-                {% if video.platform == 'youtube' %}<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{video.key}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>{% endif %}
-                {% if video.platform == 'vimeo' %}<iframe src="https://player.vimeo.com/video/{{video.key}}" width="640" height="401" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>{% endif %}
+                {% if video.platform == 'vimeo' %}
+                  <iframe src="https://player.vimeo.com/video/{{video.key}}" width="640" height="401" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                {% else %}
+                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{video.key}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                {% endif %}
               </div>
             {% endfor %}
           {% endif %}
