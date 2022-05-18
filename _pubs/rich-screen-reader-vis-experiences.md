@@ -375,17 +375,26 @@ tags:
     longdesc="fig-gallery-longdesc.html">
     <a href="fig-gallery-longdesc.html" class="ltx_align_center longdesc" target="_">Long Description</a>
       <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text">Figure 2</span>: </span><span class="ltx_text">Example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types.</span></figcaption>
-       <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    </figure>
+    <div id="NavigableTree">
+      <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
       <script src="AccessibilityTree.js"></script>
       <link rel="stylesheet" type="text/css" href="ExampleStyles.css" />
       <div id="accessibilityTreeExamples">
-        <div>
+        <p>
+          Below is an example of the a navigable structure of a faceted scatter plot. Underneath the visualization is the navigable tree view. To enter the prototype either press "tab" until the focused on the DOM element, or click the text below the visualization to open the first level of the tree view. Once focused on the prototype, arrow keys can be used to traverse the tree view. Up and down changes which layer is being viewed while Left and right arrows handles the local navigation on adjacent nodes.
+        </p>
         <div id="visualizationExample1"></div>
-        <div id="accessibilityTree1"></div>
-        <div id="visualizationExample2"></div>
-        <div id="accessibilityTree2"></div>
+        <div>
+          <p id="Prototype-Title">
+            Structured Navigation Prototype:
+          </p>
+          <div id="accessibilityTree1"></div>
+        </div>
+        <!-- <div id="visualizationExample2"></div> -->
+        <!-- <div id="accessibilityTree2"></div> -->
           <script type="text/javascript">
             var spec1 = {
               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -431,38 +440,37 @@ tags:
                       visObject: val,
                       visSpec: spec1 })
                   });
-            var lineSpec = {
-              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-              "description": "Google's stock price over time.",
-              "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv"},
-              "transform": [{"filter": "datum.symbol==='GOOG'"}],
-              "mark": "line",
-              "encoding": {
-                "x": {"field": "date", "type": "temporal"},
-                "y": {"field": "price", "type": "quantitative"}
-              }
-            }
-            let lineVegaSpec = vegaLite.compile(lineSpec).spec;
-            const lineRuntime = vega.parse(lineVegaSpec);
-            const lineRender = document.getElementById('visualizationExample2');
-            let lineView = new vega.View(lineRuntime)
-                  .logLevel(vega.Warn)
-                  .initialize(lineRender)
-                  .renderer('svg')
-                  .hover()
-                  .runAsync()
-                  .then(val => {
-                    window.createAccessibilityTree({
-                      adapter: "vega-lite",
-                      renderType: "tree",
-                      domId: "accessibilityTree2",
-                      visObject: val,
-                      visSpec: lineSpec })
-                  });
+            // var lineSpec = {
+            //   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            //   "description": "Google's stock price over time.",
+            //   "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv"},
+            //   "transform": [{"filter": "datum.symbol==='GOOG'"}],
+            //   "mark": "line",
+            //   "encoding": {
+            //     "x": {"field": "date", "type": "temporal"},
+            //     "y": {"field": "price", "type": "quantitative"}
+            //   }
+            // }
+            // let lineVegaSpec = vegaLite.compile(lineSpec).spec;
+            // const lineRuntime = vega.parse(lineVegaSpec);
+            // const lineRender = document.getElementById('visualizationExample2');
+            // let lineView = new vega.View(lineRuntime)
+            //       .logLevel(vega.Warn)
+            //       .initialize(lineRender)
+            //       .renderer('svg')
+            //       .hover()
+            //       .runAsync()
+            //       .then(val => {
+            //         window.createAccessibilityTree({
+            //           adapter: "vega-lite",
+            //           renderType: "tree",
+            //           domId: "accessibilityTree2",
+            //           visObject: val,
+            //           visSpec: lineSpec })
+            //       });
           </script>
         </div>
-      </div>
-    </figure>
+    </div>
     <div id="S4.p1" class="ltx_para">
       <p class="ltx_p">Our co-design process yielded prototypes that demonstrate a breadth of ways to operationalize our design dimensions.
         Figure&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> excerpts some of our highest-fidelity prototypes, implemented on top of Vega-Lite&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib47" title="Vega-Lite: A Grammar of Interactive Graphics" class="ltx_ref">50</a>]</cite>.
