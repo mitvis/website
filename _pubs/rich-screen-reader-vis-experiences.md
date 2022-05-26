@@ -382,21 +382,26 @@ tags:
       <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
       <script src="AccessibilityTree.js"></script>
       <link rel="stylesheet" type="text/css" href="ExampleStyles.css" />
-      <div id="accessibilityTreeExamples">
+      <div id="Accessibility-Tree-Examples">
         <p>
           Below is an example of the a navigable structure of a faceted scatter plot. Underneath the visualization is the navigable tree view. To enter the prototype either press "tab" until the focused on the DOM element, or click the text below the visualization to open the first level of the tree view. Once focused on the prototype, arrow keys can be used to traverse the tree view. Up and down changes which layer is being viewed while Left and right arrows handles the local navigation on adjacent nodes.
         </p>
-        <div id="visualizationExample1"></div>
+        <select id="Spec-Selection" onChange='updateVisualization(this)'>
+          <option value=''></option>
+          <option value='facetedTrellis'>Faceted Trellis Chart</option>
+          <option value='multiSeriesLine'>Multi-Series Line Chart</option>
+          <option value='stackedBar'>Stacked Bar Chart</option>
+        </select>
+        <div id="Visualization-Example"></div>
         <div>
           <p id="Prototype-Title">
             Structured Navigation Prototype:
           </p>
-          <div id="accessibilityTree1"></div>
+          <div id="Accessibility-Tree"></div>
         </div>
-        <!-- <div id="visualizationExample2"></div> -->
-        <!-- <div id="accessibilityTree2"></div> -->
           <script type="text/javascript">
-            var spec1 = {
+          let specArray = [
+            {
               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
               "name": "trellis_barley",
               "description": "A trellis of Barley yields from the 1930s, complete with main-effects ordering to facilitate comparison.",
@@ -422,13 +427,59 @@ tags:
                 },
                 "color": {"field": "year", "type": "nominal"}
               }
+            },
+            {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "description": "Stock prices of 5 Tech Companies over Time.",
+              "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv"},
+              "mark": "line",
+              "encoding": {
+                "x": {"field": "date", "type": "temporal"},
+                "y": {"field": "price", "type": "quantitative"},
+                "color": {"field": "symbol", "type": "nominal"}
+              }
+            },
+            {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "data": { "url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/barley.json" },
+              "mark": "bar",
+              "description": "A horizontally stacked bar chart displaying barley variety and the sum of yeilds among different farm sites.",
+              "encoding": {
+                "x": { "aggregate": "median", "field": "yield" },
+                "y": { "field": "variety" },
+                "color": { "field": "site" }
+              }
             }
-            let barleySpec = vegaLite.compile(spec1).spec
-            const barleyRuntime = vega.parse(barleySpec);
-            const barleyRender = document.getElementById('visualizationExample1');
-            let view = new vega.View(barleyRuntime)
+          ]
+          const updateVisualization = (e) => {
+            let currentTree = document.getElementById('Accessibility-Tree')
+            if (currentTree.firstChild) {
+              currentTree.removeChild(currentTree.firstChild)
+            }
+            let select = document.getElementById('Spec-Selection');
+            let value = select.options[select.selectedIndex].value;
+            let specIndex;
+            switch(value) {
+              case 'facetedTrellis':
+                specIndex = 0;
+                break;
+              case 'multiSeriesLine':
+                specIndex = 1;
+                break;
+              case 'stackedBar':
+                specIndex = 2;
+                break;
+              default:
+                specIndex = -1;
+                break;
+            }
+            if (specIndex > -1) {
+              let spec = vegaLite.compile(specArray[specIndex]).spec
+              const runtime = vega.parse(spec);
+              const render = document.getElementById('Visualization-Example');
+              let view = new vega.View(runtime)
                   .logLevel(vega.Warn)
-                  .initialize(barleyRender)
+                  .initialize(render)
                   .renderer('svg')
                   .hover()
                   .runAsync()
@@ -436,38 +487,12 @@ tags:
                     window.createAccessibilityTree({
                       adapter: "vega-lite",
                       renderType: "tree",
-                      domId: "accessibilityTree1",
+                      domId: "Accessibility-Tree",
                       visObject: val,
-                      visSpec: spec1 })
+                      visSpec: specArray[specIndex] })
                   });
-            // var lineSpec = {
-            //   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-            //   "description": "Google's stock price over time.",
-            //   "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv"},
-            //   "transform": [{"filter": "datum.symbol==='GOOG'"}],
-            //   "mark": "line",
-            //   "encoding": {
-            //     "x": {"field": "date", "type": "temporal"},
-            //     "y": {"field": "price", "type": "quantitative"}
-            //   }
-            // }
-            // let lineVegaSpec = vegaLite.compile(lineSpec).spec;
-            // const lineRuntime = vega.parse(lineVegaSpec);
-            // const lineRender = document.getElementById('visualizationExample2');
-            // let lineView = new vega.View(lineRuntime)
-            //       .logLevel(vega.Warn)
-            //       .initialize(lineRender)
-            //       .renderer('svg')
-            //       .hover()
-            //       .runAsync()
-            //       .then(val => {
-            //         window.createAccessibilityTree({
-            //           adapter: "vega-lite",
-            //           renderType: "tree",
-            //           domId: "accessibilityTree2",
-            //           visObject: val,
-            //           visSpec: lineSpec })
-            //       });
+            }
+          }
           </script>
         </div>
     </div>
