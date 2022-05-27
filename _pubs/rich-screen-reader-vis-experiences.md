@@ -382,9 +382,31 @@ tags:
       <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
       <script src="AccessibilityTree.js"></script>
       <link rel="stylesheet" type="text/css" href="ExampleStyles.css" />
-      <div id="Accessibility-Tree-Examples">
+    <div id="S4.p1" class="ltx_para">
+      <p class="ltx_p">Our co-design process yielded prototypes that demonstrate a breadth of ways to operationalize our design dimensions.
+        Figure&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> excerpts some of our highest-fidelity prototypes, implemented on top of Vega-Lite&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib47" title="Vega-Lite: A Grammar of Interactive Graphics" class="ltx_ref">50</a>]</cite>.
+        As deeply nested structures and dynamic content are not well-supported by ARIA, we implemented our designs as in-memory data structures.
+        Event listeners update the user’s position in the structure on keypress, and write text descriptions to an ARIA-Live region (an ARIA role typically used for temporary notifications).
+        To establish common ground with sighted users, we also render the visualization graphically.
+        The user’s position in the tree drives a Vega-Lite selection that highlights points when the screen reader user is attending to them.
+      </p>
+    </div>
+    <div id="S4.p2" class="ltx_para">
+      <p class="ltx_p">For every prototype, the <span class="ltx_text ltx_font_typewriter">up</span>, <span class="ltx_text ltx_font_typewriter">down</span>, <span class="ltx_text ltx_font_typewriter">left</span>, and <span class="ltx_text ltx_font_typewriter">right</span> arrow keys enable structural navigation (moving up or down a level, or stepping through siblings respectively).
+        For example, within the facet level of Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(a), the user can press <span class="ltx_text ltx_font_typewriter">left</span> or <span class="ltx_text ltx_font_typewriter">right</span> keys to move between the six subplots of the multiview chart.
+        On charts that contain a node representing the x-y grid, users can also use the <span class="ltx_text ltx_font_typewriter">WASD</span> keys to spatially navigate the grid and data points within that branch (mimicking an interaction found in video games).</p>
+    </div>
+    <div id="S4.p3" class="ltx_para">
+      <p class="ltx_p">These prototypes highlight different compositions of structures and navigation schemes.
+        Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(a) includes <span class="ltx_text ltx_font_typewriter">shift+left</span> and <span class="ltx_text ltx_font_typewriter">shift+right</span> for lateral navigation across facets: pressing these keys at any node within a facet branch will navigate to the same location under an adjacent branch (subplot).
+        With the chloropleth (Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(b)), we group data in the encoding structure by U.S. state; users can then drill down into counties across either this branch or the legend one.
+        Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(c) offers two different paths for drilling down: month first, or weather first.
+        Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(d) structures the tree by annotations rather than encoding: users can descend into the time intervals designated by the orange and blue rectangles, and view points within those intervals.
+        Finally, Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(e) organizes its tree in terms of data, offering a binary search structure through the years.</p>
+    </div>
+    <div id="Accessibility-Tree-Examples">
         <p>
-          Below is an example of the a navigable structure of a faceted scatter plot. Underneath the visualization is the navigable tree view. To enter the prototype either press "tab" until the focused on the DOM element, or click the text below the visualization to open the first level of the tree view. Once focused on the prototype, arrow keys can be used to traverse the tree view. Up and down changes which layer is being viewed while Left and right arrows handles the local navigation on adjacent nodes.
+          Below is a dropdown menu of several different specs that will render its respective visualization and navigable tree. Underneath the visualization is the navigable tree view. To enter the prototype either press "t" to automatically focus onto the tree, or click the text below the visualization to open the first level of the tree view. Once focused on the prototype, arrow keys can be used to traverse the tree view. Up and down changes which layer is being viewed while Left and right arrows handles the local navigation on adjacent nodes.
         </p>
         <select id="Spec-Selection" onChange='updateVisualization(this)'>
           <option value=''></option>
@@ -493,30 +515,15 @@ tags:
                   });
             }
           }
+          document.addEventListener('keypress', (keyStroke) => {
+            if (keyStroke.key.toLowerCase() === 't') {
+              if (document.getElementById('treeView') !== null) {
+                document.getElementById('treeView').firstChild.focus()
+              }
+            }
+          })
           </script>
         </div>
-    </div>
-    <div id="S4.p1" class="ltx_para">
-      <p class="ltx_p">Our co-design process yielded prototypes that demonstrate a breadth of ways to operationalize our design dimensions.
-        Figure&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> excerpts some of our highest-fidelity prototypes, implemented on top of Vega-Lite&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib47" title="Vega-Lite: A Grammar of Interactive Graphics" class="ltx_ref">50</a>]</cite>.
-        As deeply nested structures and dynamic content are not well-supported by ARIA, we implemented our designs as in-memory data structures.
-        Event listeners update the user’s position in the structure on keypress, and write text descriptions to an ARIA-Live region (an ARIA role typically used for temporary notifications).
-        To establish common ground with sighted users, we also render the visualization graphically.
-        The user’s position in the tree drives a Vega-Lite selection that highlights points when the screen reader user is attending to them.
-      </p>
-    </div>
-    <div id="S4.p2" class="ltx_para">
-      <p class="ltx_p">For every prototype, the <span class="ltx_text ltx_font_typewriter">up</span>, <span class="ltx_text ltx_font_typewriter">down</span>, <span class="ltx_text ltx_font_typewriter">left</span>, and <span class="ltx_text ltx_font_typewriter">right</span> arrow keys enable structural navigation (moving up or down a level, or stepping through siblings respectively).
-        For example, within the facet level of Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(a), the user can press <span class="ltx_text ltx_font_typewriter">left</span> or <span class="ltx_text ltx_font_typewriter">right</span> keys to move between the six subplots of the multiview chart.
-        On charts that contain a node representing the x-y grid, users can also use the <span class="ltx_text ltx_font_typewriter">WASD</span> keys to spatially navigate the grid and data points within that branch (mimicking an interaction found in video games).</p>
-    </div>
-    <div id="S4.p3" class="ltx_para">
-      <p class="ltx_p">These prototypes highlight different compositions of structures and navigation schemes.
-        Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(a) includes <span class="ltx_text ltx_font_typewriter">shift+left</span> and <span class="ltx_text ltx_font_typewriter">shift+right</span> for lateral navigation across facets: pressing these keys at any node within a facet branch will navigate to the same location under an adjacent branch (subplot).
-        With the chloropleth (Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(b)), we group data in the encoding structure by U.S. state; users can then drill down into counties across either this branch or the legend one.
-        Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(c) offers two different paths for drilling down: month first, or weather first.
-        Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(d) structures the tree by annotations rather than encoding: users can descend into the time intervals designated by the orange and blue rectangles, and view points within those intervals.
-        Finally, Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(e) organizes its tree in terms of data, offering a binary search structure through the years.</p>
     </div>
   </section>
   <section id="S5" class="ltx_section">
