@@ -404,23 +404,23 @@ tags:
         Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(d) structures the tree by annotations rather than encoding: users can descend into the time intervals designated by the orange and blue rectangles, and view points within those intervals.
         Finally, Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(e) organizes its tree in terms of data, offering a binary search structure through the years.</p>
     </div>
-    <div id="Accessibility-Tree-Examples">
+    <div id="Accessibility-Tree-Examples" style="background: #f6f6f6; border: 1px solid #ddd; border-radius: 10px; padding: 0 1em;">
         <p>
-          Below is a dropdown menu of several different specs that will render its respective visualization and navigable tree. Underneath the visualization is the navigable tree view. To enter the prototype either press "t" to automatically focus onto the tree, or click the text below the visualization to open the first level of the tree view. Once focused on the prototype, arrow keys can be used to traverse the tree view. Up and down changes which layer is being viewed while Left and right arrows handles the local navigation on adjacent nodes.
+          These examples are available as interactive prototypes in the <a href="/pubs/rich-screen-reader-vis-experiences/supplementary-material.zip">supplementary material</a>.
+          Here, we preview updates to the implementation and user experience we are working on for a future open source software release.
+          <strong>Note: these previews do not yet demonstrate all the functionality found in our supplementary interactive prototypes.</strong>
+          To begin, press the <span class="ltx_text ltx_font_typewriter">t</span> key to bring focus to the keyboard-navigable tree structure.  
+          Arrow keys can then be used, as described above, to traverse the tree structurally (i.e., <span class="ltx_text ltx_font_typewriter">up</span> and <span class="ltx_text ltx_font_typewriter">down</span> to move between levels, <span class="ltx_text ltx_font_typewriter">left</span> and <span class="ltx_text ltx_font_typewriter">right</span> to move between siblings).
+          You may also switch between example visualizations using the dropdown menu. 
         </p>
-        <select id="Spec-Selection" onChange='updateVisualization(this)'>
-          <option value=''></option>
+        <p>Example: <select id="Spec-Selection" onChange='updateVisualization()'>
           <option value='facetedTrellis'>Faceted Trellis Chart</option>
           <option value='multiSeriesLine'>Multi-Series Line Chart</option>
           <option value='stackedBar'>Stacked Bar Chart</option>
-        </select>
+        </select></p>
         <div id="Visualization-Example"></div>
-        <div>
-          <p id="Prototype-Title">
-            Structured Navigation Prototype:
-          </p>
-          <div id="Accessibility-Tree"></div>
-        </div>
+        <p>Accessible Tree:</p>
+        <div id="Accessibility-Tree"></div>
           <script type="text/javascript">
           let specArray = [
             {
@@ -478,42 +478,24 @@ tags:
             if (currentTree.firstChild) {
               currentTree.removeChild(currentTree.firstChild)
             }
-            let select = document.getElementById('Spec-Selection');
-            let value = select.options[select.selectedIndex].value;
-            let specIndex;
-            switch(value) {
-              case 'facetedTrellis':
-                specIndex = 0;
-                break;
-              case 'multiSeriesLine':
-                specIndex = 1;
-                break;
-              case 'stackedBar':
-                specIndex = 2;
-                break;
-              default:
-                specIndex = -1;
-                break;
-            }
-            if (specIndex > -1) {
-              let spec = vegaLite.compile(specArray[specIndex]).spec
-              const runtime = vega.parse(spec);
-              const render = document.getElementById('Visualization-Example');
-              let view = new vega.View(runtime)
-                  .logLevel(vega.Warn)
-                  .initialize(render)
-                  .renderer('svg')
-                  .hover()
-                  .runAsync()
-                  .then(val => {
-                    window.createAccessibilityTree({
-                      adapter: "vega-lite",
-                      renderType: "tree",
-                      domId: "Accessibility-Tree",
-                      visObject: val,
-                      visSpec: specArray[specIndex] })
-                  });
-            }
+            let specIndex = document.getElementById('Spec-Selection').selectedIndex;
+            let spec = vegaLite.compile(specArray[specIndex]).spec
+            const runtime = vega.parse(spec);
+            const render = document.getElementById('Visualization-Example');
+            let view = new vega.View(runtime)
+                .logLevel(vega.Warn)
+                .initialize(render)
+                .renderer('canvas') // Render as an image to not pollute DOM with elements that the screen reader needs to traverse first.
+                .hover()
+                .runAsync()
+                .then(val => {
+                  window.createAccessibilityTree({
+                    adapter: "vega-lite",
+                    renderType: "tree",
+                    domId: "Accessibility-Tree",
+                    visObject: val,
+                    visSpec: specArray[specIndex] })
+                });
           }
           document.addEventListener('keypress', (keyStroke) => {
             if (keyStroke.key.toLowerCase() === 't') {
@@ -522,6 +504,7 @@ tags:
               }
             }
           })
+          window.addEventListener('DOMContentLoaded', () => updateVisualization());
           </script>
         </div>
     </div>
