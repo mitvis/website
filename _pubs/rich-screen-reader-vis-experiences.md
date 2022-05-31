@@ -29,7 +29,7 @@ videos:
     key: JSWyT4Ttimw
 materials:
   - name: Supplementary Material
-    url: supplementary-material.zip
+    url: /pubs/rich-screen-reader-vis-experiences/supplementary-material.zip
     type: file
 ---
 <article>

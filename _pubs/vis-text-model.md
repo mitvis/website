@@ -18,7 +18,7 @@ videos:
     key: xowu8EOa6NQ
 materials:
   - name: Supplementary Material
-    url: data
+    url: /pubs/vis-text-model/data
     type: file
 ---
 <style>
