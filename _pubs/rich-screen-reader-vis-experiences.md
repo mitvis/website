@@ -387,6 +387,12 @@ materials:
     <a href="fig-gallery-longdesc.html" class="ltx_align_center longdesc" target="_">Long Description</a>
       <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text">Figure 2</span>: </span><span class="ltx_text">Example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types.</span></figcaption>
     </figure>
+    <div id="NavigableTree">
+      <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      <script src="AccessibilityTree.js"></script>
+      <link rel="stylesheet" type="text/css" href="ExampleStyles.css" />
     <div id="S4.p1" class="ltx_para">
       <p class="ltx_p">Our co-design process yielded prototypes that demonstrate a breadth of ways to operationalize our design dimensions.
         Figure&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> excerpts some of our highest-fidelity prototypes, implemented on top of Vega-Lite&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib47" title="Vega-Lite: A Grammar of Interactive Graphics" class="ltx_ref">50</a>]</cite>.
@@ -408,6 +414,110 @@ materials:
         Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(c) offers two different paths for drilling down: month first, or weather first.
         Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(d) structures the tree by annotations rather than encoding: users can descend into the time intervals designated by the orange and blue rectangles, and view points within those intervals.
         Finally, Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(e) organizes its tree in terms of data, offering a binary search structure through the years.</p>
+    </div>
+    <div id="Accessibility-Tree-Examples" style="background: #f6f6f6; border: 1px solid #ddd; border-radius: 10px; padding: 0 1em;">
+        <p>
+          These examples are available as interactive prototypes in the <a href="/pubs/rich-screen-reader-vis-experiences/supplementary-material.zip">supplementary material</a>.
+          Here, we preview updates to the implementation and user experience we are working on for a future open source software release.
+          <strong>Note: these previews do not yet demonstrate all the functionality found in our supplementary interactive prototypes.</strong>
+          To begin, press the <span class="ltx_text ltx_font_typewriter">t</span> key to bring focus to the keyboard-navigable tree structure.  
+          Arrow keys can then be used, as described above, to traverse the tree structurally (i.e., <span class="ltx_text ltx_font_typewriter">up</span> and <span class="ltx_text ltx_font_typewriter">down</span> to move between levels, <span class="ltx_text ltx_font_typewriter">left</span> and <span class="ltx_text ltx_font_typewriter">right</span> to move between siblings).
+          You may also switch between example visualizations using the dropdown menu. 
+        </p>
+        <p>Example: <select id="Spec-Selection" onChange='updateVisualization()'>
+          <option value='facetedTrellis'>Faceted Trellis Chart</option>
+          <option value='multiSeriesLine'>Multi-Series Line Chart</option>
+          <option value='stackedBar'>Stacked Bar Chart</option>
+        </select></p>
+        <div id="Visualization-Example"></div>
+        <p>Accessible Tree:</p>
+        <div id="Accessibility-Tree"></div>
+          <script type="text/javascript">
+          let specArray = [
+            {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "name": "trellis_barley",
+              "description": "A trellis of Barley yields from the 1930s, complete with main-effects ordering to facilitate comparison.",
+              "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/barley.json"},
+              "mark": "point",
+              "height": {"step": 12},
+              "encoding": {
+                "facet": {
+                  "field": "site",
+                  "type": "ordinal",
+                  "columns": 2,
+                  "sort": {"op": "median", "field": "yield"}
+                },
+                "x": {
+                  "field": "yield",
+                  "type": "quantitative",
+                  "scale": {"zero": false}
+                },
+                "y": {
+                  "field": "variety",
+                  "type": "ordinal",
+                  "sort": "-x"
+                },
+                "color": {"field": "year", "type": "nominal"}
+              }
+            },
+            {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "description": "Stock prices of 5 Tech Companies over Time.",
+              "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv"},
+              "mark": "line",
+              "encoding": {
+                "x": {"field": "date", "type": "temporal"},
+                "y": {"field": "price", "type": "quantitative"},
+                "color": {"field": "symbol", "type": "nominal"}
+              }
+            },
+            {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "data": { "url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/barley.json" },
+              "mark": "bar",
+              "description": "A horizontally stacked bar chart displaying barley variety and the sum of yeilds among different farm sites.",
+              "encoding": {
+                "x": { "aggregate": "median", "field": "yield" },
+                "y": { "field": "variety" },
+                "color": { "field": "site" }
+              }
+            }
+          ]
+          const updateVisualization = (e) => {
+            let currentTree = document.getElementById('Accessibility-Tree')
+            if (currentTree.firstChild) {
+              currentTree.removeChild(currentTree.firstChild)
+            }
+            let specIndex = document.getElementById('Spec-Selection').selectedIndex;
+            let spec = vegaLite.compile(specArray[specIndex]).spec
+            const runtime = vega.parse(spec);
+            const render = document.getElementById('Visualization-Example');
+            let view = new vega.View(runtime)
+                .logLevel(vega.Warn)
+                .initialize(render)
+                .renderer('canvas') // Render as an image to not pollute DOM with elements that the screen reader needs to traverse first.
+                .hover()
+                .runAsync()
+                .then(val => {
+                  window.createAccessibilityTree({
+                    adapter: "vega-lite",
+                    renderType: "tree",
+                    domId: "Accessibility-Tree",
+                    visObject: val,
+                    visSpec: specArray[specIndex] })
+                });
+          }
+          document.addEventListener('keypress', (keyStroke) => {
+            if (keyStroke.key.toLowerCase() === 't') {
+              if (document.getElementById('treeView') !== null) {
+                document.getElementById('treeView').firstChild.focus()
+              }
+            }
+          })
+          window.addEventListener('DOMContentLoaded', () => updateVisualization());
+          </script>
+        </div>
     </div>
   </section>
   <section id="S5" class="ltx_section">
