@@ -31,7 +31,6 @@ videos:
     platform: vimeo
   - name: OpenVis 2017 Talk
     key: 9uaHRWj04D4
-    platform: youtube
 materials:
   - name: Project
     url: https://vega.github.io/vega-lite

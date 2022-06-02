@@ -2,8 +2,10 @@
 title: 'Embedding Comparator: Visualizing Differences in Global Structure and Local Neighborhoods via Small Multiples'
 authors:
   - key: aboggust
+    equal: true
   - name: Brandon Carter
     affiliation: MIT CSAIL
+    equal: true
   - key: arvindsatya
 # type: preprint  
 # preprint: 
@@ -13,6 +15,7 @@ authors:
 venue: iui
 year: 2022
 date: 2022-03-22
+doi: 10.1145/3490099.3511122
 award: honMention
 tags:
   - interface
@@ -28,7 +31,6 @@ materials:
 videos:
   - name: IUI 2022 Talk
     key: UU5LAxF8-7Q
-    platform: youtube
 teaser: >
   The Embedding Comparator (left) facilitates comparisons of embedding spaces via _local neighborhood dominoes_: small multiple visualizations depicting local substructures (right).
 ---

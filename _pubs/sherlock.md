@@ -27,7 +27,6 @@ teaser: Data processing and analysis flow, starting from (1) a corpus of real-wo
 videos:
   - name: Video Preview
     key: vUPnez9ZFIA
-    platform: youtube
 materials:
   - name: Code
     url: https://github.com/madelonhulsebos/sherlock

@@ -21,7 +21,6 @@ videos:
     platform: vimeo
   - name: OpenVis 2014 Talk
     key: io7BSu6RIYM
-    platform: youtube
 materials:
   - name: Application
     url: http://idl.cs.washington.edu/projects/lyra/

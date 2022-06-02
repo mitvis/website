@@ -14,6 +14,7 @@ authors:
 venue: chi
 year: 2022
 date: 2022-05-06
+doi: 10.1145/3491102.3501965
 award: honMention
 tags:
   - machine learning interpretability
@@ -34,8 +35,11 @@ materials:
     url: http://shared-interest.csail.mit.edu/human-annotation
     type: cube
 videos:
+  - name: 30s Video Preview
+    key: pdVCfENR-sA
+  - name: CHI 2020 Talk
+    key: iDVJqmj8Mlc
   - name: NeurIPS 2020 Demo
     key: -Q_8qTBsKqo
-    platform: youtube
 ---
 Saliency methods—techniques to identify the importance of input features on a model's output—are a common step in understanding neural network behavior. However, interpreting saliency requires tedious manual inspection to identify and aggregate patterns in model behavior, resulting in ad hoc or cherry-picked analysis. To address these concerns, we present Shared Interest: metrics for comparing model reasoning (via saliency) to human reasoning (via ground truth annotations). By providing quantitative descriptors, Shared Interest enables ranking, sorting, and aggregating inputs, thereby facilitating large-scale systematic analysis of model behavior. We use Shared Interest to identify eight recurring patterns in model behavior, such as cases where contextual features or a subset of ground truth features are most important to the model. Working with representative real-world users, we show how Shared Interest can be used to decide if a model is trustworthy, uncover issues missed in manual analyses, and enable interactive probing. 

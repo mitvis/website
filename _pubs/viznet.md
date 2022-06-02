@@ -34,7 +34,6 @@ teaser: VizNet enables data scientists and visualization researchers to aggregat
 videos:
   - name: Video Preview
     key: s7vKysUvQuI
-    platform: youtube
 materials:
   - name: Code
     url: https://github.com/mitmedialab/viznet

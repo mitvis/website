@@ -9,17 +9,28 @@ authors:
   - key: lundgard
     equal: true
   - name: JiWoong Jang
+    affiliation: Carnegie Mellon University
   - name: Daniel Hajas
+    affiliation: Global Disability Innovation Hub
+    url: https://www.disabilityinnovation.com/who-we-are/our-team/daniel-hajas
   - key: arvindsatya
 venue: eurovis
 year: 2022
 date: 2022-06-13
+award: honMention
 tags:
   - visualization design
   - interaction design
   - interface
   - accessibility
   - mixed methods
+videos:
+  - name: Video Demo
+    key: JSWyT4Ttimw
+materials:
+  - name: Supplementary Material
+    url: /pubs/rich-screen-reader-vis-experiences/supplementary-material.zip
+    type: file
 ---
 <article>
   <section class="ltx_abstract" id="abstract">
