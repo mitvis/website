@@ -418,7 +418,13 @@ materials:
     <div id="Accessibility-Tree-Examples" style="background: #f6f6f6; border: 1px solid #ddd; border-radius: 10px; padding: 0 1em;">
         <p>
           The examples shown in Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> are available as interactive prototypes in the <a href="/pubs/rich-screen-reader-vis-experiences/supplementary-material.zip">supplementary material</a>.
-          Here, we preview updates to the implementation and user experience we are working on for a future open source software release, led by <a href="https://mattblanco.me/">Matt Blanco</a>.
+          The video below, narrated by Hajas, demonstrates how hierarchical structures and keyboard navigation works in practice.
+        </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JSWyT4Ttimw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>
+          Finally, we preview updates to the implementation and user experience we are working on for a future open source software release, led by <a href="https://mattblanco.me/">Matt Blanco</a>.
           <strong>Note: these previews do not yet demonstrate all the functionality found in our supplementary interactive prototypes.</strong>
           To begin, press the <span class="ltx_text ltx_font_typewriter">t</span> key to bring focus to the keyboard-navigable tree structure.  
           Arrow keys can then be used, as described above, to traverse the tree structurally (i.e., <span class="ltx_text ltx_font_typewriter">up</span> and <span class="ltx_text ltx_font_typewriter">down</span> to move between levels, <span class="ltx_text ltx_font_typewriter">left</span> and <span class="ltx_text ltx_font_typewriter">right</span> to move between siblings).
