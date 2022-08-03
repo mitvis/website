@@ -1,7 +1,8 @@
 ---
 title: 'VisuaLint: Sketchy In Situ Annotations of Chart Construction Errors'
 authors:
-  - key: dataspen
+  - name: Aspen Hopkins
+    affiliation: MIT CSAIL
   - name: Michael Correll
     url: https://correll.io
     affiliation: Tableau Research

@@ -14,14 +14,10 @@ nathalie_vladis:
   alumni: true
 
 # PhDs
-dataspen:
-  name: Aspen Hopkins
-  url: http://aspenhopkins.com
-  title: PhD Researcher
 lundgard:
   name: Alan Lundgard
   url: https://alanlundgard.com/
-  title: PhD Researcher
+  title: PhD Researcher (On Leave)
 jzong:
   name: Jonathan Zong
   url: http://jonathanzong.com/
@@ -84,10 +80,12 @@ annieb22:
   name: Annie Bryan
   title: Undergraduate Researcher
   url: https://anniebryan.github.io
+  alumni: true
 tiffc:
   name: Tiffany Chen
   title: Undergraduate Researcher
   url: http://tiffanychenn.me/
+  alumni: true
 ksiyoung:
   name: Siyoung Kim
   title: Undergraduate Researcher
@@ -154,3 +152,4 @@ peck:
   name: Evan Peck
   title: Visiting Scientist
   url: http://www.eg.bucknell.edu/~emp017
+  alumni: true

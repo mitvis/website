@@ -3,7 +3,8 @@ title: 'Data Crafting: Exploring Data through Craft and Play'
 authors:
   - key: nathalie_vladis
     affiliation: Harvard Medical School
-  - key: dataspen
+  - name: Aspen Hopkins
+    affiliation: MIT CSAIL
   - key: arvindsatya
 type: workshop
 venue: visactivities
