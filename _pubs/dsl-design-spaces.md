@@ -3,8 +3,7 @@ title: 'Design Spaces of Domain-Specific Languages: Comparing and Contrasting Ap
 authors:
   - key: jzong
     equal: true
-  - name: Josh Pollock
-    affiliation: MIT CSAIL
+  - key: jopo
     equal: true
   - key: dwootton
   - key: arvindsatya
