@@ -1,7 +1,7 @@
 - key: tools
   name: Visualization Design Tools
   url: /pubs/#tag=visualization-design
-  people: arvindsatya, jzong, allenlee, dhiraj, rneogy, ktbacher, esefah, dwootton
+  people: arvindsatya, jzong, allenlee, dhiraj, rneogy, ktbacher, esefah, dwootton, meic1212
   desc: >
     We develop [languages](/pubs/#tag=language&tag=visualization-design), [systems](/pubs/#tag=system&tag=visualization-design), and [interfaces](/pubs/#tag=interface&tag=visualization-design) for creating common and custom interactive visualizations.
 - key: interpretability
