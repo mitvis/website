@@ -8,9 +8,9 @@ authors:
     equal: true
   - key: dwootton
   - key: arvindsatya
-type: workshop
-venue: plateau
-year: 2022
+venue: vis-full
+year: 2023
+date: 2023-01-02
 tags:
   - language
   - visualization design
