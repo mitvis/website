@@ -18,6 +18,7 @@ lundgard:
   name: Alan Lundgard
   url: https://alanlundgard.com/
   title: PhD Researcher (On Leave)
+  alumni: true
 jzong:
   name: Jonathan Zong
   url: http://jonathanzong.com/
@@ -26,6 +27,7 @@ crystall:
   name: Crystal Lee
   url: http://web.mit.edu/crystall/www/
   title: PhD Researcher
+  alumni: true
 hsuresh:
   name: Harini Suresh
   url: http://harinisuresh.com
@@ -83,6 +85,7 @@ mattblanco:
   name: Matt Blanco
   title: Undergraduate Researcher
   url: https://mattblanco.me
+  alumni: true
 meic1212:
   name: Catherine Mei
   title: Undergraduate Researcher
@@ -132,6 +135,9 @@ allenlee:
   url: https://allenjlee.github.io
   title: Undergraduate Researcher
   alumni: true
+gracefh:
+  name: Grace Huang
+  title: Undergraduate Researcher
 
 # Interns
 jwjang:
