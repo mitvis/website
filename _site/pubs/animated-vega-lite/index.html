@@ -5,6 +5,36 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154350780-1"></script>
     <script>
+        function goToAnimation(example) {
+            console.log('going to ', example)
+            let src = "";
+
+            switch (example) {
+                case 'interactiveGapminder':
+                    //Statements executed when the
+                    //result of expression matches value2
+                case 'racingBarChart':
+                    src = "https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6IgcwEt8oA6CqTRAI0XwFNkBjAewDspW+1bgFsiAK17RMEHgC9epIgFYAZgBYVEAMwA2VgA4OAJg5gADGp1aAnIw5KlZpWrNGdasBx1FkEAO5EKhwcAIysOtYhOgDsRvrWrGqsWhzR+oz6EPo6EKxGSukhasH6WhBGYEQc0KykXMgAngC0jL48YPhC+ABuIAC+ADQgAtxg5Dyk8KDcqPVTICrkrKhgGNX8dY0gQ6i1AqsIIFwqKmxQ8PpmfYMgAB7zi8sHIN0QqIis2yBQDbifcCAAI6IGRQcgwMHdT43BoPJYrDA8CDCT5DH5-RFcYTjN5ffD1c6HR4IgGvd6oo7IMDsDDU-AcfbjSY3CC3SjwTSoNg3MEouFPWk1PHVXbzdH-ECMGSrIZtUj-ADaZgGITMarMAF0bgBrViwonw55Ivk3ZCselvf5QZAfa47CANGlwBWgYQQZDajBS5D9Aau92ew7ijD8W7nIZvcikHgYXYqcOSiBsVDjCVQLi4L5ge5wLRDMD6tQ3EZcMYTMWsMP8kkgY3Q65aoA";
+                    //Statements executed when the
+                    //result of expression matches valueN
+                    //Statements executed when none of
+                    //the values match the value of the expression
+                default:
+                    src = 'https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB4J5hj1PCgPKjcyEEgAGa0bKhgGDyI-MgAnrYOAB4R0bHxcFEcULSo9GkOUCm4bBgAjogQ-PTQtJLpIGkIUTFxGCWRbAD6bBlVnF7lldX5dQ1FMEWt9iBFIlOgOT35KWwQ4Q7ObB3r3XkgiclpNlc2QA'
+            }
+
+
+            // iframe must be removed and then readded with updated src as otherwise the new spec doesn't update
+            document.getElementById("vega-lite-animated-editor-iframe").remove();
+            const iframe = document.createElement("iframe");
+            iframe.id = "vega-lite-animated-editor-iframe"
+            iframe.src = src;
+            iframe.width = '100%';
+            iframe.height = '700px'
+            document.getElementById("vega-lite-animated-editor-section").appendChild(iframe);
+        }
+    </script>
+    <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -339,8 +369,8 @@
                                 existing animation grammars. These reflections highlight the key motivating role of in-the-wild examples, and identify three central tradeoffs: the language design process, the types of animated transitions supported, and
                                 how the systems model keyframes.</p>
                         </section>
-                        <section class="ltx_abstract" id="vega-lite-animated-editor">
-                            <iframe width="100%" height="700px" src="https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGJwoyIJQAPoAZv6RDuyobJxeCCBQAJ64kXAg7p7eINbFULQRyLYOTMZg8KDGuIjZIGS81KmOxvAAjACcAKyjDhoAHvAATAAM8xMgWmy48KM2NgC6DlDd+IncyCLBoIm0qNotJX7hUTFxSSm2Ow6CPGDG1Dc8qMc3C5sVDNYo8RD8ZB5eogGY5IEgjCJDjVVD0aF7ApFEAAR0QEH49GgtEkMOh8NowNBIDRyPibCmhSy5XyhQweIJ1Rg1VJ9lyNSK50piOKeTYfnK+E4EAyN26vWC8zso0W822fOcbHJQqpUW4EP20K2WyAA"></iframe>
+                        <section class="ltx_abstract" id="vega-lite-animated-editor-section">
+                            <iframe id="vega-lite-animated-editor-iframe" width="100%" height="700px" src="https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGJwoyIJQAPoAZv6RDuyobJxeCCBQAJ64kXAg7p7eINbFULQRyLYOTMZg8KDGuIjZIGS81KmOxvAAjACcAKyjDhoAHvAATAAM8xMgWmy48KM2NgC6DlDd+IncyCLBoIm0qNotJX7hUTFxSSm2Ow6CPGDG1Dc8qMc3C5sVDNYo8RD8ZB5eogGY5IEgjCJDjVVD0aF7ApFEAAR0QEH49GgtEkMOh8NowNBIDRyPibCmhSy5XyhQweIJ1Rg1VJ9lyNSK50piOKeTYfnK+E4EAyN26vWC8zso0W822fOcbHJQqpUW4EP20K2WyAA"></iframe>
                         </section>
                         <section id="S1" class="ltx_section">
                             <h2 class="ltx_title ltx_title_section" id="H-S1">
@@ -612,7 +642,7 @@
                                         To visually distinguish the current day’s points, she also elaborates the time encoding into an explicit selection called <span class="ltx_text ltx_font_typewriter">current_frame</span> and uses it to drive a conditional
                                         opacity encoding. She renders current points at full opacity while rendering the trailing points at less opacity.</p>
                                 </div>
-                                <figure id="S3.F2" class="ltx_figure"><img src="x17.png" id="S3.F2.g1" class="ltx_graphics ltx_centering" width="1026" height="288" alt="Animated Vega-Lite specification of the influential Gapminder animation " />
+                                <figure id="S3.F2" onClick='goToAnimation("")' class="ltx_figure"><img src="x17.png" id="S3.F2.g1" class="ltx_graphics ltx_centering" width="1026" height="288" alt="Animated Vega-Lite specification of the influential Gapminder animation " />
                                     <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Animated Vega-Lite specification of the influential Gapminder animation <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib43" title="The best stats you’ve ever seen" class="ltx_ref">34</a>]</cite>.
                                         (A) A minimal specification using only time encoding. (B) The same specification elaborated to show default encoding properties and a default selection. (C) Selected keyframes from the resulting animation.</figcaption>
                                 </figure>
