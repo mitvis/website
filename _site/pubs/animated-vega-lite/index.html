@@ -10,6 +10,9 @@
             let src = "";
 
             switch (example) {
+                case 'dunkin':
+                    src = 'https://jonathanzong.github.io/editor/#/url/vega-lite/N4Ig7glgJgLgFiAXAVgAyoDQjgUwgczhiQGZ0sAjAQwGMBrfAJwHsBXAOyiRAGIT+QWKFRhUkoVowA23IjAAOAZ0QB6FfgiKYAOg3xWFVopyMazdjBwXtZgLYqoYZsxgxzKqiRqoATDlQAZgCMAOyoUKgUABwALABsJFH+QTE0CVBBAQCcqFEqjFRgKnFUWWgxtCHUUSFRwTVZWTh+JCFtNFQhcXE4MWUkUFA0Dhx0EOyKAPrszJM+MZNwjDaKAG4gAL5YMAUTAcyMtkgA2qAdUjSsUiI43G4Acqy2FCYAFMIwT9rM8laTHzgYBBbDgAJSCEBURTcH5-AFAkGbDBnKgXK43O7MR7PN4fL40KTMYxQf43BFgiFQ7gEok4Enw4G3DYAXSw8hYACscDQgeZxCAYABPX7cVEvRiKACqijEWxA8ioBVs0MQpxA7CoiMQIFh7H+o2hWGMUm5xEQoCFIu18mY42IWD52vJjAh7LpEA6ln5VE4J1AAQgOCkXG1utJlnJEKkXvNIBwAA92aL2MDJqtUawmVt-YHg9TCcTw4DGRD8GbQAmk9qfan01JM5sWRtm6yQLZFXRqRBTCaIVYzFBxvh+YT2HpWFBbrGA0GQyBR+PJxDLVOQABHVg+oGiIGrJlYa7bidTnOz7iHiCfJfbYWrjdby8iCB7pEgMyEl2xsycS8QR2gBUlRhX49SgA0ITrBttUFINCTAV9INXJgcEFV9I2nXM5zDBlESNc4TwFW9z3GHBFQhKBmHbcYTiCBJ5mQOJ0EwWiSB8ZAYlQRjUFbXZ8CnY5mKY7jm2bIA'
+                    break;
                 case 'interactiveGapminder':
                     //Statements executed when the
                     //result of expression matches value2
@@ -19,6 +22,7 @@
                     //result of expression matches valueN
                     //Statements executed when none of
                     //the values match the value of the expression
+                    break;
                 default:
                     src = 'https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB4J5hj1PCgPKjcyEEgAGa0bKhgGDyI-MgAnrYOAB4R0bHxcFEcULSo9GkOUCm4bBgAjogQ-PTQtJLpIGkIUTFxGCWRbAD6bBlVnF7lldX5dQ1FMEWt9iBFIlOgOT35KWwQ4Q7ObB3r3XkgiclpNlc2QA'
             }
@@ -732,7 +736,7 @@
                                             a field that has values that are evenly spaced in the desired domain. So, with a default scale domain, the animation would appear to jump between time stamps rather than move through them smoothly. To achieve
                                             the desired behavior, the user instead specifies a custom domain representing the continuous interval between 00:00 and 23:30.</p>
                                     </div>
-                                    <figure id="S4.F3" class="ltx_figure"><img src="x18.png" id="S4.F3.g1" class="ltx_graphics ltx_centering" width="1081" height="592" alt="Animation of Dunkin’ Donuts stores’ opening and closing times. With a custom domain and predicate, the animation advances through 24 hours at a constant rate and conditionally colors each store if the current time is between the store’s open and close times."
+                                    <figure id="S4.F3" onClick='goToAnimation("dunkin")' style="cursor:pointer" class="ltx_figure"><img src="x18.png" id="S4.F3.g1" class="ltx_graphics ltx_centering" width="1081" height="592" alt="Animation of Dunkin’ Donuts stores’ opening and closing times. With a custom domain and predicate, the animation advances through 24 hours at a constant rate and conditionally colors each store if the current time is between the store’s open and close times."
                                         />
                                         <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3: </span>Animation of Dunkin’ Donuts stores’ opening and closing times. With a custom domain and predicate, the animation advances through 24 hours at a constant rate
                                             and conditionally colors each store if the current time is between the store’s open and close times.</figcaption>
@@ -757,7 +761,7 @@
                                             the ordering of the top-ranked bars salient.
                                         </p>
                                     </div>
-                                    <figure id="S4.F4" class="ltx_figure"><img src="x19.png" id="S4.F4.g1" class="ltx_graphics ltx_centering" width="1026" height="224" alt="Demonstration of the " />
+                                    <figure onclick="goToAnimation('racingBarChart')" style="cursor:pointer" id="S4.F4" class="ltx_figure"><img src="x19.png" id="S4.F4.g1" class="ltx_graphics ltx_centering" width="1026" height="224" alt="Demonstration of the " />
                                         <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 4: </span>Demonstration of the
                                             <emph class="ltx_text ltx_font_italic">rescale</emph> time encoding property recreating a D3 bar chart race example&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib64" title="Bar Chart Race, Explained" class="ltx_ref">27</a>]</cite>.
                                             (A) <span class="ltx_text ltx_font_typewriter">rescale</span> is <span class="ltx_text ltx_font_typewriter">true</span>: the viewport is recalculated on each keyframe. (B) <span class="ltx_text ltx_font_typewriter">rescale</span>                                            is <span class="ltx_text ltx_font_typewriter">false</span>: the viewport is calculated on the whole dataset, and does not update with the selection.</figcaption>
