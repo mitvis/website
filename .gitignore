@@ -1,4 +1,4 @@
-_site
+_site/
 _scripts/out
 .sass-cache
 .jekyll-cache
