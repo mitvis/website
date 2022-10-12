@@ -1,6 +1,6 @@
 ---
 stub: false
-title: 'Animated Vega-Lite: Unifying Animation with a Grammar of Interactive Graphics'
+title: "Animated Vega-Lite: Unifying Animation with a Grammar of Interactive Graphics"
 authors:
   - key: jzong
     equal: true
@@ -17,6 +17,19 @@ tags:
   - interaction design
   - qualitative methods
 ---
+
+<style>
+  #vega-lite-animated-editor-gallery-section img {
+    cursor: pointer;
+    height: 100px;
+    border: 1px solid black;
+    margin-right: 5px;
+  }
+  #vega-lite-animated-editor-gallery-section img:hover {
+    border: 1px solid #CC5200;
+  }
+</style>
+
 <article>
   <section class="ltx_abstract" id="abstract">
     <h2 class="ltx_title ltx_title_abstract" id="H-abstract">Abstract</h2>
@@ -27,6 +40,23 @@ tags:
       We also critically reflect on the conceptual affordances and limitations of our contribution by interviewing five expert developers of existing animation grammars.
       These reflections highlight the key motivating role of in-the-wild examples, and identify three central tradeoffs: the language design process, the types of animated transitions supported, and how the systems model keyframes.</p>
   </section>
+
+  <section id="vega-lite-animated-editor-section">
+    <div id="vega-lite-animated-editor-loading" style="display: none">Loading...</div>
+    <iframe id="vega-lite-animated-editor-iframe" width="100%" height="750px" src="https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGJwoyIJQAPoAZv6RDuyobJxeCCBQAJ64kXAg7p7eINbFULQRyLYOTMZg8KDGuIjZIGS81KmOxvAAjACcAKyjDhoAHvAATAAM8xMgWmy48KM2NgC6DlDd+IncyCLBoIm0qNotJX7hUTFxSSm2Ow6CPGDG1Dc8qMc3C5sVDNYo8RD8ZB5eogGY5IEgjCJDjVVD0aF7ApFEAAR0QEH49GgtEkMOh8NowNBIDRyPibCmhSy5XyhQweIJ1Rg1VJ9lyNSK50piOKeTYfnK+E4EAyN26vWC8zso0W822fOcbHJQqpUW4EP20K2WyAA"></iframe>
+  </section>
+  <section id="vega-lite-animated-editor-gallery-section">
+    <img src="gifs/bar.gif" onclick="goToAnimation('bar')" />
+    <img src="gifs/birds.gif" onclick="goToAnimation('birds')" />
+    <img src="gifs/bump.gif" onclick="goToAnimation('bump')" />
+    <img src="gifs/connected.gif" onclick="goToAnimation('connected')" />
+    <img src="gifs/dunkin.gif" onclick="goToAnimation('dunkin')" />
+    <img src="gifs/gapminder.gif" onclick="goToAnimation('gapminder')" />
+    <img src="gifs/hop.gif" onclick="goToAnimation('hop')" />
+    <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
+    <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
+  </section>
+
   <section id="S1" class="ltx_section">
     <h2 class="ltx_title ltx_title_section" id="H-S1">
       <span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
@@ -534,7 +564,7 @@ tags:
   <section id="S6" class="ltx_section">
     <h2 class="ltx_title ltx_title_section" id="H-S6">
       <span class="ltx_tag ltx_tag_section">6 </span>Evaluation: Example Gallery</h2>
-    <figure id="S6.F5" class="ltx_figure"><img src="" id="S6.F5.g1" class="ltx_graphics ltx_centering" alt="Animated Vega-Lite examples demonstrating coverage over interaction and animation taxonomies ">
+    <figure id="S6.F5" class="ltx_figure"><img src="example-gallery-1-1.png" id="S6.F5.g1" class="ltx_graphics ltx_centering" alt="Animated Vega-Lite examples demonstrating coverage over interaction and animation taxonomies ">
       <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 5: </span>Animated Vega-Lite examples demonstrating coverage over interaction and animation taxonomies <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib9" title="Toward a Deeper Understanding of the Role of Interaction in Information Visualization" class="ltx_ref">51</a>, <a href="#bib.bib5" title="Animated Transitions in Statistical Data Graphics" class="ltx_ref">11</a>]</cite> (see <a href="#S4.F4" title="Figure 4 ‣ 4.1.3 Re-scale ‣ 4.1 Time Encoding Channel ‣ 4 A Grammar of Animation in Vega-Lite ‣ Animated Vega-Lite: Unifying Animation with a Grammar of Interactive Graphics" class="ltx_ref ltx_refmacro_autoref"><span class="ltx_text ltx_ref_tag">Figure&nbsp;4</span></a> for an example <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#FFFFCC;">substrate transform</emph> and <a href="#S4.F3" title="Figure 3 ‣ 4.1.2 Time Scale ‣ 4.1 Time Encoding Channel ‣ 4 A Grammar of Animation in Vega-Lite ‣ Animated Vega-Lite: Unifying Animation with a Grammar of Interactive Graphics" class="ltx_ref ltx_refmacro_autoref"><span class="ltx_text ltx_ref_tag">Figure&nbsp;3</span></a> for <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#E6FFF5;">select</emph>). A) <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#FFFFCC;">View transform</emph> via panning, <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#E6FFF5;">abstract/elaborate</emph> via overview + detail, and <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#E6FFF5;">connect</emph>ing multiple views. B) <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#E6FFF5;">Filte</emph><emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#FFFFCC;">ring</emph> data via a predicate. C) <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#FFFFCC;">Ordering</emph> / <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#E6FFF5;">reconfiguring</emph> a sorted axis in a bump chart. D) <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#E6FFF5;">Exploring</emph> sequential <emph class="ltx_text ltx_font_italic" style="color:#000000;background-color:#FFFFCC;">timestep</emph>s of an index chart. E) A hypothetical outcome plot in the style of the New York Times <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib71" title="How Not to Be Misled by the Jobs Report" class="ltx_ref">14</a>]</cite>. F) An interactive brush selection over Gapminder.</figcaption>
     </figure>
     <div id="S6.p1" class="ltx_para">
@@ -1596,3 +1626,62 @@ tags:
     </ul>
   </section>
 </article>
+
+<script>
+  function onEditorLoad() {
+    console.log('sup');
+    document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
+  }
+
+  function goToAnimation(example) {
+    let src = "";
+
+    <img src="gifs/bar.gif" onclick="goToAnimation('bar')" />
+    <img src="gifs/birds.gif" onclick="goToAnimation('birds')" />
+    <img src="gifs/bump.gif" onclick="goToAnimation('bump')" />
+    <img src="gifs/connected.gif" onclick="goToAnimation('connected')" />
+    <img src="gifs/dunkin.gif" onclick="goToAnimation('dunkin')" />
+    <img src="gifs/gapminder.gif" onclick="goToAnimation('gapminder')" />
+    <img src="gifs/hop.gif" onclick="goToAnimation('hop')" />
+    <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
+    <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
+
+    switch (example) {
+      case 'bar':
+        src = "https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6IgcwEt8oA6CqTRAI0XwFNkBjAewDspW+1bgFsiAK17RMEHgC9epIgFYAZgBYVEAMwA2VgA4OAJg5gADGp1aAnIw5KlZpWrNGdasBx1FkEAO5EKhwcAIysOtYhOgDsRvrWrGqsWhzR+oz6EPo6EKxGSukhasH6WhBGYEQc0KykXMgAngC0jL48YPhC+ABuIAC+ADQgAtxg5Dyk8KDcqPVTICrkrKhgGNX8dY0gQ6i1AqsIIFwqKmxQ8PpmfYMgAB7zi8sHIN0QqIis2yBQDbifcCAAI6IGRQcgwMHdT43BoPJYrDA8CDCT5DH5-RFcYTjN5ffD1c6HR4IgGvd6oo7IMDsDDU-AcfbjSY3CC3SjwTSoNg3MEouFPWk1PHVXbzdH-ECMGSrIZtUj-ADaZgGITMarMAF0bgBrViwonw55Ivk3ZCselvf5QZAfa47CANGlwBWgYQQZDajBS5D9Aau92ew7ijD8W7nIZvcikHgYXYqcOSiBsVDjCVQLi4L5ge5wLRDMD6tQ3EZcMYTMWsMP8kkgY3Q65aoA";
+        break;
+      case 'birds':
+        break;
+      case 'bump':
+        break;
+      case 'connected':
+        break;
+      case 'dunkin':
+        src = 'https://jonathanzong.github.io/editor/#/url/vega-lite/N4Ig7glgJgLgFiAXAVgAyoDQjgUwgczhiQGZ0sAjAQwGMBrfAJwHsBXAOyiRAGIT+QWKFRhUkoVowA23IjAAOAZ0QB6FfgiKYAOg3xWFVopyMazdjBwXtZgLYqoYZsxgxzKqiRqoATDlQAZgCMAOyoUKgUABwALABsJFH+QTE0CVBBAQCcqFEqjFRgKnFUWWgxtCHUUSFRwTVZWTh+JCFtNFQhcXE4MWUkUFA0Dhx0EOyKAPrszJM+MZNwjDaKAG4gAL5YMAUTAcyMtkgA2qAdUjSsUiI43G4Acqy2FCYAFMIwT9rM8laTHzgYBBbDgAJSCEBURTcH5-AFAkGbDBnKgXK43O7MR7PN4fL40KTMYxQf43BFgiFQ7gEok4Enw4G3DYAXSw8hYACscDQgeZxCAYABPX7cVEvRiKACqijEWxA8ioBVs0MQpxA7CoiMQIFh7H+o2hWGMUm5xEQoCFIu18mY42IWD52vJjAh7LpEA6ln5VE4J1AAQgOCkXG1utJlnJEKkXvNIBwAA92aL2MDJqtUawmVt-YHg9TCcTw4DGRD8GbQAmk9qfan01JM5sWRtm6yQLZFXRqRBTCaIVYzFBxvh+YT2HpWFBbrGA0GQyBR+PJxDLVOQABHVg+oGiIGrJlYa7bidTnOz7iHiCfJfbYWrjdby8iCB7pEgMyEl2xsycS8QR2gBUlRhX49SgA0ITrBttUFINCTAV9INXJgcEFV9I2nXM5zDBlESNc4TwFW9z3GHBFQhKBmHbcYTiCBJ5mQOJ0EwWiSB8ZAYlQRjUFbXZ8CnY5mKY7jm2bIA'
+          break;
+      case 'hop':
+        break;
+      case 'overview':
+        break;
+      case 'stocks':
+        break;
+      case 'gapminder':
+      default:
+        src = 'https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB4J5hj1PCgPKjcyEEgAGa0bKhgGDyI-MgAnrYOAB4R0bHxcFEcULSo9GkOUCm4bBgAjogQ-PTQtJLpIGkIUTFxGCWRbAD6bBlVnF7lldX5dQ1FMEWt9iBFIlOgOT35KWwQ4Q7ObB3r3XkgiclpNlc2QA'
+    }
+
+
+    // iframe must be removed and then readded with updated src as otherwise the new spec doesn't update
+    document.getElementById("vega-lite-animated-editor-loading").style.display = "block";
+    document.getElementById("vega-lite-animated-editor-iframe").remove();
+    const iframe = document.createElement("iframe");
+    iframe.id = "vega-lite-animated-editor-iframe"
+    iframe.src = src;
+    iframe.width = '100%';
+    iframe.height = '750px'
+    iframe.onload = onEditorLoad;
+    document.getElementById("vega-lite-animated-editor-section").appendChild(iframe);
+    document.getElementById("vega-lite-animated-editor-section").scrollIntoView();
+
+  }
+</script>
