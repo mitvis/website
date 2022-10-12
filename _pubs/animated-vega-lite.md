@@ -25,6 +25,9 @@ materials:
 ---
 
 <style>
+  #vega-lite-animated-editor-gallery-section {
+    margin-top: 15px;
+  }
   #vega-lite-animated-editor-gallery-section img {
     cursor: pointer;
     height: 100px;
@@ -65,7 +68,7 @@ materials:
     <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
     <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
   </section>
-  
+
   <section id="S1" class="ltx_section">
     <h2 class="ltx_title ltx_title_section" id="H-S1">
       <span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
@@ -1634,7 +1637,7 @@ materials:
       </li>
     </ul>
   </section>
-  
+
 </article>
 <script>
   function goToAnimation(example) {
@@ -1678,14 +1681,12 @@ materials:
     iframe.width = '100%';
     iframe.height = '700px'
     iframe.onload = onEditorLoad;
-        document.getElementById("vega-lite-animated-editor-link").href = src;
-
+    document.getElementById("vega-lite-animated-editor-link").href = src;
     document.getElementById("vega-lite-animated-editor-section").appendChild(iframe);
     document.getElementById("vega-lite-animated-editor-section").scrollIntoView();
-  }
-  function onEditorLoad() {
-    document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
-  }
-  
-</script>
+}
+function onEditorLoad() {
+  document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
+}
 
+</script>
