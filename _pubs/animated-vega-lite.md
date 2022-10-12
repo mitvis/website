@@ -45,6 +45,9 @@ tags:
     <div id="vega-lite-animated-editor-loading" style="display: none">Loading...</div>
     <iframe id="vega-lite-animated-editor-iframe" width="100%" height="700px" src="https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA"></iframe>
   </section>
+  <section>
+  <a target="_blank" id="vega-lite-animated-editor-link" href="https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA">Open Example in New Tab</a>
+</section>
   <section id="vega-lite-animated-editor-gallery-section">
     <img src="gifs/bar.gif" onclick="goToAnimation('bar')" />
     <img src="gifs/birds.gif" onclick="goToAnimation('birds')" />
@@ -56,7 +59,7 @@ tags:
     <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
     <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
   </section>
-
+  
   <section id="S1" class="ltx_section">
     <h2 class="ltx_title ltx_title_section" id="H-S1">
       <span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
@@ -1669,11 +1672,14 @@ tags:
     iframe.width = '100%';
     iframe.height = '700px'
     iframe.onload = onEditorLoad;
+        document.getElementById("vega-lite-animated-editor-link").href = src;
+
     document.getElementById("vega-lite-animated-editor-section").appendChild(iframe);
     document.getElementById("vega-lite-animated-editor-section").scrollIntoView();
   }
   function onEditorLoad() {
     document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
   }
+  
 </script>
 
