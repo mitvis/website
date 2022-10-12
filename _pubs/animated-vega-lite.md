@@ -1625,28 +1625,11 @@ tags:
       </li>
     </ul>
   </section>
+  
 </article>
-
-
 <script>
-  function onEditorLoad() {
-    console.log('sup');
-    document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
-  }
-
   function goToAnimation(example) {
     let src = "";
-
-    <img src="gifs/bar.gif" onclick="goToAnimation('bar')" />
-    <img src="gifs/birds.gif" onclick="goToAnimation('birds')" />
-    <img src="gifs/bump.gif" onclick="goToAnimation('bump')" />
-    <img src="gifs/connected.gif" onclick="goToAnimation('connected')" />
-    <img src="gifs/dunkin.gif" onclick="goToAnimation('dunkin')" />
-    <img src="gifs/gapminder.gif" onclick="goToAnimation('gapminder')" />
-    <img src="gifs/hop.gif" onclick="goToAnimation('hop')" />
-    <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
-    <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
-
     switch (example) {
       case 'bar':
         src = "https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6IgcwEt8oA6CqTRAI0XwFNkBjAewDspW+1bgFsiAK17RMEHgC9epIgFYAZgBYVEAMwA2VgA4OAJg5gADGp1aAnIw5KlZpWrNGdasBx1FkEAO5EKhwcAIysOtYhOgDsRvrWrGqsWhzR+oz6EPo6EKxGSukhasH6WhBGYEQc0KykXMgAngC0jL48YPhC+ABuIAC+ADQgAtxg5Dyk8KDcqPVTICrkrKhgGNX8dY0gQ6i1AqsIIFwqKmxQ8PpmfYMgAB7zi8sHIN0QqIis2yBQDbifcCAAI6IGRQcgwMHdT43BoPJYrDA8CDCT5DH5-RFcYTjN5ffD1c6HR4IgGvd6oo7IMDsDDU-AcfbjSY3CC3SjwTSoNg3MEouFPDANVgQZB46q7ebo-4gRgyVZDNqkf4AbTMAxCZk1ZgAujcANasWFE+HPJF8m7IVj0t7-KDID7XIa4EXI-DwZWgM3SoUivHLVgcQmgKUYXBccbnIa8DC8mk3RjjA6gca4RCEkCKinYnjwIxaobCVm5swhaxDKisXDwELXbVotr4FT1YTu6ZvDiIVA1DAAanwTCoyCZAApIFBEMJqGPWAM1WoAJRfCBugE+0WDNuoDtd-i9scT6hkj5LlcvN7HjcgfHIQkehYmwXC0VRqk0gF0hntJn9AagYnPI8KXqalRXfK1PzGCZ+jrEA-ETLg-FbI4qwBNo9RPDA0OgoZSGQLhEFwRgjWVEA1xAXVf3vVB+FA0BnV8FtVyffpL0Wai3z-B9UJkdCdl3OANVrHYICFUC70LZB0IBWV10oiSpODX5pX4W5IxAN5yFIHMAV2FQ1NlNhUHGZSuCrIYwHuOAtHMo01BuEYuEgyZDhUoN7wFAEvRYvpdSAA/view";
@@ -1677,12 +1660,9 @@ tags:
       default:
         src = 'https://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB4J5hj1PCgPKjcyEEgAGa0bKhgGDyI-MgAnrYOAB4R0bHxcFEcULSo9GkOUCm4bBgAjogQ-PTQtJLpIGkIUTFxGCWRbAD6bBlVnF7lldX5dQ1FMEWt9iBFIlOgOT35KWwQ4Q7ObB3r3XkgiclpNlc2QAhttps://jonathanzong.github.io/editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA/view'
     }
-
     // iframe must be removed and then readded with updated src as otherwise the new spec doesn't update
     document.getElementById("vega-lite-animated-editor-loading").style.display = "block";
     document.getElementById("vega-lite-animated-editor-iframe").remove();
-    console.log('removing iframe!',document.getElementById("vega-lite-animated-editor-iframe"))
-    
     const iframe = document.createElement("iframe");
     iframe.id = "vega-lite-animated-editor-iframe"
     iframe.src = src;
@@ -1691,6 +1671,9 @@ tags:
     iframe.onload = onEditorLoad;
     document.getElementById("vega-lite-animated-editor-section").appendChild(iframe);
     document.getElementById("vega-lite-animated-editor-section").scrollIntoView();
-
+  }
+  function onEditorLoad() {
+    document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
   }
 </script>
+
