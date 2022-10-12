@@ -1,5 +1,5 @@
 ---
-title: 'Shared Interest: Measuring Human-AI Alignment to Identify Recurring Paterns in Model Behavior'
+title: 'Shared Interest: Measuring Human-AI Alignment to Identify Recurring Patterns in Model Behavior'
 authors:
   - key: aboggust
   - name: Benjamin Hoover
