@@ -797,7 +797,8 @@ function onEditorLoad() {
             But, as Thompson identified in his post-interview, parametric transitions also increase the expressive gamut of scene animations.
           </p>
         </div>
-        <figure id="S7.F6" class="ltx_figure"><img src="x20.png" id="S7.F6.g1" class="ltx_graphics ltx_centering" width="1026" height="326" alt="Swimming World Records example from Data Animator ">
+        <figure id="S7.F6" class="ltx_figure">
+          <div style="padding:57.92% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/459118704?h=5fb59f3fb9&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 6: </span>Swimming World Records example from Data Animator <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib66" title="Swimming World Records throughout History" class="ltx_ref">15</a>]</cite>.</figcaption>
         </figure>
         <div id="S7.SS2.SSS2.p6" class="ltx_para">
