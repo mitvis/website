@@ -11,6 +11,7 @@ authors:
 venue: vis-full
 year: 2023
 date: 2023-01-02
+doi: 10.1109/TVCG.2022.3209369
 tags:
   - language
   - visualization design
