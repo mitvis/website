@@ -28,7 +28,7 @@ materials:
 
 <style>
   #vega-lite-animated-editor-gallery-section {
-    margin-top: 15px;
+    margin: 15px auto;
   }
   #vega-lite-animated-editor-gallery-section img {
     cursor: pointer;
@@ -52,13 +52,6 @@ materials:
       These reflections highlight the key motivating role of in-the-wild examples, and identify three central tradeoffs: the language design process, the types of animated transitions supported, and how the systems model keyframes.</p>
   </section>
 
-  <section id="vega-lite-animated-editor-section">
-    <div id="vega-lite-animated-editor-loading" style="display: none">Loading...</div>
-    <iframe id="vega-lite-animated-editor-iframe" width="100%" height="700px" src="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA"></iframe>
-  </section>
-  <section>
-  <a target="_blank" id="vega-lite-animated-editor-link" href="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA">Open Example in New Tab</a>
-</section>
   <section id="vega-lite-animated-editor-gallery-section">
     <img src="gifs/bar.gif" onclick="goToAnimation('bar')" />
     <img src="gifs/birds.gif" onclick="goToAnimation('birds')" />
@@ -69,6 +62,14 @@ materials:
     <img src="gifs/hop.gif" onclick="goToAnimation('hop')" />
     <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
     <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
+    <div>
+      Click on an example to open the Animated Vega-Lite editor.
+    </div>
+  </section>
+  <section id="vega-lite-animated-editor-section" style="display: none">
+    <a target="_blank" id="vega-lite-animated-editor-link" href="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA">Open Example in New Tab</a>
+    <div id="vega-lite-animated-editor-loading" style="display: none">Loading...</div>
+    <iframe id="vega-lite-animated-editor-iframe" width="100%" height="700px" src="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA"></iframe>
   </section>
 
   <section id="S1" class="ltx_section">
@@ -1674,8 +1675,9 @@ materials:
       default:
         src = 'editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA'
     }
-    // iframe must be removed and then readded with updated src as otherwise the new spec doesn't update
+    document.getElementById("vega-lite-animated-editor-section").style.display = "block";
     document.getElementById("vega-lite-animated-editor-loading").style.display = "block";
+    // iframe must be removed and then readded with updated src as otherwise the new spec doesn't update
     document.getElementById("vega-lite-animated-editor-iframe").remove();
     const iframe = document.createElement("iframe");
     iframe.id = "vega-lite-animated-editor-iframe"
@@ -1685,7 +1687,7 @@ materials:
     iframe.onload = onEditorLoad;
     document.getElementById("vega-lite-animated-editor-link").href = src;
     document.getElementById("vega-lite-animated-editor-section").appendChild(iframe);
-    document.getElementById("vega-lite-animated-editor-section").scrollIntoView();
+    // document.getElementById("vega-lite-animated-editor-section").scrollIntoView();
 }
 function onEditorLoad() {
   document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
