@@ -264,6 +264,8 @@ materials:
       <h3 class="ltx_title ltx_title_subsection" id="H-S3.SS2">
         <span class="ltx_tag ltx_tag_subsection">3.2 </span>Low-Viscous Authoring: An Example Usage Scenario</h3>
       <div id="S3.SS2.p1" class="ltx_para">
+        <p class="ltx_p" style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/evoV6kvG7z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
         <p class="ltx_p">A unified abstraction for static, interaction and animation also promotes a low-viscous authoring process (i.e., being able to easily switch between modalities, or compose them together).
           To illustrate the affordances of this approach, we present an example walkthrough following Imani, an orthonologist, as she plans a new birdwatching expedition.
           Imani has a bird migration dataset comprising the average latitudes and longitudes for a variety of bird species, for every day of the year<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib52" title="Convergence of broad-scale migration strategies in terrestrial birds" class="ltx_ref">21</a>]</cite>.
