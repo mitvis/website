@@ -28,18 +28,71 @@ materials:
 
 <style>
   #vega-lite-animated-editor-gallery-section {
-    margin: 15px auto;
+    margin-top: 1em;
   }
   #vega-lite-animated-editor-gallery-section img {
     cursor: pointer;
     height: 100px;
-    border: 1px solid black;
+    border: 1px solid #898D8D;
     margin-right: 5px;
   }
   #vega-lite-animated-editor-gallery-section img:hover {
-    border: 1px solid #CC5200;
+    border: 1px solid #F0B323;
   }
 </style>
+
+<script>
+  function goToAnimation(example) {
+    let src = "";
+    switch (example) {
+      case 'bar':
+        src = "editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA29zQgegMbQFMBzAe2QE8BaAI2QgDswBnAOlyYDcQBfAGhAL1cJMAEt6ReKGGoyUkADNRBVGAz4oxMuRD9UxQWoQgSChUwJR4ADgAM3PiAAe8pSqMgOEVIgK6QUOQADn5wIACOiAxQojAxHH6OOsZuqhj0EAC2fvyBIekkmeLe-kxkVinKaWFePjkmyGAEyBhNTLiG4pKOEE6iTPAK3haOMdmuVR7kBBAt-O3eoaB5oSDUDGr8dBKhANq2vACMtie2ALqOANYEyaCpHhnjjsgEC-rwUMi+DvxBs1kDOC7UCPVbTWalFQEXAVZbBVZBEjiKz8Ej0DBjZo8fjUcRGUDiIKICogbZEepFdFwABMp34mV68FphwAnPNNEF4IcHGdctsmAoyJl4MCQPhULhEKhCBgANRMRDUJifLoACkgUEQmRYGoIvAOABYAJT+CCAkDglp8aTeSXSzRyjVali1Xym82uxK8UBlZAVUX3DCW-xkJotMJtDqMLrYu6TDCekONLER15RsQSHi8kAAdzxJBzItAJE5YW2l3dGHLWf4RGQJEQQWoyV2FpmLQu3sUolQmnDoD+dGFYWDPzjvZTcfcVYYFb0Drgxx5egg03DooZyArYXWVq7m+3cPyYU0ThRIG8oiIVJA+gU5-WFlQ4lWUBL-jALjgAGZ+GBkgajiCMIGaSMYp6wt205hKCPA8twQA";
+        break;
+      case 'birds':
+        src="editor/#/url/vega-lite/N4Ig7glgJgLgFiAXARgAzoDQjgUwgczhiQDZMQAHAJwHsArHAYxghoDslQYBPCnJEDgCOAVwCGAGwCiYqvBBZGEiBSkAPGDjbFEAbV2oMqALoZdAFkwAOdMeMBfLBLHccVJLtBQxMMZxAiVBIC3r4A9GA0QVAAtMhoALYAdHQAzuwKIABmUQk+-jx8AjA0FPTpHFhZOD6B-IggjDQi2lQQOKkg9o4geVQA1gW89SD4ODSpcGJFVRASwQ0AxFkA7KurmakwtP0ji2IHXY5ePn6IoIELIKFiYQBGEFRQW227qUmMqQBuXVgUsmIEp09KA2ICRoxAlQtDAAPpZKjgzY4CRMHRcYYCMoQbSZDINFgJNy-EAPNhQfw4igiHQgRFsMaZBI4pDILB5NRIADMJAArFgtjgKKysGCiSEXEcMKCkQ1IOSaGB4YjxQKUWihkUGtjcVh8SBCcS-tCoBBGD56qAxOSPKAsu0JBSGmxYd5uJkJJp-Dg1NQBNaIAlYV9JCJ+N1pdkHU6QC63Zl8OjBL73A0A0GQxIwwACGLZgBMqCODgjMvF2pgnTVqOYmpGOuIeo4DQSzVS4y+RqjKOeHhAqT4jHanRLpgN9NSOSoCVtjUkkOcXoJNAAciIEnc3AAKULrpJugCUmTEwNjrslxyjnuJ50oAJncpxUEVyqR3THfUGDSHVCU-CwWhNKaDL+BI7D4BAMAiFAlrdo6AhgRwPSLpB0GwfaPYIfkPRNGBqZ2tGAgDkww4kqkEAAF6wU05KQawzagP8KpYpWmSZmGrLkDgCQUDwSBZJI7Y9Ox9SFj0pRiEOfG3jRposPijH3gIkJUNC2ivqqIAiaywmhvUqBJMgPSGv4GHwc657ugK5qonWAh3NaFJYPSjJ6IYaDoCYEYGjQNCeiopmEQ0xFDh0Rz2A4QA"
+        // Note: not the  link as that one breaks
+        break;
+      case 'bump':
+        src = "editor/#/url/vega-lite/N4IgJAzgxgFgpgWwIYgFwhgF0wBwqgegIDc4BzJAOjIEtMYBXAI0poHsDp5kTykBaADZ04JAKyUAVhDYA7EABoQAEzjQATjRyZ289ACEGCHAAJYSdZkUY4NMljQAmACwAGJQHcay+mjfuQOFkoNmUaWTI0UAAPKJAAMxo4QWU0EABNOAtrTABPHDg0tnUw2SRBEABfJVy4xOTU9AAlJFkAaxz8wvRi0vLraHLu0GU2ZHC0AG0ARgVHBQBmBWcFMQUANgUAdgUADgUATgVp1wBdJXVWsm7JtYXnU8rqkBDBYrqklLSAYTY39U6BTSsjG4X6zx0CGGCU+jQyWQBSkGgmheSB6CYrVSFyu0IgmDgODQYlcrieSjacFqqFA9S+6F+-yq5JAyHUHRpIDR3RAwlkhSU4QJ6hwfyQBLSUAsfQqSlFQrQmHUDDgzxwFiQCAgU1AZShaVaNAQAH0IMkBsk4FArJzuWl5bIrEo5GlIXBESAcOo4GEpRLOXS4ZlskpBP7QHBol6DbIjcbiOUVcynucuZdZBB4sUEDqXuUoAxBOKeZg2AA5IxMd0ACmU4qMlGD6gAlNYkNr0E2qgpQFLBAWi-6ueXKzW65gGy12q2lO20lOOtVaTQw+64urLjn0IaTWaKimlOOUJyGOoKugjwQmEYcJQoBBiMygA"
+        break;
+      case 'connected':
+        src = "editor/#/url/vega-lite/N4Ig7glgJgLgFiAXAVgAyoDQjgUwgczhiTUxCgEMYKlQBXAJwBslyqKB6KBiANwgB2+AHQArAM4B7ASAC+WGAwoDxAM0kMAtkgDaoAMYUm+ukyo5WAckQBKSyCwVxrANY4AnnIyhVEJjBwGWhAABwolbUQQZQhNAH1xHBZZWQBdLDCI50Q9EAEKTQsomPjEliwynH1iRFAYdxCi0MlBYixpVhhYwIdQhhwoCEMA4N8kqFZ3HHDe-yLQHAAPEKDigVi43iM6CxSU9JBNcJdWJkELLBwBfUlBoWDF0Yhx1k0-HGcFBqaARzplLrULq8C4gcSGJjzEAAL0CkiQqiMiRSWE8tRAYyYEyi+CcvXqjVYfwBECBfFB4KMUNhDHhiERTGR8hAGigPXRmOxICmM2ZXUKTxeUR5QQqEKhBKaACNlBMsEohFDxAEQkgAEzoFEgNxonzPLGuDxyPZAA"
+        break;
+      case 'dunkin':
+        src = 'editor/#/url/vega-lite/N4Ig7glgJgLgFiAXAVgAyoDQjgUwgczhiQGZ0sAjAQwGMBrfAJwHsBXAOyiRAGIT+QWKFRhUkoVowA23YaID0UDnQjsAzgH12zDQCYALBriMAdDTUA3EAF8sMRlXUAzZowC2SANqgaVKTVYpERxuGGYAOVY3ChxGAAo5KJNmAAccdg05HBgINxwASkEQKjVuVPTM4Jy8mwwfPwCgmBDEEDDI6NiEkSSaKWY1HChK5uqCopLuPoGhkezckOsAXSwUlgArHBoc5nZxNoBPNO4-GMY1AFU1MVsQFKoHN1LEbxB2KhrW8oyldjpSrCDKRbYiIUAwI4tO7MVTELC7UILRhFNZDCC+Zr7RxcF6gJwQHBSHEgb5zMZFKSYsEgHAADzWJ3YuQ0Fj8rEWtjxBKJU36g2GWXJWHwoNAdIZrUczNZUnZNmW1kVKxAbgedCmEEYfRCWHSNGYUFU+H2-XY+AgMFYUBaXMJxNN5st1qKEOOrQAjqxHDlRDkLIssE0LVabSB8XbuEGnTrDm6QJ7vRaRBB-bUQPr+sjqfrOBaIAjqfdHmU0j9lACQDK5a0DoT+mA01WoUwcAc0+TqeGeV9S2SFkU1L5gftXVCpKocA8ilBmKrVF4AIwANhIBmQS-QmGXq+Q+lQG9QyocZpani3m8PisVQA'
+          break;
+      case 'hop':
+        src="editor/#/url/vega-lite/N4IgJAzgxgFgpgWwIYgFwhgF0wBwqgegIDc4BzJAOjIEtMYBXAI0poHsDp5kTykBaADZ04JAKyUAVhDYA7EABoQAEySYUqUAwBOgtCrVJOcNZkFx+AdxP042ylAjEQAXyXJtAa32YaUb0pQcgBmNGRooL7+ESD0fp6ycBAQaADMLm4gcLJByjSy4ZogAJ4xoXCCyvo42nBQNDh0auzySpjFOHD6AI4MSLK+6r6krm00CF1F5ZX6qphdStBI5jHa-WSToBDzOGgATGIADBknQA"
+        break;
+      case 'overview':
+        src = "editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA29zQgegM4AcBWABmIDoBjXANxAF8AaEaigewDsLp4BtUAdwCWYKAAt4AFgAcxJgFsIyANYZFAU1hM1nVmEHsA5vFAAPYyABmgtajAZIUNSCZQAnvidwQjuflbIIdCZcLlRPUDBWBX1zfEUIOQwAI2REXHE6RhAIE0FccyhBKDCMeizXcysbOy98ZEEKJxd3TxAAR0QIdkKYQuonTMYBYTFJGSZRNUEDUSh4ADZZEAVlVWQNZxA4gLl8uD4QdgTWlLTxYJs1CjmEbxaMfUdkakDN7TY9Qz2eEDMAXSYHAwhTkamQmzqaj0XEc5i6NQOVVs9mgTRABlhtzUJjqqnYgjkAH0XqhEAMhpZrMivA40ahMaBsbivF0CcTAmSAAQAak5AGYAIyEPmLUhisp-LJJfQ1EAhQJqfKZAEgd66fRGW5mW5I2W0zZuDzAtS+fyvcqVKmyuoNNGG1odLo9aCCfqbHJ5AoNJQAYVYiG68D5TAM9RqFkCuDUmRcBPClOqKNhwVC8ftGFQ+g04KYAUMnh4slFpElg0lQA"
+        break;
+      case 'stocks':
+        src = "editor/#/url/vega-lite/N4IgJAzgxgFgpgWwIYgFwhgF0wBwqgegIDc4BzJAOjIEtMYBXAI0poHsDp5kTykBaADZ04JAKyUAVhDYA7EABoQAEySYUqUAwBOgtCrVJOmNlADWESlAjFFIAGZttyTGlA4k2iHDcHMP9FV-EABfMKUAdxplejQANjEABiV4GjIsNABmROSQOFkoNmUaWTJfTBoEANB7GjhBZX0gnyVoJEFqkG0kUs6Ifxw0ACYcsPCQQSQATzhtNABtd08kBAgF0FkVgJAS5TgADztidoYAxZBDzRAZz2GcsSUEOVjUAEYlZrRXsIBdVvq4FBXFdMFMcNscGwSq4lHJ9BUqnNfo9PGZ9JDoXZ8oViqVfJcanUGk01C0QKDwfDEJDunolEh9jQ1qhZAxBIIQrCPFA6FNfMdBKc0IkxgpQJhurIII5nOsJmw2GYGIN0BApggmGw6Q5tGwEL4PN19ehdgc7GY4HzVerNXpwqAoO0oGzSSTMAwEKxZHt9gACABk-t9QQ9Xp9lBw2hoUDgvoAfL7Er6APy+gAUIc9kejsf4wbUodN+wjUZjAEoCJmwwcSznfahE3YkMydt6DnBlAB9bMx0J-EDIbRo9DCWRk7FFEplK4EhxExqBV1KCnbfwIGntJuM5ms9mc66+Wr1Betn0d7ulskr-QARwYPQq6gqpC3TMPThc+gApKF94VBE4h7zvoaoalqdjXugsh6iUm6iuKkrSh+cq1II-hzFchorPoRa-v2E64tOoCzkexKLsEy5gqu1JOJu9Lbmgu4cko-6AVcApCugtTaHATClmi4yTDMGHnIOw7ilR+jaGyZL9LqFoAOrRC8iSUGI9oDqi5SSeg-j7DCIDtGk8joDGsjoXYjjmQpcBpBkbyjEoBFTuUBzAoSx5ulelRwAAqrIdD6DczjPDAoRKFaoAcQEmSvCKvwhD8IRAA"
+        break;
+      case 'gapminder':
+      default:
+        src = 'editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA29zQgegOYQAcBbASwDswBTZAOgCsBnAezJAF8AaEIiZAawwEm5KCC4FeEIg3gBtUGSmUMAT0q8xIBpVSUAxqIQgoKgsrgghIzSwxQSRauy4AjcmHihyBRIZDIIMlxlLlJWOABGAE4AVhjQiAAPeAAmAAY0+K0oSgJ4GLY2AF0uKACyBgAzJmQiOVBKklQc5E9LSTqLNQ1CkpBKMj0mMHJcNqHUGrbGnQ8LIcQyMpVNXWCKeDJEVFROEGSjGdQ5kErqe1QSE00TMwwAR0RA+xh7ADdlPZXDklmMS7OAH1KIkzAYbqZzCBHs8rtASB9nMYHOYGr9jqp1K0uAw9BBdG1ysE5GkODEMmkins+JRvmi-vMmItluxCmwgA'
+    }
+    document.getElementById("vega-lite-animated-editor-section").style.display = "block";
+    document.getElementById("vega-lite-animated-editor-loading").style.display = "block";
+    document.querySelector('#vega-lite-animated-editor-gallery-section > div').style.display = 'none';
+    // iframe must be removed and then readded with updated src as otherwise the new spec doesn't update
+    document.getElementById("vega-lite-animated-editor-iframe").remove();
+    const iframe = document.createElement("iframe");
+    iframe.id = "vega-lite-animated-editor-iframe"
+    iframe.src = src;
+    iframe.width = '100%';
+    iframe.height = '700px'
+    iframe.onload = onEditorLoad;
+    document.getElementById("vega-lite-animated-editor-link").href = src;
+    document.getElementById("vega-lite-animated-editor-section").appendChild(iframe);
+    // document.getElementById("vega-lite-animated-editor-section").scrollIntoView();
+}
+function onEditorLoad() {
+  document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
+}
+</script>
 
 <article>
   <section class="ltx_abstract" id="abstract">
@@ -50,26 +103,26 @@ materials:
       We evaluate the expressiveness of our approach through a gallery of diverse examples that demonstrate coverage over taxonomies of both interaction and animation.
       We also critically reflect on the conceptual affordances and limitations of our contribution by interviewing five expert developers of existing animation grammars.
       These reflections highlight the key motivating role of in-the-wild examples, and identify three central tradeoffs: the language design process, the types of animated transitions supported, and how the systems model keyframes.</p>
-  </section>
 
-  <section id="vega-lite-animated-editor-gallery-section">
-    <img src="gifs/bar.gif" onclick="goToAnimation('bar')" />
-    <img src="gifs/birds.gif" onclick="goToAnimation('birds')" />
-    <img src="gifs/bump.gif" onclick="goToAnimation('bump')" />
-    <img src="gifs/connected.gif" onclick="goToAnimation('connected')" />
-    <img src="gifs/dunkin.gif" onclick="goToAnimation('dunkin')" />
-    <img src="gifs/gapminder.gif" onclick="goToAnimation('gapminder')" />
-    <img src="gifs/hop.gif" onclick="goToAnimation('hop')" />
-    <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
-    <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
-    <div>
-      Click on an example to open the Animated Vega-Lite editor.
-    </div>
-  </section>
-  <section id="vega-lite-animated-editor-section" style="display: none">
-    <a target="_blank" id="vega-lite-animated-editor-link" href="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA">Open Example in New Tab</a>
-    <div id="vega-lite-animated-editor-loading" style="display: none">Loading...</div>
-    <iframe id="vega-lite-animated-editor-iframe" width="100%" height="700px" src="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA"></iframe>
+      <section id="vega-lite-animated-editor-gallery-section">
+        <img src="gifs/bar.gif" onclick="goToAnimation('bar')" />
+        <img src="gifs/birds.gif" onclick="goToAnimation('birds')" />
+        <img src="gifs/bump.gif" onclick="goToAnimation('bump')" />
+        <img src="gifs/connected.gif" onclick="goToAnimation('connected')" />
+        <img src="gifs/dunkin.gif" onclick="goToAnimation('dunkin')" />
+        <img src="gifs/gapminder.gif" onclick="goToAnimation('gapminder')" />
+        <img src="gifs/hop.gif" onclick="goToAnimation('hop')" />
+        <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
+        <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
+        <div style="font-style: italic;">
+          Click on an example to open the Animated Vega-Lite editor.
+        </div>
+      </section>
+      <section id="vega-lite-animated-editor-section" style="display: none">
+        <a target="_blank" id="vega-lite-animated-editor-link" href="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA">Open Example in New Tab</a>
+        <div id="vega-lite-animated-editor-loading" style="display: none">Loading...</div>
+        <iframe id="vega-lite-animated-editor-iframe" width="100%" height="700px" src="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA"></iframe>
+      </section>
   </section>
 
   <section id="S1" class="ltx_section">
@@ -1644,55 +1697,3 @@ materials:
   </section>
 
 </article>
-<script>
-  function goToAnimation(example) {
-    let src = "";
-    switch (example) {
-      case 'bar':
-        src = "editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6IgcwEt8oA6CqTRAI0XwFNkBjAewDspW+1bgFsiAK17RMEHgC9epIgFYAZgBYVEAMwA2VgA4OAJg5gADGp1aAnIw5KlZpWrNGdasBx1FkEAO5EKhwcAIysOtYhOgDsRvrWrGqsWhzR+oz6EPo6EKxGSukhasH6WhBGYEQc0KykXMgAngC0jL48YPhC+ABuIAC+ADQgAtxg5Dyk8KDcqPVTICrkrKhgGNX8dY0gQ6i1AqsIIFwqKmxQ8PpmfYMgAB7zi8sHIN0QqIis2yBQDbifcCAAI6IGRQcgwMHdT43BoPJYrDA8CDCT5DH5-RFcYTjN5ffD1c6HR4IgGvd6oo7IMDsDDU-AcfbjSY3CC3SjwTSoNg3MEouFPDANVgQZB46q7ebo-4gRgyVZDNqkf4AbTMAxCZk1ZgAujcANasWFE+HPJF8m7IVj0t7-KDID7XIa4EXI-DwZWgM3SoUivHLVgcQmgKUYXBccbnIa8DC8mk3RjjA6gca4RCEkCKinYnjwIxaobCVm5swhaxDKisXDwELXbVotr4FT1YTu6ZvDiIVA1DAAanwTCoyCZAApIFBEMJqGPWAM1WoAJRfCBugE+0WDNuoDtd-i9scT6hkj5LlcvN7HjcgfHIQkehYmwXC0VRqk0gF0hntJn9AagYnPI8KXqalRXfK1PzGCZ+jrEA-ETLg-FbI4qwBNo9RPDA0OgoZSGQLhEFwRgjWVEA1xAXVf3vVB+FA0BnV8FtVyffpL0Wai3z-B9UJkdCdl3OANVrHYICFUC70LZB0IBWV10oiSpODX5pX4W5IxAN5yFIHMAV2FQ1NlNhUHGZSuCrIYwHuOAtHMo01BuEYuEgyZDhUoN7wFAEvRYvpdSAA";
-        break;
-      case 'birds':
-        src="editor/#/url/vega-lite/N4Ig7glgJgLgFiAXARgAzoDQjgUwgczhiQDZMQAHAJwHsArHAYxghoDslQYBPCnJEDgCOAVwCGAGwCiYqvBBZGEiBSkAPGDjbFEAbV2oMqALoZdAFkwAOdMeMBfLBLHccVJLtBQxMMZxAiVBIC3r4A9GA0QVAAtMhoALYAdHQAzuwKIABmUQk+-jx8AjA0FPTpHFhZOD6B-IggjDQi2lQQOKkg9o4geVQA1gW89SD4ODSpcGJFVRASwQ0AxFkA7KurmakwtP0ji2IHXY5ePn6IoIEL2DAwFKmIYWH4EFtJz-AiAEYiqW5N2loYEkmgkwnR2D4pmwAF7sfBhACsWXMWTEAGYSDgrIwAEyMKCocwkNEATk+jARCNQCMsOJI5igjBIYSoYjAYRIjE+ONQK1QnxIWSyUCgOKg5nJyDEJOQwqgxIRKzRfPMVnMyFVVmQYU+ECoUAA+qExMDUgA3LpYCiyMQJTp6UBsW0jRiBKiAg1ZVkJfhYX4SJg6LjDARlCDaTIZBosH3uHq6thQfzhigiHQgVlsMaZBLhpDILB5NRIDEIv2aCj5rBOn0hFxHDCO50CSCJmhgT3e30gf2BoZFBphiNYKMgGNuTLUHBQCCMHz1UBiRMeUBZdoSJMNNhG+tOTT+HBqagCJcQBIGs2SET8bqN7LrzcgbfebiZfBBwRH9wNU-ny8Sa8AAIYkAnkjgcW8m1rQcYE6P0cADZh+xGIdiBHDgGgSZpfhoM0J1mBCoHtXQez4Rh2k6CDTDHTNUhyKgEhXRpJFdZx92jGgADkRAST43AAClCHikhfABKTIxHtJ8d1fY57wkTRv1Aa1vRbcMoHbTtm26ai+kGBpyKoJRuy0JoZyzfwJDhCAYBEKAF3vQiBCsjgejYmy7IctcnIaNjLUaGgrKUxyNwEVIyIo-zUggaEHP+GcWCjZSbUYmC4JAf9r3zcgcASCgeCQVEJF+HpMvqHkelKMRyIK84AsTGzWAw5LVIMt0PS9ZssDK-NSqvepUCSZAenHfxvNCrcZM2OcA2QgRPiXJMsEzbM9EMNB0BMW8xxoQKWErOrxsfcKmEi7p7AcIA"
-        // Note: not the  link as that one breaks
-        break;
-      case 'bump':
-        src = "editor/#/url/vega-lite/N4IgJAzgxgFgpgWwIYgFwhgF0wBwqgegIDc4BzJAOjIEtMYBXAI0poHsDp5kTykBaADZ04JAKyUAVhDYA7EABoQAEzjQATjRyZ289ACEGCHAAJYSdZkUY4NMljQAmACwAGJQHcay+mjfuQOFkoNmUaWTI0UAAPKJAAMxo4QWU0EABNOAtrTABPHDg0tnUw2SRBEABfJVy4xOTU9AAlJFkAaxz8wvRi0vLraHLu0GU2ZHC0AG0ARgVHBQBmBWcFMQUANgUAdgUADgUATgVp1wBdJXVWsm7JtYXnU8rqkBDBYrqklLSAYTY39U6BTSsjG4X6zx0CGGCU+jQyWQBSkGgmheSB6CYrVSFyu0IgmDgODQYlcrieSjacFqqFA9S+6F+-yq5JAyHUHRpIDR3RAwlkhSU4QJ6hwfyQBLSUAsfQqSlFQrQmHUDDgzxwFiQCAgU1AZShaVaNAQAH0IMkBsk4FArJzuWl5bIrEo5GlIXBESAcOo4GEpRLOXS4ZlskpBP7QHBol6DbIjcbiOUVcynucuZdZBB4sUEDqXuUoAxBOKeZg2AA5IxMd0ACmU4qMlGD6gAlNYkNr0E2qgpQFLBAWi-6ueXKzW65gGy12q2lO20lOOtVaTQw+64urLjn0IaTWaKimlOOUJyGOoKugsLh8ERaPjqHRGEwGGb1CFHUFMJQQggCMoPGw2GwOQCC2MQxCgXYFiQXZXHWJhHHiZQFigRwxAWZDHCgrYMPWLZ4gWAhLg8Ag4HiXDsKgpAkC2XYoDgMR4kcJhlBcaZHBoqAmHieIkHYqAtgOVQmC4ggn2ML8IGIZkgA"
-        break;
-      case 'connected':
-        src = "editor/#/url/vega-lite/N4Ig7glgJgLgFiAXAVgAyoDQjgUwgczhiTUxCgEMYKlQBXAJwBslsYYAHAZ0QHpeGFMADp8EeHQBGdLjgYBjAPYA7GDlXClAW14A3HPgp6DFALSVqsmF15aKXNQ14WjUBhF0Rl+YQCsuKiAAvlgwgspcAGaKDFpIANqg8hRM8nRMVDisAOSIAJTZIFj2rADWOACewRigkRBMjrQgHBSCcYggFMoQWgD6sixBQQC6WC1tXAmgyhRaWR1dPf04LFgDOPLEiKAwFRzzzYpexFiBHTA9ckXNDDhQEMlqTXUrUKwVOK3XDfOgOAAeHAYrEWfV0KToWSGQ1GIDsDFKrCYXiyWHUSnu3ia-2eEFerC09Rwk1CewOAEc6F0LtQLvprlxkkxfiAAF5yRRISIpWRDLBVbYgF5MN4dQwkkC7fasSnU8RUDyokCMlIs9kMTmIblMXkhEAxKBXQXC0UgD5fPUXOa4-Edc3AtZMllSg6SLpvLDhfAshw4DhIABM6D5IHKAtqeJFZUqwWhQA"
-        break;
-      case 'dunkin':
-        src = 'editor/#/url/vega-lite/N4Ig7glgJgLgFiAXAVgAyoDQjgUwgczhiQGZ0sAjAQwGMBrfAJwHsBXAOyiRAGIT+QWKFRhUkoVowA23IjAAOAZ0QB6FfgiKYAOg3xWFVopyMazdjBwXtZgLYqoYZsxgxzKqiRqoATDlQAZgCMAOyoUKgUABwALABsJFH+QTE0CVBBAQCcqFEqjFRgKnFUWWgxtCHUUSFRwTVZWTh+JCFtNFQhcXE4MWUkUFA0Dhx0EOyKAPrszJM+MZNwjDaKAG4gAL5YMAUTAcyMtkgA2qAdUjSsUiI43G4Acqy2FCYAFMIwT9rM8laTHzgYBBbDgAJSCEBURTcH5-AFAkGbDBnKgXK43O7MR7PN4fL40KTMYxQf43BFgiFQ7gEok4Enw4G3DYAXSw8hYACscDQgeZxCAYABPX7cVEvRiKACqijEWxA8ioBVs0MQpxA7CoiMQIFh7H+o2hWGMUm5xEQoCFIu18mY42IWD52vJjAh7LpEA6ln5VE4J1AAQgOCkXG1utJlnJEKkXvNIBwAA92aL2MDJqtUawmVt-YHg9TCcTw4DGRD8GbQAmk9qfan01JM5sWRtm6yQLZFXRqRBTCaIVYzFBxvh+YT2HpWFBbrGA0GQyBR+PJxDLVOQABHVg+oGiIGrJlYa7bidTnOz7iHiCfJfbYWrjdby8iCB7pEgMyEl2xsycS8QR2gBUlRhX49SgA0ITrBttUFINCTAV9INXJgcEFV9I2nXM5zDBlESNc4TwFW9z3GHBFQhKBmHbcYTiCBJ5mQOJ0EwWiSB8ZAYlQRjUFbXZ8CnY5mKY7jm2bIA'
-          break;
-      case 'hop':
-        src="editor/#/url/vega-lite/N4IgJAzgxgFgpgWwIYgFwhgF0wBwqgegIDc4BzJAOjIEtMYBXAI0poHsDp5kTykBaADZ04JAKyUAVhDYA7EABoQAEySYUqUAwBOgtCrVJOcNZkFx+AdxP042ylAjEQAXyXJtAa32YaUb0pQcgBmNGRooL7+ESD0fp6ycBAQaADMLm4gcLJByjSy4ZogAJ4xoXCCyvo42nBQNDh0auzySpjFOHD6AI4MSLK+6r6krm00CF1F5ZX6qphdStBI5jHa-WSToBDzOGgATGIADBknQA"
-        break;
-      case 'overview':
-        src = "editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA29zQgegM4AcBWABmIDoBjXANxAF8AaEaigewDsLp4BtUAdwCWYKAAt4AFgAcxJgFsIyANYZFAU1hM1nVmEHsA5vFAAPYyABmgtajAZIUNSCZQAnvidwQjuflbIIdCZcLlRPUDBWBX1zfEUIOQwAI2REXHE6RhAIE0FccyhBKDCMeizXcysbOy98ZEEKJxd3TxAAR0QIdkKYQuonTMYBYTFJGSZRNUEDUSh4ADZZEAVlVWQNZxA4gLl8uD4QdgTWlLTxYJs1CjmEbxaMfUdkakDN7TY9Qz2eEDMAXSYHAwhTkamQmzqaj0XEc5i6NQOVVs9mgTRABlhtzUJjqqnYgjkAH0XqhEAMhpZrMivA40ahMaBsbivF0CcTAmSAAQAak5AGYAIyEPmLUhisp-LJJfQ1EAhQJqfKZAEgd66fRGW5mW5I2W0zZuDzAtS+fyvcqVKmyuoNNGG1odLo9aCCfqbHJ5AoNJQAYVYiG68D5TAM9RqFkCuDUmRcBPClOqKNhwVC8ftGFQ+g04KYAUMnh4slFpElg0lQA"
-        break;
-      case 'stocks':
-        src = "editor/#/url/vega-lite/N4IgJAzgxgFgpgWwIYgFwhgF0wBwqgegIDc4BzJAOjIEtMYBXAI0poHsDp5kTykBaADZ04JAKyUAVhDYA7EABoQAEySYUqUAwBOgtCrVJOmNlADWESlAjFFIAGZttyTGlA4k2iHDcHMP9FV-EABfMKUAdxplejQANjEABiV4GjIsNABmROSQOFkoNmUaWTJfTBoEANB7GjhBZX0gnyVoJEFqkG0kUs6Ifxw0ACYcsPCQQSQATzhtNABtd08kBAgF0FkVgJAS5TgADztidoYAxZBDzRAZz2GcsSUEOVjUAEYlZrRXsIBdVvq4FBXFdMFMcNscGwSq4lHJ9BUqnNfo9PGZ9JDoXZ8oViqVfJcanUGk01C0QKDwfDEJDunolEh9jQ1qhZAxBIIQrCPFA6FNfMdBKc0IkxgpQJhurIII5nOsJmw2GYGIN0BApggmGw6Q5tGwEL4PN19ehdgc7GY4HzVerNXpwqAoO0oGzSSTMAwEKxZHt9gACABk-t9QQ9Xp9lBw2hoUDgvoAfL7Er6APy+gAUIc9kejsf4wbUodN+wjUZjAEoCJmwwcSznfahE3YkMydt6DnBlAB9bMx0J-EDIbRo9DCWRk7FFEplK4EhxExqBV1KCnbfwIGntJuM5ms9mc66+Wr1Betn0d7ulskr-QARwYPQq6gqpC3TMPThc+gApKF94VBE4h7zvoaoalqdjXugsh6iUm6iuKkrSh+cq1II-hzFchorPoRa-v2E64tOoCzkexKLsEy5gqu1JOJu9Lbmgu4cko-6AVcApCugtTaHATClmi4yTDMGHnIOw7ilR+jaGyZL9LqFoAOrRC8iSUGI9oDqi5SSeg-j7DCIDtGk8joDGsjoXYjjmQpcBpBkbyjEoBFTuUBzAoSx5ulelRwAAqrIdD6DczjPDAoRKFaoAcQEmSvCKvwhD8IRAA"
-        break;
-      case 'gapminder':
-      default:
-        src = 'editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA'
-    }
-    document.getElementById("vega-lite-animated-editor-section").style.display = "block";
-    document.getElementById("vega-lite-animated-editor-loading").style.display = "block";
-    // iframe must be removed and then readded with updated src as otherwise the new spec doesn't update
-    document.getElementById("vega-lite-animated-editor-iframe").remove();
-    const iframe = document.createElement("iframe");
-    iframe.id = "vega-lite-animated-editor-iframe"
-    iframe.src = src;
-    iframe.width = '100%';
-    iframe.height = '700px'
-    iframe.onload = onEditorLoad;
-    document.getElementById("vega-lite-animated-editor-link").href = src;
-    document.getElementById("vega-lite-animated-editor-section").appendChild(iframe);
-    // document.getElementById("vega-lite-animated-editor-section").scrollIntoView();
-}
-function onEditorLoad() {
-  document.getElementById("vega-lite-animated-editor-loading").style.display = "none";
-}
-
-</script>
