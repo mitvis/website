@@ -16,6 +16,9 @@ tags:
   - visualization design
   - interaction design
   - qualitative methods
+videos:
+  - name: Video Demo
+    key: evoV6kvG7z4
 teaser:
   Example gallery of animated vega-lite specifications.
 materials:
@@ -96,7 +99,7 @@ materials:
     </div>
     <div id="S1.p4" class="ltx_para">
       <p class="ltx_p">Animated Vega-Lite offers two abstractions of time that allow animations to compose with Vega-Lite’s existing grammars of static and interactive visualizations (<a href="#S4" title="4 A Grammar of Animation in Vega-Lite ‣ Animated Vega-Lite: Unifying Animation with a Grammar of Interactive Graphics" class="ltx_ref ltx_refmacro_autoref"><span class="ltx_text ltx_ref_tag">section&nbsp;4</span></a>).
-        From the perspective of interaction, time is an <emph class="ltx_text ltx_font_italic">event stream</emph>: a source of events analogous to <code class="ltx_verbatim ltx_font_typewriter">clicks</code> and <code class="ltx_verbatim ltx_font_typewriter">keypresses</code> produced by a user.
+        From the perspective of interaction, time is an <emph class="ltx_text ltx_font_italic">event stream</emph>: a source of events analogous to <code class="ltx_verbatim ltx_font_typewriter">click</code>s and <code class="ltx_verbatim ltx_font_typewriter">keypress</code>es produced by a user.
         These events drive Vega-Lite <emph class="ltx_text ltx_font_italic">selections</emph>, which apply dynamic data queries to visual encodings.
         Thus, by modeling time as an event stream, users can seamlessly specify and move between interactive and animated behavior in the same specification.
         From the perspective of Vega-Lite’s grammar of graphics, time is an <emph class="ltx_text ltx_font_italic">encoding channel</emph>.
