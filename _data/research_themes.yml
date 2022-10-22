@@ -1,7 +1,7 @@
 - key: tools
   name: Visualization Design Tools
   url: /pubs/#tag=visualization-design
-  people: arvindsatya, jzong, allenlee, dhiraj, rneogy, ktbacher, esefah, dwootton, jopo, gracefh, meic1212, vineetpa
+  people: arvindsatya, jzong, allenlee, dhiraj, rneogy, ktbacher, esefah, dwootton, jopo, gracefh, meic1212
   desc: >
     We develop [languages](/pubs/#tag=language&tag=visualization-design), [systems](/pubs/#tag=system&tag=visualization-design), and [interfaces](/pubs/#tag=interface&tag=visualization-design) for creating common and custom interactive visualizations.
 - key: interpretability
@@ -19,7 +19,7 @@
 - key: convivial-info
   name: Cognitively Convivial Information
   url: /pubs/#tag=convivial-information
-  people: arvindsatya, dwootton, crystall, jzong, tanyang, katmh, monterde, soominc, annaad, ajmeurer, nathalie_vladis
+  people: arvindsatya, dwootton, crystall, jzong, tanyang, katmh, monterde, soominc, annaad, ajmeurer, nathalie_vladis, vineetpa
   desc: >
     We study how people [understand](/pubs/visualint/), [discuss](/pubs/viral-visualizations), and [interact with](/pubs/#tag=interaction-design) visualizations, to build more general [behavioral rules](/pubs/varv/) for information, or an [information "physics"](/pubs/towards-convivial-info-space/).
   
