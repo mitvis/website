@@ -1,7 +1,7 @@
 ---
 title: Towards a Dynamic Multiscale Personalized Information Space
 authors:
-  - name: Amy Fox
+  - key: amyfox
     affiliation: UC San Diego
   - name: Philip Guo
     affiliation: UC San Diego
