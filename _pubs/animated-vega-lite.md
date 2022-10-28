@@ -18,6 +18,8 @@ tags:
   - interaction design
   - qualitative methods
 videos:
+  - name: VIS 2022 Talk
+    key: RMsqpWWPQik
   - name: Video Demo
     key: evoV6kvG7z4
 teaser: Example gallery of animated vega-lite specifications.
