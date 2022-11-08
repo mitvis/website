@@ -1,15 +1,19 @@
-# website
+# vis.csail.mit.edu
 
-Command to deploy build folder to live website
+## How to dev mitvis website 
 
+- Install Jekyll ([instructions](https://jekyllrb.com/docs/installation/macos/))
+- Install bundler
 ```
-rsync -avz build/* [CSAIL-USERNAME]@groups.csail.mit.edu:/afs/csail.mit.edu/group/visualization/www/data/
+gem install jekyll bundler
 ```
+- Install dependencies
+```
+bundle install
+```
+- Serve your content
+```
+bundle exec jekyll serve
+```
+- Check localhost:4000 for your content
 
-To log into the CSAIL servers:
-
-```ssh [CSAIL-USERNAME]@login.csail.mit.edu```
-
-To navigate to the website files:
-
-```cd /afs/csail.mit.edu/group/visualization/www/data```
