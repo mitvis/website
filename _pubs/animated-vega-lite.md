@@ -323,7 +323,7 @@ function onEditorLoad() {
         <p class="ltx_p" style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/evoV6kvG7z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
         <p class="ltx_p">A unified abstraction for static, interaction and animation also promotes a low-viscous authoring process (i.e., being able to easily switch between modalities, or compose them together).
-          To illustrate the affordances of this approach, we present an example walkthrough following Imani, an orthonologist, as she plans a new birdwatching expedition.
+          To illustrate the affordances of this approach, we present an example walkthrough following Imani, an ornithologist, as she plans a new birdwatching expedition.
           Imani has a bird migration dataset comprising the average latitudes and longitudes for a variety of bird species, for every day of the year<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib52" title="Convergence of broad-scale migration strategies in terrestrial birds" class="ltx_ref">21</a>]</cite>.
           To ensure a productive trip, Imani wants uncover how migration patterns correspond to different times of the year and geographic regions.</p>
       </div>
