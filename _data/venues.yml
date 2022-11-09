@@ -29,12 +29,24 @@ vis-full:
   bibtex:
     type: article
     venue: journal
+vis-posters:
+  short: VIS Posters
+  full: IEEE VIS Posters
+  bibtex:
+    type: inproceedings
+    venue: booktitle
 infovis:
   short: InfoVis
   full: IEEE Transactions on Visualization & Computer Graphics (Proc. IEEE InfoVis)
   bibtex:
     type: article
     venue: journal
+infovis-posters:
+  short: InfoVis Posters
+  full: IEEE InfoVis Posters
+  bibtex:
+    type: inproceedings
+    venue: booktitle
 eurovis:
   short: EuroVis
   full: Computer Graphics Forum (Proc. EuroVis)
@@ -89,12 +101,6 @@ distill:
 kdd:
   short: KDD
   full: ACM Knowledge Discovery and Data Mining (KDD)
-  bibtex:
-    type: inproceedings
-    venue: booktitle
-infovis-posters:
-  short: VIS Posters
-  full: IEEE InfoVis Posters
   bibtex:
     type: inproceedings
     venue: booktitle

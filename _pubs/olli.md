@@ -5,7 +5,7 @@ authors:
   - key: jzong
   - key: arvindsatya
 type: poster
-venue: infovis-posters
+venue: vis-posters
 year: 2022
 date: 2022-10-19
 tags:
