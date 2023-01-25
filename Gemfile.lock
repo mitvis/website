@@ -48,6 +48,8 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    nokogiri (1.13.10-arm64-darwin)
+      racc (~> 1.4)
     nokogiri (1.13.10-x64-mingw-ucrt)
       racc (~> 1.4)
     nokogiri (1.13.10-x86_64-darwin)
@@ -70,16 +72,11 @@ GEM
       ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    thread_safe (0.3.6)
-    tzinfo (1.2.10)
-      thread_safe (~> 0.1)
-    tzinfo-data (1.2022.7)
-      tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
-    wdm (0.1.1)
     webrick (1.7.0)
 
 PLATFORMS
+  arm64-darwin-21
   x64-mingw-ucrt
   x86_64-darwin-19
   x86_64-darwin-20
