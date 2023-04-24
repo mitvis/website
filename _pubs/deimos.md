@@ -5,8 +5,8 @@ authors:
     affiliation: Monash University
   - key: arvindsatya
   - name: Maxime Cordeil 
-    affiliation: The University Of Queensland
-  - name: Arnaud Prouzeau Potioc
+    affiliation: University Of Queensland
+  - name: Arnaud Prouzeau
     affiliation: Inria, Bordeaux
   - name: Bernhard Jenny 
     affiliation: Monash University
