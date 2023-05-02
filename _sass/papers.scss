@@ -218,6 +218,11 @@
       }
       th[scope=col] { font-weight: bold; }
       th[scope=row] { font-style: italic;}
+
+      td > img {
+        height: auto;
+        object-fit: contain;
+      }
     }
   }
 
