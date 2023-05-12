@@ -5,22 +5,28 @@ module MITVisFilters
     input.select{ |key, value| value['alumni'] == flag }
   end
 
-  def sort_people(input)
-    def filter(arr, flip = false)
-      arr.select{ |key, value| 
-        title = value['title']
-        first = title.include?('Professor') || title.include?('Administrative')
-        flip ? !first : first
-      }
-    end
+  def filter_titles(arr, titles, flip=false)
+    arr.select{ |key, value| 
+      title = value['title']
+      first = titles.any? { |t| title.include?(t) }
+      flip ? !first : first
+    }
+  end
 
+  def sort_people(input, titles, sort_head=true)
     def namesort(arr)
       arr.sort{ |a, b| a[1]['name'].split(' ')[-1] <=> b[1]['name'].split(' ')[-1] }
     end
 
-    staff = filter(input).to_a
-    members = namesort(filter(input, true))
-    staff + members
+    titles = titles.split(', ')
+
+    head = filter_titles(input, titles).to_a
+    if sort_head
+      head = namesort(head)
+    end
+    
+    tail = namesort(filter_titles(input, titles, true))
+    head + tail
   end
 
   def jsonify_pub(input)
