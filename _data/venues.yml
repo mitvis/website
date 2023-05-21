@@ -119,3 +119,8 @@ plateau:
   bibtex:
     type: inproceedings
     venue: booktitle
+facct:
+  full: ACM Conference on Fairness, Accountability, and Transparency (FAccT)
+  bibtex:
+    type: inproceedings
+    venue: booktitle
