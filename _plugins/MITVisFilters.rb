@@ -1,4 +1,4 @@
-require 'nokogumbo'
+require 'nokogiri'
 
 module MITVisFilters
   def filter_alumni(input, flag)
@@ -6,7 +6,7 @@ module MITVisFilters
   end
 
   def filter_titles(arr, titles, flip=false)
-    arr.select{ |key, value| 
+    arr.select{ |key, value|
       title = value['title']
       first = titles.any? { |t| title.include?(t) }
       flip ? !first : first
@@ -24,7 +24,7 @@ module MITVisFilters
     if sort_head
       head = namesort(head)
     end
-    
+
     tail = namesort(filter_titles(input, titles, true))
     head + tail
   end
@@ -33,12 +33,12 @@ module MITVisFilters
     people = @context.registers[:site].data['people']
     pub = {
       'id': input['slug'],
-      'title': input['title'], 
+      'title': input['title'],
       'year': input['year'],
       'type': input['type'],
       'tags': input['tags'].map { |tag| tag.downcase},
-      'authors': input['authors'].map { 
-        |author| author['name'] || people[author['key']]['name'] 
+      'authors': input['authors'].map {
+        |author| author['name'] || people[author['key']]['name']
       }
     }
 
