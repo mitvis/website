@@ -34,6 +34,7 @@ materials:
     url: /pubs/rich-screen-reader-vis-experiences/supplementary-material.zip
     type: file
 ---
+
 <article>
   <section class="ltx_abstract" id="abstract">
     <h2 class="ltx_title ltx_title_abstract" id="H-abstract">Abstract</h2>
@@ -166,7 +167,7 @@ materials:
           Through our co-design process, we identified two components important to analyzing accessible structures: their <emph class="ltx_text ltx_font_italic">form</emph>, or the shape they organize information into; and <emph class="ltx_text ltx_font_italic">entities</emph>, or which parts of the visualization specification are used to translate a chart into a non-visual structure.
           Design decisions about form and entities are guided by considerations of <emph class="ltx_emph ltx_font_italic">information granularity</emph>, or how many levels comprise the range between a high-level overview and individual data values.</p>
       </div>
-      <figure id="S3.F1" class="ltx_figure"><img src="x7.png" id="S3.F1.g1" class="ltx_graphics ltx_centering" width="1081" height="333" 
+      <figure id="S3.F1" class="ltx_figure"><img src="x7.png" id="S3.F1.g1" class="ltx_graphics ltx_centering" width="1081" height="333"
       alt="A graphic with two parts. Part A illustrates an accessible visualization structure for an example scatterplot, and its corresponding data and encoding entities: Chart Root, Encodings, Intervals/Categories, and Data points. Part B illustrates three different ways of navigating a visualization structure: Structural, Spatial, and Targeted navigation. A long description of this graphic is available at the following link."
       longdesc="fig-tree-longdesc.html">
       <a href="fig-tree-longdesc.html" class="ltx_align_center longdesc" target="_">Long Description</a>
@@ -390,11 +391,6 @@ materials:
       <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure"><span class="ltx_text">Figure 2</span>: </span><span class="ltx_text">Example structural and navigational schemes generated as part of our co-design process, and applied to diverse chart types.</span></figcaption>
     </figure>
     <div id="NavigableTree">
-      <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-      <script src="AccessibilityTree.js"></script>
-      <link rel="stylesheet" type="text/css" href="ExampleStyles.css" />
     <div id="S4.p1" class="ltx_para">
       <p class="ltx_p">Our co-design process yielded prototypes that demonstrate a breadth of ways to operationalize our design dimensions.
         Figure&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> excerpts some of our highest-fidelity prototypes, implemented on top of Vega-Lite&nbsp;<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib47" title="Vega-Lite: A Grammar of Interactive Graphics" class="ltx_ref">50</a>]</cite>.
@@ -417,35 +413,40 @@ materials:
         Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(d) structures the tree by annotations rather than encoding: users can descend into the time intervals designated by the orange and blue rectangles, and view points within those intervals.
         Finally, Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(e) organizes its tree in terms of data, offering a binary search structure through the years.</p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/olli@1.0.7/dist/olli.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/olli-adapters@1.0.7/dist/adapters.min.js"></script>
     <div id="Accessibility-Tree-Examples" style="background: #f6f6f6; border: 1px solid #ddd; border-radius: 10px; padding: 0 1em;">
-        <p>
-          The examples shown in Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> are available as interactive prototypes in the <a href="/pubs/rich-screen-reader-vis-experiences/supplementary-material.zip">supplementary material</a>.
-          The video below, narrated by Hajas, demonstrates how hierarchical structures and keyboard navigation works in practice.
-        </p>
+      <p>
+        The examples shown in Fig.&nbsp;<a href="#S4.F2" title="Figure 2 ‣ 4 Example Gallery ‣ Rich Screen Reader Experiences for Accessible Data Visualization" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> are available as interactive prototypes in the <a href="/pubs/rich-screen-reader-vis-experiences/supplementary-material.zip">supplementary material</a>.
+        The video below, narrated by Hajas, demonstrates how hierarchical structures and keyboard navigation works in practice.
+      </p>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/JSWyT4Ttimw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JSWyT4Ttimw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <p>
-          Finally, we preview updates to the implementation and user experience we are working on for a future open source software release, led by <a href="https://mattblanco.me/">Matt Blanco</a>.
-          <strong>Note: these previews do not yet demonstrate all the functionality found in our supplementary interactive prototypes.</strong>
-          To begin, press the <span class="ltx_text ltx_font_typewriter">t</span> key to bring focus to the keyboard-navigable tree structure.  
-          Arrow keys can then be used, as described above, to traverse the tree structurally (i.e., <span class="ltx_text ltx_font_typewriter">up</span> and <span class="ltx_text ltx_font_typewriter">down</span> to move between levels, <span class="ltx_text ltx_font_typewriter">left</span> and <span class="ltx_text ltx_font_typewriter">right</span> to move between siblings).
-          You may also switch between example visualizations using the dropdown menu. 
-        </p>
-        <p>Example: <select id="Spec-Selection" onChange='updateVisualization()'>
-          <option value='facetedTrellis'>Faceted Trellis Chart</option>
-          <option value='multiSeriesLine'>Multi-Series Line Chart</option>
-          <option value='stackedBar'>Stacked Bar Chart</option>
-        </select></p>
-        <div id="Visualization-Example"></div>
-        <p>Accessible Tree:</p>
-        <div id="Accessibility-Tree"></div>
-          <script type="text/javascript">
+      <p>
+        Finally, we preview updates to the implementation and user experience we are working on for a future open source software release, led by <a href="https://mattblanco.me/">Matt Blanco</a>.
+        <strong>Note: these previews do not yet demonstrate all the functionality found in our supplementary interactive prototypes.</strong>
+        To begin, press the <span class="ltx_text ltx_font_typewriter">t</span> key to bring focus to the keyboard-navigable tree structure.
+        Arrow keys can then be used, as described above, to traverse the tree structurally (i.e., <span class="ltx_text ltx_font_typewriter">up</span> and <span class="ltx_text ltx_font_typewriter">down</span> to move between levels, <span class="ltx_text ltx_font_typewriter">left</span> and <span class="ltx_text ltx_font_typewriter">right</span> to move between siblings).
+        You may also switch between example visualizations using the dropdown menu.
+      </p>
+      <p>Example: <select id="Spec-Selection" onChange='updateVisualization()'>
+        <option value='facetedTrellis'>Faceted Trellis Chart</option>
+        <option value='multiSeriesLine'>Multi-Series Line Chart</option>
+        <option value='stackedBar'>Stacked Bar Chart</option>
+      </select></p>
+      <div id="Visualization-Example"></div>
+      <p style="font-weight:bold">Accessible Tree:</p>
+      <div style="padding-bottom:1em" id="Accessibility-Tree"></div>
+        <script type="text/javascript">
           let specArray = [
             {
               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
               "name": "trellis_barley",
-              "description": "A trellis of Barley yields from the 1930s, complete with main-effects ordering to facilitate comparison.",
+              "description": "A trellis of Barley yields from the 1930s.",
               "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/barley.json"},
               "mark": "point",
               "height": {"step": 12},
@@ -471,7 +472,7 @@ materials:
             },
             {
               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-              "description": "Stock prices of 5 Tech Companies over Time.",
+              "description": "Stock prices of 5 tech companies over time.",
               "data": {"url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/stocks.csv"},
               "mark": "line",
               "encoding": {
@@ -484,7 +485,6 @@ materials:
               "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
               "data": { "url": "https://raw.githubusercontent.com/vega/vega-datasets/next/data/barley.json" },
               "mark": "bar",
-              "description": "A horizontally stacked bar chart displaying barley variety and the sum of yeilds among different farm sites.",
               "encoding": {
                 "x": { "aggregate": "median", "field": "yield" },
                 "y": { "field": "variety" },
@@ -493,40 +493,32 @@ materials:
             }
           ]
           const updateVisualization = (e) => {
-            let currentTree = document.getElementById('Accessibility-Tree')
+            const currentTree = document.getElementById('Accessibility-Tree')
             if (currentTree.firstChild) {
               currentTree.removeChild(currentTree.firstChild)
             }
-            let specIndex = document.getElementById('Spec-Selection').selectedIndex;
-            let spec = vegaLite.compile(specArray[specIndex]).spec
-            const runtime = vega.parse(spec);
+            const specIndex = document.getElementById('Spec-Selection').selectedIndex;
+            const vlSpec = specArray[specIndex];
+            const vgSpec = vegaLite.compile(vlSpec).spec
             const render = document.getElementById('Visualization-Example');
-            let view = new vega.View(runtime)
+            const view = new vega.View(vega.parse(vgSpec))
                 .logLevel(vega.Warn)
                 .initialize(render)
                 .renderer('canvas') // Render as an image to not pollute DOM with elements that the screen reader needs to traverse first.
-                .hover()
                 .runAsync()
                 .then(val => {
-                  window.createAccessibilityTree({
-                    adapter: "vega-lite",
-                    renderType: "tree",
-                    domId: "Accessibility-Tree",
-                    visObject: val,
-                    visSpec: specArray[specIndex] })
+                  OlliAdapters.VegaLiteAdapter(vlSpec).then((olliVisSpec) => {
+                    document
+                      .getElementById("Accessibility-Tree")
+                      .append(olli(olliVisSpec));
+                  });
                 });
           }
-          document.addEventListener('keypress', (keyStroke) => {
-            if (keyStroke.key.toLowerCase() === 't') {
-              if (document.getElementById('treeView') !== null) {
-                document.getElementById('treeView').firstChild.focus()
-              }
-            }
-          })
           window.addEventListener('DOMContentLoaded', () => updateVisualization());
-          </script>
-        </div>
+        </script>
+      </div>
     </div>
+
   </section>
   <section id="S5" class="ltx_section">
     <h2 class="ltx_title ltx_title_section" id="H-S5">
@@ -620,49 +612,49 @@ materials:
           </caption>
           <tr style="font-weight:bold;">
             <th scope="col">Prompt: When using this prototype ...</th>
-            <th scope="col">Task</th> 
+            <th scope="col">Task</th>
             <th scope="col">Table</th>
             <th scope="col">Multi-view</th>
             <th scope="col">Targeted</th>
           </tr>
           <tr style="background:#f6f6f6;">
             <th scope="row">How enjoyable was it to interact with the data?</th>
-            <td><span class="ltx_text ltx_font_typewriter">enjoy</span></td> 
+            <td><span class="ltx_text ltx_font_typewriter">enjoy</span></td>
             <td><strong>3</strong> [3.31] (0.95)</td>
             <td><strong>4</strong> [3.77] (1.01)</td>
             <td><strong>4</strong> [3.54] (0.97)</td>
           </tr>
           <tr>
             <th scope="row">How easy was it to generate and answer questions?</th>
-            <td><span class="ltx_text ltx_font_typewriter">discover</span></td> 
+            <td><span class="ltx_text ltx_font_typewriter">discover</span></td>
             <td><strong>4</strong> [3.15] (1.34)</td>
             <td><strong>3</strong> [3.00] (1.08)</td>
             <td><strong>3</strong> [3.23] (1.17)</td>
           </tr>
           <tr style="background:#f6f6f6;">
             <th scope="row">If you already knew what information you were trying to find, how easy would it be to look up or locate those data?</th>
-            <td><span class="ltx_text ltx_font_typewriter">lookup-locate</span></td> 
+            <td><span class="ltx_text ltx_font_typewriter">lookup-locate</span></td>
             <td><strong>3</strong> [3.31] (1.32)</td>
             <td><strong>4</strong> [3.77] (1.17)</td>
             <td><strong>4</strong> [3.38] (1.19)</td>
           </tr>
           <tr>
             <th scope="row">If you didn't already know which information you were trying to find, how easy would it be to browse or explore the data?</th>
-            <td><span class="ltx_text ltx_font_typewriter">browse-explore</span></td> 
+            <td><span class="ltx_text ltx_font_typewriter">browse-explore</span></td>
             <td><strong>2</strong> [3.00] (1.68)</td>
             <td><strong>2</strong> [2.69] (1.11)</td>
             <td><strong>3</strong> [3.00] (1.29)</td>
           </tr>
           <tr style="background:#f6f6f6;">
             <th scope="row">How easy was it to learn to use?</th>
-            <td>ease-of-use</td> 
+            <td>ease-of-use</td>
             <td><strong>4</strong> [4.15] (0.99)</td>
             <td><strong>3</strong> [2.69] (0.75)</td>
             <td><strong>3</strong> [3.15] (1.34)</td>
           </tr>
           <tr>
             <th scope="row">How useful would it be to have access to this interaction style for engaging with data?</th>
-            <td>perceived usefulness</td> 
+            <td>perceived usefulness</td>
             <td><strong>4</strong> [4.15] (0.80)</td>
             <td><strong>4</strong> [4.00] (0.82)</td>
             <td><strong>4</strong> [4.15] (1.07)</td>
