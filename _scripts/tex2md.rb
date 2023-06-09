@@ -1,7 +1,7 @@
 #! /usr/bin/env ruby
 
 require 'fileutils'
-require 'nokogumbo'
+require 'nokogiri'
 require 'htmlbeautifier'
 
 # Call from the root directory.
@@ -25,7 +25,7 @@ doc = Nokogiri::HTML5(IO.read('_scripts/out/tex2md.html'))
 
 # Improve semantics
 h6 = doc.css('h6')
-h6.each do |h| 
+h6.each do |h|
   h.name = 'h2'
   if h.content == 'Acknowledgements.'
     h.content = 'Acknowledgements'
@@ -91,7 +91,7 @@ article.css('li.ltx_bibitem').each do |li|
 
   # Remove "External Links" text
   span.inner_html = span.inner_html.sub('External Links: ', '')
-    
+
 
   # Remove URL Notes
   # Remove empty Document links
