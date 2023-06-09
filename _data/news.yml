@@ -1,3 +1,9 @@
+- date: 2023-06-09
+  desc: >
+    Two papers this summer: [Saliency Cards](/pubs/saliency-cards) at ACM FAccT 2023 and [VisText](/pubs/vistext) at ACL 2023. 
+- date: 2023-05-08
+  desc: >
+    Arvind gave a seminar talk at Stanford on [Intelligence Augmentation through the Lens of Interactive Data Visualizing](https://www.youtube.com/watch?v=wZc1Rq5FtXc), reflecting on the group's work in the context of large language models.
 - date: 2023-04-24
   desc: >
     Two papers at CHI 2023: [Kaleidoscope](/pubs/kaleidoscope) for semantically-grounded context-specific evaluation of ML models; and [Deimos](/pubs/deimos), a grammar for visualization morphs in immersive environments.
