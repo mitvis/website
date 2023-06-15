@@ -12,6 +12,8 @@
     {% assign venue_type = site.data.venues[page.venue].bibtex.venue %}
     {% if venue_type == 'journal' %}
       <meta name="citation_journal_title" content="{{site.data.venues[page.venue].full | default:page.venue}}">
+    {% elsif venue_type == 'institute' %}
+      <meta name="citation_technical_report_institution" content="{{site.data.venues[page.venue].full | default:page.venue}}">
     {% else %}
       <meta name="citation_inbook_title" content="{{site.data.venues[page.venue].full | default:page.venue}}">
     {% endif %}
