@@ -124,3 +124,8 @@ facct:
   bibtex:
     type: inproceedings
     venue: booktitle
+acl:
+  full: The Annual Meeting of the Association for Computational Linguistics (ACL)
+  bibtex:
+    type: inproceedings
+    venue: booktitle
