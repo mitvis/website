@@ -29,7 +29,7 @@ tags:
   - system
   - quantitative methods
 teaser: Webzeitgeist, a scalable platform for Web design mining, supplements the data used in traditional Web content mining (yellow) with information about the visual appearance and structure of pages (blue) to enable a host of new design applications (green).
-award: bestPaper
+award: Best Paper Award
 videos:
   - name: Video Preview
     key: 3d3ZRnuPw-0

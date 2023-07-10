@@ -45,13 +45,9 @@ layout: page
                 {{site.data.venues[pub.venue].full}}, {{pub.year}}
               {% endif %}
             </p>
-            {% if pub.award == 'bestPaper' %}
+            {% if pub.award %}
               <p class="award">
-                <i class="fas fa-trophy"></i> Best Paper Award
-              </p>
-            {% elsif pub.award == 'honMention' %}
-              <p class="award">
-                <i class="fas fa-award"></i> Best Paper Honorable Mention
+                <i class="fas fa-award"></i> {{pub.award}}
               </p>
             {% endif %}
             <p class="links">

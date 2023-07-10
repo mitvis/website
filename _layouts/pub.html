@@ -105,13 +105,9 @@
                 {% endif %}
               </span>
             </p>
-            {% if page.award == 'bestPaper' %}
+            {% if page.award %}
               <p class="award">
-                <i class="fas fa-trophy"></i> Best Paper Award
-              </p>
-            {% elsif page.award == 'honMention' %}
-              <p class="award">
-                <i class="fas fa-award"></i> Best Paper Honorable Mention
+                <i class="fas fa-award"></i> {{page.award}}
               </p>
             {% endif %}
 

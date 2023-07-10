@@ -18,7 +18,7 @@ venue: eurovis
 doi: 10.1111/cgf.14519
 year: 2022
 date: 2022-06-13
-award: honMention
+award: Best Paper Honorable Mention
 tags:
   - visualization design
   - interaction design

@@ -13,6 +13,7 @@ tags:
   - accessibility
   - mixed methods
 teaser: The VisText dataset contains over 12,000 charts represented as a rasterized image, data table, and scene graph. Each chart is accompanied by a generated low-level (L1) caption describing the aspects of the chart’s construction (e.g., chart type and axis labels) and a crowdsourced high-level (L2/L3) caption describing summary statistics and interesting trends.
+award: Outstanding Paper Award
 materials:
   - name: Dataset
     url: https://vis.csail.mit.edu/vistext/

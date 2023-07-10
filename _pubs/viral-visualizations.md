@@ -17,7 +17,7 @@ tags:
   - mixed methods
   - visualization design
 teaser: ' Sample counter-visualizations from the anti-mask user network. While there are meme-based visualizations, anti-maskers on Twitter adopt the same visual vocabulary as visualization experts and the mainstream media.'
-award: honMention
+award: Best Paper Honorable Mention
 videos:
   - name: CHI 2021 Talk
     key: zVlwJQu8pRo
