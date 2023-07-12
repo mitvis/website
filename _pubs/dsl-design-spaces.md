@@ -10,6 +10,7 @@ authors:
 type: workshop
 venue: plateau
 year: 2021
+doi: 10.1184/r1/19799233.v1
 tags:
   - language
   - qualitative methods
