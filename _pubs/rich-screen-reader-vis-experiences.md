@@ -34,6 +34,9 @@ materials:
   - name: Supplementary Material
     url: /pubs/rich-screen-reader-vis-experiences/supplementary-material.zip
     type: file
+  - name: Olli (Open Source Library)
+    url: https://mitvis.github.io/olli/
+    type: cube
 ---
 
 <article>
@@ -52,6 +55,13 @@ materials:
       An accessible HTML version of this paper is available at:&nbsp;<a href="http://vis.csail.mit.edu/pubs/rich-screen-reader-vis-experiences" title="" class="ltx_ref ltx_href">http://vis.csail.mit.edu/pubs/rich-screen-reader-vis-experiences</a>.
       </p>
   </section>
+
+  <section>
+    <p class="ltx_p" style="font-weight: bold; background: #F0B32377; border-bottom: 1px solid #898D8D; margin: 0; padding: 1em; text-align: center;">
+      This paper's prototypes have been implemented in <a href="https://mitvis.github.io/olli/">Olli</a> — an open source Javascript library.
+    </p>
+  </section>
+
   <section id="S1" class="ltx_section">
     <h2 class="ltx_title ltx_title_section" id="H-S1">
       <span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
