@@ -63,7 +63,13 @@ home: true
             </span>
             <span>
               <span class="name">{{person[1].name}}</span><br> 
-              <span class="title">{{person[1].title}}</span>
+              <span class="title">
+                {{person[1].title}}
+                {% if person[1].next %}
+                  <br>
+                  &rdca; {{person[1].next}}
+                {% endif %}
+              </span>              
             </span>
           </a>
         </li>
