@@ -21,6 +21,7 @@ materials:
     url: /pubs/vis-text-model/data
     type: file
 ---
+
 <style>
   figure#S4\.T3 tbody {
     font-size: 0.8em;
@@ -28,8 +29,8 @@ materials:
   }
 </style>
 <article>
-  <figure id="teaser"><img src="x32.png" id="p1.g1" class="ltx_graphics ltx_centering" width="2702" height="588" 
-    alt="A three-column horizontal teaser graphic. Column A contains the famous “Flatten the Curve” coronavirus chart. Columns B and C contain different descriptions of that chart. A long description is available at the following link." 
+  <figure id="teaser"><img src="x32.png" id="p1.g1" class="ltx_graphics ltx_centering" width="2702" height="588"
+    alt="A three-column horizontal teaser graphic. Column A contains the famous “Flatten the Curve” coronavirus chart. Columns B and C contain different descriptions of that chart. A long description is available at the following link."
     longdesc="fig-teaser-longdesc.html"/>
     <a href="fig-teaser-longdesc.html" class="ltx_align_center" target="_">Long Description</a>
     <figcaption class="ltx_text ltx_caption ltx_align_center">
@@ -353,7 +354,7 @@ materials:
               reference to the rendered visualization and “common knowledge” (<emph class="ltx_emph ltx_font_italic">perceiver-dependent</emph>)</td>
           </tr>
           <tr class="ltx_tr">
-            <td class="ltx_td ltx_align_left ltx_wrap ltx_align_middle" style="width:5.7pt;padding-top:3.472222222222222px;padding-bottom:3.472222222222222px; background-color:#94DE94;">
+            <td class="ltx_td ltx_align_center ltx_align_middle" style="width:5.7pt;padding-top:3.472222222222222px;padding-bottom:3.472222222222222px; background-color:#94DE94;">
               <span class="ltx_text ltx_wrap ltx_font_typewriter">Level 2</span>
             </td>
             <td class="ltx_td ltx_align_left ltx_wrap ltx_align_middle" style="width:71.1pt;padding-top:3.472222222222222px;padding-bottom:3.472222222222222px; background-color:#F2FFEB;">
