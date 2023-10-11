@@ -27,9 +27,16 @@ home: true
 
   <div class="pure-u-1 pure-u-md-2-5">
     <h2 id="news-header">News</h2>
+
+    <div id="pinned">
+      {% assign pinned = site.data.news | where: "pinned", true %}
+      {{pinned[0].desc | markdownify}}
+    </div>
+
     <div id="news">
       <div id="news-items">
-        {% for item in site.data.news limit: 10 %}
+        {% assign unpinned = site.data.news | where_exp: "item", "item.date" %}
+        {% for item in unpinned limit: 10 %}
           <div class="item">
             <p class="date">{{item.date}}</p>
             {{item.desc | markdownify}}

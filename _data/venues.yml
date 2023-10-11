@@ -129,3 +129,9 @@ acl:
   bibtex:
     type: inproceedings
     venue: booktitle
+live:
+  short: Live Programming
+  full: The Live Programming Workshop at SPLASH
+  bibtex:
+    type: inproceedings
+    venue: booktitle
