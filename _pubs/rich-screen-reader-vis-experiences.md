@@ -33,7 +33,7 @@ videos:
 materials:
   - name: Supplementary Material
     url: /pubs/rich-screen-reader-vis-experiences/supplementary-material.zip
-    type: file
+    type: file-archive
   - name: Olli (Open Source Library)
     url: https://mitvis.github.io/olli/
     type: cube

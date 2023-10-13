@@ -20,7 +20,7 @@ materials:
     type: cube
   - name: Code
     url: https://github.com/mitvis/vistext
-    type: cube
+    type: code
 videos:
   - name: ACL Teaser Video
     key: Ygyw6AQIPUo
