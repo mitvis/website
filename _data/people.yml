@@ -79,7 +79,7 @@ benjtang:
   title: Master's (SM) Researcher
   alumni: true
 
-mzc219: 
+mzc219:
   name: Katie Chen
   url: https://www.k80chen.com/
   title: Master's (SM) Researcher
@@ -197,6 +197,10 @@ allenlee:
 
 gracefh:
   name: Grace Huang
+  title: Undergraduate Researcher
+
+sjzheng:
+  name: Sophia Zheng
   title: Undergraduate Researcher
 
 # Interns
