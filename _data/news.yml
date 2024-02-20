@@ -1,9 +1,11 @@
-- pinned: true
-  desc: >
-    We are looking to recruit **1–2 fully-funded PhD students** to work with us on [accessible data representations](/pubs/#tag=accessibility), [interpretable/explainable](/pubs/#tag=machine-learning-interpretability) AI & human-AI alignment, or [malleable interfaces & LLMs](/pubs/#tag=malleable-interfaces). 
-    
-
-    Apply through [MIT EECS](https://www.eecs.mit.edu/academics/graduate-programs/admission-process/) (deadline: **Dec 15, 2023**). The MIT EECS website lists a number of resources to help with the application process. For instance, consider signing up with [MIT EECS GAAP](https://eecs-gaap.mit.edu/) to receive mentorship about your application from a current MIT EECS PhD student.
+# - pinned: true
+#  desc: >
+#    We are looking to recruit **1–2 fully-funded PhD students** to work with us on [accessible data representations](/pubs/#tag=accessibility), [interpretable/explainable](/pubs/#tag=machine-learning-interpretability) AI & human-AI alignment, or [malleable interfaces & LLMs](/pubs/#tag=malleable-interfaces). 
+#    
+#
+#    Apply through [MIT EECS](https://www.eecs.mit.edu/academics/graduate-programs/admission-process/) (deadline: **Dec 15, 2023**). The MIT EECS website lists a number of resources to help with the application process. For instance, consider signing up with [MIT EECS GAAP](https://eecs-gaap.mit.edu/) to receive mentorship about your application from a current MIT EECS PhD student.
+- date: 2024-02-20
+  desc: Arvind was named a [2024 Alfred P. Sloan Fellow](https://sloan.org/fellowships/2024-Fellows)
 - date: 2023-06-09
   desc: >
     Two papers this summer: [Saliency Cards](/pubs/saliency-cards) at ACM FAccT 2023 and [VisText](/pubs/vistext) at ACL 2023. VisText was recognized with an <a href="/pubs/vistext/"><span class="award">Outstanding Paper Award</span></a>.
