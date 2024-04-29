@@ -73,6 +73,10 @@ jonsh:
   title: Master's (MEng) Researcher
   alumni: true
 
+ipedraza:
+  name: Isabella Pedraza Pineros
+  title: Master's (MEng) Researcher
+
 benjtang:
   name: Benny J. Tang
   url: https://benjtang.dev
@@ -124,10 +128,6 @@ wso:
   next: MIT DUSP PhD Student
 
 # Undergrads
-ipedraza:
-  name: Isabella Pedraza Pineros
-  title: Undergraduate Researcher
-  url: https://61040-fa22.github.io/portfolio-isabellapedraza/
 
 mattblanco:
   name: Matt Blanco
