@@ -59,12 +59,7 @@ home: true
       {% endfor %}
     </div>
 
-    <h3 id="gallery-header">Our Community</h3>
-    <div id="gallery">
-
-    </div>
-
-    <h3 id="alumni-header">Our Alumni</h3>
+    <h3 id="alumni-header">Alumni</h3>
     <ul id="alumni" class="pure-g">
       {% assign alumni = site.data.people | filter_alumni: true | sort_people: 'PhD, Postdoctoral, Scientist' %}
       {% for person in alumni  %}
