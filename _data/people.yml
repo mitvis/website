@@ -1,246 +1,30 @@
-arvindsatya:
-  name: Arvind Satyanarayan
-  url: http://arvindsatya.com
+
+azaliamirhoseini:
+  name: Azalia Mirhoseini
+  url: http://azaliamirhoseini.com/
   title: Assistant Professor
 
-crosenth:
-  name: Cynthia Rosenthal
-  title: Administrative Assistant
-
-# Postdocs
-nathalie_vladis:
-  name: Nathalie Vladis
-  title: Postdoctoral Researcher
-  alumni: true
-
-vineetpa:
-  name: Vineet Pandey
-  url: https://vineetp13.github.io/
-  title: Postdoctoral Researcher
-  alumni: true
-  next: Faculty at Utah CS
-
-amyfox:
-  name: Amy Fox
-  url: https://madebyafox.github.io
-  title: Postdoctoral Researcher
-
 # PhDs
-lundgard:
-  name: Alan Lundgard
-  url: https://alanlundgard.com/
-  title: PhD Researcher (On Leave)
-  alumni: true
-  next: Design Consultant
+jordanjurafsky:
+  name: Jordan Jurafsky
+  url: https://www.jordanjuravsky.com/
+  title: PhD Student
 
-jzong:
-  name: Jonathan Zong
-  url: http://jonathanzong.com/
-  title: PhD Researcher
+jonsaadfalcon:
+  name: Jon Saad-Falcon
+  url: https://jonsaadfalcon.com/
+  title: PhD Student
 
-crystall:
-  name: Crystal Lee
-  url: http://web.mit.edu/crystall/www/
-  title: PhD Researcher
-  alumni: true
-  next: Faculty at MIT CMS/W
-
-hsuresh:
-  name: Harini Suresh
-  url: http://harinisuresh.com
-  title: PhD Researcher
-  # title: Postdoctoral Researcher
-  alumni: true
-  next: Faculty at Brown CS
-
-aboggust:
-  name: Angie Boggust
-  url: http://angieboggust.com
-  title: PhD Researcher
-
-dwootton:
-  name: Dylan Wootton
-  url: https://dylanwootton.com
-  title: PhD Researcher
-jopo:
-  name: Josh Pollock
-  url: https://joshmpollock.com/
-  title: PhD Researcher
-
-# Master's
-jonsh:
-  name: Shuli Jones
-  title: Master's (MEng) Researcher
-  alumni: true
-
-benjtang:
-  name: Benny J. Tang
-  url: https://benjtang.dev
-  title: Master's (SM) Researcher
-  alumni: true
-
-mzc219:
-  name: Katie Chen
-  url: https://www.k80chen.com/
-  title: Master's (SM) Researcher
-
-hbang:
-  name: Hyemin Bang
-  title: Master's (MEng) Researcher
-
-esefah:
-  name: Ebenezer "EJ" Sefah
-  title: Master's (MEng) Researcher
-  alumni: true
-
-ktbacher:
-  name: Katie Bacher
-  title: Master's (MEng) Researcher
-  alumni: true
-
-houssam:
-  name: Houssam Kherraz
-  title: Master's (MEng) Researcher
-  alumni: true
-
-nava:
-  name: Nava Haghighi
-  url: http://navahaghighi.com
-  title: Master's (SM) Researcher
-  alumni: true
-  next: Stanford CS PhD student
-
-rneogy:
-  name: Rupayan Neogy
-  url: http://rneogy.github.io
-  title: Master's (MEng) Researcher
-  alumni: true
-
-wso:
-  name: Wonyoung So
-  url: https://wonyoung.so/
-  title: Master's (SM) Researcher
-  alumni: true
-  next: MIT DUSP PhD Student
+# Masters
 
 # Undergrads
-ipedraza:
-  name: Isabella Pedraza Pineros
-  title: Undergraduate Researcher
-  url: https://61040-fa22.github.io/portfolio-isabellapedraza/
 
-mattblanco:
-  name: Matt Blanco
-  title: Undergraduate Researcher
-  url: https://mattblanco.me
-  alumni: true
+# Alumni
 
-meic1212:
-  name: Catherine Mei
-  title: Undergraduate Researcher
-
-annieb22:
-  name: Annie Bryan
-  title: Undergraduate Researcher
-  url: https://anniebryan.github.io
-  alumni: true
-
-tiffc:
-  name: Tiffany Chen
-  title: Undergraduate Researcher
-  url: http://tiffanychenn.me/
-  alumni: true
-
-ksiyoung:
-  name: Siyoung Kim
-  title: Undergraduate Researcher
-  url: https://siyoung-kim.github.io/
-  alumni: true
-
-tanyang:
-  name: Tanya Yang
-  title: Undergraduate Researcher
-  alumni: true
-
-katmh:
-  name: Katherine Huang
-  title: Undergraduate Researcher
-  alumni: true
-  url: http://katmh.com
-
-monterde:
-  name: Mateo Monterde
-  title: Undergraduate Researcher
-  alumni: true
-
-soominc:
-  name: Soomin Chun
-  title: Undergraduate Researcher
-  alumni: true
-
-annaad:
-  name: Anna Arpaci-Dusseau
-  title: Undergraduate Researcher
-  url: http://annaad.github.io
-  alumni: true
-
-ajmeurer:
-  name: Anna Meurer
-  title: Undergraduate Researcher
-  alumni: true
-
-allenlee:
-  name: Allen Lee
-  url: https://allenjlee.github.io
-  title: Undergraduate Researcher
-  alumni: true
-
-gracefh:
-  name: Grace Huang
-  title: Undergraduate Researcher
-
-sjzheng:
-  name: Sophia Zheng
-  title: Undergraduate Researcher
-
-efaith1:
-  name: Esther Kinyanjui
-  title: Undergraduate Researcher
-
-ljewel:
-  name: Lydia Patterson
-  title: Undergraduate Researcher
-
-# Interns
-jwjang:
-  name: JiWoong (Joon) Jang
-  title: Research Intern
-  affiliation: Carnegie Mellon University
-  alumni: true
-
-sovesh:
-  name: Sovesh Mohapatra
-  url: https://www.linkedin.com/in/sovesh/
-  title: Research Intern
-  affiliation: University of Massachusetts, Amherst
-  alumni: true
-
-nicbk:
-  name: Nicolás Kennedy
-  title: Research Intern
-  url: https://nicbk.com/
-  alumni: true
-
-dhiraj:
-  name: Dhiraj Barnwal
-  url: https://djbarnwal.github.io/
-  title: Research Intern
-  affiliation: IIT Kharagpur
-  alumni: true
-
-# Visitors
-peck:
-  name: Evan Peck
-  title: Visiting Scientist
-  url: http://www.eg.bucknell.edu/~emp017
-  alumni: true
+#example:
+#  name: 
+#  url:
+#  title: 
+#  alumni: true
+#  affiliation: 
+#  next:

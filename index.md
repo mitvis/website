@@ -3,10 +3,7 @@ layout: page
 home: true
 ---
 <p id="mission">
-  We use visualization as a petri dish 
-  to study <strong>intelligence augmentation</strong>: 
-  how can computation help amplify our cognition and creativity, 
-  while respecting our agency?
+  We develop <strong>scalable and self-improving AI systems</strong>, leveraging techniques in machine learning, systems, natural language processing, and beyond.
 </p>
 
 <div id="home" class="pure-g">
@@ -14,9 +11,7 @@ home: true
     <h2>Research Themes</h2>
     {% for theme in site.data.research_themes %}
       <div id="theme-{{theme.key}}" class="theme" data-url="{{theme.url}}" data-people="{{theme.people}}">
-        <video muted loop playsinline>
-          <source src="/videos/themes/{{theme.key}}.mp4" type="video/mp4">
-        </video>
+        
         <div class="content">
           <h3>{{theme.name}}</h3>
           {{theme.desc | markdownify}}
@@ -26,23 +21,10 @@ home: true
   </div>
 
   <div class="pure-u-1 pure-u-md-2-5">
-    <h2 id="news-header">News</h2>
 
     <div id="pinned">
       {% assign pinned = site.data.news | where: "pinned", true %}
       {{pinned[0].desc | markdownify}}
-    </div>
-
-    <div id="news">
-      <div id="news-items">
-        {% assign unpinned = site.data.news | where_exp: "item", "item.date" %}
-        {% for item in unpinned limit: 10 %}
-          <div class="item">
-            <p class="date">{{item.date}}</p>
-            {{item.desc | markdownify}}
-          </div>
-        {% endfor %}
-      </div>
     </div>
 
     <h2 id="people-header">People</h2>
@@ -83,4 +65,8 @@ home: true
       {% endfor %}
     </ul>
   </div>
+</div>
+
+<div>
+  <h5>Design from <a href="https://vis.csail.mit.edu/">MIT Visualization Group</a></h5>
 </div>

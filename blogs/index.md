@@ -1,10 +1,10 @@
 ---
-title: Publications
+title: Blogs
 layout: page
 ---
 <div id="pubs" class="pure-g">
   <div id="content" class="pure-u-1 pure-u-md-3-4">
-    <h1 class="title">Publications</h1>
+    <h1 class="title">Blogs</h1>
 
     {% assign pubYears = site.pubs | group_by:"year" | sort: "name" | reverse %}
     {% for year in pubYears %}
@@ -72,7 +72,7 @@ layout: page
     <h4>Search</h4>
     <input type="text" id="search" placeholder="Search title, abstract, or authors...">
 
-    <h4>Publication Type</h4>
+    <h4>Blog Type</h4>
     <div id="types">
       {% assign types = site.pubs | map: 'type' | uniq %}
       {% for type in types %}
