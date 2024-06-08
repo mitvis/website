@@ -67,23 +67,26 @@
   }
 }
 
-#alumni-header {
+#gallery-header, #alumni-header {
   font-size: 1rem;
   color: $csail-orange;
   margin-bottom: 0.25em;
+  border-bottom: 1px solid rgba($csail-orange, 0.5);
 }
 
 #alumni {
   margin: 0;
   padding: 0;
   list-style: none;
+  height: 20rem;
+  overflow-y: scroll;
 
   li a {
     display: flex;
     align-items: center;
     text-align: left;
     padding: 0.5em 0 0.25em 0;
-    border-top: 1px solid rgba($csail-orange, 0.5);
+    border-bottom: 1px solid rgba($csail-orange, 0.5);
 
     .name {
       font-weight: normal;

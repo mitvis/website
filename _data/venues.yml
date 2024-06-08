@@ -135,3 +135,9 @@ live:
   bibtex:
     type: inproceedings
     venue: booktitle
+mit-genai:
+  short: MIT GenAI Impact Papers
+  full: An MIT Exploration of Generative AI
+  bibtex:
+    type: article
+    venue: publisher
