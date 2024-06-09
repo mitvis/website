@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-
 azaliamirhoseini:
   name: Azalia Mirhoseini
   url: http://azaliamirhoseini.com/
   title: Assistant Professor
-=======
-arvindsatya:
-  name: Arvind Satyanarayan
-  url: http://arvindsatya.com
-  title: Associate Professor
->>>>>>> 0877e2c2118715de95a0508343b1c95ae7e46c97
 
 # PhDs
 jordanjurafsky:
@@ -22,98 +14,7 @@ jonsaadfalcon:
   url: https://jonsaadfalcon.com/
   title: PhD Student
 
-<<<<<<< HEAD
 # Masters
-=======
-crystall:
-  name: Crystal Lee
-  url: http://web.mit.edu/crystall/www/
-  title: PhD Researcher
-  alumni: true
-  next: Faculty at MIT CMS/W
-
-hsuresh:
-  name: Harini Suresh
-  url: http://harinisuresh.com
-  title: PhD Researcher
-  # title: Postdoctoral Researcher
-  alumni: true
-  next: Faculty at Brown CS
-
-aboggust:
-  name: Angie Boggust
-  url: http://angieboggust.com
-  title: PhD Researcher
-
-dwootton:
-  name: Dylan Wootton
-  url: https://dylanwootton.com
-  title: PhD Researcher
-jopo:
-  name: Josh Pollock
-  url: https://joshmpollock.com/
-  title: PhD Researcher
-
-# Master's
-jonsh:
-  name: Shuli Jones
-  title: Master's (MEng) Researcher
-  alumni: true
-
-ipedraza:
-  name: Isabella Pedraza Pineros
-  title: Master's (MEng) Researcher
-
-benjtang:
-  name: Benny J. Tang
-  url: https://benjtang.dev
-  title: Master's (SM) Researcher
-  alumni: true
-
-mzc219:
-  name: Katie Chen
-  url: https://www.k80chen.com/
-  title: Master's (SM) Researcher
-
-hbang:
-  name: Hyemin Bang
-  title: Master's (MEng) Researcher
-
-esefah:
-  name: Ebenezer "EJ" Sefah
-  title: Master's (MEng) Researcher
-  alumni: true
-
-ktbacher:
-  name: Katie Bacher
-  title: Master's (MEng) Researcher
-  alumni: true
-
-houssam:
-  name: Houssam Kherraz
-  title: Master's (MEng) Researcher
-  alumni: true
-
-nava:
-  name: Nava Haghighi
-  url: http://navahaghighi.com
-  title: Master's (SM) Researcher
-  alumni: true
-  next: Stanford CS PhD student
-
-rneogy:
-  name: Rupayan Neogy
-  url: http://rneogy.github.io
-  title: Master's (MEng) Researcher
-  alumni: true
-
-wso:
-  name: Wonyoung So
-  url: https://wonyoung.so/
-  title: Master's (SM) Researcher
-  alumni: true
-  next: MIT DUSP PhD Student
->>>>>>> 0877e2c2118715de95a0508343b1c95ae7e46c97
 
 # Undergrads
 

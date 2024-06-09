@@ -11,7 +11,7 @@ home: true
     <h2>Research Themes</h2>
     {% for theme in site.data.research_themes %}
       <div id="theme-{{theme.key}}" class="theme" data-url="{{theme.url}}" data-people="{{theme.people}}">
-        
+        <img src="/themes/{{theme.key}}.png" style="max-width: 100%; height: auto; display: block; margin-top: 0;">
         <div class="content">
           <h3>{{theme.name}}</h3>
           {{theme.desc | markdownify}}
