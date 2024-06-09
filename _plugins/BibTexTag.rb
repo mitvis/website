@@ -44,7 +44,7 @@ module Jekyll
   author = {#{author_str}},
   #{bibtex['venue']} = {#{bibtex_escape(venues[venue]['full'])}},
   year = {#{year}},#{!doi.nil? ? doi_str : ''}
-  url = {http://vis.csail.mit.edu/pubs/#{slug}}
+  url = {https://arxiv.org/abs/pdf/#{slug}}
 }"
     end
   end

@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <meta name="citation_title" content="{{page.title}}">
-  <meta name="citation_pdf_url" content="http://vis.csail.mit.edu/pubs/{{page.slug}}.pdf">
+  <meta name="citation_pdf_url" content="https://arxiv.org/abs/pdf/{{page.slug}}">
   {% if page.doi %}
     <meta name="citation_doi" content="{{page.doi}}">
   {% endif %}
@@ -23,7 +23,7 @@
     {% assign person = site.data.people[author.key] %}
     {% capture affiliation %}
       {% if person %}
-        {{author.affiliation | default: person.affiliation | default: 'MIT CSAIL'}}
+        {{author.affiliation | default: person.affiliation | default: 'Stanford'}}
       {% else %}
         {{author.affiliation}}
       {% endif %}
@@ -85,7 +85,7 @@
                 <span class="name">{{author.name | default:person.name}}{% if author.equal %}*{% endif %}</span>
                 <span class="affiliation">
                   {% if person %}
-                    {{author.affiliation | default: person.affiliation | default: 'MIT CSAIL'}}
+                    {{author.affiliation | default: person.affiliation | default: 'Stanford'}}
                   {% else %}
                     {{author.affiliation}}
                   {% endif %}
