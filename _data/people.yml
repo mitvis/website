@@ -238,6 +238,13 @@ dhiraj:
   affiliation: IIT Kharagpur
   alumni: true
 
+helenagv:
+  name: Helena Vasconcelos
+  url: https://helenavasc.com/
+  title: Research Intern
+  affiliation: Stanford University
+  alumni: false
+
 # Visitors
 peck:
   name: Evan Peck

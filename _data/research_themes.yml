@@ -7,7 +7,7 @@
 - key: interpretability
   name: Machine Learning Interpretability
   url: /pubs/#tag=machine-learning-interpretability
-  people: arvindsatya, aboggust, hsuresh, houssam, benjtang, annieb22, tiffc, hbang
+  people: arvindsatya, aboggust, hsuresh, houssam, benjtang, annieb22, tiffc, hbang, helenagv
   desc: >
     We design [metrics](/pubs/shared-interest/) and [interfaces](/pubs/knnviz/) for [visually analyzing](/pubs/embedding-comparator/) models, and study [human-AI interaction](/pubs/#tag=human-ai-interaction).
 - key: accessibility
