@@ -141,9 +141,3 @@ mit-genai:
   bibtex:
     type: article
     venue: publisher
-preprint:
-  short: Preprint
-  full: Preprint
-  bibtex:
-    type: misc
-    venue: booktitle
