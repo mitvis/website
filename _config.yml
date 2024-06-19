@@ -22,7 +22,7 @@ title: Scaly Lab at Stanford University
 email: azalia@stanford.edu
 description: >- # this means to ignore newlines until "baseurl:"
   
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/scaly_lab.github.io" # the subpath of your site, e.g. /blog
 url: "https://scalingintelligence.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /imgs/logo.png
 twitter: 
