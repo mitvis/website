@@ -51,6 +51,7 @@ sass:
   style: compressed
 plugins:
   - jekyll-seo-tag
+  - jekyll-scholar
 
 # Dates are used to sort publications, and we will likely upload 
 # publications before their conferences occur.
