@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include head.html %}
+
+  <meta name="citation_title" content="{{page.title}}">
+  <meta name="citation_pdf_url" content="https://arxiv.org/abs/pdf/{{page.slug}}">
+  {% if page.doi %}
+    <meta name="citation_doi" content="{{page.doi}}">
+  {% endif %}
+  {% if page.venue %}
+    {% assign venue_type = site.data.venues[page.venue].bibtex.venue %}
+    {% if venue_type == 'journal' %}
+      <meta name="citation_journal_title" content="{{site.data.venues[page.venue].full | default:page.venue}}">
+    {% elsif venue_type == 'institute' %}
+      <meta name="citation_technical_report_institution" content="{{site.data.venues[page.venue].full | default:page.venue}}">
+    {% else %}
+      <meta name="citation_inbook_title" content="{{site.data.venues[page.venue].full | default:page.venue}}">
+    {% endif %}
+  {% endif %}
+
+  {% for author in page.authors %}
+    {% assign person = site.data.people[author.key] %}
+    {% capture affiliation %}
+      {% if person %}
+        {{author.affiliation | default: person.affiliation | default: 'Stanford'}}
+      {% else %}
+        {{author.affiliation}}
+      {% endif %}
+    {% endcapture %}
+    <meta name="citation_author" content="{{author.name | default:person.name}}">
+    <meta name="citation_author_institution" content="{{affiliation | strip}}">
+  {% endfor %}
+
+  {% unless page.stub %}
+    <script src="https://unpkg.com/@sidsbrmnn/scrollspy@1.0.4/dist/scrollspy.min.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        scrollSpy('#toc', {sectionSelector: '.ltx_title', offset: 16});
+      });
+    </script>
+  {% endunless %}
+
+</head>
+<body>
+  <div class="pure-g">
+    <div id="center" class="pure-u-1">
+      {% include header.html %}
+
+      <div id="paper" class="pure-g">
+        <div id="content" class="{% if page.stub %}stub{% endif %} pure-u-1 pure-u-md-3-4">
+          <h1 class="title">{{page.title}}</h1>
+          <div id="authors" class="pure-g">
+            {% for author in page.authors %}
+              {% assign person = site.data.people[author.key] %}
+              {% assign person_url = author.url | default:person.url %}
+              <p class="pure-u-1-2 pure-u-md-1-4">
+                {% if person_url %}<a href="{{person_url}}">{% endif %}
+                {% if person %}<img src="/imgs/people/{{author.key}}.jpg" alt="" />{% endif %}
+                <span class="name">{{author.name | default:person.name}}{% if author.equal %}*{% endif %}</span>
+                <span class="affiliation">
+                  {% if person %}
+                    {{author.affiliation | default: person.affiliation | default: 'Stanford'}}
+                  {% else %}
+                    {{author.affiliation}}
+                  {% endif %}
+                </span>
+                {% if person_url %}</a>{% endif %}
+              </p>
+            {% endfor %}
+          </div>
+
+          <div id="metadata">
+            <p>
+              <span id="venue">
+                {% if page.preprint %}
+                  {{page.preprint.server}}: {{page.preprint.id}}
+                {% else %}
+                  {{site.data.venues[page.venue].full | default:page.venue}}, {{page.year}}
+                {% endif %}
+              </span>
+            </p>
+            {% if page.award %}
+              <p class="award">
+                <i class="fas fa-award"></i> {{page.award}}
+              </p>
+            {% endif %}
+
+            {% if page.doi %}
+              <p id="doi" class="links">
+                <span>DOI:</span> <a href="https://doi.org/{{page.doi}}">{{page.doi}}</a>
+              </p>
+            {% endif %}
+          </div>
+
+          <hr>
+
+          {% unless page.stub %}
+            {{content}}
+          {% else %}
+            {% if page.teaser %}
+              <div class="teaser">
+                <img src="/imgs/teasers/{{page.slug}}.png" alt="" />
+                {{page.teaser | markdownify}}
+              </div>
+            {% endif %}
+
+            <h3>Abstract</h3>
+
+            {{content}}
+
+          {% endunless %}
+        </div>
+
+        <div id="sidebar" class="pure-u-1 pure-u-md-1-4">
+          <h4>Materials</h4>
+          <ul id="materials" class="links">
+            <li><a href="/blogs/{{page.slug}}.pdf"><i class="far fa-file-pdf"></i>Paper PDF</a></li>
+            {% for material in page.materials %}
+              <li><a href="{{material.url}}"><i class="fas fa-{{material.type}}"></i>{{material.name}}</a></li>
+            {% endfor %}
+          </ul>
+
+          {% unless page.preprint %}
+            <h4>
+              Bibtex
+              <a id="bib-copy" class="bib" href="#" title="Copy Bibtex"><i class="far fa-copy" aria-hidden="true"></i></a>
+              <a id="bib-download" class="bib" href="#" title="Download Bibtex"><i class="far fa-arrow-alt-circle-down" aria-hidden="true"></i></a>
+            </h4>
+            {% assign bib = site.data.venues[page.venue].bibtex %}
+            <pre><code id="bibtex">{% bibtex %}</code></pre>
+          {% endunless %}
+
+          {% if page.videos.size > 0 %}
+            <h4>Videos</h4>
+
+            {% for video in page.videos %}
+              <h5>{{video.name}}</h5>
+              <div class="video-wrapper">
+                {% if video.platform == 'vimeo' %}
+                  <iframe src="https://player.vimeo.com/video/{{video.key}}" width="640" height="401" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                {% else %}
+                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/{{video.key}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                {% endif %}
+              </div>
+            {% endfor %}
+          {% endif %}
+
+          {% unless page.stub %}
+            <div id="toc">
+              <h4>Table of Contents</h4>
+              <div id="toc-inner">
+                {% include toc.html html=content h_min=2 id="contents" %}
+              </div>
+            </div>
+          {% endunless %}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

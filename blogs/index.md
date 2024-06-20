@@ -1,5 +1,5 @@
 ---
-title: Blogs
+title: Publications
 layout: page
 ---
 <div id="pubs" class="pure-g">
@@ -38,30 +38,6 @@ layout: page
               {% endif %}
             {% endfor %}
             </p>
-            <p class="venue">
-              {% if pub.preprint %}
-                {{pub.preprint.server}}: {{pub.preprint.id}}
-              {% else %}
-                {{site.data.venues[pub.venue].full}}, {{pub.year}}
-              {% endif %}
-            </p>
-            {% if pub.award %}
-              <p class="award">
-                <i class="fas fa-award"></i> {{pub.award}}
-              </p>
-            {% endif %}
-            <p class="links">
-              {% if pub.external_url %}
-                <a href="{{pub.external_url}}">
-                  {% if pub.preprint %}Preprint{% else %}Article{% endif %}
-                </a>
-              {% else %}
-                <a href="/pubs/{{pub.slug}}.pdf">PDF</a>
-              {% endif %}
-              {% for material in pub.materials %}
-                &middot; <a href="{{material.url}}">{{material.name}}</a> 
-              {% endfor %}
-            </p>
           </div>
         </div>
       {% endfor %}
@@ -70,11 +46,11 @@ layout: page
   
   <div id="sidebar" class="pure-u-1 pure-u-md-1-4">
     <h4>Search</h4>
-    <input type="text" id="search" placeholder="Search title, abstract, or authors...">
+    <input type="text" id="search" placeholder="Search title or authors...">
 
     <h4>Blog Type</h4>
     <div id="types">
-      {% assign types = site.pubs | map: 'type' | uniq %}
+      {% assign types = site.blogs | map: 'type' | uniq %}
       {% for type in types %}
         <a id="type-{{type}}" class="tag" data-tag="{{type}}">{{type | capitalize}} <span>()</span></a>
       {% endfor %}

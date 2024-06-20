@@ -1,0 +1,86 @@
+#blogs {
+    .blog {
+      margin-bottom: 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    h3, p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  
+    .thumbnail {
+      img {
+        width: 90%;
+        border: 1px solid $csail-lgrey;
+        border-radius: 5px;
+      }
+  
+      a {
+        position: relative; 
+  
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 5px;
+          border-radius: 5px;
+        }
+  
+        &:hover {
+          img { border-color: $csail-orange; }
+          &:before { background: $grad-orange; }
+        }
+      }
+    }
+  
+    .authors a {
+      color: #333;
+  
+      &:hover { color: $csail-orange; }
+    }
+  
+    .venue { font-style: italic; }
+  
+    #sidebar p {
+      margin-bottom: 1em;
+    }
+  
+    .tag {
+      display: inline-block;
+      padding: 0.25em 0.5em;
+      margin: 0.25em;
+      margin-left: 0;
+      border: 1px solid rgba($csail-lgrey, 0.5);
+      border-radius: 20px;
+      color: #333;
+      font-size: 0.9rem;
+      font-weight: 400;
+  
+      &:hover {
+        text-decoration: none;
+        background: rgba($csail-lgrey, 0.3);
+        border-color: rgba($csail-lgrey, 0.75);
+      }
+  
+      &.selected {
+        background: rgba($csail-yellow, 0.3);
+        border-color: $csail-yellow;
+      }
+  
+      &.empty {
+        opacity: 0.3;
+      }
+  
+      span {
+        color: $csail-lgrey;
+        font-weight: 300;
+      }
+    }
+  }
+  
