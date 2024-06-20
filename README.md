@@ -1,4 +1,4 @@
-# Scaly Research Lab Website
+# Scaly Intelligence Lab Website
 
 ## Dev Instructions
 
