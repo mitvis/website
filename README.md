@@ -1,6 +1,6 @@
-# vis.csail.mit.edu
+# Scaly Research Lab Website
 
-## How to dev mitvis website 
+## Dev Instructions
 
 - Install Jekyll ([instructions](https://jekyllrb.com/docs/installation/macos/))
 - Install bundler
@@ -16,4 +16,4 @@ bundle install
 bundle exec jekyll serve
 ```
 - Check localhost:4000 for your content
-
+  
