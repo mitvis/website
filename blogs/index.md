@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Blogs
 layout: page
 ---
 <div id="pubs" class="pure-g">
