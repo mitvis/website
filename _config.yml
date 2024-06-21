@@ -39,15 +39,25 @@ collections:
     output: true
     permalink: /blogs/:slug/index.html
 
-# defaults:
-#   -
-#     scope:
-#       path: ""
-#       type: pubs
-#     values:
-#       layout: pub
-#       stub: true
-#       type: paper
+defaults:
+  -
+    scope:
+      path: ""
+      type: pubs
+    values:
+      layout: pub
+      stub: true
+      type: paper
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: blogs
+    values:
+      layout: blog
+      stub: true
+      type: paper
 
 # Build settings
 sass:

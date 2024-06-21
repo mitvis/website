@@ -55,7 +55,7 @@ module MITVisFilters
 
   def jsonify_blog(input)
     people = @context.registers[:site].data['people']
-    pub = {
+    blog = {
       'id': input['slug'],
       'title': input['title'],
       'year': input['year'],
@@ -67,12 +67,12 @@ module MITVisFilters
     }
 
     if input['stub'] then
-      pub['caption'] = strip_html(input['teaser'])
-      pub['abstract'] = strip_html(input['content'])
+      # blog['caption'] = strip_html(input['teaser'])
+      # blog\ub['abstract'] = strip_html(input['content'])
     else
       doc = Nokogiri::HTML5(input['content'])
-      pub['caption'] = strip_html(doc.at_css('#teaser figcaption'))
-      pub['abstract'] = strip_html(doc.at_css('#abstract p'))
+      # blog['caption'] = strip_html(doc.at_css('#teaser figcaption'))
+      # blog['abstract'] = strip_html(doc.at_css('#abstract p'))
     end
     escape(jsonify(blog))
   end
