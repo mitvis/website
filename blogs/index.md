@@ -6,8 +6,8 @@ layout: page
   <div id="content" class="pure-u-1 pure-u-md-3-4">
     <h1 class="title">Blogs</h1>
 
-    {% assign pubYears = site.blogs | group_by:"year" | sort: "name" | reverse %}
-    {% for year in pubYears %}
+    {% assign blogYears = site.blogs | group_by:"year" | sort: "name" | reverse %}
+    {% for year in blogYears %}
       <div id="year-{{year.name}}" class="year pure-g">
         <div class="pure-u-1-3 pure-u-md-1-5"></div>
         <div class="pure-u-2-3 pure-u-md-4-5">
@@ -15,8 +15,8 @@ layout: page
         </div>
       </div>
 
-      {% assign pubs = year.items | sort: 'date' | reverse %}
-      {% for blog in pubs %}
+      {% assign blogs = year.items | sort: 'date' | reverse %}
+      {% for blog in blogs %}
         {% assign url = blog.external_url | default: blog.url | relative_url | replace: 'index.html', '' %}
         <div id="{{blog.slug}}" class="blog pure-g" data-blog='{{ blog | jsonify_blog }}'>
           <div class="thumbnail pure-u-1-3 pure-u-md-1-5">
