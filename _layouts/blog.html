@@ -41,6 +41,31 @@
     </script>
   {% endunless %}
 
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      const bibtex = document.getElementById('bibtex').innerText;
+
+      // Copy Bibtext
+      document.getElementById('bib-copy').addEventListener('click', function(evt) {
+        const setText = (txt) => () => {
+          evt.target.innerText = txt;
+          window.setTimeout(() => evt.target.innerText = '', 1500);
+        }
+
+        navigator.permissions.query({name: "clipboard-write"}).then(result => {
+          if (result.state == "granted" || result.state == "prompt") {
+            navigator.clipboard.writeText(bibtex)
+              .then(setText(' Copied!'), setText(' Failed.'));
+          }
+        });
+      });
+
+      // Download Bibtex
+      const dl = document.getElementById('bib-download');
+      dl.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(bibtex));
+      dl.setAttribute('download', '{{page.slug}}.bib');
+    });
+  </script>
 </head>
 <body>
   <div class="pure-g">

@@ -43,21 +43,20 @@ defaults:
   -
     scope:
       path: ""
+      type: blogs
+    values:
+      layout: blog
+      stub: true
+      type: paper
+  -
+    scope:
+      path: ""
       type: pubs
     values:
       layout: pub
       stub: true
       type: paper
 
-defaults:
-  -
-    scope:
-      path: ""
-      type: blogs
-    values:
-      layout: blog
-      stub: true
-      type: paper
 
 # Build settings
 sass:
