@@ -52,6 +52,30 @@ module MITVisFilters
     end
     escape(jsonify(pub))
   end
+
+  def jsonify_blog(input)
+    people = @context.registers[:site].data['people']
+    blog = {
+      'id': input['slug'],
+      'title': input['title'],
+      'year': input['year'],
+      'type': input['type'],
+      'tags': input['tags'].map { |tag| tag.downcase},
+      'authors': input['authors'].map {
+        |author| author['name'] || people[author['key']]['name']
+      }
+    }
+
+    if input['stub'] then
+      # blog['caption'] = strip_html(input['teaser'])
+      # blog\ub['abstract'] = strip_html(input['content'])
+    else
+      doc = Nokogiri::HTML5(input['content'])
+      # blog['caption'] = strip_html(doc.at_css('#teaser figcaption'))
+      # blog['abstract'] = strip_html(doc.at_css('#abstract p'))
+    end
+    escape(jsonify(blog))
+  end
 end
 
 Liquid::Template.register_filter(MITVisFilters)

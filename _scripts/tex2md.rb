@@ -104,3 +104,7 @@ File.write(md, html, File.size(md), mode: 'a')
 slug = File.basename(md, '.md')
 FileUtils.mkdir_p("pubs/#{slug}")
 FileUtils.mv(Dir.glob('_scripts/out/*.png'), "pubs/#{slug}/", :verbose => true)
+
+slug = File.basename(md, '.md')
+FileUtils.mkdir_p("blogs/#{slug}")
+FileUtils.mv(Dir.glob('_scripts/out/*.png'), "blogs/#{slug}/", :verbose => true)
