@@ -1,10 +1,9 @@
 ---
 title: 'Hydragen: High-Throughput LLM Inference with Shared Prefixes'
 authors:
-  - key: jordanjurafsky
-  - name: Bradley Brown
-    affiliation: University of Oxford
-  - name: Ryan Ehrlich
+  - key: jordanjuravsky
+  - key: bradleybrown
+  - key: ryanehrlich
     affiliation: University of Waterloo
   - name: Daniel Y. Fu
     affiliation: Stanford University
