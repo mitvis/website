@@ -1,0 +1,32 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Adjust if your branch is named differently
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7'  # Match the Ruby version in your local setup if different
+          bundler-cache: true
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build the site
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
