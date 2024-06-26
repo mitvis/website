@@ -14,9 +14,43 @@ jonsaadfalcon:
   url: https://jonsaadfalcon.com/
   title: PhD Student
 
+bradleybrown:
+  name: Bradley Brown
+  url: https://www.bradbrown.ca/
+  title: Visting PhD Student
+
+ryanehrlich:
+  name: Ryan Ehrlich
+  url: https://www.linkedin.com/in/ryan-ehrlich-68a60b11a/
+  title: Visitng PhD Student
+
+je-yong:
+  name: Je-Yong Lee
+  url: https://www.linkedin.com/in/jeyong-lee-523ba2258/?originalSubdomain=uk
+  title: PhD Collaborator
 # Masters
 
 # Undergrads
+
+tanvirbhathal:
+  name: Tanvir Bhathal
+  url: https://www.linkedin.com/in/tanvir-bhathal/
+  title: Undergrad
+
+robbymanihani:
+  name: Robby Manihani
+  url: https://www.linkedin.com/in/grmanihani/
+  title: Undergrad
+
+amritbaveja:
+  name: Amrit Baveja
+  url: https://linkedin.com/in/amrit-baveja
+  title: Undergrad
+
+caiacostello:
+  name: Caia Costello
+  url: https://www.linkedin.com/in/caia-costello-5b4064216
+  title: Undergrad
 
 # Alumni
 
