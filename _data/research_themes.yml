@@ -1,13 +1,13 @@
 - key: scalable_intelligence
   name: Scalable Intelligence
   url: /pubs/#tag=scaling_intelligence
-  people: azaliamirhoseini, jordanjurafsky, jonsaadfalcon
+  people: azaliamirhoseini, jordanjuravsky, jonsaadfalcon
   desc: >
     We build new AI systems that scale robustly across data, parameters, compute, and domains.
 - key: self_improvement
   name: Self-Improvement
   url: /pubs/#tag=self_improvement
-  people: azaliamirhoseini, jordanjurafsky, jonsaadfalcon
+  people: azaliamirhoseini, jordanjuravsky, jonsaadfalcon
   desc: >
     We develop algorithms that enable machines to learn from their own experiences with minimal human guidance.
 
