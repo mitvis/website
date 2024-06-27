@@ -38,6 +38,31 @@ layout: page
               {% endif %}
             {% endfor %}
             </p>
+
+            <p class="venue">
+              {% if blog.preprint %}
+                {{blog.preprint.server}}: {{blog.preprint.id}}
+              {% else %}
+                {{site.data.venues[blog.venue].full}}, {{blog.year}}
+              {% endif %}
+            </p>
+            {% if blog.award %}
+              <p class="award">
+                <i class="fas fa-award"></i> {{blog.award}}
+              </p>
+            {% endif %}
+            <p class="links">
+              {% if blog.external_url %}
+                <a href="{{blog.external_url}}">
+                  {% if blog.preprint %}Preprint{% else %}Article{% endif %}
+                </a>
+              {% else %}
+                <a href="/blogs/{{blog.slug}}.pdf">Blog</a>
+              {% endif %}
+              {% for material in blog.materials %}
+                &middot; <a href="{{material.url}}">{{material.name}}</a> 
+              {% endfor %}
+            </p>
           </div>
         </div>
       {% endfor %}

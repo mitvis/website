@@ -9,7 +9,7 @@
     <meta name="citation_doi" content="{{page.doi}}">
   {% endif %}
   {% if page.venue %}
-    <!-- {% assign venue_type = site.data.venues[page.venue].bibtex.venue %} -->
+    {% assign venue_type = site.data.venues[page.venue].bibtex.venue %}
     {% if venue_type == 'journal' %}
       <meta name="citation_journal_title" content="{{site.data.venues[page.venue].full | default:page.venue}}">
     {% elsif venue_type == 'institute' %}
@@ -41,7 +41,7 @@
     </script>
   {% endunless %}
 
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function() {
       const bibtex = document.getElementById('bibtex').innerText;
 
@@ -65,7 +65,7 @@
       dl.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(bibtex));
       dl.setAttribute('download', '{{page.slug}}.bib');
     });
-  </script> -->
+  </script>
 </head>
 <body>
   <div class="pure-g">
@@ -146,7 +146,7 @@
             {% endfor %}
           </ul>
 
-          <!-- {% unless page.preprint %}
+          {% unless page.preprint %}
             <h4>
               Bibtex
               <a id="bib-copy" class="bib" href="#" title="Copy Bibtex"><i class="far fa-copy" aria-hidden="true"></i></a>
@@ -154,7 +154,7 @@
             </h4>
             {% assign bib = site.data.venues[page.venue].bibtex %}
             <pre><code id="bibtex">{% bibtex %}</code></pre>
-          {% endunless %} -->
+          {% endunless %}
 
           {% if page.videos.size > 0 %}
             <h4>Videos</h4>

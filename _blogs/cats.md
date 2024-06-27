@@ -1,14 +1,17 @@
 ---
-title: 'Hydragen: High-Throughput LLM Inference with Shared Prefixes'
+title: 'CATS Blog'
 authors:
-  - name: Je-Yong Lee
-    affiliation: Oxford University
-  - name: Luke Donghyun Lee
-    affiliation: University College London
+  - key: jordanjuravsky
+  - key: bradleybrown
+  - key: je-yong
+  - name: Donghyun Lee
+    affiliation: Stanford University
   - name: Genghan Zhang
+    affiliation: Stanford University
   - name: Mo Tiwari
+    affiliation: Stanford University
   - key: azaliamirhoseini
-venue: blog
+venue: preprint
 year: 2024
 doi: 
 tags:
@@ -16,7 +19,7 @@ tags:
   - generative AI
 teaser: The human brain operates with remarkable energy efficiency, despite its complexity. Usually, a human brain activates only a sparse array of neurons at any given moment. Do state-of-the-art large language models (LLMs) behave similarly? Until recently, the answer was no. They typically exhibit over 99% non-zero activations during inference. However, our recent research unveils a surprising observation, LLMs activations are intrinsically sparse.
 materials:
-  - name: CATS Blog
+  - name: CATS
     url: https://github.com/ScalingIntelligence/CATS
     type: code
 ---
