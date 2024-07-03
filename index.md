@@ -29,7 +29,7 @@ home: true
 
     <h2 id="people-header">People</h2>
     <div id="people" class="pure-g">
-      {% assign members = site.data.people | filter_alumni: nil | sort_people: 'Professor, Administrative', false %}
+      {% assign members = site.data.people | filter_alumni: nil | sort_people: 'Professor, PhD, Undergraduate Student', false %}
       {% for person in members %}
         <div id="{{person[0]}}" class="person pure-u-1-4">
           <a href="{{person[1].url}}">
@@ -41,7 +41,7 @@ home: true
       {% endfor %}
     </div>
 
-    <h3 id="alumni-header">Alumni</h3>
+    <!-- <h3 id="alumni-header">Alumni</h3>
     <ul id="alumni" class="pure-g">
       {% assign alumni = site.data.people | filter_alumni: true | sort_people: 'PhD, Postdoctoral, Scientist' %}
       {% for person in alumni  %}
@@ -63,7 +63,7 @@ home: true
           </a>
         </li>
       {% endfor %}
-    </ul>
+    </ul> -->
   </div>
 </div>
 

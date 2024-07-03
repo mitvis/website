@@ -1,8 +1,6 @@
 ---
 title: 'CATS Blog'
 authors:
-  - key: jordanjuravsky
-  - key: bradleybrown
   - key: je-yong
   - name: Donghyun Lee
     affiliation: Stanford University

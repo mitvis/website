@@ -60,7 +60,7 @@ layout: page
                 <a href="/blogs/{{blog.slug}}.pdf">Blog</a>
               {% endif %}
               {% for material in blog.materials %}
-                &middot; <a href="{{material.url}}">{{material.name}}</a> 
+                &middot; <a href="{{material.url}}">{{material.name}} {{material.type}}</a> 
               {% endfor %}
             </p>
           </div>

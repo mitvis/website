@@ -59,7 +59,7 @@ layout: page
                 <a href="/pubs/{{pub.slug}}.pdf">PDF</a>
               {% endif %}
               {% for material in pub.materials %}
-                &middot; <a href="{{material.url}}">{{material.name}}</a> 
+                &middot; <a href="{{material.url}}">{{material.name}} {{material.type}}</a> 
               {% endfor %}
             </p>
           </div>
