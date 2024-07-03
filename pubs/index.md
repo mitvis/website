@@ -59,7 +59,15 @@ layout: page
                 <a href="/pubs/{{pub.slug}}.pdf">PDF</a>
               {% endif %}
               {% for material in pub.materials %}
-                &middot; <a href="{{material.url}}">{{material.name}} {{material.type}}</a> 
+                &middot; <a href="{{material.url}}">
+                  {% if material.type == "link" %}
+                    {{material.name}} ArXiv
+                  {% elsif material.type == "code" %}
+                    {{material.name}} Code
+                  {% else %}
+                    {{material.name}} {{material.type}}
+                  {% endif %}
+                </a>
               {% endfor %}
             </p>
           </div>

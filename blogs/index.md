@@ -60,7 +60,15 @@ layout: page
                 <a href="/blogs/{{blog.slug}}.pdf">Blog</a>
               {% endif %}
               {% for material in blog.materials %}
-                &middot; <a href="{{material.url}}">{{material.name}} {{material.type}}</a> 
+                &middot; <a href="{{material.url}}">
+                  {% if material.type == "link" %}
+                    {{material.name}} ArXiv
+                  {% elsif material.type == "code" %}
+                    {{material.name}} Code
+                  {% else %}
+                    {{material.name}} {{material.type}}
+                  {% endif %}
+                </a>
               {% endfor %}
             </p>
           </div>
