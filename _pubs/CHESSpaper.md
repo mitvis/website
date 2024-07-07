@@ -1,15 +1,15 @@
 ---
 title: 'CHESS: Contextual Harnessing for Efficient SQL Synthesis'
 authors:
-  - key: azaliamirhoseini
   - name: Shayan Talaei
-    affiliation: Stanford University
-  - name: Yu-Chen Chang
-    affiliation: Stanford University
-  - name: Amin Saberi
     affiliation: Stanford University
   - name: Mohammadreza Pourreza
     affiliation: University of Alberta
+  - name: Yu-Chen Chang
+    affiliation: Stanford University
+  - key: azaliamirhoseini
+  - name: Amin Saberi
+    affiliation: Stanford University
 venue: preprint
 year: 2024
 doi: 2405.16755​

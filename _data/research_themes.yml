@@ -10,4 +10,9 @@
   people: azaliamirhoseini, jordanjuravsky, jonsaadfalcon
   desc: >
     We develop algorithms that enable machines to learn from their own experiences with minimal human guidance.
-
+- key: system_design
+  name: AI for Systems Design 
+  url: /pubs/#tag=ML_systens
+  people: azaliamirhoseini, jordanjuravsky, jonsaadfalcon
+  desc: >
+    We create AI systems that enable people to design and test new hardware architectures.
