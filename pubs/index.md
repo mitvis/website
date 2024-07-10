@@ -61,9 +61,9 @@ layout: page
               {% for material in pub.materials %}
                 &middot; <a href="{{material.url}}">
                   {% if material.type == "link" %}
-                    {{material.name}} ArXiv
+                    ArXiv
                   {% elsif material.type == "code" %}
-                    {{material.name}} Code
+                    Code
                   {% else %}
                     {{material.name}} {{material.type}}
                   {% endif %}

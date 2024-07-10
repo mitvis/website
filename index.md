@@ -3,7 +3,7 @@ layout: page
 home: true
 ---
 <p id="mission">
-  We develop <strong>scalable and self-improving AI systems</strong>, leveraging techniques in machine learning, systems, natural language processing, and beyond.
+  We develop <strong>scalable and self-improving AI systems and methodologies towards the goal of AGI</strong>, leveraging techniques in machine learning, systems, natural language processing, and beyond.
 </p>
 
 <div id="home" class="pure-g">
