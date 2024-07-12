@@ -7,7 +7,7 @@ home: true
 </p>
 
 <p id="ad">
-  <strong>Prospective students and postdocs:</strong> Thanks for your interest in working in our lab! Please email your CV along with a note briefly describing research directions you are excited about and up to two past projects. If you are applying to Stanford, please make sure to mention your interest in working in Prof. Mirhoseini's lab in the application form as well as in your research statement. You can reach out by sending an email to PI's FIRSTNAME (at) stanford.edu.
+  <strong><b>Prospective students and postdocs:</b></strong> Thanks for your interest in working in our lab! Please email your CV along with a note briefly describing research directions you are excited about and up to two past projects. If you are applying to Stanford, please make sure to mention your interest in working in Prof. Mirhoseini's lab in the application form as well as in your research statement. You can reach out by sending an email to PI's FIRSTNAME (at) stanford.edu.
 </p>
 
 <div id="home" class="pure-g">
