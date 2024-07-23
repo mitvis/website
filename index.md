@@ -38,7 +38,7 @@ home: true
 
     <h2 id="people-header">People</h2>
     <div id="people" class="pure-g">
-      {% assign members = site.data.people | filter_alumni: nil | sort_people: 'Professor, PhD, Undergraduate Student', false %}
+      {% assign members = site.data.people | filter_alumni: nil | sort_people: 'Professor, PhD, Visiting, Undergraduate Student', false %}
       {% for person in members %}
         <div id="{{person[0]}}" class="person pure-u-1-4">
           <a href="{{person[1].url}}">
