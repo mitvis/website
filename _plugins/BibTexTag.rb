@@ -36,15 +36,15 @@ module Jekyll
 
       bibtex = venues[venue]['bibtex']
 
-      author_str = authors.map{|a| a['name'] || people[a['key']]['name']}.join(' AND ')
-      doi_str = "\n  doi = {#{doi}},"
+      author_str = authors.map{|a| a['name'] || people[a['key']]['name']}.join(' and ')
+      doi_str = doi ? "\n  doi = {#{doi}}," : ''
+      url_str = doi ? "\n  url = {https://arxiv.org/abs/#{doi.split('arXiv.').last}}," : ''
 
-      "@#{bibtex['type']}{#{year}-#{slug},
-  title = {{#{title}}},
+      "@#{bibtex['type']}{#{year}#{slug.gsub(/[_-]/, '')},
+  title = {#{title}},
   author = {#{author_str}},
   #{bibtex['venue']} = {#{bibtex_escape(venues[venue]['full'])}},
-  year = {#{year}},#{!doi.nil? ? doi_str : ''}
-  url = {https://arxiv.org/abs/pdf/#{slug}}
+  year = {#{year}},#{doi_str}#{url_str}
 }"
     end
   end

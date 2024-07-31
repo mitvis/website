@@ -55,10 +55,11 @@ adriangamarralafuente:
   url: https://www.linkedin.com/in/adrian-gamarra/
   title: Undergraduate Student
 
-# je-yong:
-#   name: Je-Yong Lee
-#   url: https://www.linkedin.com/in/jeyong-lee-523ba2258/?originalSubdomain=uk
-#   title: Undergraduate Collaborator
+je-yong:
+  name: Je-Yong Lee
+  url: https://www.linkedin.com/in/jeyong-lee-523ba2258/?originalSubdomain=uk
+  title: Undergraduate Collaborator
+  not_current: True
 
 # Alumni
 

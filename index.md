@@ -40,16 +40,17 @@ home: true
     <div id="people" class="pure-g">
       {% assign members = site.data.people | filter_alumni: nil | sort_people: 'Professor, PhD, Visiting, Undergraduate Student', false %}
       {% for person in members %}
-        <div id="{{person[0]}}" class="person pure-u-1-4">
-          <a href="{{person[1].url}}">
-            <p class="headshot"><img src="/imgs/people/{{person[0]}}.jpg" alt="" /></p>
-            <p class="name">{{person[1].name}}</p>
-            <p class="title">{{person[1].title}}</p>
-          </a>
-        </div>
+        {% unless person[1].not_current %}
+          <div id="{{person[0]}}" class="person pure-u-1-4">
+            <a href="{{person[1].url}}">
+              <p class="headshot"><img src="/imgs/people/{{person[0]}}.jpg" alt="" /></p>
+              <p class="name">{{person[1].name}}</p>
+              <p class="title">{{person[1].title}}</p>
+            </a>
+          </div>
+        {% endunless %}
       {% endfor %}
     </div>
-
     <!-- <h3 id="alumni-header">Alumni</h3>
     <ul id="alumni" class="pure-g">
       {% assign alumni = site.data.people | filter_alumni: true | sort_people: 'PhD, Postdoctoral, Scientist' %}

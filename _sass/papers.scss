@@ -28,7 +28,7 @@
   .thumbnail {
     img {
       width: 90%;
-      border: 1px solid $csail-lgrey;
+      // border: 1px solid $csail-lgrey; # removed because it looks odd with different aspect ratio images
       border-radius: 5px;
     }
 
@@ -115,7 +115,7 @@
   .thumbnail {
     img {
       width: 90%;
-      border: 1px solid $csail-lgrey;
+      // border: 1px solid $csail-lgrey;  # removed because it looks odd with different aspect ratio images
       border-radius: 5px;
     }
 

@@ -11,7 +11,7 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2024
-doi: 10.48550/ARXIV.2404.08763
+doi: 10.48550/arXiv.2404.08763
 tags:
   - natural language processing
   - generative AI
