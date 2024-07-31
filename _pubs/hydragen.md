@@ -6,13 +6,13 @@ authors:
   - key: ryanehrlich
     affiliation: University of Waterloo
   - name: Daniel Y. Fu
-    affiliation: Stanford University
+    affiliation: Stanford
   - name: Christopher Ré
-    affiliation: Stanford University
+    affiliation: Stanford
   - key: azaliamirhoseini
 venue: preprint
 year: 2024
-doi: 10.48550/2402.05099
+doi: 10.48550/arXiv.2402.05099
 tags:
   - machine learning
   - generative AI
