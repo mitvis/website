@@ -60,12 +60,14 @@ layout: page
               {% endif %}
               {% for material in pub.materials %}
                 &middot; <a href="{{material.url}}">
-                  {% if material.type == "link" %}
+                  {% if material.display_name %}
+                    {{material.display_name}}
+                  {% elsif material.type == "link" %}
                     ArXiv
                   {% elsif material.type == "code" %}
                     Code
                   {% else %}
-                    {{material.name}} {{material.type}}
+                    {{material.name}}
                   {% endif %}
                 </a>
               {% endfor %}
