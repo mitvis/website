@@ -6,25 +6,18 @@ home: true
   We develop <strong>scalable and self-improving AI systems and methodologies towards the goal of AGI</strong>, leveraging techniques in machine learning, systems, natural language processing, and beyond.
 </p>
 
-<p id="ad">
-  <strong><b>Prospective students and postdocs:</b></strong>
-  <ul>
-    <li>Please email your CV along with a note briefly describing research directions you are excited about and up to two past projects.</li>
-    <li>If you are applying to Stanford, please make sure to mention your interest in working in Prof. Mirhoseini's lab in the application form as well as in your research statement.</li>
-    <li>You can reach out by sending an email to &lt;PI's FIRSTNAME&gt; (at) stanford.edu.</li>
-  </ul>
-</p>
-
 <div id="home" class="pure-g">
   <div id="themes" class="pure-u-1 pure-u-md-3-5">
     <h2>Research Themes</h2>
     {% for theme in site.data.research_themes %}
       <div id="theme-{{theme.key}}" class="theme" data-url="{{theme.url}}" data-people="{{theme.people}}">
-        <img src="/themes/{{theme.key}}.png" style="max-width: 100%; height: auto; display: block; margin-top: 0;">
-        <div class="content">
-          <h3>{{theme.name}}</h3>
-          {{theme.desc | markdownify}}
-        </div>
+        <!-- <img src="/themes/{{theme.key}}.png" style="max-width: 100%; height: auto; display: block; margin-top: 0;"> -->
+          <div style="padding-top: 60px; border-radius: 5px; margin-bottom: 20px;">
+            <div class="content">
+              <h3>{{theme.name}}</h3>
+              {{theme.desc | markdownify}}
+            </div>
+          </div>
       </div>
     {% endfor %}
   </div>
@@ -76,6 +69,15 @@ home: true
     </ul> -->
   </div>
 </div>
+
+<p id="ad">
+  <strong><b>Prospective students and postdocs:</b></strong>
+  <ul>
+    <li>Please email your CV along with a note briefly describing research directions you are excited about and up to two past projects.</li>
+    <li>If you are applying to Stanford, please make sure to mention your interest in working in Prof. Mirhoseini's lab in the application form as well as in your research statement.</li>
+    <li>You can reach out by sending an email to &lt;PI's FIRSTNAME&gt; (at) stanford.edu.</li>
+  </ul>
+</p>
 
 <div>
   <h5>Design from <a href="https://vis.csail.mit.edu/">MIT Visualization Group</a></h5>
