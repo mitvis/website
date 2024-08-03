@@ -8,7 +8,8 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-# To run localhost on windows change this to 4.3.3 and comment line 32. Then undo these changes before pushing code!
+# To run localhost on windows change this to 4.3.3 and comment line 33. Then undo these changes before pushing code!
+# To run localhost, bundle install, then bundle exec jekyll serve
 gem "jekyll", "~> 4.2.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and

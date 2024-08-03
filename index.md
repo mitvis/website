@@ -12,7 +12,7 @@ home: true
     {% for theme in site.data.research_themes %}
       <div id="theme-{{theme.key}}" class="theme" data-url="{{theme.url}}" data-people="{{theme.people}}">
         <!-- <img src="/themes/{{theme.key}}.png" style="max-width: 100%; height: auto; display: block; margin-top: 0;"> -->
-          <div style="padding-top: 60px; border-radius: 5px; margin-bottom: 20px;">
+          <div style="padding-top: 0px; border-radius: 5px; margin-bottom: 0px;">
             <div class="content">
               <h3>{{theme.name}}</h3>
               {{theme.desc | markdownify}}

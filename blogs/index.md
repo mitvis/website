@@ -62,7 +62,7 @@ layout: page
               {% for material in blog.materials %}
                 &middot; <a href="{{material.url}}">
                   {% if material.type == "link" %}
-                    ArXiv
+                    Link
                   {% elsif material.type == "code" %}
                     Code
                   {% else %}
