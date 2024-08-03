@@ -10,7 +10,7 @@ source "https://rubygems.org"
 
 # To run localhost on windows change this to 4.3.3 and comment line 33. Then undo these changes before pushing code!
 # To run localhost, bundle install, then bundle exec jekyll serve
-gem "jekyll", "~> 4.3.3"
+gem "jekyll", "~> 4.2.0"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -30,7 +30,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 # Performance-booster for watching directories on Windows
-# gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "nokogiri", "~> 1.12"
 gem "webrick"
