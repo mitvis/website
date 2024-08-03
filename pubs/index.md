@@ -81,6 +81,7 @@ layout: page
     {% endfor %}
 
     <h1 class="title">Selected Prior Publications</h1>
+    <br>
     {% assign highlighted_pubs = site.pubs | where: 'tags', 'highlight' %}
     {% assign pubYears = highlighted_pubs | group_by:"year" | sort: "name" | reverse %}
     {% for year in pubYears %}
