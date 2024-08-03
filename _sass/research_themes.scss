@@ -24,7 +24,6 @@
       content: "";
       width: 100%;
       height: 100%;
-      padding-top: 0;
       // position: absolute;
       // z-index: -1;
       // left: 0;
@@ -53,6 +52,7 @@
       bottom: 0em;
       padding: 0.5em;
       background: rgba(#9fdafd, 0.9);
+      padding-bottom: 20px;
 
       &:hover {
         h3 { text-decoration: none; }

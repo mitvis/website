@@ -14,6 +14,7 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2024
+has_pdf: true
 doi: 10.48550/arXiv.2407.21787
 tags:
   - machine learning

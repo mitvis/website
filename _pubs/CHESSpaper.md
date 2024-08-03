@@ -12,6 +12,7 @@ authors:
     affiliation: Stanford University
 venue: preprint
 year: 2024
+has_pdf: true
 doi: 2405.16755​
 tags:
   - natural language processing
