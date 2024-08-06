@@ -140,7 +140,9 @@
         <div id="sidebar" class="pure-u-1 pure-u-md-1-4">
           <h4>Materials</h4>
           <ul id="materials" class="links">
-            <li><a href="/pubs/{{page.slug}}.pdf"><i class="far fa-file-pdf"></i>Paper PDF</a></li>
+            {% if page.has_pdf %}
+              <li><a href="/pubs/{{page.slug}}.pdf"><i class="far fa-file-pdf"></i>Paper PDF</a></li>
+            {% endif %}
             {% for material in page.materials %}
               <li><a href="{{material.url}}"><i class="fas fa-{{material.type}}"></i>{{material.name}}</a></li>
             {% endfor %}

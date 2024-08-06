@@ -3,7 +3,25 @@ title: 'A graph placement methodology for fast chip design'
 authors:
   - key: azaliamirhoseini
   - name: Anna Goldie
-  - name: etc
+  - name: Mustafa Yazgan
+  - name: Joe Wenjie Jiang
+  - name: Ebrahim Songhori
+  - name: Shen Wang
+  - name: Young-Joon Lee
+  - name: Eric Johnson
+  - name: Omkar Pathak
+  - name: Azade Nazi
+  - name: Jiwoo Pak
+  - name: Andy Tong
+  - name: Kavya Srinivasa
+  - name: William Hang
+  - name: Emre Tuncer
+  - name: Quoc V. Le
+  - name: James Laudon
+  - name: Richard Ho
+  - name: Roger Carpenter
+  - name: Jeff Dean
+
 venue: preprint
 year: 2021
 has_pdf: false

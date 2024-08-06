@@ -6,7 +6,53 @@ authors:
   - name: Sandipan Kundu
   - name: Amanda Askell
   - name: Jackson Kernion
+  - name: Andy Jones
+  - name: Anna Chen
+  - name: Anna Goldie
   - key: azaliamirhoseini
+  - name: Cameron McKinnon
+  - name: Carol Chen
+  - name: Catherine Olsson
+  - name: Christopher Olah
+  - name: Danny Hernandez
+  - name: Dawn Drain
+  - name: Deep Ganguli
+  - name: Dustin Li
+  - name: Eli Tran-Johnson
+  - name: Ethan Perez
+  - name: Jamie Kerr
+  - name: Jared Mueller
+  - name: Jeffrey Ladish
+  - name: Joshua Landau
+  - name: Kamal Ndousse
+  - name: Kamile Lukosuite
+  - name: Liane Lovitt
+  - name: Michael Sellitto
+  - name: Nelson Elhage
+  - name: Nicholas Schiefer
+  - name: Noemi Mercado
+  - name: Nova DasSarma
+  - name: Robert Lasenby
+  - name: Robin Larson
+  - name: Sam Ringer
+  - name: Scott Johnston
+  - name: Shauna Kravec
+  - name: Sheer El Showk
+  - name: Stanislav Fort
+  - name: Tamera Lanham
+  - name: Timothy Telleen-Lawton
+  - name: Tom Conerly
+  - name: Tom Henighan
+  - name: Tristan Hume
+  - name: Samuel R. Bowman
+  - name: Zac Hatfield-Dodds
+  - name: Ben Mann
+  - name: Dario Amodei
+  - name: Nicholas Joseph
+  - name: Sam McCandlish
+  - name: Tom Brown
+  - name: Jared Kaplan
+
 venue: preprint
 year: 2022
 has_pdf: true
