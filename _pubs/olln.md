@@ -10,7 +10,7 @@ authors:
   - name: Jeff Dean
 venue: preprint
 year: 2017
-has_pdf: true
+has_pdf: false
 doi: 1701.06538'
 tags:
   - natural language processing

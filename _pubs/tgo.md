@@ -15,7 +15,7 @@ authors:
   - name: James Laudon
 venue: preprint
 year: 2020
-has_pdf: true
+has_pdf: false
 doi: 2010.12438'
 tags:
   - natural language processing

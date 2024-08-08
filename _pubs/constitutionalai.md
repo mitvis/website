@@ -55,7 +55,7 @@ authors:
 
 venue: preprint
 year: 2022
-has_pdf: true
+has_pdf: false
 doi: 2212.08073v1
 tags:
   - natural language processing

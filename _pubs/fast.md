@@ -16,7 +16,7 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2022
-has_pdf: true
+has_pdf: false
 doi: 3503222.3507767v
 tags:
   - natural language processing
