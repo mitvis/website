@@ -8,7 +8,7 @@ authors:
   - name: Mo Tiwari
     affiliation: Stanford University
   - key: azaliamirhoseini
-venue: preprint
+venue: COLM 2024
 year: 2024
 doi:
 tags:
@@ -21,7 +21,7 @@ materials:
     type: code
 ---
 
-> **We are thrilled to announce that our paper has been accepted for presentation at COLM 2024!**
+> **We are thrilled to announce that our paper has been accepted for presentation at [COLM 2024](https://colmweb.org/index.html)!**
 
 ## **Human Brains Versus LLMs**
 
