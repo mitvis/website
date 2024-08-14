@@ -68,12 +68,13 @@ lukelee:
   title: Undergraduate Collaborator
   affiliation: University College London
   not_current: True
+
 # Alumni
 
 #example:
-#  name:
+#  name: 
 #  url:
-#  title:
+#  title: 
 #  alumni: true
-#  affiliation:
+#  affiliation: 
 #  next:
