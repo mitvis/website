@@ -95,3 +95,6 @@ exclude:
   - src/
   - static/
   - scripts/
+markdown: kramdown
+
+
