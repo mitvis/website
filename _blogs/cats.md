@@ -8,7 +8,7 @@ authors:
   - name: Mo Tiwari
     affiliation: Stanford University
   - key: azaliamirhoseini
-venue: COLM 2024
+venue: colm
 year: 2024
 doi:
 tags:

@@ -6,7 +6,8 @@ visxai:
     venue: booktitle
 visactivities:
   short: VIS Activities Workshop
-  full: IEEE VIS Workshop on Data Vis Activities to Facilitate Learning, Reflecting,
+  full:
+    IEEE VIS Workshop on Data Vis Activities to Facilitate Learning, Reflecting,
     Discussing, and Designing
   bibtex:
     type: misc
@@ -105,7 +106,7 @@ kdd:
     type: inproceedings
     venue: booktitle
 rethinking-interaction:
-  full: 'Rethinking Interaction: From Instrumental Interaction to Human-Computer Partnerships. ACM CHI'
+  full: "Rethinking Interaction: From Instrumental Interaction to Human-Computer Partnerships. ACM CHI"
   bibtex:
     type: inproceedings
     venue: booktitle
@@ -147,3 +148,8 @@ preprint:
   bibtex:
     type: misc
     venue: booktitle
+colm:
+  short: COLM
+  full: Confernece on Language Modeling
+  type: inproceedings
+  venue: booktitle
