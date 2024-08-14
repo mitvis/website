@@ -25,7 +25,7 @@ materials:
 
 ## **Human Brains Versus LLMs**
 
-<img src="https://file.notion.so/f/f/9bb00a01-186d-40b1-9d49-bc2a97f6435a/ee1a8be4-67f3-4149-a00b-1b7223318dd4/Untitled.png?table=block&id=7a2eedfc-fcb9-4b96-9073-dd916689b4a6&spaceId=9bb00a01-186d-40b1-9d49-bc2a97f6435a&expirationTimestamp=1723651200000&signature=jl2aBOkCf1cHh2heKKc4VS0eXG49hmS6A-HCunfgb-E&downloadName=Untitled.png" alt="Untitled" style="width: 80%; height: auto;">
+![Untitled](https://file.notion.so/f/f/9bb00a01-186d-40b1-9d49-bc2a97f6435a/ee1a8be4-67f3-4149-a00b-1b7223318dd4/Untitled.png?table=block&id=7a2eedfc-fcb9-4b96-9073-dd916689b4a6&spaceId=9bb00a01-186d-40b1-9d49-bc2a97f6435a&expirationTimestamp=1723651200000&signature=jl2aBOkCf1cHh2heKKc4VS0eXG49hmS6A-HCunfgb-E&downloadName=Untitled.png)
 
 The human brain operates with remarkable energy efficiency, despite its complexity. Usually, a human brain activates only a sparse array of neurons at any given moment. Do state-of-the-art large language models (LLMs) behave similarly? Until recently, the answer was no: they typically exhibit over 99% non-zero activations during inference. However, our recent research unveils a surprising observation: LLMs activations are intrinsically sparse.
 
