@@ -151,5 +151,6 @@ preprint:
 colm:
   short: COLM
   full: Confernece on Language Modeling
-  type: inproceedings
-  venue: booktitle
+  bibtex:
+    type: inproceedings
+    venue: booktitle
