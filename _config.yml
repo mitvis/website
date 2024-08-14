@@ -65,6 +65,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-scholar
 
+# For latex support
+markdown: kramdown
+
 # Dates are used to sort publications, and we will likely upload 
 # publications before their conferences occur.
 future: true

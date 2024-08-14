@@ -147,3 +147,9 @@ preprint:
   bibtex:
     type: misc
     venue: booktitle
+colm:
+  short: COLM
+  full: Confernece on Language Modeling
+  bibtex:
+    type: inproceedings
+    venue: booktitle

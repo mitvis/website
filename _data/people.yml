@@ -59,6 +59,14 @@ je-yong:
   name: Je-Yong Lee
   url: https://www.linkedin.com/in/jeyong-lee-523ba2258/?originalSubdomain=uk
   title: Undergraduate Collaborator
+  affiliation: University of Oxford
+  not_current: True
+
+lukelee:
+  name: Donghyun Lee
+  url: https://www.linkedin.com/in/donghyun-lee-aa789422a/
+  title: Undergraduate Collaborator
+  affiliation: University College London
   not_current: True
 
 # Alumni
