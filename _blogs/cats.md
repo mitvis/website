@@ -1,5 +1,5 @@
 ---
-title: "CATS Blog"
+title: "CATS: Contextually-Aware Thresholding for Sparsity in Large Language Models"
 authors:
   - key: je-yong
   - key: lukelee
