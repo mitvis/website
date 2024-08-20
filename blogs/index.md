@@ -43,7 +43,11 @@ layout: page
               {% if blog.preprint %}
                 {{blog.preprint.server}}: {{blog.preprint.id}}
               {% else %}
+                {% if blog.venue != "none" %}
                 {{site.data.venues[blog.venue].full}}, {{blog.year}}
+                {% else %}
+                {{blog.year}}
+                {% endif %}
               {% endif %}
             </p>
             {% if blog.award %}
