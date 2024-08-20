@@ -40,7 +40,7 @@ materials:
 
 <p>In our recent paper, we propose a modified version of this statement: <i>a LLM sampling a large amount of completions, will generate correct answers for many complex datasets, including resolving real-world GitHub issues on SWE-bench Lite.</i> </p>
 
-<p>Specifically, we show that the number of problems solved using an LLM often increases log-linearly as we scale the number of samples over 4 orders of magnitude for a variety of math and code reasoning datasets, thus demonstrating <strong>inference-time scaling laws for LLMs.</strong></p>
+<p>We show that this is true on a variety of math and code reasoning datasets. In particular, we demonstrate that LLMs exhibit <strong>inference-time scaling laws</strong> where the number of problems solved  often increases log-linearly as we scale the number of samples over 4 orders of magnitude.</p>
 
 <img src="/imgs/blog/monkeys/coverage.png" alt="Coverage (percent of problems solved by any sample) increases across five code and math reasoning tasks." style="width: 100%; height: auto;">
 <p style="text-align: center;">Across five tasks, we find that coverage (the fraction of problems solved by at least one generated sample) increases as we scale the number of samples. Notably, using repeated sampling, we are able to increase the solve rate of an open-source method from 15.9% to 56% on SWE-bench Lite.</p>
