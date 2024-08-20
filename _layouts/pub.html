@@ -96,15 +96,17 @@
           </div>
 
           <div id="metadata">
-            <p>
-              <span id="venue">
-                {% if page.preprint %}
-                  {{page.preprint.server}}: {{page.preprint.id}}
-                {% else %}
-                  {{site.data.venues[page.venue].full | default:page.venue}}, {{page.year}}
-                {% endif %}
-              </span>
-            </p>
+            {% if page.venue != "none" %}
+              <p>
+                <span id="venue">
+                  {% if page.preprint %}
+                    {{page.preprint.server}}: {{page.preprint.id}}
+                  {% else %}
+                    {{site.data.venues[page.venue].full | default:page.venue}}, {{page.year}}
+                  {% endif %}
+                </span>
+              </p>
+            {% endif %}
             {% if page.award %}
               <p class="award">
                 <i class="fas fa-award"></i> {{page.award}}
@@ -140,9 +142,6 @@
         <div id="sidebar" class="pure-u-1 pure-u-md-1-4">
           <h4>Materials</h4>
           <ul id="materials" class="links">
-            {% if page.has_pdf %}
-              <li><a href="/pubs/{{page.slug}}.pdf"><i class="far fa-file-pdf"></i>Paper PDF</a></li>
-            {% endif %}
             {% for material in page.materials %}
               <li><a href="{{material.url}}"><i class="fas fa-{{material.type}}"></i>{{material.name}}</a></li>
             {% endfor %}
