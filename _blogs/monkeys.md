@@ -58,9 +58,9 @@ materials:
 
 <p>While all three methods improve performance relative to taking a single sample, their performance saturates before 100 samples and falls well below the final oracle accuracy. This gap highlights the importance of continuing to research verification methods.</p>
 
-<h2>Monkey Business: A dataset of sample collections</h2>
+<h2>Monkey Business: A dataset of LLM sample collections</h2>
 
-<p>To faciliate research into verification, we are excited to release <strong>Monkey Business: a dataset of sample collections for a variety of tasks and models</strong>.</p>
+<p>To faciliate verification research in the large sample setting, we are excited to release <strong>Monkey Business: a dataset of sample collections for a variety of tasks and models</strong>.</p>
 
 <p>Specifically, Monkey Business contains 10,000 samples per problem for subsets of the following datasets:</p>
 <ul>
@@ -81,7 +81,9 @@ materials:
 <p>We are also releasing our sampling and evaluation scripts to make it easier to work with other tasks and models.</p>
 
 <p>🤗 Dataset: <a href="https://huggingface.co/datasets/ScalingIntelligence/monkey_business">https://huggingface.co/datasets/ScalingIntelligence/monkey_business</a></p>
-<p>💻 Github: <a href="https://github.com/ScalingIntelligence/large-language-monkeys">https://github.com/ScalingIntelligence/large-language-monkeys</a></p>
+<p>💻 Github: <a href="https://github.com/ScalingIntelligence/large_language_monkeys">https://github.com/ScalingIntelligence/large_language_monkeys</a></p>
+
+<p>In addition to training verifiers, we think that this dataset is useful for several other research directions including self-improvement methods and understanding patterns across correct and incorrect samples.</p>
 
 <p>How to cite? If you use our dataset or code, please cite the following paper:</p>
 
