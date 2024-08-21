@@ -2,6 +2,7 @@
 title: "Monkey Business: a dataset of large LLM sample collections for math and code tasks"
 authors:
   - key: bradleybrown
+    affiliation: University of Oxford
   - key: jordanjuravsky
   - key: ryanehrlich
   - name: Ronald Clark
@@ -62,7 +63,7 @@ materials:
 
 <p>To faciliate verification research in the large sample setting, we are excited to release <strong>Monkey Business: a dataset of sample collections for a variety of tasks and models</strong>.</p>
 
-<p>Specifically, Monkey Business contains 10,000 samples per problem for subsets of the following datasets:</p>
+<p>Specifically, Monkey Business contains 10,000 correct and incorrect samples per problem for subsets of the following datasets:</p>
 <ul>
   <li>GSM8K: 127 randomly sampled problems from the test set (we originally had 128 but identified a problem with an incorrect ground-truth answer which we removed).</li>
   <li>MATH: 128 randomly sampled problems from the test set.</li>
