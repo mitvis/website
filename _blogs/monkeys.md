@@ -32,22 +32,20 @@ materials:
 
 <h2>TL;DR</h2>
 
-<p>We’re releasing the data and code for our recent paper: <a href="https://arxiv.org/abs/2407.21787">Large Language Monkeys: Scaling Inference Compute with Repeated Sampling</a>. This includes 10,000 LLM-generated samples per problem for a variety of datasets such as GSM8K, MATH, CodeContests, and MiniF2F-MATH, and model families such as Llamma (8B Base/Instruct, 70B), Gemma (2B, 7B), and Pythia (70M-12B)!</p>
+<p>We’re releasing the data and code for our recent paper: <a href="https://arxiv.org/abs/2407.21787">Large Language Monkeys: Scaling Inference Compute with Repeated Sampling</a>. This includes 10,000 LLM-generated samples per problem for a variety of datasets (GSM8K, MATH, CodeContests, and MiniF2F-MATH) and model families (Llama-3, Gemma, and Pythia)!</p>
 
 <h2>LLMs are smart monkeys at keyboards</h2>
 
-<p>The infinite monkey theorem states: <i>a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type any given text, including the complete works of William Shakespeare.</i></p>
+<p>The infinite monkey theorem states that <i>a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type any given text, including the complete works of William Shakespeare.</i></p>
 
-<p>In our recent paper, we propose a modified version of this statement: <i>a LLM sampling a large amount of completions, will generate correct answers for many complex datasets, including resolving real-world GitHub issues on SWE-bench Lite.</i> </p>
-
-<p>We show that this is true on a variety of math and code reasoning datasets. In particular, we demonstrate that LLMs exhibit <strong>inference-time scaling laws</strong> where the number of problems solved  often increases log-linearly as we scale the number of samples over 4 orders of magnitude.</p>
+<p>In our paper, we make LLMs our monkeys, exploring whether they can generate correct answers to real-world math and coding datasets when allowed to make hundreds or thousands of attempts. We find that LLMs exhibit <strong>inference-time scaling laws</strong> where the number of problems solved often increases log-linearly as we scale the number of samples over four orders of magnitude.</p>
 
 <img src="/imgs/blog/monkeys/coverage.png" alt="Coverage (percent of problems solved by any sample) increases across five code and math reasoning tasks." style="width: 100%; height: auto;">
 <p style="text-align: center;">Across five tasks, we find that coverage (the fraction of problems solved by at least one generated sample) increases as we scale the number of samples. Notably, using repeated sampling, we are able to increase the solve rate of an open-source method from 15.9% to 56% on SWE-bench Lite.</p>
 
 <h2>The verification problem</h2>
 
-<p>For tasks with automatic verifiers (ex. formal proof checkers or unit tests for code), we’re done! We can directly benefit from the coverage increases by using a verifier to pick a correct answer from the large number of samples. For other datasets, like natural language math problems, identifying a correct answer is less straightforward. </p>
+<p>When tasks have tools for automatically verifying candidate solutions (ex. formal proof checkers or unit tests for code), we’re done! We can directly benefit from repeated sampling by using our verifiers to pick out correct answers from large sample collections. However, for other datasets, like natural language math problems, identifying a correct answer is less straightforward. </p>
 
 <p>As an initial investigation for how hard verification is in these settings, we compared three simple baselines against oracle selection (ie. choosing the best solution out of k samples):</p>
 <ul>
@@ -58,21 +56,13 @@ materials:
 
 <img src="/imgs/blog/monkeys/verifiers.png" alt="All three simple verification methods fall well below the oracle upper bound." style="width: 100%; height: auto;">
 
-<p>Although providing some benefit, all three methods saturate before 100 samples, and fall well below the final oracle accuracy. This gap highlights the large room for improvement with the following research direction:</p>
+<p>While all three methods improve performance relative to taking a single sample, their performance saturates before 100 samples and falls well below the final oracle accuracy. This gap highlights the importance of continuing to research verification methods.</p>
 
-<p style="font-weight: bold;">How do we design verifiers that</p>
-<ul style="font-weight: bold;">
-  <li>Can recognize correct/incorrect answers for code and math tasks</li>
-  <li>Scale to identifying correct solutions out of thousands of samples</li>
-</ul>
+<h2>Monkey Business: A dataset of sample collections</h2>
 
-<p>There has been a lot of great progress benchmarking reward models, but a lot of the effort has been concentrated around chat-based applications, and choosing the best answer from a small number of candidates.</p>
+<p>To faciliate research into verification, we are excited to release <strong>Monkey Business: a dataset of sample collections for a variety of tasks and models</strong>.</p>
 
-<h2>Monkey Business: A dataset for large sample verification</h2>
-
-<p>As a small first step towards benchmarking verification for reasoning tasks in the large sample setting, we are excited to release <strong>Monkey Business: a dataset of many samples for a variety of tasks and LLMs (+ some LMs!)</strong>.</p>
-
-<p>Specifically, it contains 10,000 correct and incorrect samples per problem for subsets of the following datasets:</p>
+<p>Specifically, Monkey Business contains 10,000 samples per problem for subsets of the following datasets:</p>
 <ul>
   <li>GSM8K: 127 randomly sampled problems from the test set (we originally had 128 but identified a problem with an incorrect ground-truth answer which we removed).</li>
   <li>MATH: 128 randomly sampled problems from the test set.</li>
@@ -82,18 +72,16 @@ materials:
 
 <p>These samples are generated with the following models:</p>
 <ul>
-  <li>GSM8K: Llama3-8b-Instruct, Llama3-70b-Instruct</li>
-  <li>MATH: Llama3-8b, Llama3-8b-Instruct, Llama3-70b-Instruct, Pythia 70m-12b, Gemma 2b, Gemma 7b</li>
-  <li>CodeContests: Llama3-8b, Llama3-8b-Instruct, Llama3-70b-Instruct, Gemma 2b, Gemma 7b</li>
-  <li>MiniF2F-MATH: Llama3-8b-Instruct, Llama3-70b-Instruct</li>
+  <li>GSM8K: Llama-3-8B-Instruct, Llama-3-70B-Instruct</li>
+  <li>MATH: Llama-3-8B, Llama-3-8B-Instruct, Llama-3-70B-Instruct, Pythia 70M-12B, Gemma 2B, Gemma 7B</li>
+  <li>CodeContests: Llama-3-8B, Llama-3-8B-Instruct, Llama-3-70B-Instruct, Gemma 2B, Gemma 7B</li>
+  <li>MiniF2F-MATH: Llama-3-8B-Instruct, Llama-3-70B-Instruct</li>
 </ul>
 
-<p>We are also releasing our sampling scripts to make it easier to generate large sample collections for other tasks and models. </p>
+<p>We are also releasing our sampling and evaluation scripts to make it easier to work with other tasks and models.</p>
 
 <p>🤗 Dataset: <a href="https://huggingface.co/datasets/ScalingIntelligence/monkey_business">https://huggingface.co/datasets/ScalingIntelligence/monkey_business</a></p>
 <p>💻 Github: <a href="https://github.com/ScalingIntelligence/large-language-monkeys">https://github.com/ScalingIntelligence/large-language-monkeys</a></p>
-
-<p>In addition to training verifiers, we think that this dataset is useful for several other research directions including self-improvement methods and understanding patterns across correct and incorrect samples.</p>
 
 <p>How to cite? If you use our dataset or code, please cite the following paper:</p>
 
