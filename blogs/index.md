@@ -17,7 +17,7 @@ layout: page
 
       {% assign blogs = year.items | sort: 'date' | reverse %}
       {% for blog in blogs %}
-        {% assign url = blog.external_url | default: blog.url | relative_url | replace: 'index.html', '' %}
+        {% assign url = blog.url | relative_url | replace: 'index.html', '' | default: blog.external_url %}
         <div id="{{blog.slug}}" class="blog pure-g" data-blog='{{ blog | jsonify_blog }}'>
           <div class="thumbnail pure-u-1-3 pure-u-md-1-5">
             <a href="{{url}}">
@@ -43,7 +43,11 @@ layout: page
               {% if blog.preprint %}
                 {{blog.preprint.server}}: {{blog.preprint.id}}
               {% else %}
+                {% if blog.venue != "none" %}
                 {{site.data.venues[blog.venue].full}}, {{blog.year}}
+                {% else %}
+                {{blog.year}}
+                {% endif %}
               {% endif %}
             </p>
             {% if blog.award %}
@@ -52,22 +56,13 @@ layout: page
               </p>
             {% endif %}
             <p class="links">
-              {% if blog.external_url %}
-                <a href="{{blog.external_url}}">
-                  {% if blog.preprint %}Preprint{% else %}Article{% endif %}
-                </a>
-              {% else %}
-                <a href="/blogs/{{blog.slug}}.pdf">Blog</a>
-              {% endif %}
               {% for material in blog.materials %}
-                &middot; <a href="{{material.url}}">
-                  {% if material.type == "link" %}
-                    Link
-                  {% elsif material.type == "code" %}
-                    Code
-                  {% else %}
-                    {{material.name}} {{material.type}}
-                  {% endif %}
+                {% if forloop.first %}
+                  <a href="{{material.url}}">
+                {% else %}
+                  &middot; <a href="{{material.url}}">
+                {% endif %}
+                   {{material.name}}
                 </a>
               {% endfor %}
             </p>
