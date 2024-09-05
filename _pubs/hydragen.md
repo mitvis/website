@@ -2,9 +2,12 @@
 title: 'Hydragen: High-Throughput LLM Inference with Shared Prefixes'
 authors:
   - key: jordanjuravsky
+    equal: true
   - key: bradleybrown
+    equal: true
   - key: ryanehrlich
     affiliation: University of Waterloo
+    equal: true
   - name: Daniel Y. Fu
     affiliation: Stanford
   - name: Christopher Ré

@@ -2,7 +2,9 @@
 title: 'A graph placement methodology for fast chip design'
 authors:
   - key: azaliamirhoseini
+    equal: true
   - name: Anna Goldie
+    equal: true
   - name: Mustafa Yazgan
   - name: Joe Wenjie Jiang
   - name: Ebrahim Songhori

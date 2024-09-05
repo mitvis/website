@@ -2,7 +2,9 @@
 title: 'A HIERARCHICAL MODEL FOR DEVICE PLACEMENT'
 authors:
   - key: azaliamirhoseini
+    equal: true
   - name: Anna Goldie
+    equal: true
   - name: Hieu Pham
   - name: Benoit Steiner
   - name: Quoc V. Le

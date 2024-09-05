@@ -2,8 +2,10 @@
 title: 'CATS: Contextually-Aware Thresholding for Sparsity in Large Language Models'
 authors:
   - key: je-yong
+    equal: true
   - name: Donghyun Lee
     affiliation: Stanford University
+    equal: true
   - name: Genghan Zhang
     affiliation: Stanford University
   - name: Mo Tiwari

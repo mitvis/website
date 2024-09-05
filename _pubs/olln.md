@@ -2,8 +2,11 @@
 title: 'OUTRAGEOUSLY LARGE NEURAL NETWORKS: THE SPARSELY-GATED MIXTURE-OF-EXPERTS LAYER'
 authors:
   - name: Noam Shazeer
+    equal: true
   - key: azaliamirhoseini
+    equal: true
   - name: Krzysztof Maziarz
+    equal: true
   - name: Andy Davis
   - name: Quoc Le
   - name: Geoffrey Hinton

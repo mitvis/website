@@ -3,8 +3,11 @@ title: "Monkey Business: a dataset of large LLM sample collections for math and 
 authors:
   - key: bradleybrown
     affiliation: University of Oxford
+    equal: true
   - key: jordanjuravsky
+    equal: true
   - key: ryanehrlich
+    equal: true
   - name: Ronald Clark
     affiliation: University of Oxford
   - name: Quoc V. Le

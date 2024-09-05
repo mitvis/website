@@ -2,7 +2,9 @@
 title: 'Device Placement Optimization with Reinforcement Learning'
 authors:
   - key: azaliamirhoseini
+    equal: true
   - name: Hieu Pham
+    equal: true
   - name: Quoc V. Le
   - name: Benoit Steiner
   - name: Rasmus Larsen

@@ -3,8 +3,11 @@ title: 'Large Language Monkeys: Scaling Inference Compute with Repeated Sampling
 authors:
   - key: bradleybrown
     affiliation: University of Oxford
+    equal: true
   - key: jordanjuravsky
+    equal: true
   - key: ryanehrlich
+    equal: true
   - name: Ronald Clark
     affiliation: University of Oxford
   - name: Quoc V. Le
