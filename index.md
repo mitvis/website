@@ -6,6 +6,14 @@ home: true
   We develop <strong>scalable and self-improving AI systems and methodologies towards the goal of AGI</strong>, leveraging techniques in machine learning, systems, natural language processing, and beyond.
 </p>
 
+<p id="ad">
+    <h2><strong><b>Prospective Students and Postdocs:</b></strong></h2>
+    <ul>
+      <li>For students interested in working in the lab, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSemsYIAG1wUpGgclG1eaQxDNYxPHB5VZzLl9eRRFsT6NPa_0A/viewform">the following form.</a></li>
+      <li>For postdocs interested in working in the lab, please reach out by sending an email to &lt;PI's FIRSTNAME&gt; (at) stanford.edu.</li>
+    </ul>
+  </p>
+
 <div id="home" class="pure-g">
   <div id="themes" class="pure-u-1 pure-u-md-3-5">
     <h2>Research Themes</h2>
@@ -69,15 +77,6 @@ home: true
     </ul> -->
   </div>
 </div>
-
-<p id="ad">
-  <strong><b>Prospective students and postdocs:</b></strong>
-  <ul>
-    <li>Please email your CV along with a note briefly describing research directions you are excited about and up to two past projects.</li>
-    <li>If you are applying to Stanford, please make sure to mention your interest in working in Prof. Mirhoseini's lab in the application form as well as in your research statement.</li>
-    <li>You can reach out by sending an email to &lt;PI's FIRSTNAME&gt; (at) stanford.edu.</li>
-  </ul>
-</p>
 
 <div>
   <h5>Design from <a href="https://vis.csail.mit.edu/">MIT Visualization Group</a></h5>
