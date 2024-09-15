@@ -40,7 +40,7 @@ home: true
 
     <h2 id="people-header">People</h2>
     <div id="people" class="pure-g">
-      {% assign members = site.data.people | filter_alumni: nil | sort_people: 'Professor, PhD, Visiting, Undergraduate Student', false %}
+      {% assign members = site.data.people | filter_alumni: nil | sort_people: 'Professor, PhD, Visiting, Researcher, Undergraduate Student', false %}
       {% for person in members %}
         {% unless person[1].not_current %}
           <div id="{{person[0]}}" class="person pure-u-1-4">
