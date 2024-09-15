@@ -9,8 +9,9 @@ home: true
 <p id="ad">
     <h2><strong><b>Prospective Students and Postdocs:</b></strong></h2>
     <ul>
-      <li>For students interested in working in the lab, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSemsYIAG1wUpGgclG1eaQxDNYxPHB5VZzLl9eRRFsT6NPa_0A/viewform">the following form.</a></li>
-      <li>For postdocs interested in working in the lab, please reach out by sending an email to &lt;PI's FIRSTNAME&gt; (at) stanford.edu.</li>
+      <li>For students interested in working in the lab, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSemsYIAG1wUpGgclG1eaQxDNYxPHB5VZzLl9eRRFsT6NPa_0A/viewform">the following form</a>.</li>
+      <li>If you are a prospective PhD student: please indicate your interest in working with Prof. Mirhoseini in the Stanford CS PhD online application form, as well as in your research statement. We admit new PhD students each year. Please do not contact us directly regarding PhD applications until admission decisions are out, as we will not be able to reply to emails from individual applicants.</li>
+      <li>If you are a postdoc candidate: we currently have a joint postdoc position available. For information on how to apply, please visit <a href="https://docs.google.com/document/d/1SBfvFhLF4hSseTBybXRKJeRFMxqw4ahQ9f4Cf5Vbl7I/edit#heading=h.v7myj1tz6zo">here</a>.</li>
     </ul>
   </p>
 
