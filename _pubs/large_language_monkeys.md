@@ -24,6 +24,15 @@ tags:
   - generative AI
 teaser: Increasing the amount of inference compute through repeated sampling leads to large improvements in coverage - the fraction of problems solved by any attempt - across a variety tasks, models, and sample budgets. This makes it possible, and sometimes cost-effective, to amplify weaker models with many samples and outperform single attempts from more capable models.
 materials:
+  - name: Paper
+    url: https://arxiv.org/abs/2407.21787
+    type: file-pdf
+  - name: HF Dataset
+    url: https://huggingface.co/datasets/ScalingIntelligence/monkey_business
+    type: database
+  - name: Codebase
+    url: https://github.com/ScalingIntelligence/large_language_monkeys
+    type: code
   - name: SWE-bench Lite Samples
     url: https://github.com/ScalingIntelligence/swe-bench-lite-samples
     type: code
