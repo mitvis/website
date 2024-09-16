@@ -1,6 +1,6 @@
 ---
 stub: false
-title: "Animated Vega-Lite: Unifying Animation with a Grammar of Interactive Graphics"
+title: 'Animated Vega-Lite: Unifying Animation with a Grammar of Interactive Graphics'
 authors:
   - key: jzong
     equal: true
@@ -24,7 +24,7 @@ videos:
     key: evoV6kvG7z4
 teaser: Example gallery of animated vega-lite specifications.
 materials:
-  - name: Animated Vega-lite Editor
+  - name: Animated Vega-Lite Editor
     url: editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA
     type: cube
 ---
@@ -126,6 +126,7 @@ function onEditorLoad() {
         <div id="vega-lite-animated-editor-loading" style="display: none">Loading...</div>
         <iframe id="vega-lite-animated-editor-iframe" width="100%" height="700px" src="editor/#/url/vega-lite/N4IgJghgLhIFygK4CcA28QAspQA4Gc4B6I5CAdwDoBzASyk0QCNF8BTZAYwHsA7KNv0o8AtkQBubahAlSIAWkgx2UfERER8A5ESUzpuEbV5gOlAFb4+IAL4AaEBuQBrDLm7GoIB7ghkR+PAA2qC8ECJsGACebH7eIOyobJxeCCBQUbiRcCDunvHWOVC0Eci2DkzGYPCgxriIqSBkvNSRDka88ACMAJwArH3tEAAe8ABMAAwTgwkCuPB9NjYAug5QzfgAZtzIIsGgm7So2jW5fuHRsWVLqyCCPGDG1Kc8qDunh2yo1Tk8iPzIKLxJKtEzwXiIVCoewgUZpT7fDCbDjFVD0IFrTLZEAAR0QEH49GgtEk5RAQPhtC+PxAaORAH02MMsil4hkshg8QTijBiqSYcUIh8qYicjE4g58JwIElTs1WsEJnY+lMJssYc42BSDiKaX8AUClksgA"></iframe>
       </section>
+
   </section>
 
   <section id="S1" class="ltx_section">
@@ -384,6 +385,7 @@ function onEditorLoad() {
         </p>
       </div>
     </section>
+
   </section>
   <section id="S4" class="ltx_section">
     <h2 class="ltx_title ltx_title_section" id="H-S4">
