@@ -5,10 +5,12 @@ authors:
   - key: aboggust
   - key: arvindsatya
 venue: eXCV
+type: workshop
 year: 2024
 date: 2024-09-29
 tags:
   - empirical study
+  - quantitative methods
   - machine learning interpretability
   - human-ai interaction
 teaser: Explanation alignment measures the agreement between model-generated explanations and human annotations to detect spurious correlations and model biases by aggregating saliency-based metrics, such as Shared Interest and The Pointing Game, across datasets. In pretrained ImageNet models, it reveals that models with similar accuracy can focus on vastly different image regions, highlighting significant variations in explanation alignment despite comparable performance.
