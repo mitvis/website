@@ -21,7 +21,7 @@ authors:
 venue: preprint
 year: 2024
 has_pdf: true
-doi: 10.48550/2409.15254
+doi: 10.48550/arXiv.2409.15254
 tags:
   - machine learning
   - generative AI
