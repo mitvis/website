@@ -16,7 +16,7 @@ layout: page
         </div>
       </div>
       {% endif %}
-        {% assign pubs = year.items | sort: 'date' | reverse %}
+        {% assign pubs = year.items | sort: 'title' %}
         {% for pub in pubs %}
         {% unless pub.tags contains "highlight" %}
         {% assign url = pub.external_url | default: pub.url | relative_url | replace: 'index.html', '' %}
