@@ -141,3 +141,9 @@ mit-genai:
   bibtex:
     type: article
     venue: publisher
+eXCV:
+  short: eXCV Workshop at ECCV
+  full: 'ECCV Workshop on Explainable Computer Vision: Where are We and Where are We Going?'
+  bibtex:
+    type: inproceedings
+    venue: booktitle
