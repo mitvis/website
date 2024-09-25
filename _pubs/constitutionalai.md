@@ -55,6 +55,7 @@ authors:
 
 venue: preprint
 year: 2022
+day: 349
 has_pdf: false
 doi: 2212.08073v1
 tags:

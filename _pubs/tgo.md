@@ -15,6 +15,7 @@ authors:
   - name: James Laudon
 venue: preprint
 year: 2020
+day: 51
 has_pdf: false
 doi: 2010.12438'
 tags:

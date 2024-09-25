@@ -11,6 +11,7 @@ authors:
   - name: Jeff Dean
 venue: preprint
 year: 2018
+day: 1
 has_pdf: false
 doi: NA
 tags:

@@ -13,6 +13,7 @@ authors:
   - name: Jeff Dean
 venue: preprint
 year: 2017
+day: 23
 has_pdf: false
 doi: 1701.06538'
 tags:

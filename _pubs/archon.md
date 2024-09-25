@@ -20,6 +20,7 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2024
+day: 267
 has_pdf: true
 doi: 10.48550/arXiv.2409.15254
 tags:
