@@ -9,6 +9,8 @@ authors:
     affiliation: Stanford
   - name: Hristo Todorov
     affiliation: Stanford
+  - name: Etash Guha
+    affiliation: University of Washington
   - name: E. Kelly Buchanan
     affiliation: Stanford
   - name: Mayee Chen
