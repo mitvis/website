@@ -62,6 +62,7 @@ dwootton:
   name: Dylan Wootton
   url: https://dylanwootton.com
   title: PhD Researcher
+  
 jopo:
   name: Josh Pollock
   url: https://joshmpollock.com/
@@ -81,6 +82,7 @@ jonsh:
 ipedraza:
   name: Isabella Pedraza Pineros
   title: Master's (MEng) Researcher
+  alumni: true
 
 benjtang:
   name: Benny J. Tang
@@ -92,6 +94,7 @@ mzc219:
   name: Katie Chen
   url: https://www.k80chen.com/
   title: Master's (SM) Researcher
+  alumni: true
 
 hbang:
   name: Hyemin Bang
@@ -203,6 +206,7 @@ allenlee:
 gracefh:
   name: Grace Huang
   title: Undergraduate Researcher
+  alumni: true
 
 sjzheng:
   name: Sophia Zheng
