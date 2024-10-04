@@ -135,6 +135,10 @@ wso:
   alumni: true
   next: MIT DUSP PhD Student
 
+sjzheng:
+  name: Sophia Zheng
+  title: Master's (MEng) Researcher
+
 # Undergrads
 
 mattblanco:
@@ -207,10 +211,6 @@ gracefh:
   name: Grace Huang
   title: Undergraduate Researcher
   alumni: true
-
-sjzheng:
-  name: Sophia Zheng
-  title: Undergraduate Researcher
 
 efaith1:
   name: Esther Kinyanjui
