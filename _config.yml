@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -21,15 +21,15 @@
 title: Scaling Intelligence Lab at Stanford University
 email: azalia@stanford.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://scalingintelligence.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://scalingintelligence.stanford.edu" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /imgs/logo.png
-twitter: 
-  username: scaly_lab
+twitter:
+  username: scaling_intelligence_lab
   card: summary
-twitter_username: scaly_lab
-github_username:  scaly_lab
+twitter_username: scaling_intelligence_lab
+github_username: scaling_intelligence_lab
 
 collections:
   pubs:
@@ -40,16 +40,14 @@ collections:
     permalink: /blogs/:slug/index.html
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: blogs
     values:
       layout: blog
       stub: true
       type: paper
-  -
-    scope:
+  - scope:
       path: ""
       type: pubs
     values:
@@ -57,18 +55,18 @@ defaults:
       stub: true
       type: paper
 
-
 # Build settings
 sass:
   style: compressed
 plugins:
   - jekyll-seo-tag
   - jekyll-scholar
+  - jekyll-sitemap
 
 # For latex support
 markdown: kramdown
 
-# Dates are used to sort publications, and we will likely upload 
+# Dates are used to sort publications, and we will likely upload
 # publications before their conferences occur.
 future: true
 
