@@ -6,9 +6,9 @@ authors:
   - key: amyfox
   - key: peck 
   - key: arvindsatya
-venue: infovis
-year: 2024
-date: 2024-10-13
+venue: vis-full
+year: 2025
+date: 2025-1-01
 doi: 10.1109/TVCG.2024.3456217.
 tags:
   - empirical study
