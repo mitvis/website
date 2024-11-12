@@ -9,7 +9,7 @@ authors:
 venue: vis-full
 year: 2025
 date: 2025-1-01
-doi: 10.1109/TVCG.2024.3456217.
+doi: 10.1109/TVCG.2024.3456217
 tags:
   - empirical study
   - visualization design
