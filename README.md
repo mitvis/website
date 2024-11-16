@@ -2,6 +2,7 @@
 
 ## How to dev mitvis website 
 
+- Install rbenv ([instructions](https://github.com/rbenv/rbenv))
 - Install Jekyll ([instructions](https://jekyllrb.com/docs/installation/macos/))
 - Install bundler
 ```
@@ -13,7 +14,7 @@ bundle install
 ```
 - Serve your content
 ```
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload
 ```
 - Check localhost:4000 for your content
 
