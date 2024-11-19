@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://scalingintelligence.stanford.edu/sitemap.xml
