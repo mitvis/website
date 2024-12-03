@@ -21,6 +21,7 @@ tags:
   - generative AI
 venue: none
 year: 2024
+date: 2024-09-01
 teaser: A monkey maybe solving SWE-bench Lite
 materials:
   - name: HF Dataset
