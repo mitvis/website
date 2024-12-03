@@ -30,7 +30,7 @@
       if (sm) {
         for (const video of videos) video.play();
       } else {
-        videos[0].play();
+        videos[0]?.play();
       }
 
       function showAllPeople() {
