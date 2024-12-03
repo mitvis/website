@@ -71,6 +71,19 @@ lukelee:
   affiliation: University College London
   not_current: True
 
+# Rotating
+anneouyang:
+  name: Anne Ouyang
+  url: https://anneouyang.com/
+  title: Rotating PhD Student
+  not_current: True
+
+simonguo:
+  name: Simon Guo
+  url: https://simonguo.tech/
+  title: Rotating PhD Student
+  not_current: True
+
 # Alumni
 
 #example:

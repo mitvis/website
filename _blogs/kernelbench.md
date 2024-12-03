@@ -1,11 +1,9 @@
 ---
 title: "KernelBench: Can LLMs Write GPU Kernels?"
 authors:
-  - name: Anne Ouyang
-    affiliation: Stanford
+  - key: anneouyang
     equal: true
-  - name: Simon Guo
-    affiliation: Stanford
+  - key: simonguo
     equal: true
   - key: azaliamirhoseini
 tags:
@@ -14,6 +12,7 @@ tags:
   - generative AI
 venue: none
 year: 2024
+date: 2024-12-03
 teaser: A benchmark designed to evaluate the ability of LLMs to generate efficient GPU kernels for optimizing neural network performance
 materials:
   - name: HF Dataset
