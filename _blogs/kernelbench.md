@@ -221,6 +221,12 @@ Comparing across various models, we note while some models do well on Level 1 ta
 
 Beyond greedy decoding, we are also interested in pass@k, having at least 1 correct (and successfully compiled) solution given k attempts, as introduced in the [HumanEval paper](https://arxiv.org/abs/2107.03374). We sample models with high decoding temperature (deepseek-coder with temp=1.6, and Llama 3.1 70b-Instruct with temp=0.8) for more diverse samples, compute pass@1,3,5,10 with N=100 samples. 
 
+Pass@k is defined as 
+$$
+\text{pass@$k$} := \mathop{\mathbb{E}}_{\text{problems}} \left[ 1 - \frac{\binom{n - c}{k}}{\binom{n}{k}} \right]
+$$
+where $n$ is the total number of samples and $c$ is the number of correct samples.
+
 <img src="/imgs/blog/kernelbench/init_eval_passk.png" width="100%" />
 *Caption: Pass@k performance for Deepseek-coder and Llama 3.1 70B Instruct*  
    
@@ -234,11 +240,12 @@ We only analyze correctness in the section above. However, in the case of kernel
 
 When evaluating performance, we prioritize correctness, as incorrect but fast code is not useful. Therefore, speedups are calculated using only the correct samples. To present a comprehensive view of performance, we report speedups in percentiles. The count of correct samples for each model is indicated in parentheses after the model name in the table below.
 
-In addition to the baseline PyTorch implementation, we also compare speedups against torch.compile() using its default mode.
+In addition to the baseline PyTorch implementation, we also compare speedups against torch.compile() using its default mode. The speedup is defined as
+$$\frac{t\_baseline}{t\_generated}$$
 
 <img src="/imgs/blog/kernelbench/init_eval_speedup.png" width="100%" />
 
-*Caption: Percentile of Speedups for both Torch and Torch Compile across 3 levels*
+*Caption: Percentile of Speedups vs. Baseline for both Torch and Torch Compile across 3 levels*
 
 Among the samples that are correct, we see that most generated kernels exhibit relatively slow speedups over torch and torch.compile baseline, but a few are notably faster as outliers\! This piqued our interest and led us to the following investigations.
 
