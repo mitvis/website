@@ -64,7 +64,7 @@ As models grow larger and become more embedded into our daily lives, having fine
 ## Big O is not all you need. 
 
 In algorithm classes we are taught to view Big O as the gold standard for measuring the efficiency of algorithms. In ML research, new model architectures may have better theoretical complexity, implying they should outperform traditional architectures in speed or efficiency, but when it comes down to real-world performance, these newer models can struggle to keep up with established architectures.  
-<img src="/imgs/blog/kernelbench/gru.png" width="650" />
+<img src="/imgs/blog/kernelbench/gru.png" width="100%" />
 
 *(Meme credit to Michael Zhang)*
 
@@ -361,3 +361,13 @@ Many design patterns and optimizations are reusable across GPU kernels –– fu
 # Acknowledgements
 
 We would like to thank Aaryan Singhal, AJ Root, Allen Nie, Anjiang Wei, Benjamin Spector, Bilal Khan, Bradley Brown, Dylan Patel, Genghan Zhang, Hieu Pham, Hugh Leather, John Yang, Jon Saad-Falcon, Jordan Juravsky, Mark Saroufim, Michael Zhang, Ryan Ehrlich, Sahan Paliskara, Sahil Jain, Shicheng (George) Liu, Simran Arora, Suhas Kotha, Vikram Sharma Mailthody, and Yangjun Ruan for insightful discussions and constructive feedback in shaping this work. We would also like to thank SWEBench for its inspiration and reference, which greatly contributed to the development of this work.
+
+# Citing
+```bibtex
+@misc{ouyang2024kernelbench,
+      title={KernelBench: Can LLMs Write GPU Kernels?}, 
+      author={Anne Ouyang and Simon Guo and Azalia Mirhoseini},
+      year={2024},
+      url={https://scalingintelligence.stanford.edu/blogs/kernelbench/}, 
+}
+```
