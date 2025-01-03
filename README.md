@@ -3,11 +3,6 @@
 ## How to dev mitvis website 
 
 - Install rbenv ([instructions](https://github.com/rbenv/rbenv))
-- Install Jekyll ([instructions](https://jekyllrb.com/docs/installation/macos/))
-- Install bundler
-```
-gem install jekyll bundler
-```
 - Install dependencies
 ```
 bundle install
