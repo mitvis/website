@@ -62,7 +62,7 @@ dwootton:
   name: Dylan Wootton
   url: https://dylanwootton.com
   title: PhD Researcher
-  
+
 jopo:
   name: Josh Pollock
   url: https://joshmpollock.com/
@@ -259,3 +259,9 @@ peck:
   title: Visiting Scientist
   url: http://www.eg.bucknell.edu/~emp017
   alumni: true
+
+berger:
+  name: Caroline Berger
+  title: Visiting PhD Researcher
+  url: https://carolineberger.github.io/
+  affiliation: Aarhus University
