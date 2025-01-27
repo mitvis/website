@@ -22,12 +22,12 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2024
-day: 267
+date: 2024-09-23
 has_pdf: true
 doi: 10.48550/arXiv.2409.15254
 tags:
   - machine learning
-  - generative AI
+  - generative ai
   - inference-time techniques
 teaser: Archon, a modular framework for designing inference-time architectures, outperforms top language models like GPT-4 and Claude 3.5 on various benchmarks by optimally combining LLMs and inference techniques.
 materials:

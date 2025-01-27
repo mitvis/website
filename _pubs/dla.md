@@ -9,12 +9,12 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2022
-day: 139
+date: 2022-05-22
 has_pdf: false
 doi: 1558-1101
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: Unlock the potential of power-efficient deep learning with AutoApprox, a groundbreaking framework that creates low-power accelerators without sacrificing accuracy. By leveraging a TPUv3-like systolic array and a learned router, AutoApprox tailors approximate circuits specifically for each neural network, achieving up to 3.2% power reduction and 5.2% area savings with zero loss in accuracy on large-scale datasets like ImageNet. Experience the future of energy-efficient deep learning with unparalleled accuracy and efficiency.
 materials:

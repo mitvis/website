@@ -15,13 +15,13 @@ authors:
     affiliation: Google Brain
   - key: azaliamirhoseini
 venue: preprint
-year: 2022
-day: 53
+year: 2021
+date: 2021-05-26
 has_pdf: false
 doi: 3503222.3507767v
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: Explore the cutting-edge Full-stack Accelerator Search Technique (FAST), a game-changing framework designed to optimize hardware accelerators for today's dynamic deep learning demands. This innovative approach fine-tunes every aspect of the hardware-software stack, from datapath design to software scheduling and compiler optimizations. By targeting bottlenecks in leading models like EfficientNet and BERT, FAST creates accelerators that deliver up to 3.7× better performance per watt compared to TPU-v3 for single workloads, and 2.4× better for a range of tasks. Discover how FAST can revolutionize datacenter efficiency and performance.
 materials:

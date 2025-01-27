@@ -11,12 +11,12 @@ authors:
   - name: Jeff Dean
 venue: preprint
 year: 2018
-day: 1
+date: 2018-02-15
 has_pdf: false
 doi: NA
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: We present a hierarchical model that optimizes the placement of computational graphs across heterogeneous hardware, including CPUs and GPUs. Our approach, trained with policy gradients and requiring no human input, significantly enhances placement efficiency and achieves up to 60.6% runtime reductions per training step for models like Neural Machine Translation.
 materials:

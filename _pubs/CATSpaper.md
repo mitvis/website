@@ -13,12 +13,12 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2024
-day: 117
+date: 2024-04-26
 has_pdf: true
 doi: 10.48550/arXiv.2404.08763
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
 teaser: The human brain operates with remarkable energy efficiency, despite its complexity. Usually, a human brain activates only a sparse array of neurons at any given moment. Do state-of-the-art large language models (LLMs) behave similarly? Until recently, the answer was no. They typically exhibit over 99% non-zero activations during inference. However, our recent research unveils a surprising observation, LLMs activations are intrinsically sparse.
 materials:
   - name: CATS

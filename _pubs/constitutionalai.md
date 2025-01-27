@@ -55,12 +55,12 @@ authors:
 
 venue: preprint
 year: 2022
-day: 349
+date: 2022-12-15
 has_pdf: false
 doi: 2212.08073v1
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: Imagine an AI that polices itself to ensure it remains helpful and safe. Our approach, called Constitutional AI, trains an AI assistant through a two-phase process. First, it learns from itself by generating and revising its own responses. Then, it refines its performance through reinforcement learning based on feedback from its own evaluations. This method not only improves the AI’s ability to handle sensitive queries but also requires minimal human oversight, making it a powerful tool for creating AI systems that are both effective and secure.
 materials:

@@ -13,12 +13,12 @@ authors:
   - name: Jeff Dean
 venue: preprint
 year: 2017
-day: 23
+date: 2017-01-23
 has_pdf: false
 doi: 1701.06538'
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: This study enhances neural network capacity using conditional computation, specifically through a Sparsely-Gated Mixture-of-Experts (MoE) layer. By activating selective sub-networks per example, the MoE significantly boosts model capacity with minimal computational overhead, improving performance in language modeling and machine translation tasks.
 materials:

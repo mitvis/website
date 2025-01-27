@@ -15,12 +15,12 @@ authors:
   - name: Jeff Dean
 venue: preprint
 year: 2017
-day: 164
+date: 2017-06-13
 has_pdf: false
 doi: NA
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: In recent years, neural network training and inference have surged in complexity and resource demands. We introduce a novel approach that leverages a sequence-to-sequence model to optimize device placement for TensorFlow graphs. Our method outperforms traditional heuristics and algorithms by learning optimal device assignments, as demonstrated with Inception-V3 on ImageNet and RNN LSTM models for language tasks.
 materials:

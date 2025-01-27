@@ -9,12 +9,12 @@ authors:
   - name: Ion Stocia
 venue: preprint
 year: 2021
-day: 21
+date: 2021-01-21
 has_pdf: true
 doi: NA
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: GraphTrans combines GNNs with Transformer-based self-attention to learn long-range relationships and uses a novel "readout" mechanism for global graph embeddings. It achieves state-of-the-art results in graph classification, suggesting that learning-based approaches can effectively capture long-range dependencies.
 materials:

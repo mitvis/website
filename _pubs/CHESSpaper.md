@@ -12,12 +12,12 @@ authors:
     affiliation: Stanford University
 venue: preprint
 year: 2024
-day: 178
+date: 2024-04-23
 has_pdf: true
 doi: 2405.16755​
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
 teaser: Translating natural language questions into database queries, or text-to-SQL, is a long-standing research problem. This issue has been exacerbated in recent years due to the growing complexity of databases, driven by the increasing sizes of schemas (sets of columns and tables), values (content), and catalogs (metadata describing schemas and values) stored within them. 
 materials:
   - name: CHESS

@@ -17,12 +17,12 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2024
-day: 212
+date: 2024-07-31
 has_pdf: true
 doi: 10.48550/arXiv.2407.21787
 tags:
   - machine learning
-  - generative AI
+  - generative ai
 teaser: Increasing the amount of inference compute through repeated sampling leads to large improvements in coverage - the fraction of problems solved by any attempt - across a variety tasks, models, and sample budgets. This makes it possible, and sometimes cost-effective, to amplify weaker models with many samples and outperform single attempts from more capable models.
 materials:
   - name: Paper

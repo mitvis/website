@@ -15,12 +15,12 @@ authors:
   - key: azaliamirhoseini
 venue: preprint
 year: 2025
-day: 23
+date: 2025-01-23
 has_pdf: true
 doi: 10.48550/arXiv.2501.14723
 tags:
   - machine learning
-  - generative AI
+  - generative ai
 teaser: CodeMonkeys, a system designed to solve software engineering problems by scaling test time compute.
 materials:
   - name: Paper

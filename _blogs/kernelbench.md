@@ -9,7 +9,7 @@ authors:
 tags:
   - ml systems
   - gpu programming
-  - generative AI
+  - generative ai
 venue: none
 year: 2024
 date: 2024-12-03

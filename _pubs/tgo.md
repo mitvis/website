@@ -15,12 +15,12 @@ authors:
   - name: James Laudon
 venue: preprint
 year: 2020
-day: 51
+date: 2020-02-20
 has_pdf: false
 doi: 2010.12438'
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: Revolutionize graph optimization with GO, our deep reinforcement learning method that outperforms traditional heuristics. By optimizing entire graphs at once, GO delivers 33%-60% faster results and up to 21% better performance compared to previous methods, achieving 15× faster convergence on complex tasks.
 materials:

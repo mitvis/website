@@ -18,7 +18,7 @@ authors:
 tags:
   - natural language processing
   - scaling laws
-  - generative AI
+  - generative ai
 venue: none
 year: 2024
 date: 2024-09-01

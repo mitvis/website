@@ -26,12 +26,12 @@ authors:
 
 venue: preprint
 year: 2021
-day: 103
+date: 2021-04-13
 has_pdf: false
 doi: 10.1038'
 tags:
   - natural language processing
-  - generative AI
+  - generative ai
   - highlight
 teaser: Revolutionize chip design with our deep reinforcement learning approach to chip floorplanning. In under six hours, our method generates chip layouts that match or exceed human-designed standards in power, performance, and area. By using an edge-based graph convolutional neural network, we enable AI to learn from past designs and continuously improve. This technology has already shaped the next generation of Google’s AI accelerators and promises to drastically cut human design time while accelerating advances in both AI and hardware.
 materials:
