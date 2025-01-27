@@ -20,28 +20,28 @@
 
 - key: scalable_intelligence
   name: Scalable Intelligence
-  url: /pubs/#tag=scaling_intelligence
-  people: azaliamirhoseini, jordanjuravsky, jonsaadfalcon
+  url: /pubs/
+  people:
   desc: >
     We build new AI systems that scale robustly across data, parameters, and compute.
 
 - key: aosi
   name: Agentic Optimization and Self-Improvement
-  url: /pubs/#tag=aosi
-  people: azaliamirhoseini, jordanjuravsky, jonsaadfalcon
+  url: /pubs/
+  people:
   desc: >
     We create agentic frameworks that enable machines to learn from their worldly interactions and experiences, enabling advanced reasoning and planning.
 
 - key: avb
   name: Automated Verifiers and Benchmarks
-  url: /pubs/#tag=avb
-  people: azaliamirhoseini, jordanjuravsky, jonsaadfalcon
+  url: /pubs/
+  people:
   desc: >
     We design methods and frameworks for automated evaluation and benchmarking.
 
 - key: assa
   name: AI for Systems and Systems for AI
-  url: /pubs/#tag=assa
-  people: azaliamirhoseini, jordanjuravsky, jonsaadfalcon
+  url: /pubs/
+  people:
   desc: >
     We design efficient systems for AI training and serving, with a particular interest in using AI itself as the optimization engine.
