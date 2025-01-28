@@ -35,6 +35,9 @@ materials:
   - name: Codebase Content Dataset
     url: https://huggingface.co/datasets/ScalingIntelligence/swe-bench-verified-codebase-content
     type: database
+  - name: Blog post
+    url: /blogs/codemonkeys/
+    type: link
 ---
 Scaling test-time compute is a promising axis for improving LLM capabilities.
 However, test-time compute can be scaled in a variety of ways, and effectively combining different approaches remains an active area of research.
