@@ -18,6 +18,9 @@ tags:
   - interface
 teaser: Abstraction alignment measures human-AI alignment by comparing model behavior to known human abstractions.
 materials:
+  - name: Demo
+    url: https://vis.mit.edu/abstraction-alignment/
+    type: cube
   - name: Code
     url: https://github.com/mitvis/abstraction-alignment
     type: code
