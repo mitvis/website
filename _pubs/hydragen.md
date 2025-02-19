@@ -21,6 +21,7 @@ doi: 10.48550/arXiv.2402.05099
 tags:
   - machine learning
   - generative ai
+  - ml systems
 teaser: Hydragen also enables the use of very long shared contexts with a large batch size, increasing the prefix length from 1K to 16K tokens decreases Hydragen throughput by less than 15%, while the throughput of baselines drops by over 90%. Hydragen generalizes beyond simple prefix-suffix decomposition and can be applied to tree-based prompt sharing patterns, allowing us to further reduce inference time on competitive programming problems by 55%.
 materials:
   - name: Hydragen

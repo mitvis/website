@@ -23,6 +23,7 @@ tags:
   - natural language processing
   - generative ai
   - highlight
+  - ml systems
 teaser: Explore the cutting-edge Full-stack Accelerator Search Technique (FAST), a game-changing framework designed to optimize hardware accelerators for today's dynamic deep learning demands. This innovative approach fine-tunes every aspect of the hardware-software stack, from datapath design to software scheduling and compiler optimizations. By targeting bottlenecks in leading models like EfficientNet and BERT, FAST creates accelerators that deliver up to 3.7× better performance per watt compared to TPU-v3 for single workloads, and 2.4× better for a range of tasks. Discover how FAST can revolutionize datacenter efficiency and performance.
 materials:
   - name: A Full-Stack Search Technique for Domain Optimized Deep Learning Accelerators
