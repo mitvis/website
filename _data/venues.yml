@@ -147,3 +147,9 @@ eXCV:
   bibtex:
     type: inproceedings
     venue: booktitle
+bds:
+  short: Big Data & Society
+  full: Big Data & Society
+  bibtex:
+    type: article
+    venue: journal
