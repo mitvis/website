@@ -27,11 +27,11 @@
 
       const videos = document.querySelectorAll('video');
       const sm = window.matchMedia('(max-width: 47.9em)').matches;
-      if (sm) {
+      // if (sm) {
         for (const video of videos) video.play();
-      } else {
-        videos[0].play();
-      }
+      // } else {
+        // videos[0].play();
+      // }
 
       function showAllPeople() {
         const people = document.querySelectorAll('.person')
@@ -51,8 +51,8 @@
             }
 
             for (const video of videos) {
-              if (video.parentElement === theme) video.play();
-              else video.pause();
+              // if (video.parentElement === theme) video.play();
+              // else video.pause();
             }
           });
         }
