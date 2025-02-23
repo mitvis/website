@@ -25,6 +25,11 @@ amyfox:
   url: https://madebyafox.github.io
   title: Postdoctoral Researcher
 
+ahorvath:
+  name: Amber Horvath
+  url: https://amberhorvath.com
+  title: Postdoctoral Researcher
+
 # PhDs
 lundgard:
   name: Alan Lundgard
@@ -215,6 +220,7 @@ gracefh:
 efaith1:
   name: Esther Kinyanjui
   title: Undergraduate Researcher
+  alumni: true
 
 ljewel:
   name: Lydia Patterson
@@ -252,6 +258,7 @@ helenagv:
   url: https://helenavasc.com/
   title: Research Intern
   affiliation: Stanford University
+  alumni: true
 
 # Visitors
 peck:
