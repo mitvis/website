@@ -25,6 +25,8 @@ materials:
     url: https://github.com/mitvis/abstraction-alignment
     type: code
 videos:
+  - name: CHI 2025 Presentation
+    key: cLi93F6pEl0
   - name: Video Figure
     key: b8flyUcQc4Q
 ---
