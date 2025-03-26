@@ -30,6 +30,11 @@ ahorvath:
   url: https://amberhorvath.com
   title: Postdoctoral Researcher
 
+jzong:
+  name: Jonathan Zong
+  url: http://jonathanzong.com/
+  title: Postdoctoral Researcher
+
 # PhDs
 lundgard:
   name: Alan Lundgard
@@ -37,11 +42,6 @@ lundgard:
   title: PhD Researcher (On Leave)
   alumni: true
   next: Design Consultant
-
-jzong:
-  name: Jonathan Zong
-  url: http://jonathanzong.com/
-  title: PhD Researcher
 
 crystall:
   name: Crystal Lee
