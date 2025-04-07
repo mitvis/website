@@ -71,6 +71,12 @@ chi-ea:
   bibtex:
     type: inproceedings
     venue: booktitle
+chi-workshop:
+  short: CHI Workshop
+  full: ACM Human Factors in Computing Systems (CHI) Workshop
+  bibtex:
+    type: inproceedings
+    venue: booktitle
 tei-wip:
   short: TEI WIP
   full: Work-in-Progress of ACM Tangible, Embedded, and Embodied Interaction (TEI)
