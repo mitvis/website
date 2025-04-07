@@ -4,7 +4,7 @@ authors:
   - key: jzong
   - key: ipedraza
   - key: mzc219
-  - name: Daniel Hajas
+  - key: hajas
     affiliation: Global Disability Innovation Hub
     url: https://www.disabilityinnovation.com/who-we-are/our-team/daniel-hajas
   - key: arvindsatya

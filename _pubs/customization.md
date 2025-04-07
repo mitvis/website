@@ -4,7 +4,7 @@ Accessible Data Visualizations'
 authors:
   - key: jonsh
   - key: ipedraza
-  - name: Daniel Hajas
+  - key: hajas
     affiliation: Global Disability Innovation Hub
     url: https://www.disabilityinnovation.com/who-we-are/our-team/daniel-hajas
   - key: jzong

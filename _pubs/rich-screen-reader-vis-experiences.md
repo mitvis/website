@@ -10,7 +10,7 @@ authors:
     equal: true
   - name: JiWoong Jang
     affiliation: Carnegie Mellon University
-  - name: Daniel Hajas
+  - key: hajas
     affiliation: Global Disability Innovation Hub
     url: https://www.disabilityinnovation.com/who-we-are/our-team/daniel-hajas
   - key: arvindsatya
