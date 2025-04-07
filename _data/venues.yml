@@ -71,9 +71,9 @@ chi-ea:
   bibtex:
     type: inproceedings
     venue: booktitle
-chi-workshop:
-  short: CHI Workshop
-  full: ACM Human Factors in Computing Systems (CHI) Workshop
+chi-t4t:
+  short: ACM CHI Workshop on Tools for Thought
+  full: ACM CHI Workshop on Tools for Thought
   bibtex:
     type: inproceedings
     venue: booktitle

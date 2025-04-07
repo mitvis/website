@@ -1,13 +1,13 @@
 ---
 stub: false
-title: 'Semi-Formal Demo: Something In Between Formal Spec and Informal Representation'
+title: 'Something In Between Formal Spec and Informal Representation'
 authors:
   - key: ryanyen2
   - key: jopo
   - key: berger
   - key: arvindsatya
 type: workshop
-venue: chi-workshop
+venue: chi-t4t
 teaser: 'A scenario illustrating a semi-formal paradigm, where programmers code with web page, image, and LaTeX formula'
 year: 2025
 date: 2025-05-26
