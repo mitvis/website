@@ -19,8 +19,11 @@ materials:
   #   url: https://dl.acm.org/doi/fullHtml/10.1145/3706598.3714132
   #   type: cube
   - name: Prototype editor
-    url: https://tactile-vega-lite.vercel.app/
+    url: https://vega-lite-tactile.vercel.app/
     type: cube
+  - name: Code
+    url: https://github.com/mitvis/tactile-vega-lite
+    type: code
 ---
 
 Tactile charts are essential for conveying data to blind and low vision (BLV) readers but are difficult for designers to construct. Non-expert designers face barriers to entry due to complex guidelines, while experts struggle with fragmented and time-consuming workflows that involve extensive customization. Inspired by formative interviews with expert tactile graphics designers, we created Tactile Vega-Lite (TVL): an extension of Vega-Lite that offers tactile-specific abstractions and synthesizes existing guidelines into a series of smart defaults. Pre-defined stylistic choices enable non-experts to quickly produce guideline-compliant tactile charts. Expert users can override defaults to tailor customizations for their intended audience. In a user study with 12 tactile graphics creators, we show that Tactile Vega-Lite enhances flexibility and consistency by automating tasks like adjusting spacing and translating braille while accelerating iterations through pre-defined textures and line styles. Through expert critique, we also learn more about tactile chart design best practices and design decisions.
