@@ -1,30 +1,38 @@
-# vis.csail.mit.edu
+# sv
 
-## How to dev mitvis website 
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-- Install rbenv ([instructions](https://github.com/rbenv/rbenv))
-- Install dependencies
+## Creating a project
+
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+# create a new project in the current directory
+npx sv create
+
+# create a new project in my-app
+npx sv create my-app
 ```
-bundle install
-```
-- Serve your content
-```
-bundle exec jekyll serve --livereload
-```
-- Check localhost:4000 for your content
 
-## Adding a paper
-Add these files:
-- Add `<my-paper>.md` to `_pubs`
-- Add `<my-paper>.pdf` to `pubs`
-- Add a thumbnail image, `<my-paper>.png`, to `imgs/thumbs`. It should be 240x120 or similar
-- Add a teaser image, `<my-paper>.png`, to `imgs/teasers`.
+## Developing
 
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Adding a person
-Edit these files:
-- Add an entry in `_data/people.yml`
-Add these files:
-- Add a square photo to `imgs/people`
-- - filename must match the key you used for your entry in `_data/people.yml`
-- - extension must be `.jpg`
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
