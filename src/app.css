@@ -1,3 +1,17 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans: 'Cabin', system-ui, sans-serif;
+	--font-serif: 'Merriweather', serif;
+
+  --color-csail-orange: #B94700;
+  --color-csail-yellow: #F0B323;
+  --color-csail-light-grey: #898D8D;
+  --color-csail-dark-grey: #525252;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}

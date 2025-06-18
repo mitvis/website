@@ -122,7 +122,7 @@
     "url": "http://navahaghighi.com",
     "title": "Master's (SM) Researcher",
     "alumni": true,
-    "next": "Stanford CS PhD student"
+    "next": "PhD Student at Stanford CS"
   },
   "rneogy": {
     "name": "Rupayan Neogy",
@@ -135,7 +135,7 @@
     "url": "https://wonyoung.so/",
     "title": "Master's (SM) Researcher",
     "alumni": true,
-    "next": "MIT DUSP PhD Student"
+    "next": "PhD Student at MIT DUSP"
   },
   "sjzheng": {
     "name": "Sophia Zheng",
@@ -252,7 +252,8 @@
     "url": "https://helenavasc.com/",
     "title": "Research Intern",
     "affiliation": "Stanford University",
-    "alumni": true
+    "alumni": true,
+    "next": "PhD Student at Harvard CS"
   },
   "peck": {
     "name": "Evan Peck",

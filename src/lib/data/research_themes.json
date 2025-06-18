@@ -60,15 +60,13 @@
     ]
   },
   {
-    "key": "convivial-info",
-    "name": "Cognitively Convivial Information",
-    "desc": "We study how people [understand](/pubs/visualint/), [discuss](/pubs/viral-visualizations), and [interact with](/pubs/#tag=interaction-design) visualizations, to build more general [behavioral rules](/pubs/varv/) for information, or an [information \"physics\"](/pubs/towards-convivial-info-space/).",
-    "url": "/pubs/#tag=convivial-information",
+    "key": "sociocultural-design",
+    "name": "Sociocultural Design",
+    "url": "/pubs/#tag=sociocultural-design",
     "people": [
       "arvindsatya",
-      "dwootton",
       "crystall",
-      "jzong",
+      "amyfox",
       "tanyang",
       "katmh",
       "monterde",
@@ -77,6 +75,18 @@
       "ajmeurer",
       "vineetpa",
       "amyfox"
+    ]
+  },
+  {
+    "key": "convivial-interaction",
+    "name": "Cognitively Convivial Interaction",
+    "desc": "We study how people [understand](/pubs/visualint/), [discuss](/pubs/viral-visualizations), and [interact with](/pubs/#tag=interaction-design) visualizations, to build more general [behavioral rules](/pubs/varv/) for information, or an [information \"physics\"](/pubs/towards-convivial-info-space/).",
+    "url": "/pubs/#tag=convivial-information",
+    "people": [
+      "arvindsatya",
+      "dwootton",
+      "ryanyen2",
+      "jopo"
     ]
   }
 ] 
