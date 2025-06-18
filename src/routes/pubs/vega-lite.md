@@ -14,6 +14,7 @@ authors:
     affiliation: University of Washington
 venue: infovis
 year: 2017
+date: 2017-01-01
 doi: 10.1109/TVCG.2016.2599030
 themes:
   - tools

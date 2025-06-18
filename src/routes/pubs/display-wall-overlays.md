@@ -11,6 +11,7 @@ authors:
     affiliation: UC San Diego
 venue: iui
 year: 2012
+date: 2012-02-14
 doi: 10.1145/2166966.2166987
 themes:
   - convivial-interaction

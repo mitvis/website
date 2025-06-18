@@ -23,6 +23,7 @@ authors:
     affiliation: Intel Corporation
 venue: chi
 year: 2013
+date: 2013-04-27
 doi: 10.1145/2470654.2466420
 themes:
   - sociocultural-design

@@ -12,6 +12,7 @@ authors:
     affiliation: University of Washington
 venue: eurovis
 year: 2016
+date: 2016-06-01
 doi: 10.1111/cgf.12903
 themes:
   - tools

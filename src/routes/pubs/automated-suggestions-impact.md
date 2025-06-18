@@ -10,8 +10,9 @@ authors:
     affiliation: MIT CSAIL
 venue: chi
 year: 2021
+date: 2021-05-06
 doi: 10.1145/3411764.3445522
-themes: 
+themes:
   - convivial-interaction
 tags:
   - human-ai interaction

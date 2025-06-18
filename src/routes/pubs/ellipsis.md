@@ -8,6 +8,7 @@ authors:
     affiliation: University of Washington
 venue: eurovis
 year: 2014
+date: 2014-06-01
 doi: 10.1111/cgf.12392
 themes:
   - tools

@@ -11,6 +11,7 @@ authors:
     affiliation: University of Washington
 venue: chi
 year: 2018
+date: 2018-04-21
 doi: 10.1145/3173574.3174106
 themes:
   - tools
