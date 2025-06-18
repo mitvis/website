@@ -8,6 +8,7 @@ authors:
 type: workshop
 venue: rethinking-interaction
 year: 2018
+date: 2018-04-22
 themes:
   - convivial-interaction
 tags:
