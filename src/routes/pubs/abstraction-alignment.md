@@ -11,11 +11,14 @@ venue: chi
 year: 2025
 date: 2025-04-28
 doi: 10.1145/3706598.3713406
+themes: 
+  - interpretability
 tags:
   - machine learning interpretability
   - language
   - mixed methods
   - interface
+spotlight: true
 teaser: Abstraction alignment measures human-AI alignment by comparing model behavior to known human abstractions.
 materials:
   - name: Demo

@@ -10,6 +10,8 @@ authors:
 venue: chi
 year: 2021
 doi: 10.1145/3411764.3445088
+themes:
+  - interpretability
 tags:
   - machine learning interpretability
   - qualitative methods

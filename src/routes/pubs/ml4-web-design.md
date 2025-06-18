@@ -13,6 +13,8 @@ type: poster
 venue: chi-ea
 year: 2012
 doi: 10.1145/2212776.2223695
+themes:
+  - tools
 tags:
   - web design
   - system

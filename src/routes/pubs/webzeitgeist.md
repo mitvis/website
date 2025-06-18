@@ -24,6 +24,8 @@ authors:
 venue: chi
 year: 2013
 doi: 10.1145/2470654.2466420
+themes:
+  - sociocultural-design
 tags:
   - web design
   - system

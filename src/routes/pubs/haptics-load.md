@@ -13,6 +13,9 @@ preprint:
   id: '2006.00372'
 year: 2020
 date: 2020-02-27
+themes:
+  - accessibility
+  - convivial-interaction
 tags:
   - empirical study
   - quantitative methods

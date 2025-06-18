@@ -12,6 +12,8 @@ type: workshop
 venue: plateau
 year: 2024
 date: 2024-02-19
+themes:
+  - convivial-interaction
 tags:
   - language
   - malleable interfaces

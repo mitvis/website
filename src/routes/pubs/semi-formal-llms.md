@@ -10,6 +10,8 @@ type: workshop
 venue: live
 year: 2023
 date: 2023-10-23
+themes:
+  - convivial-interaction
 tags:
   - language
   - malleable interfaces

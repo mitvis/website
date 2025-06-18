@@ -8,6 +8,9 @@ venue: mit-genai
 year: 2024
 date: 2024-03-29
 external_url: https://mit-genai.pubpub.org/pub/94y6e0f8
+themes:
+  - sociocultural-design
+  - convivial-interaction
 tags:
   - qualitative methods
   - human-ai interaction

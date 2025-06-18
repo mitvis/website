@@ -15,6 +15,9 @@ authors:
 venue: chi
 year: 2022
 date: 2022-05-05
+themes:
+  - tools
+  - convivial-interaction
 tags:
   - language
   - system

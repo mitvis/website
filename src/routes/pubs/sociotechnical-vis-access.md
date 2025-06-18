@@ -10,6 +10,8 @@ venue: vis-short
 year: 2019
 date: 2019-10-20
 doi: 10.1109/VISUAL.2019.8933762
+themes:
+  - accessibility
 tags:
   - visualization design
   - accessibility

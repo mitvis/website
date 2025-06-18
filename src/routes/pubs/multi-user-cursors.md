@@ -8,6 +8,8 @@ venue: vis-short
 year: 2020
 date: 2020-10-25
 doi: 10.1109/VIS47514.2020.00036
+themes:
+  - tools
 tags:
   - interface
   - visualization design

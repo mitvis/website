@@ -21,6 +21,8 @@ venue: infovis
 year: 2020
 date: 2020-10-25
 doi: 10.1109/TVCG.2019.2934281
+themes:
+  - tools
 tags:
   - visualization design
   - qualitative methods

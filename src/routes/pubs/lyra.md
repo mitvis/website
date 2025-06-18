@@ -9,6 +9,8 @@ authors:
 venue: eurovis
 year: 2014
 doi: 10.1111/cgf.12391
+themes:
+  - tools
 tags:
   - visualization design
   - interaction design

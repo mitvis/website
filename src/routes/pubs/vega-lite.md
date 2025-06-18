@@ -15,6 +15,8 @@ authors:
 venue: infovis
 year: 2017
 doi: 10.1109/TVCG.2016.2599030
+themes:
+  - tools
 tags:
   - language
   - visualization design

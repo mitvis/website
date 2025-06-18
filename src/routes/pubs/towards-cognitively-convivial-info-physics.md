@@ -8,6 +8,8 @@ authors:
 type: workshop
 venue: rethinking-interaction
 year: 2018
+themes:
+  - convivial-interaction
 tags:
   - interaction design
   - convivial information

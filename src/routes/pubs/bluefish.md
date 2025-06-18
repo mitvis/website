@@ -14,11 +14,14 @@ venue: uist
 year: 2024
 date: 2024-07-24
 doi: 10.1145/3654777.3676465
+themes:
+  - tools
 tags:
   - language
   - visualization design
   - web design
   - qualitative methods
+spotlight: true
 teaser: 'Diagrams built with the Bluefish language. These graphics run the gamut from computer science to physics to math
 and are constructed with declarative, composable, extensible relations. From left to right: a quantum circuit equivalence,
 topologies, a Python Tutor diagram, an Ohm parse tree, and a physics pulley diagram.'

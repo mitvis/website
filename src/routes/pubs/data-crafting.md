@@ -10,6 +10,9 @@ type: workshop
 venue: visactivities
 year: 2020
 date: 2020-10-24
+themes:
+  - sociocultural-design
+  - convivial-interaction
 tags:
   - visualization design
   - convivial information

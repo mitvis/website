@@ -12,6 +12,8 @@ venue: vis-full
 year: 2023
 date: 2023-01-02
 doi: 10.1109/TVCG.2022.3209369
+themes: 
+  - tools
 tags:
   - language
   - visualization design
@@ -29,7 +31,7 @@ materials:
     type: cube
 ---
 
-<style>
+<style lang="css">
   #vega-lite-animated-editor-gallery-section {
     margin-top: 1em;
   }
@@ -44,7 +46,7 @@ materials:
   }
 </style>
 
-<script>
+<script lang="javascript">
   function goToAnimation(example) {
     let src = "";
     switch (example) {
@@ -108,15 +110,15 @@ function onEditorLoad() {
       These reflections highlight the key motivating role of in-the-wild examples, and identify three central tradeoffs: the language design process, the types of animated transitions supported, and how the systems model keyframes.</p>
 
       <section id="vega-lite-animated-editor-gallery-section">
-        <img src="gifs/bar.gif" onclick="goToAnimation('bar')" />
-        <img src="gifs/birds.gif" onclick="goToAnimation('birds')" />
-        <img src="gifs/bump.gif" onclick="goToAnimation('bump')" />
-        <img src="gifs/connected.gif" onclick="goToAnimation('connected')" />
-        <img src="gifs/dunkin.gif" onclick="goToAnimation('dunkin')" />
-        <img src="gifs/gapminder.gif" onclick="goToAnimation('gapminder')" />
-        <img src="gifs/hop.gif" onclick="goToAnimation('hop')" />
-        <img src="gifs/overview.gif" onclick="goToAnimation('overview')" />
-        <img src="gifs/stocks.gif" onclick="goToAnimation('stocks')" />
+        <img src="gifs/bar.gif" onclick={() => goToAnimation('bar')} />
+        <img src="gifs/birds.gif" onclick={() => goToAnimation('birds')} />
+        <img src="gifs/bump.gif" onclick={() => goToAnimation('bump')} />
+        <img src="gifs/connected.gif" onclick={() => goToAnimation('connected')} />
+        <img src="gifs/dunkin.gif" onclick={() => goToAnimation('dunkin')} />
+        <img src="gifs/gapminder.gif" onclick={() => goToAnimation('gapminder')} />
+        <img src="gifs/hop.gif" onclick={() => goToAnimation('hop')} />
+        <img src="gifs/overview.gif" onclick={() => goToAnimation('overview')} />
+        <img src="gifs/stocks.gif" onclick={() => goToAnimation('stocks')} />
         <div style="font-style: italic;">
           Click on an example to open the Animated Vega-Lite editor.
         </div>
@@ -538,7 +540,7 @@ function onEditorLoad() {
             For example, if at every step of the animation, a user wished to show all points with year less than or equal to <span class="ltx_text ltx_font_typewriter">anim_value</span>, they would use the following predicate:</p>
         </div>
         <div id="S4.SS2.SSS2.p3" class="ltx_para">
-          <p class="ltx_p"><span class="ltx_text ltx_font_typewriter">{"field": "year", "lte": "anim_value"}</span></p>
+          <p class="ltx_p"><span class="ltx_text ltx_font_typewriter">{'{"field": "year", "lte": "anim_value"}'}</span></p>
         </div>
         <div id="S4.SS2.SSS2.p4" class="ltx_para">
           <p class="ltx_p">Previously, Vega-Lite did not allow users to customize the selection predicate because the majority of interactions could be expressed using a combination of default predicates and selection transformations.
@@ -578,7 +580,7 @@ function onEditorLoad() {
             For example, a user can bind a checkbox to a parameter named <span class="ltx_text ltx_font_typewriter">is_playing</span>, and use the following event stream definition to pause the visualization when the box is checked:</p>
         </div>
         <div id="S4.SS2.SSS4.p2" class="ltx_para">
-          <p class="ltx_p"><span class="ltx_text ltx_font_typewriter">"on":{"type": "timer", "filter": "is_playing"}</span></p>
+          <p class="ltx_p"><span class="ltx_text ltx_font_typewriter">{'"on":{"type": "timer", "filter": "is_playing"}'}</span></p>
         </div>
         <div id="S4.SS2.SSS4.p3" class="ltx_para">
           <p class="ltx_p">Pausing by data value is specified using the <span class="ltx_text ltx_font_typewriter">pause</span> property of an animated selection definition.
@@ -586,7 +588,7 @@ function onEditorLoad() {
             For example, a user can specify that the Gapminder animation should pause on the year 1995 for 2 seconds, to draw attention to the data for that year:</p>
         </div>
         <div id="S4.SS2.SSS4.p4" class="ltx_para">
-          <p class="ltx_p"><span class="ltx_text ltx_font_typewriter">"pause": [{"value": 1995, "duration": 2000}]</span></p>
+          <p class="ltx_p"><span class="ltx_text ltx_font_typewriter">{'"pause": [{"value": 1995, "duration": 2000}]'}</span></p>
         </div>
       </section>
       <section id="S4.SS2.SSS5" class="ltx_subsubsection">

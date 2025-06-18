@@ -11,6 +11,8 @@ authors:
 venue: chi
 year: 2021
 doi: 10.1145/3411764.3445522
+themes: 
+  - convivial-interaction
 tags:
   - human-ai interaction
   - empirical study

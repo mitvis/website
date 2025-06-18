@@ -9,6 +9,8 @@ venue: chi
 doi: 10.1145/3706598.3714132
 year: 2025
 date: 2025-05-02
+themes:
+  - accessibility
 tags:
   - visualization design
   - accessibility

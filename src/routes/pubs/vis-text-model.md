@@ -9,6 +9,8 @@ year: 2022
 date: 2022-01-01
 doi: 10.1109/TVCG.2021.3114770
 image: /imgs/og/vis-text-model.png
+themes:
+  - accessibility
 tags:
   - interface
   - accessibility

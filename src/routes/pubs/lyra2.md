@@ -9,6 +9,8 @@ venue: infovis
 year: 2021
 date: 2021-01-01
 doi: 10.1109/TVCG.2020.3030367
+themes:
+  - tools
 tags:
   - visualization design
   - interaction design

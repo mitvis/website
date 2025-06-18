@@ -8,9 +8,11 @@ authors:
   - key: arvindsatya
 venue: iui
 year: 2025
-month: 2025-03-24
+date: 2025-03-24
 doi: 10.1145/3708359.3712122
 teaser: Pluto’s user interface. The key components include a data panel (A), chart editor (B), chart title (C), main chart canvas (D), and a chart description (E). Here, the user has manually entered a description and clicked the 💡 Suggest button to get ideas on improving the chart and text for communication purposes. This results in the system suggesting a title and adding a highlight annotation for `Single Family` homes, while also generating a chart design recommendation (F) and a set of description editing recommendations (G).
+themes:
+  - tools
 tags:
   - system
   - visualization design

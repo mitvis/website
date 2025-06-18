@@ -9,6 +9,8 @@ authors:
 venue: aaai
 year: 2022
 date: 2022-02-22
+themes:
+  - convivial-interaction
 tags:
   - human-ai interaction
   - empirical study

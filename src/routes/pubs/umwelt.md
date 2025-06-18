@@ -12,6 +12,9 @@ venue: chi
 doi: 10.1145/3613904.3641996
 year: 2024
 date: 2024-05-15
+themes:
+  - tools
+  - accessibility
 tags:
   - visualization design
   - interaction design

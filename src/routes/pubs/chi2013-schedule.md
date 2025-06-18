@@ -19,6 +19,8 @@ type: poster
 venue: chi-ea
 year: 2013
 doi: 10.1145/2468356.2479591
+themes:
+  - convivial-interaction
 tags:
   - interaction design
   - interface

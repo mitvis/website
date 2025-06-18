@@ -11,6 +11,8 @@ venue: eurovis
 year: 2020
 date: 2020-05-29
 doi: 10.1111/cgf.13975
+themes:
+  - sociocultural-design
 tags:
   - interface
   - empirical study

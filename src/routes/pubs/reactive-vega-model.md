@@ -12,6 +12,8 @@ authors:
 venue: uist
 year: 2014
 doi: 10.1145/2642918.2647360
+themes:
+  - tools
 tags:
   - visualization design
   - interaction design

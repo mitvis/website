@@ -14,6 +14,8 @@ venue: vis-full
 year: 2024
 date: 2024-01-01
 doi: 10.1109/TVCG.2023.3327158
+themes:
+  - convivial-interaction
 tags:
   - visualization design
   - interaction design
