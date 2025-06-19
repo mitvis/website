@@ -97,7 +97,7 @@
       <div class="absolute inset-0 bg-gradient-to-b from-transparent from-90% to-white pointer-events-none"></div>
     </div>
 
-    <div class="sticky top-20">
+    <div class="sticky top-17">
       <h2 class="text-xl font-black uppercase text-lime-600 mb-2 mt-4">People</h2>
 
     <div class="grid grid-cols-3 gap-0.5 w-full">

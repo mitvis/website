@@ -1,4 +1,8 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75px" height="100px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
+<script>
+	export let size = 75; // default size
+</script>
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="{size}px" height="{size * 1.33}px" viewBox="303 328 150 100" enable-background="new 303 328 150 100" xml:space="preserve">
 	<g>
 		<path d="M306.799,397.896c0,1.027,0.833,1.86,1.86,1.86h13.954c1.027,0,1.86-0.833,1.86-1.86v-30.698c0-1.027-0.833-1.86-1.86-1.86
 			h-13.954c-1.027,0-1.86,0.833-1.86,1.86V397.896z" fill="#B94700"></path>
