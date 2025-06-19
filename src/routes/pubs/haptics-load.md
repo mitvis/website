@@ -21,7 +21,7 @@ tags:
   - empirical study
   - quantitative methods
   - accessibility
-  - convivial information
+  - convivial interaction
 external_url: https://arxiv.org/abs/2006.00372
 ---
 

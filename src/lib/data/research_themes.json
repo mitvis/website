@@ -1,9 +1,10 @@
 [
   {
     "key": "tools",
-    "name": "Visualization Design Tools",
-    "desc": "We develop [languages](/pubs/#tag=language&tag=visualization-design), [systems](/pubs/#tag=system&tag=visualization-design), and [interfaces](/pubs/#tag=interface&tag=visualization-design) for creating common and custom interactive visualizations.",
+    "name": "Visualization Authoring Tools",
+    "desc": "We develop [languages](/pubs/#tag=language&tag=visualization-design) and [systems](/pubs/#tag=system&tag=visualization-design) to make it easy for anyone to create common and custom interactive visualizations.",
     "url": "/pubs/#tag=visualization-design",
+    "video_url": "/pubs/lyra2",
     "people": [
       "arvindsatya",
       "jzong",
@@ -24,9 +25,10 @@
   },
   {
     "key": "interpretability",
-    "name": "Machine Learning Interpretability",
-    "desc": "We design [metrics](/pubs/shared-interest/) and [interfaces](/pubs/knnviz/) for [visually analyzing](/pubs/embedding-comparator/) models, and study [human-AI interaction](/pubs/#tag=human-ai-interaction).",
+    "name": "Interpretability & Alignment",
+    "desc": "We design [metrics](/pubs/shared-interest) and [interfaces](/pubs/knnviz) for [visually analyzing](/pubs/embedding-comparator/) ML models and for discovering how they [align with human expectations](/pubs/abstraction-alignment).",
     "url": "/pubs/#tag=machine-learning-interpretability",
+    "video_url": "/pubs/embedding-comparator",
     "people": [
       "arvindsatya",
       "aboggust",
@@ -41,9 +43,10 @@
   },
   {
     "key": "accessibility",
-    "name": "Accessible Visualization Design",
-    "desc": "[In collaboration with](/pubs/sociotechnical-vis-access/) people with visual disabilities, we explore [textual](/pubs/vis-text-model/) and [screen reader](/pubs/rich-screen-reader-vis-experiences/) modalities for representing data.",
+    "name": "Accessible Data Representations",
+    "desc": "[Working with blind collaborators](/pubs/sociotechnical-vis-access), we co-design non-visual data displays via [alt](/pubs/vis-text-model) [text](/pubs/vistext), [screen readers](/pubs/rich-screen-reader-vis-experiences), and [tactile graphics](/pubs/tactile-vega-lite).",
     "url": "/pubs/#tag=accessibility",
+    "video_url": "/pubs/rich-screen-reader-vis-experiences",
     "people": [
       "arvindsatya",
       "lundgard",
@@ -62,7 +65,9 @@
   {
     "key": "sociocultural-design",
     "name": "Sociocultural Design",
+    "desc": "We study how visualizations and ML models function as social artifacts: signaling identities, [shaping norms](/pubs/cultural-interpretability), and [propagating misinformation](/pubs/viral-visualizations).",
     "url": "/pubs/#tag=sociocultural-design",
+    "video_url": "/pubs/viral-visualizations",
     "people": [
       "arvindsatya",
       "crystall",
@@ -79,9 +84,9 @@
   },
   {
     "key": "convivial-interaction",
-    "name": "Convivial Interaction",
-    "desc": "We study how people [understand](/pubs/visualint/), [discuss](/pubs/viral-visualizations), and [interact with](/pubs/#tag=interaction-design) visualizations, to build more general [behavioral rules](/pubs/varv/) for information, or an [information \"physics\"](/pubs/towards-convivial-info-space/).",
-    "url": "/pubs/#tag=convivial-information",
+    "name": "Cognitively Convivial Interaction",
+    "desc": "We prototype [novel interaction paradigms](/pubs/towards-convivial-info-space) that fluidly mix [structures](/pubs/between-formal-and-informal) and [semantics](/pubs/semi-formal-design-space) to offer more [malleable experiences](/pubs/varv).",
+    "url": "/pubs/#tag=convivial-interaction",
     "people": [
       "arvindsatya",
       "dwootton",

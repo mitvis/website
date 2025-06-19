@@ -15,7 +15,7 @@ doi: 10.1145/3411764.3445211
 themes:
   - sociocultural-design
 tags:
-  - convivial information
+  - convivial interaction
   - mixed methods
   - visualization design
 teaser: ' Sample counter-visualizations from the anti-mask user network. While there are meme-based visualizations, anti-maskers on Twitter adopt the same visual vocabulary as visualization experts and the mainstream media.'

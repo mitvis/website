@@ -35,7 +35,7 @@
     "url": "https://alanlundgard.com/",
     "title": "PhD Researcher (On Leave)",
     "alumni": true,
-    "next": "Design Consultant"
+    "next": "UXD at Stanford Libraries"
   },
   "jzong": {
     "name": "Jonathan Zong",
@@ -78,68 +78,68 @@
   },
   "jonsh": {
     "name": "Shuli Jones",
-    "title": "Master's (MEng) Researcher",
+    "title": "MEng Researcher",
     "alumni": true
   },
   "ipedraza": {
     "name": "Isabella Pedraza Pineros",
-    "title": "Master's (MEng) Researcher",
+    "title": "MEng Researcher",
     "alumni": true
   },
   "benjtang": {
     "name": "Benny J. Tang",
     "url": "https://benjtang.dev",
-    "title": "Master's (SM) Researcher",
+    "title": "SM Researcher",
     "alumni": true
   },
   "mzc219": {
-    "name": "Katie Chen",
+    "name": "Mengzhu (Katie) Chen",
     "url": "https://www.k80chen.com/",
-    "title": "Master's (SM) Researcher",
+    "title": "SM Researcher",
     "alumni": true
   },
   "hbang": {
-    "name": "Hyemin Bang",
-    "title": "Master's (MEng) Researcher"
+    "name": "Hyemin (Helen) Bang",
+    "title": "MEng Researcher"
   },
   "esefah": {
     "name": "Ebenezer \"EJ\" Sefah",
-    "title": "Master's (MEng) Researcher",
+    "title": "MEng Researcher",
     "alumni": true
   },
   "ktbacher": {
     "name": "Katie Bacher",
-    "title": "Master's (MEng) Researcher",
+    "title": "MEng Researcher",
     "alumni": true
   },
   "houssam": {
     "name": "Houssam Kherraz",
-    "title": "Master's (MEng) Researcher",
+    "title": "MEng Researcher",
     "alumni": true
   },
   "nava": {
     "name": "Nava Haghighi",
     "url": "http://navahaghighi.com",
-    "title": "Master's (SM) Researcher",
+    "title": "SM Researcher",
     "alumni": true,
     "next": "PhD Student at Stanford CS"
   },
   "rneogy": {
     "name": "Rupayan Neogy",
     "url": "http://rneogy.github.io",
-    "title": "Master's (MEng) Researcher",
+    "title": "MEng Researcher",
     "alumni": true
   },
   "wso": {
     "name": "Wonyoung So",
     "url": "https://wonyoung.so/",
-    "title": "Master's (SM) Researcher",
+    "title": "SM Researcher",
     "alumni": true,
     "next": "PhD Student at MIT DUSP"
   },
   "sjzheng": {
     "name": "Sophia Zheng",
-    "title": "Master's (MEng) Researcher"
+    "title": "MEng Researcher"
   },
   "mattblanco": {
     "name": "Matt Blanco",
@@ -149,7 +149,7 @@
   },
   "meic1212": {
     "name": "Catherine Mei",
-    "title": "Undergraduate Researcher"
+    "title": "MEng Researcher"
   },
   "annieb22": {
     "name": "Annie Bryan",
@@ -209,7 +209,7 @@
   },
   "gracefh": {
     "name": "Grace Huang",
-    "title": "Undergraduate Researcher",
+    "title": "MEng Researcher",
     "alumni": true
   },
   "efaith1": {
@@ -219,7 +219,7 @@
   },
   "ljewel": {
     "name": "Lydia Patterson",
-    "title": "Undergraduate Researcher"
+    "title": "MEng Researcher"
   },
   "jwjang": {
     "name": "JiWoong (Joon) Jang",

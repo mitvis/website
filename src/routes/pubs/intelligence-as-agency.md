@@ -15,7 +15,7 @@ themes:
 tags:
   - qualitative methods
   - human-ai interaction
-  - convivial information
+  - convivial interaction
   - malleable interfaces
   - interaction design
 ---

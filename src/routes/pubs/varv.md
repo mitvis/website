@@ -24,7 +24,7 @@ tags:
   - system
   - interaction design
   - qualitative methods
-  - convivial information
+  - convivial interaction
   - malleable interfaces
 videos:
   - name: 30s Video Preview
