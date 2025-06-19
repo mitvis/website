@@ -1,3 +1,5 @@
+import venues from '$lib/data/venues.json';
+
 export async function getPubs() {
   const files = import.meta.glob('/src/routes/pubs/*.md');
 	const pubs = await Promise.all(
@@ -5,7 +7,11 @@ export async function getPubs() {
       try {
         const { metadata} = await resolver();
         const slug = path.slice(11, -3);
-			  return {slug, ...metadata};
+			  return {
+          slug, 
+          ...metadata,
+          venue: venues[metadata.venue]
+        };
       } catch (error) {
         return {date: Date.now()};
       }

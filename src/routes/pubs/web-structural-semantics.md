@@ -22,8 +22,6 @@ type: preprint
 venue: stanford-cstr
 year: 2012
 date: 2012-02-01
-themes:
-  - sociocultural-design
 tags:
   - model
   - web design

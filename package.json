@@ -43,5 +43,10 @@
 		"typescript-eslint": "^8.20.0",
 		"vite": "^6.2.6",
 		"vitest": "^3.2.3"
+	},
+	"dependencies": {
+		"gray-matter": "^4.0.3",
+		"js-yaml": "^4.1.0",
+		"node-fetch": "^3.3.2"
 	}
 }

@@ -24,7 +24,7 @@
     }
   },
   "vis-short": {
-    "short": "VIS",
+    "short": "IEEE VIS",
     "full": "IEEE Visualization Conference (VIS)",
     "bibtex": {
       "type": "inproceedings",
@@ -32,7 +32,7 @@
     }
   },
   "vis-full": {
-    "short": "VIS",
+    "short": "IEEE VIS",
     "full": "IEEE Transactions on Visualization & Computer Graphics (Proc. IEEE VIS)",
     "bibtex": {
       "type": "article",
@@ -72,7 +72,7 @@
     }
   },
   "uist": {
-    "short": "UIST",
+    "short": "ACM UIST",
     "full": "ACM User Interface Software & Technology (UIST)",
     "bibtex": {
       "type": "inproceedings",
@@ -80,7 +80,7 @@
     }
   },
   "chi": {
-    "short": "CHI",
+    "short": "ACM CHI",
     "full": "ACM Human Factors in Computing Systems (CHI)",
     "bibtex": {
       "type": "inproceedings",
@@ -88,7 +88,7 @@
     }
   },
   "chi-ea": {
-    "short": "CHI EA",
+    "short": "ACM CHI EA",
     "full": "Extended Abstracts of ACM Human Factors in Computing Systems (CHI)",
     "bibtex": {
       "type": "inproceedings",
@@ -104,7 +104,7 @@
     }
   },
   "tei-wip": {
-    "short": "TEI WIP",
+    "short": "ACMTEI WIP",
     "full": "Work-in-Progress of ACM Tangible, Embedded, and Embodied Interaction (TEI)",
     "bibtex": {
       "type": "inproceedings",
@@ -120,7 +120,7 @@
     }
   },
   "iui": {
-    "short": "IUI",
+    "short": "ACM IUI",
     "full": "ACM Intelligent User Interfaces (IUI)",
     "bibtex": {
       "type": "inproceedings",
@@ -140,7 +140,7 @@
     }
   },
   "kdd": {
-    "short": "KDD",
+    "short": "ACM KDD",
     "full": "ACM Knowledge Discovery and Data Mining (KDD)",
     "bibtex": {
       "type": "inproceedings",
@@ -155,6 +155,7 @@
     }
   },
   "aaai": {
+    "short": "AAAI",
     "full": "AAAI Conference on Artificial Intelligence",
     "bibtex": {
       "type": "inproceedings",
@@ -162,6 +163,7 @@
     }
   },
   "plateau": {
+    "short": "PLATEAU",
     "full": "PLATEAU Workshop at the Intersection of PL and HCI",
     "bibtex": {
       "type": "inproceedings",
@@ -169,6 +171,7 @@
     }
   },
   "facct": {
+    "short": "ACM FAccT",
     "full": "ACM Conference on Fairness, Accountability, and Transparency (FAccT)",
     "bibtex": {
       "type": "inproceedings",
@@ -176,6 +179,7 @@
     }
   },
   "acl": {
+    "short": "ACL",
     "full": "The Annual Meeting of the Association for Computational Linguistics (ACL)",
     "bibtex": {
       "type": "inproceedings",
@@ -183,7 +187,7 @@
     }
   },
   "live": {
-    "short": "Live Programming",
+    "short": "LIVE",
     "full": "The Live Programming Workshop at SPLASH",
     "bibtex": {
       "type": "inproceedings",
@@ -199,7 +203,7 @@
     }
   },
   "eXCV": {
-    "short": "eXCV Workshop at ECCV",
+    "short": "eXCV",
     "full": "ECCV Workshop on Explainable Computer Vision",
     "bibtex": {
       "type": "inproceedings",
@@ -207,7 +211,7 @@
     }
   },
   "bds": {
-    "short": "Big Data & Society",
+    "short": "BD&S",
     "full": "Big Data & Society",
     "bibtex": {
       "type": "article",

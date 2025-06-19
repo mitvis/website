@@ -16,8 +16,19 @@ export const load: PageServerLoad = async () => {
     }))),
     themes: await Promise.all(themes.map(async (theme) => ({
       ...theme,
+      pubs: pubs
+        .filter(pub => pub.themes?.includes(theme.key))
+        .map(pub => ({
+          ...pub,
+          authors: pub.authors.map((author: any) => ({
+            ...author,
+            ...people[author.key]
+          }))
+        }))
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+        .slice(0, 5),
       desc: (await compile(theme.desc))?.code || theme.desc,
     }))),
-    people: people
+    people
   };
 };
