@@ -2,18 +2,24 @@
   import type { PageProps } from './$types';
   import { page } from '$app/state';
   import PubVideo from '$lib/components/PubVideo.svelte';
+  import Bibtex from '$lib/components/Bibtex.svelte';
 
   let { data }: PageProps = $props();
 
+  let slug = page.params.slug;
   let date = new Date(data.date);
-  let html_available = 'html' in data.venue && (data.venue.html === true || date >= new Date(data.venue.html));
+  let html_available = (data.venue?.html === true || date >= new Date(data.venue?.html));
 </script>
 
 <div>
   <h1 class="text-2xl font-bold leading-9 text-stone-800 mb-1 mt-4">{data.title}</h1>
 
   <p class="text-md text-stone-600 font-semibold mb-6">
-    {data.venue.full}, {date.getFullYear()}
+    {#if data.preprint}
+      {data.preprint.server}: {data.preprint.id}
+    {:else}
+      {data.venue.full}, {date.getFullYear()}
+    {/if}
     {#if data.award}
       <span class="ml-2 py-1 px-2 bg-lime-200/75 border-1 border-lime-700/25 text-lime-700 rounded-md">
         <i class="fas fa-award mr-1"></i> {data.award}
@@ -49,7 +55,7 @@
         HTML Paper
       </a>
     {/if}
-    <a href={`/pubs/${page.params.slug}.pdf`} data-sveltekit-reload class="flex bg-amber-100/75 px-4 py-1.5 rounded-md border-1 border-amber-200 hover:border-amber-300 hover:shadow-sm flex items-center gap-2 text-sm text-stone-600 hover:text-amber-700">
+    <a href={`/pubs/${slug}.pdf`} data-sveltekit-reload class="flex bg-amber-100/75 px-4 py-1.5 rounded-md border-1 border-amber-200 hover:border-amber-300 hover:shadow-sm flex items-center gap-2 text-sm text-stone-600 hover:text-amber-700">
       <i class="fas fa-file-pdf mr-1"></i> 
       <p class="flex flex-col">
         <span>PDF Paper</span>
@@ -78,14 +84,16 @@
     <div class="w-full md:w-1/2">
       <h2 class="text-lg font-bold text-stone-700">Abstract</h2>
     
-      <div class="prose prose-stone-700">
+      <div class="prose prose-stone-700 mb-4">
         <data.content />
       </div>
+
+      <Bibtex venue={data.venue} pub={data} slug={slug} />
     </div>
     <div class="w-full mt-2 md:w-1/2 md:mt-0">
       {#if data.teaser}
         <div class="w-full p-2 border-1 border-stone-100 shadow-md rounded-md">
-          <img src={`/imgs/teasers/${page.params.slug}.png`} alt={data.title} />
+          <img src={`/imgs/teasers/${slug}.png`} alt={data.title} />
           <p class="text-sm text-stone-400 mt-2">
             {data.teaser}
           </p>

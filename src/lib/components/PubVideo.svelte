@@ -1,6 +1,5 @@
 <script lang="ts">
   let { video } = $props();
-  console.log(video);
 </script>
 
 <div class="w-full aspect-video relative mb-4">
