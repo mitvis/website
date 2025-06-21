@@ -29,7 +29,9 @@
     "bibtex": {
       "type": "inproceedings",
       "venue": "booktitle"
-    }
+    },
+    "html": true,
+    "paywall": true
   },
   "vis-full": {
     "short": "IEEE VIS",
@@ -37,7 +39,9 @@
     "bibtex": {
       "type": "article",
       "venue": "journal"
-    }
+    },
+    "html": true,
+    "paywall": true
   },
   "vis-posters": {
     "short": "VIS Posters",
@@ -53,7 +57,9 @@
     "bibtex": {
       "type": "article",
       "venue": "journal"
-    }
+    },
+    "html": true,
+    "paywall": true
   },
   "infovis-posters": {
     "short": "InfoVis Posters",
@@ -69,7 +75,9 @@
     "bibtex": {
       "type": "article",
       "venue": "journal"
-    }
+    },
+    "html": true,
+    "paywall": true
   },
   "uist": {
     "short": "ACM UIST",
@@ -77,7 +85,9 @@
     "bibtex": {
       "type": "inproceedings",
       "venue": "booktitle"
-    }
+    },
+    "html": "2023-03-01",
+    "paywall": false
   },
   "chi": {
     "short": "ACM CHI",
@@ -85,7 +95,9 @@
     "bibtex": {
       "type": "inproceedings",
       "venue": "booktitle"
-    }
+    },
+    "html": "2023-03-01",
+    "paywall": false
   },
   "chi-ea": {
     "short": "ACM CHI EA",
@@ -125,7 +137,9 @@
     "bibtex": {
       "type": "inproceedings",
       "venue": "booktitle"
-    }
+    },
+    "html": "2023-03-01",
+    "paywall": false
   },
   "openvis": {
     "short": "OpenVis",
@@ -145,7 +159,9 @@
     "bibtex": {
       "type": "inproceedings",
       "venue": "booktitle"
-    }
+    },
+    "html": "2023-03-01",
+    "paywall": false
   },
   "rethinking-interaction": {
     "full": "Rethinking Interaction: From Instrumental Interaction to Human-Computer Partnerships. ACM CHI",
@@ -176,7 +192,9 @@
     "bibtex": {
       "type": "inproceedings",
       "venue": "booktitle"
-    }
+    },
+    "html": true,
+    "paywall": false
   },
   "acl": {
     "short": "ACL",
@@ -200,7 +218,9 @@
     "bibtex": {
       "type": "article",
       "venue": "publisher"
-    }
+    },
+    "html": true,
+    "paywall": false
   },
   "eXCV": {
     "short": "eXCV",
@@ -216,6 +236,8 @@
     "bibtex": {
       "type": "article",
       "venue": "journal"
-    }
+    },
+    "html": true,
+    "paywall": false
   }
 }

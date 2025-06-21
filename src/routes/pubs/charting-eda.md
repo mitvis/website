@@ -5,6 +5,7 @@ authors:
   - key: dwootton
   - key: amyfox
   - key: peck 
+    affiliation: University of Colorado Boulder
   - key: arvindsatya
 venue: vis-full
 year: 2025

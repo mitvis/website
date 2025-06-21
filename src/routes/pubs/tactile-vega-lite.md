@@ -16,13 +16,9 @@ tags:
   - accessibility
 teaser: 'Comparison of visual and tactile charts representing fertility rate trends for China and Australia from 1955 to 2005. This comparison shows design considerations necessary when transforming visual data into tactile formats, such as converting text to braille, adjusting scaling and spacing of chart elements, re-arranging the legend, and substituting visual encodings with tactile encodings.'
 materials:
-  # uncomment this when the DOI is live on dl.acm/.org
-  # - name: HTML Article
-  #   url: https://dl.acm.org/doi/fullHtml/10.1145/3706598.3714132
-  #   type: cube
-  - name: Prototype editor
+  - name: Prototype Editor
     url: https://vega-lite-tactile.vercel.app/
-    type: cube
+    type: laptop-code
   - name: Code
     url: https://github.com/mitvis/tactile-vega-lite
     type: code

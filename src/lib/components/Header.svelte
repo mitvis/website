@@ -18,13 +18,13 @@
   });
 </script>
 
-<div id="header" class="sticky top-0 bg-white border-b-1 border-stone-300 pb-2 mb-2 z-10 flex justify-between items-center transition-all duration-300">
+<div id="header" class="sticky top-0 bg-white border-b-1 border-stone-300 pb-2 mb-4 z-10 flex justify-between items-center transition-all duration-300">
   <a href="/" id="wordmark" class="flex items-center gap-2">
     <div id="logo" class="hover:opacity-80 transition-all duration-300 {isScrolled ? '-mt-1 -mb-2 mr-2' : '-mt-5 -mb-5 mr-3'}">
       <Logo size={isScrolled ? 45 : 75} />
     </div>
 
-    <h1 class="font-black mt-3 hover:text-amber-700 transition-all duration-300 {isScrolled ? 'text-xl' : 'text-3xl'}">
+    <h1 class="font-black text-zinc-800 mt-3 hover:text-amber-700 transition-all duration-300 {isScrolled ? 'text-xl' : 'text-3xl'}">
       {#if page.url.pathname === '/'}
         Hi, we're the MIT Visualization Group!
       {:else}

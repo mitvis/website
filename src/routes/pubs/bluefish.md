@@ -6,7 +6,7 @@ authors:
   - key: meic1212
   - key: gracefh
   - name: Elliot Evans
-    affiliation: Unaffiliated
+    affiliation: Independent Researcher
   - name: Daniel Jackson
     affiliation: MIT CSAIL
   - key: arvindsatya
