@@ -1,11 +1,11 @@
 <script lang="ts">
   import type { PageProps } from './$types';
   import { page } from '$app/state';
+  import PubVideo from '$lib/components/PubVideo.svelte';
 
   let { data }: PageProps = $props();
 
   let date = new Date(data.date);
-  console.log(data.venue.html, data.date, new Date(data.venue.html) > date)
   let html_available = 'html' in data.venue && (data.venue.html === true || date >= new Date(data.venue.html));
 </script>
 
@@ -90,6 +90,17 @@
             {data.teaser}
           </p>
         </div>
+      {/if}
+
+      {#if data.videos}
+        {#if data.videos.figure}
+          <h2 class="text-md font-bold text-stone-700 mt-4">Demo</h2>
+          <PubVideo video={data.videos.figure} />
+        {/if}
+        {#if data.videos.talk}
+          <h2 class="text-md font-bold text-stone-700 mt-4">Talk</h2>
+          <PubVideo video={data.videos.talk} />
+        {/if}
       {/if}
     </div>
   </div>

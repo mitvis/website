@@ -34,8 +34,7 @@ tags:
   - empirical study
 teaser: VizNet enables data scientists and visualization researchers to aggregate data, enumerate visual encodings, and crowdsource efectiveness evaluations.
 videos:
-  - name: Video Preview
-    key: s7vKysUvQuI
+  figure: s7vKysUvQuI
 materials:
   - name: Code
     url: https://github.com/mitmedialab/viznet

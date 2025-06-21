@@ -21,6 +21,8 @@ tags:
   - interface
   - accessibility
 teaser: A) Fragments of an internal declarative specification shown next to their corresponding Umwelt editor states. B) The output multimodal representation for that specification.
+videos:
+  talk: Bq6ipk2wUJI
 materials:
   - name: Prototype Editor
     url: https://mitvis.github.io/umwelt/

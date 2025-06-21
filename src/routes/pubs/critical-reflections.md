@@ -29,12 +29,10 @@ tags:
   - interface
 teaser: Data binding via dropzones in Lyra (left), via the binding icon in Data Illustrator (middle), and via either approach in Charticulator (right).
 videos:
-  - name: Video Preview
-    key: '360484371'
-    platform: vimeo
-  - name: InfoVis 2019 Talk
-    key: '372529109'
-    platform: vimeo
+  figure:
+    vimeo: '360484371'
+  talk:
+    vimeo: '372529109'
 materials:
   - name: Supplementary Material
     url: https://vis-tools-reflections.github.io/

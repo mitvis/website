@@ -20,6 +20,9 @@ tags:
   - convivial interaction
   - mixed methods
 teaser: 'Interactive visualizations are valuable tools in Exploratory Data Analysis (EDA), but their impact on how analysts interpret data is not well understood. Through a study with 13 professional data scientists using Jupyter notebooks, we observed that interactive visualizations lead to earlier and more intricate insights compared to static views. Our analysis highlights distinct patterns, like the "80-20 rule" in data observations, and provides design guidelines for crafting more effective interactive analysis tools.'
+videos: 
+  figure: CNQni-VZ4FI
+  talk: HC69aABUJuc
 materials:
   - name: Supplementary Material
     url: https://osf.io/bu7je/

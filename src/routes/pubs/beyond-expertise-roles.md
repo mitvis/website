@@ -18,8 +18,7 @@ tags:
   - qualitative methods
 teaser: A state of the <a href="/pubs/beyond-expertise-roles/framework-connections/">interactive figure</a> that visualizes the results of the analysis of ourframework’s descriptive power. We see how the two halves of the framework (knowledge-contexts and goals-objectives-tasks) provide a more granular and composable vocabulary with which to describe 58 papers from the literature on ML interpretability. Light grey links represent the set of all papers, and connect codes that appear together. The width of the link correspondsto the number of papers it represents. We use "code undetermined" to indicate cases where we were not able to code a particular category (e.g., if a paper did not explicitly specify a knowledge-context). In the interactive figure, hovering over a code selects all papers that contain the code, and highlights links to visualize the co-occurrence of other codes (e.g., "O2" shown here).
 videos:
-  - name: CHI 2021 Talk
-    key: CGbKmlTzRLI
+  talk: CGbKmlTzRLI
 materials:
   - name: Interactive Figure of Framework Connections
     url: /pubs/beyond-expertise-roles/framework-connections/

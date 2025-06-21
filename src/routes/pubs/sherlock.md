@@ -27,8 +27,7 @@ tags:
   - quantitative methods
 teaser: Data processing and analysis flow, starting from (1) a corpus of real-world datasets, proceeding to (2) feature extraction, (3) mapping extracted features to ground truth semantic types, and (4) model training and prediction.
 videos:
-  - name: Video Preview
-    key: vUPnez9ZFIA
+  figure: vUPnez9ZFIA
 materials:
   - name: Code
     url: https://github.com/madelonhulsebos/sherlock

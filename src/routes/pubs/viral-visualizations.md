@@ -21,8 +21,7 @@ tags:
 teaser: ' Sample counter-visualizations from the anti-mask user network. While there are meme-based visualizations, anti-maskers on Twitter adopt the same visual vocabulary as visualization experts and the mainstream media.'
 award: Best Paper Honorable Mention
 videos:
-  - name: CHI 2021 Talk
-    key: zVlwJQu8pRo
+  talk: zVlwJQu8pRo
 materials:
   - name: Interactive Narrative
     url: /covid-story/

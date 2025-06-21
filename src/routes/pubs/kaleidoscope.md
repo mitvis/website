@@ -22,10 +22,8 @@ tags:
   - interface
   - qualitative methods
 videos:
-  - name: Demo Video
-    key: NKk8yBq9wpo
-  - name: CHI 2023 Talk
-    key: Vu0cp_81Rkc
+  figure: NKk8yBq9wpo
+  talk: Vu0cp_81Rkc
 materials:
   - name: Code
     url: /pubs/kaleidoscope.zip

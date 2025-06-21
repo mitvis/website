@@ -16,8 +16,7 @@ tags:
   - accessibility
   - mixed methods
 videos:
-  - name: VIS 2021 Talk
-    key: xowu8EOa6NQ
+  talk: xowu8EOa6NQ
 materials:
   - name: Supplementary Material
     url: /pubs/vis-text-model/data

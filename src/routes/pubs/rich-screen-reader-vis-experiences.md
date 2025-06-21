@@ -28,10 +28,8 @@ tags:
   - accessibility
   - mixed methods
 videos:
-  - name: Video Demo
-    key: JSWyT4Ttimw
-  - name: EuroVis 2022 Talk
-    key: oc4GQNM7tUw
+  figure: JSWyT4Ttimw
+  talk: oc4GQNM7tUw
 materials:
   - name: Supplementary Material
     url: /pubs/rich-screen-reader-vis-experiences/supplementary-material.zip

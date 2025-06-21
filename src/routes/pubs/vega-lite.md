@@ -26,14 +26,13 @@ tags:
 teaser: 'Example visualizations authored with Vega-Lite. From left-to-right: layered line chart combining raw and average values, dual-axis layered bar and line chart, brushing and linking in a scatterplot matrix, layered cross-filtering, and an interactive index chart.'
 award: Best Paper Award
 videos:
-  - name: Video Preview
-    key: '177767802'
-    platform: vimeo
-  - name: InfoVis 2016 Talk
-    key: '228919603'
-    platform: vimeo
-  - name: OpenVis 2017 Talk
-    key: 9uaHRWj04D4
+  figure:
+    vimeo: '177767802'
+  talk:
+    vimeo: '228919603'
+  others:
+    - name: OpenVis 2017 Talk
+      key: 9uaHRWj04D4
 materials:
   - name: Project
     url: https://vega.github.io/vega-lite

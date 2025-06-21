@@ -31,8 +31,7 @@ materials:
     url: https://github.com/mitvis/embedding-comparator
     type: code
 videos:
-  - name: IUI 2022 Talk
-    key: UU5LAxF8-7Q
+  talk: UU5LAxF8-7Q
 teaser: >
   The Embedding Comparator (left) facilitates comparisons of embedding spaces via _local neighborhood dominoes_: small multiple visualizations depicting local substructures (right).
 ---

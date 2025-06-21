@@ -22,6 +22,9 @@ tags:
   - convivial interaction
   - qualitative methods
 teaser: 'Successes and failures of _cooperative_ dashboard design throughout the five analytic states of a conversation (a-e). Cooperative dashboards guide users through their data and, in contrast to static dashboards, provide bi-directional communication through interactivity to allow the user to change or refine their analytical goals, switch between topics of interest and levels of detail, correct or update the system if it provides irrelevant or incorrect information, and provide useful summaries of analytical actions. Note that these conversation states are not necessarily sequential and the analyst can move between these various states.'
+videos:
+  figure: ESoh9DNeFgs
+  talk: zDR8CbsQznM
 materials:
   - name: Heuristics Handout
     url: /pubs/cooperative-dashboards-handout.pdf

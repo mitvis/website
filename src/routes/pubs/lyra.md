@@ -19,11 +19,11 @@ tags:
   - mixed methods
 teaser: William Playfair’s classic chart comparing the price of wheat and wages in England recreated in the Lyra visualization design environment (VDE).
 videos:
-  - name: EuroVis 2014 Talk
-    key: '100719873'
-    platform: vimeo
-  - name: OpenVis 2014 Talk
-    key: io7BSu6RIYM
+  talk:
+    vimeo: '100719873'
+  others:
+    - name: OpenVis 2014 Talk
+      key: io7BSu6RIYM
 materials:
   - name: Application
     url: http://idl.cs.washington.edu/projects/lyra/

@@ -20,9 +20,8 @@ tags:
   - interaction design
 teaser: Crafting narrative visualizations by building scenes and adding annotations to existing visualizations using the Ellipsis interface.
 videos:
-  - name: EuroVis 2014 Talk
-    key: '100680412'
-    platform: vimeo
+  talk:
+    vimeo: '100680412'    
 materials:
   - name: Application
     url: http://idl.cs.washington.edu/projects/ellipsis/

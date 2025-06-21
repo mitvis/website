@@ -25,11 +25,11 @@ tags:
   - quantitative methods
 teaser: The Reactive Vega dataflow graph created from a declarative specification for a interactive index chart of streaming financial data. As streaming data arrives from the Yahoo! Finance API, or as a user moves their mouse pointer across the chart, an update cycle propagates through the graph and triggers an efficient update and re-render of the visualization.
 videos:
-  - name: OpenVis 2016 Talk
-    key: Y8Fp9z-9DWc
-  - name: InfoVis 2015 Talk
-    key: '236171108'
-    platform: vimeo
+  talk:
+    vimeo: '236171108'
+  others:
+    - name: OpenVis 2016 Talk
+      key: Y8Fp9z-9DWc
 materials:
   - name: Project
     url: https://vega.github.io/vega
