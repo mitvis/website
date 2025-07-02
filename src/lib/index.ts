@@ -10,6 +10,7 @@ export async function getPubs() {
 			  return {
           slug, 
           ...metadata,
+          venueKey: metadata.venue,
           venue: venues[metadata.venue]
         };
       } catch (error) {

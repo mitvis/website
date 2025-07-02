@@ -12,7 +12,6 @@ authors:
     affiliation: MIT CSAIL
   - key: arvindsatya
 venue: chi
-year: 2023
 date: 2023-04-24
 doi: 10.1145/3544548.3581482
 themes:

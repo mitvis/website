@@ -17,7 +17,6 @@ authors:
 venue: distill
 volume: 3
 number: 3
-year: 2018
 date: 2018-03-06
 doi: 10.23915/distill.00010
 external_url: https://distill.pub/2018/building-blocks/

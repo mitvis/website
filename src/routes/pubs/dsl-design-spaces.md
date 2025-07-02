@@ -9,7 +9,7 @@ authors:
   - key: arvindsatya
 type: workshop
 venue: plateau
-year: 2021
+date: 2021-11-09
 doi: 10.1184/r1/19799233.v1
 themes:
   - tools

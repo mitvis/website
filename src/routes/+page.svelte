@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { PageProps } from './$types';
   import _ from 'lodash';
-
+  import ShortVenue from '$lib/components/ShortVenue.svelte';
   let { data }: PageProps = $props();
 
   const themes = [
@@ -68,7 +68,7 @@
                   </p>
 
                   <p class="text-xs text-stone-400">
-                    {pub.venue.short} {pub.year}
+                    <ShortVenue pub={pub} />
                   </p>
                 </a>
               {/each}

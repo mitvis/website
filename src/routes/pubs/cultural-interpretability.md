@@ -7,7 +7,6 @@ authors:
     affiliation: Tel Aviv University
   - key: arvindsatya
 venue: bds
-year: 2025
 date: 2025-01-29
 doi: 10.1177/20539517241303118
 themes:

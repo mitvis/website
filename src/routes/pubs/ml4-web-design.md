@@ -11,7 +11,6 @@ authors:
     affiliation: Stanford University
 type: poster
 venue: chi-ea
-year: 2012
 date: 2012-05-05
 doi: 10.1145/2212776.2223695
 themes:

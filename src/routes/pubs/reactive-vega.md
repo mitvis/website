@@ -13,7 +13,6 @@ authors:
     url: http://jheer.org
     affiliation: University of Washington
 venue: infovis
-year: 2016
 date: 2016-01-31
 doi: 10.1109/TVCG.2015.2467091
 themes:

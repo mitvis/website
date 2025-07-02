@@ -11,7 +11,6 @@ type: preprint
 preprint: 
   server: arxiv
   id: '2006.00372'
-year: 2020
 date: 2020-02-27
 doi: 10.48550/arXiv.2006.00372
 themes:

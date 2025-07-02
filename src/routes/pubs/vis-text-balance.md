@@ -11,7 +11,6 @@ authors:
   - name: Marti A. Hearst
     affiliation: UC Berkeley
 venue: vis-full
-year: 2023
 date: 2023-01-01
 doi: 10.1109/TVCG.2022.3209383
 tags:

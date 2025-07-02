@@ -8,7 +8,6 @@ authors:
     affiliation: IBM Research
   - key: arvindsatya
 venue: chi
-year: 2025
 date: 2025-04-28
 doi: 10.1145/3706598.3713406
 themes: 

@@ -11,7 +11,6 @@ authors:
   - name: Eugene Wu
     affiliation: Columbia University
 venue: vis-full
-year: 2022
 date: 2022-01-01
 doi:  10.1109/TVCG.2021.3114796
 themes:

@@ -6,7 +6,6 @@ authors:
   - key: arvindsatya
 type: poster
 venue: vis-posters
-year: 2022
 date: 2022-10-19
 themes:
   - accessibility

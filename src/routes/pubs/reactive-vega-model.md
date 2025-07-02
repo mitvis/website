@@ -10,7 +10,6 @@ authors:
     url: http://jheer.org
     affiliation: University of Washington
 venue: uist
-year: 2014
 date: 2014-10-05
 doi: 10.1145/2642918.2647360
 themes:

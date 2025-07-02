@@ -5,7 +5,6 @@ authors:
   - name: Graham M. Jones
     affiliation: MIT Anthropology
 venue: mit-genai
-year: 2024
 date: 2024-03-29
 doi: 10.21428/e4baedd9.2d7598a2
 themes:

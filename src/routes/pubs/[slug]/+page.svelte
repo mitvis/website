@@ -21,12 +21,12 @@
       {data.venue.full}, {date.getFullYear()}
     {/if}
     {#if data.award}
-      <span class="ml-2 py-1 px-2 bg-lime-200/75 border-1 border-lime-700/25 text-lime-700 rounded-md">
+      <span class="ml-2 py-1 px-2 text-xs bg-lime-200/75 border-1 border-lime-700/25 text-lime-700 rounded-md">
         <i class="fas fa-award mr-1"></i> {data.award}
       </span>
     {/if}
     {#if data.doi}
-      <a href={`https://doi.org/${data.doi}`} class="ml-2 py-1 px-2 bg-stone-200 border-1 border-stone-400/50 text-stone-500 rounded-md hover:text-stone-600 hover:border-stone-400/75 hover:shadow-sm">
+      <a href={`https://doi.org/${data.doi}`} class="ml-2 py-1 px-2 text-xs bg-stone-200 border-1 border-stone-400/50 text-stone-500 rounded-md hover:text-stone-600 hover:border-stone-400/75 hover:shadow-sm">
         DOI
       </a>
     {/if}
@@ -81,16 +81,18 @@
   </div>
 
   <div class="md:flex gap-10">
-    <div class="w-full md:w-1/2">
+    <div class={`w-full ${data.teaser || data.videos ? 'md:w-1/2' : 'md:w-3/5'}`}>
       <h2 class="text-lg font-bold text-stone-700">Abstract</h2>
     
       <div class="prose prose-stone-700 mb-4">
         <data.content />
       </div>
 
-      <Bibtex venue={data.venue} pub={data} slug={slug} />
+      {#if data.teaser && data.videos}
+        <Bibtex venue={data.venue} pub={data} slug={slug} />
+      {/if}
     </div>
-    <div class="w-full mt-2 md:w-1/2 md:mt-0">
+    <div class={`w-full mt-2 ${data.teaser || data.videos ? 'md:w-1/2' : 'md:w-2/5'} md:mt-0`}>
       {#if data.teaser}
         <div class="w-full p-2 border-1 border-stone-100 shadow-md rounded-md">
           <img src={`/imgs/teasers/${slug}.png`} alt={data.title} />
@@ -109,6 +111,10 @@
           <h2 class="text-md font-bold text-stone-700 mt-4">Talk</h2>
           <PubVideo video={data.videos.talk} />
         {/if}
+      {/if}
+
+      {#if !data.teaser && !data.videos}
+        <Bibtex venue={data.venue} pub={data} slug={slug} />
       {/if}
     </div>
   </div>

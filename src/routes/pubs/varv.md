@@ -13,7 +13,6 @@ authors:
   - name: Clemens Nylandsted Klokmose
     affiliation: Aarhus University
 venue: chi
-year: 2022
 date: 2022-05-05
 doi: 10.1145/3491102.3502064
 themes:

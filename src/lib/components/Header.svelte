@@ -33,7 +33,7 @@
     </h1>
   </a>
 
-  <nav class="text-zinc-700 transition-all duration-300 {isScrolled ? 'mt-2' : 'mt-5'}">
+  <nav class="text-zinc-700 transition-all duration-300 {isScrolled ? 'mt-3' : 'mt-5'}">
     <a href="/" class={page.url.pathname === '/' ? 'font-bold underline underline-offset-4 decoration-amber-500' : 'hover:text-zinc-400'}>Home</a>
     &middot;
     <a href="/pubs" class={page.url.pathname.includes('/pubs') ? 'font-bold underline underline-offset-4 decoration-amber-500' : 'hover:text-zinc-400'}>Our Work</a>

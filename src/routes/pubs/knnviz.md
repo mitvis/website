@@ -13,7 +13,6 @@ authors:
 #   id: '2102.08540'
 # external_url: https://arxiv.org/abs/2102.08540
 venue: iui
-year: 2022
 date: 2022-03-21
 doi: 10.1145/3490099.3511160
 themes:

@@ -20,7 +20,6 @@ authors:
     affiliation: Stanford University
 type: preprint
 venue: stanford-cstr
-year: 2012
 date: 2012-02-01
 tags:
   - model

@@ -11,7 +11,6 @@ authors:
     affiliation: MIT CSAIL
   - key: arvindsatya
 venue: uist
-year: 2024
 date: 2024-07-24
 doi: 10.1145/3654777.3676465
 themes:

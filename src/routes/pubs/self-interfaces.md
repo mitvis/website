@@ -5,7 +5,6 @@ authors:
   - key: arvindsatya
 type: poster
 venue: tei-wip
-year: 2020
 date: 2020-02-09
 doi: 10.1145/3374920.3374979
 themes:

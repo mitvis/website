@@ -9,7 +9,6 @@ authors:
     affiliation: MIT Anthropology
   - key: arvindsatya
 venue: chi
-year: 2021
 date: 2021-05-08
 doi: 10.1145/3411764.3445211
 themes:
@@ -26,7 +25,7 @@ materials:
   - name: Interactive Narrative
     url: /covid-story/
     type: book-open
-  - name: Supplementary Dataset & Analysis Scripts
+  - name: Dataset & Analysis Scripts
     url: /pubs/viral-visualizations/supplementary-material.zip
     type: file-archive
 ---

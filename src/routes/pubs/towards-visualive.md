@@ -7,7 +7,6 @@ authors:
   - key: arvindsatya
 type: poster
 venue: infovis-posters
-year: 2019
 date: 2020-10-25
 themes:
   - convivial-interaction

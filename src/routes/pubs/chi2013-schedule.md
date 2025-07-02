@@ -17,7 +17,6 @@ authors:
     affiliation: INRIA
 type: poster
 venue: chi-ea
-year: 2013
 date: 2013-04-27
 doi: 10.1145/2468356.2479591
 themes:

@@ -12,7 +12,6 @@ authors:
 # venue: visxai
 # external_url: http://shared-interest.csail.mit.edu/
 venue: chi
-year: 2022
 date: 2022-05-06
 doi: 10.1145/3491102.3501965
 award: Best Paper Honorable Mention
