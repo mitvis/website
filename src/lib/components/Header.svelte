@@ -7,7 +7,7 @@
   
   onMount(() => {
     const handleScroll = () => {
-      isScrolled = window.scrollY > 5;
+      isScrolled = window.scrollY > 20;
     };
     
     window.addEventListener('scroll', handleScroll);
@@ -18,7 +18,7 @@
   });
 </script>
 
-<div id="header" class="sticky top-0 bg-white border-b-1 border-stone-300 pb-2 mb-4 z-10 flex justify-between items-center transition-all duration-300">
+<div id="header" class="sticky h-14 tail top-0 bg-white border-b-1 border-stone-300 pb-2 mb-4 z-10 flex justify-between items-center transition-all duration-300">
   <a href="/" id="wordmark" class="flex items-center gap-2">
     <div id="logo" class="hover:opacity-80 transition-all duration-300 {isScrolled ? '-mt-1 -mb-2 mr-2' : '-mt-5 -mb-5 mr-3'}">
       <Logo size={isScrolled ? 45 : 75} />
