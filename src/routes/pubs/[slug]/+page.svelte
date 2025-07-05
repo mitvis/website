@@ -11,6 +11,30 @@
   let html_available = (data.venue?.html === true || date >= new Date(data.venue?.html));
 </script>
 
+<svelte:head>
+  <title>{data.title} | MIT Visualization Group</title>
+
+  <meta name="citation_title" content={data.title}>
+  <meta name="citation_pdf_url" content={`https://vis.csail.mit.edu/pubs/${slug}.pdf`}>
+  {#if data.doi}
+    <meta name="citation_doi" content={data.doi}>
+  {/if}
+  {#if data.venue}
+    {#if data.venue.bibtex.venue === 'journal'}
+      <meta name="citation_journal_title" content={data.venue.full}>
+    {:else if data.venue.bibtex.venue === 'institute'}
+      <meta name="citation_technical_report_institution" content={data.venue.full}>
+    {:else}
+      <meta name="citation_inbook_title" content={data.venue.full}>
+    {/if}
+  {/if}
+
+  {#each data.authors as author}
+    <meta name="citation_author" content={author.name}>
+    <meta name="citation_author_institution" content={author.affiliation}>
+  {/each}
+</svelte:head>
+
 <div>
   <h1 class="text-2xl font-bold leading-9 text-stone-800 mb-1 mt-4">{data.title}</h1>
 

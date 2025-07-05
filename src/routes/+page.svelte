@@ -24,6 +24,10 @@
   ]
 </script>
 
+<svelte:head>
+  <title>MIT Visualization Group</title>
+</svelte:head>
+
 <p class="text-xl mb-2 text-stone-700">
   We use visualization as a petri dish to study <strong>intelligence augmentation</strong>: how can computation help amplify our cognition and creativity, while respecting our agency?
 </p>
