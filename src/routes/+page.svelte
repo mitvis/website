@@ -1,13 +1,9 @@
 <script lang="ts">
   import type { PageProps } from './$types';
-  import _ from 'lodash';
   import ShortVenue from '$lib/components/ShortVenue.svelte';
-  let { data }: PageProps = $props();
+  import _ from 'lodash';
 
-  const themes = [
-    data.themes[0],  
-    ..._.shuffle(data.themes.slice(1)),
-  ];
+  let { data }: PageProps = $props();
 
   const people = Object.entries(data.people).map(([kerberos, person]) => ({
     kerberos,
@@ -36,7 +32,7 @@
   <div class="w-4/5 mr-7">
     <h2 class="text-xl font-black uppercase text-amber-600 mb-2 mt-4">Research Themes</h2>
 
-    {#each themes as theme}
+    {#each data.themes as theme}
       <div class="flex gap-4 bg-amber-500/10 border-1 border-amber-200 rounded-lg mb-7 p-4">
 
         <div class="w-1/2">
