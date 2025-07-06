@@ -443,7 +443,7 @@ materials:
         Arrow keys can then be used, as described above, to traverse the tree structurally (i.e., <span class="ltx_text ltx_font_typewriter">up</span> and <span class="ltx_text ltx_font_typewriter">down</span> to move between levels, <span class="ltx_text ltx_font_typewriter">left</span> and <span class="ltx_text ltx_font_typewriter">right</span> to move between siblings).
         You may also switch between example visualizations using the dropdown menu.
       </p>
-      <p>Example: <select id="Spec-Selection" onChange='updateVisualization()'>
+      <p>Example: <select id="Spec-Selection" on:change={updateVisualization}>
         <option value='facetedTrellis'>Faceted Trellis Chart</option>
         <option value='multiSeriesLine'>Multi-Series Line Chart</option>
         <option value='stackedBar'>Stacked Bar Chart</option>
@@ -620,55 +620,59 @@ materials:
             Table 1. Rating scores for each prototype (Table, Multi-view, Targeted) on a five point Likert scale where {1} = Very Difficult (Very Unenjoyable) and {5} = Very Easy (Very Enjoyable).
             Median scores are shown in <strong>boldface</strong>, averages in brackets, standard deviations in parentheses.
           </caption>
-          <tr style="font-weight:bold;">
-            <th scope="col">Prompt: When using this prototype ...</th>
-            <th scope="col">Task</th>
-            <th scope="col">Table</th>
-            <th scope="col">Multi-view</th>
-            <th scope="col">Targeted</th>
-          </tr>
-          <tr style="background:#f6f6f6;">
-            <th scope="row">How enjoyable was it to interact with the data?</th>
-            <td><span class="ltx_text ltx_font_typewriter">enjoy</span></td>
-            <td><strong>3</strong> [3.31] (0.95)</td>
-            <td><strong>4</strong> [3.77] (1.01)</td>
-            <td><strong>4</strong> [3.54] (0.97)</td>
-          </tr>
-          <tr>
-            <th scope="row">How easy was it to generate and answer questions?</th>
-            <td><span class="ltx_text ltx_font_typewriter">discover</span></td>
-            <td><strong>4</strong> [3.15] (1.34)</td>
-            <td><strong>3</strong> [3.00] (1.08)</td>
-            <td><strong>3</strong> [3.23] (1.17)</td>
-          </tr>
-          <tr style="background:#f6f6f6;">
-            <th scope="row">If you already knew what information you were trying to find, how easy would it be to look up or locate those data?</th>
-            <td><span class="ltx_text ltx_font_typewriter">lookup-locate</span></td>
-            <td><strong>3</strong> [3.31] (1.32)</td>
-            <td><strong>4</strong> [3.77] (1.17)</td>
-            <td><strong>4</strong> [3.38] (1.19)</td>
-          </tr>
-          <tr>
-            <th scope="row">If you didn't already know which information you were trying to find, how easy would it be to browse or explore the data?</th>
-            <td><span class="ltx_text ltx_font_typewriter">browse-explore</span></td>
-            <td><strong>2</strong> [3.00] (1.68)</td>
-            <td><strong>2</strong> [2.69] (1.11)</td>
-            <td><strong>3</strong> [3.00] (1.29)</td>
-          </tr>
-          <tr style="background:#f6f6f6;">
-            <th scope="row">How easy was it to learn to use?</th>
-            <td>ease-of-use</td>
-            <td><strong>4</strong> [4.15] (0.99)</td>
-            <td><strong>3</strong> [2.69] (0.75)</td>
-            <td><strong>3</strong> [3.15] (1.34)</td>
-          </tr>
-          <tr>
-            <th scope="row">How useful would it be to have access to this interaction style for engaging with data?</th>
-            <td>perceived usefulness</td>
-            <td><strong>4</strong> [4.15] (0.80)</td>
-            <td><strong>4</strong> [4.00] (0.82)</td>
-            <td><strong>4</strong> [4.15] (1.07)</td>
-          </tr>
+          <thead>
+            <tr style="font-weight:bold;">
+              <th scope="col">Prompt: When using this prototype ...</th>
+              <th scope="col">Task</th>
+              <th scope="col">Table</th>
+              <th scope="col">Multi-view</th>
+              <th scope="col">Targeted</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background:#f6f6f6;">
+              <th scope="row">How enjoyable was it to interact with the data?</th>
+              <td><span class="ltx_text ltx_font_typewriter">enjoy</span></td>
+              <td><strong>3</strong> [3.31] (0.95)</td>
+              <td><strong>4</strong> [3.77] (1.01)</td>
+              <td><strong>4</strong> [3.54] (0.97)</td>
+            </tr>
+            <tr>
+              <th scope="row">How easy was it to generate and answer questions?</th>
+              <td><span class="ltx_text ltx_font_typewriter">discover</span></td>
+              <td><strong>4</strong> [3.15] (1.34)</td>
+              <td><strong>3</strong> [3.00] (1.08)</td>
+              <td><strong>3</strong> [3.23] (1.17)</td>
+            </tr>
+            <tr style="background:#f6f6f6;">
+              <th scope="row">If you already knew what information you were trying to find, how easy would it be to look up or locate those data?</th>
+              <td><span class="ltx_text ltx_font_typewriter">lookup-locate</span></td>
+              <td><strong>3</strong> [3.31] (1.32)</td>
+              <td><strong>4</strong> [3.77] (1.17)</td>
+              <td><strong>4</strong> [3.38] (1.19)</td>
+            </tr>
+            <tr>
+              <th scope="row">If you didn't already know which information you were trying to find, how easy would it be to browse or explore the data?</th>
+              <td><span class="ltx_text ltx_font_typewriter">browse-explore</span></td>
+              <td><strong>2</strong> [3.00] (1.68)</td>
+              <td><strong>2</strong> [2.69] (1.11)</td>
+              <td><strong>3</strong> [3.00] (1.29)</td>
+            </tr>
+            <tr style="background:#f6f6f6;">
+              <th scope="row">How easy was it to learn to use?</th>
+              <td>ease-of-use</td>
+              <td><strong>4</strong> [4.15] (0.99)</td>
+              <td><strong>3</strong> [2.69] (0.75)</td>
+              <td><strong>3</strong> [3.15] (1.34)</td>
+            </tr>
+            <tr>
+              <th scope="row">How useful would it be to have access to this interaction style for engaging with data?</th>
+              <td>perceived usefulness</td>
+              <td><strong>4</strong> [4.15] (0.80)</td>
+              <td><strong>4</strong> [4.00] (0.82)</td>
+              <td><strong>4</strong> [4.15] (1.07)</td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div id="S5.SS2.p2" class="ltx_para">

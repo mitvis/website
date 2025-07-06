@@ -197,7 +197,9 @@ Now, your pricing analysis is color-coded: <span class='inline-code'>@image.colo
 
 To tie together the pricing and aesthetic data, you decide to compute an Aesthetic-Price Score (APS)—a matrix used by the company that reflects how a product's visual impact relates to its cost. Rather than writing fully formal code, you begin with an informal LaTeX snippet:
 
+```
 $\mathrm{APS} = \frac{\mathrm{VisualImpact} \times \sin(\mathrm{BrandConsistency}) + e^{\,\mathrm{Trendiness}}}{\ln(\mathrm{Price} + 1)}$
+```
 
 You then reuse this LaTeX expression as code:
 
@@ -218,16 +220,11 @@ Oh, and of course, Ryan brand's APS outperforms the competitor.
 
 ### Formalizing User Interaction or User Pattern
 
-<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-
-<p>
-In a prototype combining Marimo and tldraw made by Jan-Hendrik Müller, you can dynamically change a Matplotlib color via a mouse action. Currently, a developer-coded <span class="inline-code">ReactiveColorPicker()</span> drives this. A future semi-formal system might instead extract these attribute definitions <i>from user behavior</i>, enabling new interactions on the fly. For example, writing <span class="inline-code">@receipt.calculate_sum()</span> could parse a receipt image and sum its total. If it works well, the same logic can be reused with <span class="inline-code">@stock.calculate_sum()</span> or <span class="inline-code">@shopping_cart.calculate_sum()</span>, gradually evolving into a more formal abstraction.
+In a prototype combining Marimo and tldraw made by Jan-Hendrik Müller, you can dynamically change a Matplotlib color via a mouse action. Currently, a developer-coded `ReactiveColorPicker()` drives this. A future semi-formal system might instead extract these attribute definitions <i>from user behavior</i>, enabling new interactions on the fly. For example, writing `@receipt.calculate_sum()` could parse a receipt image and sum its total. If it works well, the same logic can be reused with `@stock.calculate_sum()` or `@shopping_cart.calculate_sum()`, gradually evolving into a more formal abstraction.
 
 In <a href="https://tomasp.net/blog/2025/adventure-calculus/">Adventure Calculus</a>, he discusses ways to capture repeated <i>interaction</i> or <i>logic</i> patterns more formally. Early on, a user might copy-paste similar snippets multiple times. Eventually, they can abstract these snippets into a function, template, or formal spec. This suggests a path where <i>casual repetition</i> naturally evolves into <i>systematic reusability</i>.
-</p>
 
 <iframe width="100%" height="464" src="https://www.youtube.com/embed/-R9QoGZciek" title="pvUFD1jg 2SIbKZ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
 
 ### The Problem of Iteration (Human–AI Collaboration)
 
