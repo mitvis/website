@@ -22,6 +22,7 @@ tags:
   - visualization design
   - interaction design
   - qualitative methods
+feature: true
 teaser: 'Example visualizations authored with Vega-Lite. From left-to-right: layered line chart combining raw and average values, dual-axis layered bar and line chart, brushing and linking in a scatterplot matrix, layered cross-filtering, and an interactive index chart.'
 award: Best Paper Award
 videos:

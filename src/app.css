@@ -12,6 +12,8 @@
   --color-csail-dark-grey: #525252;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
 }

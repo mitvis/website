@@ -52,7 +52,7 @@
     }
   },
   "infovis": {
-    "short": "InfoVis",
+    "short": "IEEE InfoVis",
     "full": "IEEE Transactions on Visualization & Computer Graphics (Proc. IEEE InfoVis)",
     "bibtex": {
       "type": "article",
@@ -62,7 +62,7 @@
     "paywall": true
   },
   "infovis-posters": {
-    "short": "InfoVis Posters",
+    "short": "IEEE InfoVis Posters",
     "full": "IEEE InfoVis Posters",
     "bibtex": {
       "type": "inproceedings",
@@ -108,7 +108,7 @@
     }
   },
   "chi-t4t": {
-    "short": "ACM CHI Workshop on Tools for Thought",
+    "short": "Tools for Thought Workshop",
     "full": "ACM CHI Workshop on Tools for Thought",
     "bibtex": {
       "type": "inproceedings",
@@ -116,7 +116,7 @@
     }
   },
   "tei-wip": {
-    "short": "ACMTEI WIP",
+    "short": "ACM TEI WIP",
     "full": "Work-in-Progress of ACM Tangible, Embedded, and Embodied Interaction (TEI)",
     "bibtex": {
       "type": "inproceedings",
@@ -160,6 +160,7 @@
     "paywall": false
   },
   "rethinking-interaction": {
+    "short": "Rethinking Interaction Workshop",
     "full": "Rethinking Interaction: From Instrumental Interaction to Human-Computer Partnerships. ACM CHI",
     "bibtex": {
       "type": "inproceedings",

@@ -3,12 +3,15 @@ import { compile } from 'mdsvex';
 
 import news from '$lib/data/news.json';
 import people from '$lib/data/people.json';
-import { getThemesWithPubs } from '$lib';
+import { getThemesWithPubs, missionStatement } from '$lib';
 
 export const load: PageServerLoad = async () => {
   const themes = await getThemesWithPubs();
 
   return {
+    seo: {
+      desc: missionStatement
+    },
     news: await Promise.all(news.slice(0, 10).map(async (item) => ({
       ...item,
       desc: (await compile(item.desc))?.code || item.desc

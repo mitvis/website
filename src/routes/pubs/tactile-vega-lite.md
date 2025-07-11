@@ -13,6 +13,7 @@ themes:
 tags:
   - visualization design
   - accessibility
+feature: true
 teaser: 'Comparison of visual and tactile charts representing fertility rate trends for China and Australia from 1955 to 2005. This comparison shows design considerations necessary when transforming visual data into tactile formats, such as converting text to braille, adjusting scaling and spacing of chart elements, re-arranging the legend, and substituting visual encodings with tactile encodings.'
 materials:
   - name: Prototype Editor

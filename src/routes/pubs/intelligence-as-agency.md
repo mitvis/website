@@ -16,5 +16,6 @@ tags:
   - convivial interaction
   - malleable interfaces
   - interaction design
+feature: true
 ---
 

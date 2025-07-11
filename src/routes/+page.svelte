@@ -24,10 +24,6 @@
   ]
 </script>
 
-<svelte:head>
-  <title>MIT Visualization Group</title>
-</svelte:head>
-
 <p class="text-xl mb-2 text-stone-700">
   We use visualization as a petri dish to study <strong>intelligence augmentation</strong>: how can computation help amplify our cognition and creativity, while respecting our agency?
 </p>
@@ -56,9 +52,9 @@
           <div class="h-9/10 relative">
             <div class="absolute inset-0 h-full overflow-y-auto">
               {#each theme.pubs as pub}
-                <a href={pub.slug} class="flex flex-col gap-1 group bg-white rounded-md border-1 border-transparent shadow-sm hover:border-amber-300 p-2 mb-2">
+                <a href={`/pubs/${pub.slug}`} class="flex flex-col gap-1 group bg-white rounded-md border-1 border-transparent shadow-sm hover:border-amber-300 p-2 mb-2">
                   <p class="text-sm text-amber-600 group-hover:text-amber-500 font-semibold">
-                    {pub.title}
+                    {pub.fullTitle}
                   </p>
 
                   <p class="text-xs text-stone-600">

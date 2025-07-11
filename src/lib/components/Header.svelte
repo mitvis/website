@@ -36,6 +36,6 @@
   <nav class="text-zinc-700 transition-all duration-300 {isScrolled ? 'mt-3' : 'mt-5'}">
     <a href="/" class={page.url.pathname === '/' ? 'font-bold underline underline-offset-4 decoration-amber-500' : 'hover:text-zinc-400'}>Home</a>
     &middot;
-    <a href="/pubs" class={page.url.pathname.includes('/pubs') ? 'font-bold underline underline-offset-4 decoration-amber-500' : 'hover:text-zinc-400'}>Our Work</a>
+    <a href="/research" class={page.url.pathname.includes('/pubs') || page.url.pathname.includes('/research') ? 'font-bold underline underline-offset-4 decoration-amber-500' : 'hover:text-zinc-400'}>Our Work</a>
   </nav>
 </div>

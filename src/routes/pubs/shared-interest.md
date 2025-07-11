@@ -21,6 +21,7 @@ tags:
   - machine learning interpretability
   - language
   - mixed methods
+feature: true
 teaser: Examples of correctly and incorrectly classified images identified by shared interest coverage metrics.
 materials:
   - name: Project Page

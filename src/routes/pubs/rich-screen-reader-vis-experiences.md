@@ -26,6 +26,7 @@ tags:
   - interface
   - accessibility
   - mixed methods
+feature: true
 videos:
   figure: JSWyT4Ttimw
   talk: oc4GQNM7tUw

@@ -43,7 +43,7 @@
   title = &lbrace;&lbrace;{escape(pub.title)}&rbrace;&rbrace;,
   author = &lbrace;{escape(authors)}&rbrace;,
   {venue.bibtex.venue} = &lbrace;{escape(venue.full)}&rbrace;,
-  year = &lbrace;{new Date(pub.date).getFullYear()}&rbrace;,
+  year = &lbrace;{new Date(pub.date).getUTCFullYear()}&rbrace;,
   {#if pub.doi}doi = &lbrace;{pub.doi}&rbrace;,{/if}
   url = &lbrace;https://vis.csail.mit.edu/pubs/{slug}&rbrace;
 &rbrace;</pre>

@@ -22,6 +22,7 @@ tags:
   - interaction design
   - system
   - quantitative methods
+feature: true
 teaser: The Reactive Vega dataflow graph created from a declarative specification for a interactive index chart of streaming financial data. As streaming data arrives from the Yahoo! Finance API, or as a user moves their mouse pointer across the chart, an update cycle propagates through the graph and triggers an efficient update and re-render of the visualization.
 videos:
   talk:

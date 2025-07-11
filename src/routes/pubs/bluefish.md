@@ -20,7 +20,7 @@ tags:
   - visualization design
   - web design
   - qualitative methods
-spotlight: true
+feature: true
 teaser: 'Diagrams built with the Bluefish language. These graphics run the gamut from computer science to physics to math
 and are constructed with declarative, composable, extensible relations. From left to right: a quantum circuit equivalence,
 topologies, a Python Tutor diagram, an Ohm parse tree, and a physics pulley diagram.'

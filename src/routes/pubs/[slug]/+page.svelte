@@ -12,9 +12,7 @@
 </script>
 
 <svelte:head>
-  <title>{data.title} | MIT Visualization Group</title>
-
-  <meta name="citation_title" content={data.title}>
+  <meta name="citation_title" content={data.fullTitle}>
   <meta name="citation_pdf_url" content={`https://vis.csail.mit.edu/pubs/${slug}.pdf`}>
   {#if data.doi}
     <meta name="citation_doi" content={data.doi}>
@@ -36,16 +34,16 @@
 </svelte:head>
 
 <div>
-  <h1 class="text-2xl font-bold leading-9 text-stone-800 mb-1 mt-4">{data.title}</h1>
+  <h1 class="text-2xl font-bold leading-9 text-stone-800 mb-1 mt-4">{data.fullTitle}</h1>
 
   <p class="text-md text-stone-600 font-semibold mb-6">
     {#if data.preprint}
       {data.preprint.server}: {data.preprint.id}
     {:else}
-      {data.venue.full}, {date.getFullYear()}
+      {data.venue.full}, {date.getUTCFullYear()}
     {/if}
     {#if data.award}
-      <span class="ml-2 py-1 px-2 text-xs bg-lime-200/75 border-1 border-lime-700/25 text-lime-700 rounded-md">
+      <span class="ml-2 py-1 px-2 text-xs bg-violet-50 border-1 border-violet-200 text-violet-800 rounded-md">
         <i class="fas fa-award mr-1"></i> {data.award}
       </span>
     {/if}
@@ -119,7 +117,7 @@
     <div class={`w-full mt-2 ${data.teaser || data.videos ? 'md:w-1/2' : 'md:w-2/5'} md:mt-0`}>
       {#if data.teaser}
         <div class="w-full p-2 border-1 border-stone-100 shadow-md rounded-md">
-          <img src={`/imgs/teasers/${slug}.png`} alt={data.title} />
+          <img src={`/imgs/teasers/${slug}.png`} alt={data.fullTitle} />
           <p class="text-sm text-stone-400 mt-2">
             {data.teaser}
           </p>

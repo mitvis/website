@@ -26,6 +26,7 @@ tags:
   - visualization design
   - qualitative methods
   - interface
+feature: true
 teaser: Data binding via dropzones in Lyra (left), via the binding icon in Data Illustrator (middle), and via either approach in Charticulator (right).
 videos:
   figure:

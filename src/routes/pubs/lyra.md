@@ -16,6 +16,7 @@ tags:
   - interaction design
   - interface
   - mixed methods
+feature: true
 teaser: William Playfair’s classic chart comparing the price of wheat and wages in England recreated in the Lyra visualization design environment (VDE).
 videos:
   talk:

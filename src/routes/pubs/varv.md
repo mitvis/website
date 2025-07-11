@@ -25,6 +25,7 @@ tags:
   - qualitative methods
   - convivial interaction
   - malleable interfaces
+feature: true
 videos:
   figure: vfxogIys0Dw
   talk: xZpu_vZJo3w

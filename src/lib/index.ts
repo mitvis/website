@@ -3,8 +3,23 @@ import people from '$lib/data/people.json';
 import themes from '$lib/data/research_themes.json';
 import _ from 'lodash';
 
-export async function getThemes() {
-  return [themes[0], ..._.shuffle(themes.slice(1))];
+export const missionStatement = 'We use visualization as a petri dish to study intelligence augmentation: how can computation help amplify our cognition and creativity, while respecting our agency?';
+
+export function parsePub(metadata) {
+  const fullTitle = metadata.title;
+  const title = fullTitle.split(':');
+  return {
+    ...metadata,
+    fullTitle,
+    title: title[0].trim(),
+    subtitle: title[1]?.trim(),
+    venueKey: metadata.venue,
+    venue: venues[metadata.venue],
+    authors: metadata.authors.map((author) => ({
+      ...author,
+      ...people[author.key]
+    }))
+  };
 }
 
 export async function getPubs() {
@@ -13,17 +28,8 @@ export async function getPubs() {
 		Object.entries(files).map(async ([path, resolver]) => {
       try {
         const { metadata } = await resolver();
-        const slug = path.slice(11, -3);
-			  return {
-          slug, 
-          ...metadata,
-          venueKey: metadata.venue,
-          venue: venues[metadata.venue],
-          authors: metadata.authors.map((author: any) => ({
-            ...author,
-            ...people[author.key]
-          }))
-        };
+        const slug = path.slice(17, -3);
+        return {slug, ...parsePub(metadata)};
       } catch (error) {
         return {date: Date.now()};
       }
@@ -33,6 +39,10 @@ export async function getPubs() {
   return pubs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 };
 
+export async function getThemes() {
+  return [themes[0], ..._.shuffle(themes.slice(1))];
+}
+
 export async function getThemesWithPubs() {
   const themes = await getThemes();
   const pubs = await getPubs();
@@ -41,6 +51,5 @@ export async function getThemesWithPubs() {
     ...theme,
     pubs: pubs
       .filter(pub => pub.themes?.includes(theme.key))
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   }));
 }

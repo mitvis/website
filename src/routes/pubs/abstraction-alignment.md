@@ -17,7 +17,7 @@ tags:
   - language
   - mixed methods
   - interface
-spotlight: true
+feature: true
 teaser: Abstraction alignment measures human-AI alignment by comparing model behavior to known human abstractions.
 materials:
   - name: Demo
