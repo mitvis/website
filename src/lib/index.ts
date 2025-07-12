@@ -8,6 +8,7 @@ export const missionStatement = 'We use visualization as a petri dish to study i
 export function parsePub(metadata) {
   const fullTitle = metadata.title;
   const title = fullTitle.split(':');
+
   return {
     ...metadata,
     fullTitle,

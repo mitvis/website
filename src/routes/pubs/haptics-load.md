@@ -13,6 +13,7 @@ preprint:
   id: '2006.00372'
 date: 2020-02-27
 doi: 10.48550/arXiv.2006.00372
+thumb: false
 themes:
   - accessibility
   - convivial-interaction

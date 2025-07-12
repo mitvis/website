@@ -63,7 +63,7 @@
           <div class="w-10 h-10 md:hidden"></div>
         {/if}
         <div class="flex flex-col">
-          <p class={`text-md text-stone-600 ${author.url ? 'group-hover:text-amber-700 group-hover:underline' : ''}`}>{author.name}</p>
+          <p class={`text-md text-stone-600 ${author.url ? 'group-hover:text-amber-700 group-hover:underline' : ''}`}>{author.name} {#if author.equal}* {/if}</p>
           <p class="text-xs text-stone-400">{author.affiliation || 'MIT CSAIL'}</p>
         </div>
       </a>

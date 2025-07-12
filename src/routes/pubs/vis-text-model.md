@@ -20,7 +20,7 @@ videos:
 materials:
   - name: Supplementary Material
     url: /pubs/vis-text-model/data
-    type: file
+    type: file-archive
 ---
 
 <style>
