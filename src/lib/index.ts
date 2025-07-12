@@ -1,15 +1,17 @@
+import _ from 'lodash';
+
 import venues from '$lib/data/venues.json';
 import people from '$lib/data/people.json';
 import themes from '$lib/data/research_themes.json';
-import _ from 'lodash';
 
 export const missionStatement = 'We use visualization as a petri dish to study intelligence augmentation: how can computation help amplify our cognition and creativity, while respecting our agency?';
 
-export function parsePub(metadata) {
+export function parsePub({default: content, metadata}) {
   const fullTitle = metadata.title;
   const title = fullTitle.split(':');
 
   return {
+    content,
     ...metadata,
     fullTitle,
     title: title[0].trim(),
@@ -28,10 +30,11 @@ export async function getPubs() {
 	const pubs = await Promise.all(
 		Object.entries(files).map(async ([path, resolver]) => {
       try {
-        const { metadata } = await resolver();
+        const pub = await resolver();
         const slug = path.slice(17, -3);
-        return {slug, ...parsePub(metadata)};
+        return {slug, ...parsePub(pub)};
       } catch (error) {
+        console.error(error);
         return {date: Date.now()};
       }
 		})

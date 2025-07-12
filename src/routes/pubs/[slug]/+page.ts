@@ -9,10 +9,9 @@ export const load: PageLoad = async ({ params }) => {
     const post = await import(`../${slug}.md`);
     return {
       slug,
-      content: post.default,
-      ...parsePub(post.metadata),
+      ...parsePub(post),
       seo: {
-        desc: post.default
+        desc: post.content
       }
     };
   } catch (e) {

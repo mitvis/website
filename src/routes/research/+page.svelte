@@ -10,7 +10,7 @@
 
   <div class="gap-7 columns-1 md:columns-2 lg:columns-3 xl:columns-4">
     {#each data.pubsByYear[year] as pub}
-      <div class="group mb-7 p-3 rounded-lg overflow-hidden shadow-xs hover:shadow-md hover:cursor-pointer transition-all duration-200 border-1 {pub.award ? 'bg-violet-50 border-violet-200 hover:border-violet-300/75' : pub.feature ? 'bg-amber-500/10 border-amber-200 hover:border-amber-300/75' : 'bg-white border-zinc-200/75 hover:border-zinc-300/75'}" role="button" tabindex="0" onclick={() => goto(`/pubs/${pub.slug}`)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? goto(`/pubs/${pub.slug}`) : null}>
+      <div class="group mb-7 p-3 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:cursor-pointer transition-all duration-200 border-1 {pub.award ? 'bg-violet-50 border-violet-200 hover:border-violet-300/75' : pub.feature ? 'bg-amber-500/10 border-amber-200 hover:border-amber-300/75' : 'bg-white border-zinc-200/75 hover:border-zinc-300/75'}" role="button" tabindex="0" onclick={() => goto(`/pubs/${pub.slug}`)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? goto(`/pubs/${pub.slug}`) : null}>
         {#if pub.thumb !== false}
           <div class="-mx-3 -mt-3 mb-2">
             <img src={`/imgs/thumbs/${pub.slug}.png`} alt={pub.fullTitle} class="w-full h-auto">
