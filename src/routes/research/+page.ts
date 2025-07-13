@@ -12,7 +12,6 @@ export const load: PageLoad = async () => {
     pub.materials = pub.materials?.filter(material => !['cube', 'file-archive', 'registered'].includes(material.type));
 
     pub.video = pub.videos?.figure || pub.videos?.talk;
-    pub.video_url = pub.video?.vimeo ? `https://vimeo.com/${pub.video.vimeo}` : `https://www.youtube.com/watch?v=${pub.video}`;
   }
 
   return { pubs, themes, tags };

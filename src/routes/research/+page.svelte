@@ -2,6 +2,7 @@
   import _ from 'lodash';
   import FlexSearch from 'flexsearch';
   import {Masonry} from 'svelte-bricks';
+  import Youtube from 'svelte-youtube-embed';
   
   import type { PageProps } from './$types';
   import { goto } from '$app/navigation';
@@ -132,62 +133,76 @@
     items={pubsByYear[year]} idKey="slug">
 
     {#snippet children({ item: pub })}
-      <div class="group p-3 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:cursor-pointer transition-all duration-200 border-1 {pub.award ? 'bg-violet-50 border-violet-200 hover:bg-violet-100 hover:border-violet-300' : pub.feature ? 'bg-amber-500/10 border-amber-200 hover:bg-amber-400/18 hover:border-amber-300' : 'bg-white border-stone-200/50 hover:bg-stone-100/75 hover:border-stone-300'}" role="button" tabindex="0" onclick={() => goto(`/pubs/${pub.slug}`)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? goto(`/pubs/${pub.slug}`) : null}>
-        {#if pub.thumb !== false}
-          <div class="-mx-3 -mt-3 mb-2">
-            <img src={`/imgs/thumbs/${pub.slug}.png`} alt={pub.fullTitle} class="w-full h-auto">
+      <div class="p-3 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:cursor-pointer transition-all duration-200 border-1 {pub.award ? 'bg-violet-50 border-violet-200 hover:bg-violet-100 hover:border-violet-300' : pub.feature ? 'bg-amber-500/10 border-amber-200 hover:bg-amber-400/18 hover:border-amber-300' : 'bg-white border-stone-200/50 hover:bg-stone-100/75 hover:border-stone-300'}">
+        {#if pub.thumb !== false || pub.video}
+          <div class="-mx-3 -mt-3 mb-2 z-10">
+            {#if pub.video && !pub.video.vimeo}
+              <Youtube id={pub.video} animations={false} --title-color="transparent" --title-shadow-color="transparent" --play-button="none">
+                {#snippet play_button()}
+                  <div class="w-full h-full flex items-center justify-center">
+                    <i class="fas fa-play text-white text-4xl text-shadow-lg"></i>
+                  </div>
+                {/snippet}
+
+                {#snippet thumbnail()}
+                  <img
+                    slot="thumbnail"                    
+                    src={`/imgs/thumbs/${pub.slug}.png`}
+                    alt={pub.fullTitle}
+                    class="w-full h-auto"
+                  />
+                {/snippet}
+              </Youtube>
+            {:else}
+              <img src={`/imgs/thumbs/${pub.slug}.png`} alt={pub.fullTitle} class="w-full h-auto">
+            {/if}
           </div>
         {/if}
-        <a href={`/pubs/${pub.slug}`} class="block">
-          <h4 class="text-md font-bold {pub.award ? 'text-violet-800' : 'text-amber-700'}">
-            {#if pub.award}
-              <i class="fas fa-award mr-1"></i>
-            {:else if pub.feature}
-              <span class="text-xs">&#9733;</span>
-            {/if}
-            <span class="group-hover:underline">{pub.title}</span>
-          </h4>
-        </a>
-        {#if pub.subtitle}
-          <p class="text-sm {pub.award ? 'text-violet-600' : 'text-amber-600'} font-semibold">
-            {pub.subtitle}
-          </p>
-        {/if}
-
-        <p class="text-sm text-stone-600 my-2">
-          {#each pub.authors as author, i}
-              {author.name}{#if author.equal}*{/if}{#if i < pub.authors.length - 1},&nbsp;{/if}
-          {/each}
-        </p>
-
-        <div class="hidden" bind:textContent={pub.abstract} contenteditable="true">
-          {#if pub.stub !== false}
-            <pub.content />
-          {/if}
-        </div>
-
-        <p class="text-xs text-stone-400 mb-2">
-          <ShortVenue pub={pub} />
-        </p>
-
-        <p>
-          <a href={`/pubs/${pub.slug}.pdf`} data-sveltekit-reload class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label="PDF Paper">
-            <i class="far fa-file-pdf"></i> 
+        <div class="group" role="button" tabindex="0" onclick={() => goto(`/pubs/${pub.slug}`)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? goto(`/pubs/${pub.slug}`) : null}>
+          <a href={`/pubs/${pub.slug}`} class="block">
+            <h4 class="text-md font-bold {pub.award ? 'text-violet-800' : 'text-amber-700'}">
+              {#if pub.award}
+                <i class="fas fa-award mr-1"></i>
+              {:else if pub.feature}
+                <span class="text-xs">&#9733;</span>
+              {/if}
+              <span class="group-hover:underline">{pub.title}</span>
+            </h4>
           </a>
-
-          {#if pub.video}
-            <a href={pub.video_url} class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label="Video">
-              <i class="fab fa-youtube"></i> 
-            </a>
+          {#if pub.subtitle}
+            <p class="text-sm {pub.award ? 'text-violet-600' : 'text-amber-600'} font-semibold">
+              {pub.subtitle}
+            </p>
           {/if}
 
-          {#each pub.materials as material}
-            <a href={material.url} class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label={material.name}>
-              <i class="fas fa-{material.type}"></i> 
-            </a>
-          {/each}
-        </p>
+          <p class="text-sm text-stone-600 my-2">
+            {#each pub.authors as author, i}
+                {author.name}{#if author.equal}*{/if}{#if i < pub.authors.length - 1},&nbsp;{/if}
+            {/each}
+          </p>
 
+          <div class="hidden" bind:textContent={pub.abstract} contenteditable="true">
+            {#if pub.stub !== false}
+              <pub.content />
+            {/if}
+          </div>
+
+          <p class="text-xs text-stone-400 mb-2">
+            <ShortVenue pub={pub} />
+          </p>
+
+          <p>
+            <a href={`/pubs/${pub.slug}.pdf`} data-sveltekit-reload class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label="PDF Paper">
+              <i class="far fa-file-pdf"></i> 
+            </a>
+
+            {#each pub.materials as material}
+              <a href={material.url} class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label={material.name}>
+                <i class="fas fa-{material.type}"></i> 
+              </a>
+            {/each}
+          </p>
+        </div>
       </div>
     {/snippet}
   </Masonry>
