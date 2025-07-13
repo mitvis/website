@@ -1,6 +1,8 @@
 <script lang="ts">
   import _ from 'lodash';
   import FlexSearch from 'flexsearch';
+  import {Masonry} from 'svelte-bricks';
+  
   import type { PageProps } from './$types';
   import { goto } from '$app/navigation';
   import ShortVenue from '$lib/components/ShortVenue.svelte';
@@ -123,9 +125,14 @@
 {#each years as year, i}
   <h3 class="text-xl font-black text-stone-700 mb-4 mt-10">{year}</h3>
 
-  <div class="gap-7 columns-1 md:columns-2 lg:columns-3 xl:columns-4">
-    {#each pubsByYear[year] as pub}
-      <div class="group mb-7 p-3 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:cursor-pointer transition-all duration-200 border-1 {pub.award ? 'bg-violet-50 border-violet-200 hover:bg-violet-100 hover:border-violet-300' : pub.feature ? 'bg-amber-500/10 border-amber-200 hover:bg-amber-400/18 hover:border-amber-300' : 'bg-white border-stone-200/50 hover:bg-stone-100/75 hover:border-stone-300'}" role="button" tabindex="0" onclick={() => goto(`/pubs/${pub.slug}`)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? goto(`/pubs/${pub.slug}`) : null}>
+  <Masonry 
+    minColWidth={250}
+    maxColWidth={300}
+    gap={30}
+    items={pubsByYear[year]} idKey="slug">
+
+    {#snippet children({ item: pub })}
+      <div class="group p-3 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:cursor-pointer transition-all duration-200 border-1 {pub.award ? 'bg-violet-50 border-violet-200 hover:bg-violet-100 hover:border-violet-300' : pub.feature ? 'bg-amber-500/10 border-amber-200 hover:bg-amber-400/18 hover:border-amber-300' : 'bg-white border-stone-200/50 hover:bg-stone-100/75 hover:border-stone-300'}" role="button" tabindex="0" onclick={() => goto(`/pubs/${pub.slug}`)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? goto(`/pubs/${pub.slug}`) : null}>
         {#if pub.thumb !== false}
           <div class="-mx-3 -mt-3 mb-2">
             <img src={`/imgs/thumbs/${pub.slug}.png`} alt={pub.fullTitle} class="w-full h-auto">
@@ -182,6 +189,6 @@
         </p>
 
       </div>
-    {/each}
-  </div>
+    {/snippet}
+  </Masonry>
 {/each}
