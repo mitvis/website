@@ -12,8 +12,6 @@ doi: 10.1111/cgf.12391
 themes:
   - tools
 tags:
-  - visualization design
-  - interaction design
   - interface
   - mixed methods
 feature: true

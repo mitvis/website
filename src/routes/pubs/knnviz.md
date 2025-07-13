@@ -19,7 +19,6 @@ themes:
   - interpretability
 tags:
   - interface
-  - machine learning interpretability
   - mixed methods
 videos:
   talk: 8mpYOiH-S9M

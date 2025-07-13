@@ -23,7 +23,6 @@ venue: stanford-cstr
 date: 2012-02-01
 tags:
   - model
-  - web design
   - quantitative methods
 teaser: The pipeline for learning structural semantic classifiers for the Web. First, a large set of labeled page elements are collected from online workers. Next, these labels are used to train a set of regularized support vector classification SVMs. These classifiers are then used to identify semantic elements in new pages.
 ---

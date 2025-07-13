@@ -20,7 +20,6 @@ themes:
   - interpretability
 tags:
   - interface
-  - machine learning interpretability
   - mixed methods
 materials:
   - name: Live Demo

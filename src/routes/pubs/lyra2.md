@@ -11,8 +11,6 @@ doi: 10.1109/TVCG.2020.3030367
 themes:
   - tools
 tags:
-  - visualization design
-  - interaction design
   - interface
   - mixed methods
 teaser: 'Creating a brush with labeled extents in Lyra 2. (1) A brushing interaction authored via demonstrations. (2) Binding signals that represent the brush’s start and end extents to the content of two text marks respectively. (3) Positioning the text marks by their horizontal position to the brush’s start andend x-coordinates. (4) The completed design: an interval selection with labeled extents.'

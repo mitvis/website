@@ -10,10 +10,8 @@ date: 2022-10-19
 themes:
   - accessibility
 tags:
-  - visualization design
-  - interaction design
+  - system
   - interface
-  - accessibility
 materials:
   - name: Poster
     url: /pubs/olli/poster.pdf

@@ -1,26 +1,12 @@
-{
-  "contribution_type": [
+[
     "language",
     "interface",
     "system",
     "model",
     "dataset",
-    "empirical study"
-  ],
-  "methods": [
+    "empirical study",
+
     "qualitative methods",
     "quantitative methods",
     "mixed methods"
-  ],
-  "domain": [
-    "visualization design",
-    "interaction design",
-    "web design",
-    "accessibility",
-    "machine learning interpretability",
-    "human-ai interaction",
-    "debugging",
-    "convivial interaction",
-    "malleable interfaces"
-  ]
-} 
+]

@@ -11,8 +11,6 @@ date: 2020-10-25
 themes:
   - convivial-interaction
 tags:
-  - visualization design
-  - interaction design
   - interface
 teaser: 'The Visualive synchronized visualization system. Left: several users are interacting simultaneously with the view, with the current user following another user as they brush and zoom into the visualization. Right: the viewing user has hovered over a remote user’s bubble, resulting in the appearance of the purple tracking window that represents the remote user’s screen area.'
 ---

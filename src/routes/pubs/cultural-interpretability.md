@@ -13,8 +13,6 @@ themes:
   - interpretability
   - sociocultural-design
 tags:
-  - convivial interaction
-  - machine learning interpretability
   - qualitative methods
 feature: true
 ---

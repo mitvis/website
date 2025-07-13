@@ -21,10 +21,7 @@ themes:
 tags:
   - language
   - system
-  - interaction design
   - qualitative methods
-  - convivial interaction
-  - malleable interfaces
 feature: true
 videos:
   figure: vfxogIys0Dw

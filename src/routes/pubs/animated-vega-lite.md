@@ -15,8 +15,6 @@ themes:
   - tools
 tags:
   - language
-  - visualization design
-  - interaction design
   - qualitative methods
 videos:
   figure: evoV6kvG7z4

@@ -11,8 +11,9 @@ image: /imgs/og/vis-text-model.png
 themes:
   - accessibility
 tags:
-  - interface
-  - accessibility
+  - model
+  - dataset
+  - empirical study
   - mixed methods
 feature: true
 videos:

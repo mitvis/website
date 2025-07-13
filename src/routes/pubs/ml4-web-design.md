@@ -16,7 +16,6 @@ doi: 10.1145/2212776.2223695
 themes:
   - tools
 tags:
-  - web design
   - system
 teaser: An overview of the system architecture for large-scale machine learning on web design.
 ---

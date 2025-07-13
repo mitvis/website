@@ -21,10 +21,7 @@ award: Best Paper Honorable Mention
 themes:
   - accessibility
 tags:
-  - visualization design
-  - interaction design
   - interface
-  - accessibility
   - mixed methods
 feature: true
 videos:

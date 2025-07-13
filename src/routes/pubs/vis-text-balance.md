@@ -15,7 +15,6 @@ date: 2023-01-01
 doi: 10.1109/TVCG.2022.3209383
 tags:
   - empirical study
-  - visualization design
   - quantitative methods
 teaser: 'Information displays with varying amounts of visuals and text. (a) Chart presented with no text (beyond axes and ticks), (b) Chart with a title and a single annotation, (c) Chart which displays a narrative or story around the data, annotated through text, and (d) A text-only version of the data, with the same story as displayed in (c).'
 materials:

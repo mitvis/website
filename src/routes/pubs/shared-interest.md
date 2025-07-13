@@ -18,7 +18,6 @@ award: Best Paper Honorable Mention
 themes:
   - interpretability
 tags:
-  - machine learning interpretability
   - language
   - mixed methods
 feature: true

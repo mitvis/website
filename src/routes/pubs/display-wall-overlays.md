@@ -16,7 +16,6 @@ themes:
   - convivial-interaction
 tags:
   - interface
-  - interaction design
 videos:
   figure: oazCyaTgLdA
 ---

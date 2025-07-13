@@ -15,8 +15,6 @@ doi: 10.1145/2642918.2647360
 themes:
   - tools
 tags:
-  - visualization design
-  - interaction design
   - language
   - qualitative methods
 teaser: 'Brushing interaction expressed with our extensions to Vega: signal definitions and usage are in blue, event streams in orange, predicate definition and application in purple, rules in red, and names in green.'

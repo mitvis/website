@@ -15,9 +15,7 @@ date: 2024-05-15
 themes:
   - accessibility
 tags:
-  - interaction design
   - interface
-  - accessibility
 teaser:
   Two different customizations of Olli hierarchies for a chart showing five technology companies’ stock prices between 2000 and 2010. (a) the visualization; (b) a customization that includes more tokens, with longer brevity, more suitable for novice users who need additional assistance in forming the correct mental model of the graph; (c) a customization with fewer, brief tokens more suitable for an expert user who might have a well-formed mental model of the chart.
 videos:

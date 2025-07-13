@@ -18,8 +18,6 @@ doi: 10.1109/TVCG.2015.2467091
 themes:
   - tools
 tags:
-  - visualization design
-  - interaction design
   - system
   - quantitative methods
 feature: true

@@ -16,6 +16,7 @@ export function parsePub({default: content, metadata}) {
     fullTitle,
     title: title[0].trim(),
     subtitle: title[1]?.trim(),
+    year: new Date(metadata.date).getUTCFullYear(),
     venueKey: metadata.venue,
     venue: venues[metadata.venue],
     authors: metadata.authors.map((author) => ({

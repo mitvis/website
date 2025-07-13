@@ -29,7 +29,6 @@ tags:
   - dataset
   - model
   - quantitative methods
-  - visualization design
   - empirical study
 teaser: VizNet enables data scientists and visualization researchers to aggregate data, enumerate visual encodings, and crowdsource efectiveness evaluations.
 videos:

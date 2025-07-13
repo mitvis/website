@@ -16,8 +16,6 @@ doi:  10.1109/TVCG.2021.3114796
 themes:
   - tools
 tags:
-  - visualization design
-  - interaction design
   - system
   - mixed methods
 teaser: ' Designs to coordinate asynchronous requests and responses when querying over distributed data: (a) renders the most recent interaction request; (b) renders the most recent response received as well as any <em>pending interactions</em>; (c) renders snapshots of all interactions and their corresponding results.'

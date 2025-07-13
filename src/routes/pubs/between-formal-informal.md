@@ -14,10 +14,7 @@ themes:
   - convivial-interaction
 tags:
   - language
-  - interaction design
-  - malleable interfaces
   - interface
-  - system
 ---
 
 <!-- teaser image -->

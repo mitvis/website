@@ -17,8 +17,6 @@ themes:
   - tools
 tags:
   - language
-  - visualization design
-  - web design
   - qualitative methods
 feature: true
 teaser: 'Diagrams built with the Bluefish language. These graphics run the gamut from computer science to physics to math

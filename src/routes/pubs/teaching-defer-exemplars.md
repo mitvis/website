@@ -12,7 +12,6 @@ doi: 10.1609/aaai.v36i5.20469
 themes:
   - convivial-interaction
 tags:
-  - human-ai interaction
   - empirical study
   - quantitative methods
 teaser: The AI assisted decision making pipeline. The AI first sends to the human a message `A`, then the human decides with their rejector `r(Z,A)` if they should follow the AI's advice and predict <code>&pi;<sub>Y</sub>(X)</code> or they should predict on their own using `h(Z,A)`.

@@ -23,7 +23,6 @@ doi: 10.1109/TVCG.2019.2934281
 themes:
   - tools
 tags:
-  - visualization design
   - qualitative methods
   - interface
 feature: true

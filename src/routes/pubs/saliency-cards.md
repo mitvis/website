@@ -15,7 +15,6 @@ doi: 10.1145/3593013.3593997
 themes:
   - interpretability
 tags:
-  - machine learning interpretability
   - language
   - mixed methods
 teaser: The saliency card for Grad-CAM. Saliency cards describe a saliency method's methodology (how the saliency is computed), sensitivity (its relationship with the model and inputs), and perceptibility (how it is interpreted by a human). 

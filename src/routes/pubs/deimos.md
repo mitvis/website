@@ -21,8 +21,6 @@ themes:
   - convivial-interaction
 tags:
   - language
-  - visualization design
-  - interaction design
 teaser: 'A basic example of a morph changes the mark colour of uncoloured visualisations to red whenever the left hand performs a pinch gesture. Colour-coded boxes denote the same component in different representations. Left: The morph specification. Top right: Still images of this morph being applied to a 2D scatterplot in an immersive environment. Bottom right: The state machine for this morph. The `"restrict": true` (shown in the left-hand box labeled with _2_) prevents the morph from starting at the _highlighted_ state, and `"bidirectional": true` (shown at the end of morph specification) allows the transition to function in both directions.'
 videos:
   figure: L9Ngzh1w7nM

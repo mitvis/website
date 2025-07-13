@@ -1,8 +1,5 @@
 <script lang="ts">
   let { pub } = $props();
-
-  let pubYear = new Date(pub.date).getUTCFullYear();
-  let displayYear = (pub.venueKey === 'vis-full') ? pubYear - 1 : pubYear;
 </script>
 
-{pub.venue?.short} {displayYear}
+{pub.venue?.short} {(pub.venueKey === 'vis-full') ? pub.year - 1 : pub.year}

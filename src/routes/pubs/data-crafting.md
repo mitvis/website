@@ -10,8 +10,6 @@ type: workshop
 venue: visactivities
 date: 2020-10-24
 tags:
-  - visualization design
-  - convivial interaction
   - qualitative methods
 teaser: Example of productions. (a) Boston Weather with Pipe Cleaners by Gaurav P; (b) Ten Hours in Boston by Yue D; (c) Screen Time by Weather by Artemisia L; (d) Highs and Lows by Serena B.
 ---

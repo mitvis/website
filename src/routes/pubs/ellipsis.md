@@ -15,8 +15,6 @@ tags:
   - language
   - interface
   - qualitative methods
-  - visualization design
-  - interaction design
 teaser: Crafting narrative visualizations by building scenes and adding annotations to existing visualizations using the Ellipsis interface.
 videos:
   talk:

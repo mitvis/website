@@ -40,7 +40,7 @@
     {#if data.preprint}
       {data.preprint.server}: {data.preprint.id}
     {:else}
-      {data.venue.full}, {date.getUTCFullYear()}
+      {data.venue.full}, {data.year}
     {/if}
     {#if data.award}
       <span class="ml-2 py-1 px-2 text-xs bg-violet-50 border-1 border-violet-200 text-violet-800 rounded-md">
