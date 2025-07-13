@@ -16,11 +16,11 @@
   });
 
   $effect(() => {
-    for (const pub of pubs) {
+    for (const pub of data.pubs) {
       index.add({
         id: pub.slug,
         title: pub.title,
-        abstract: pub.abstract,
+        abstract: pub.abstract || '',
         authors: pub.authors.map((author: any) => author.name).join(' '),
         venue: pub.venue?.full || pub.venueKey,
       });
@@ -44,15 +44,11 @@
     if (filters.themes.length) pubs = pubs.filter(pub => filters.themes.every(theme => pub.themes?.includes(theme)));
     if (filters.tags.length) pubs = pubs.filter(pub => filters.tags.every(tag => pub.tags?.includes(tag)));
 
-    // Collapse results into single masonry grid
-    if (query || filters.themes.length || filters.tags.length) {
-      return pubs.map(p => ({...p, displayYear: ''}));
-    }
-
     return pubs;
   });
 
-  let pubsByYear = $derived(_.groupBy(pubs, pub => pub.displayYear));
+  // If searching/filtering, collapse results into single masonry grid
+  let pubsByYear = $derived(_.groupBy(pubs, pub => query || filters.themes.length || filters.tags.length ? '' : pub.year));
   let years = $derived(_.keys(pubsByYear).sort((a, b) => +b - +a));
 
   let counts = $derived.by(() => {
@@ -136,7 +132,7 @@
       <div class="p-3 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:cursor-pointer transition-all duration-200 border-1 {pub.award ? 'bg-violet-50 border-violet-200 hover:bg-violet-100 hover:border-violet-300' : pub.feature ? 'bg-amber-500/10 border-amber-200 hover:bg-amber-400/18 hover:border-amber-300' : 'bg-white border-stone-200/50 hover:bg-stone-100/75 hover:border-stone-300'}">
         {#if pub.thumb !== false || pub.video}
           <div class="-mx-3 -mt-3 mb-2 z-10">
-            {#if pub.video && !pub.video.vimeo}
+            {#if pub.video && typeof pub.video === 'string'}
               <Youtube id={pub.video} animations={false} --title-color="transparent" --title-shadow-color="transparent" --play-button="none">
                 {#snippet play_button()}
                   <div class="w-full h-full flex items-center justify-center">
@@ -196,7 +192,7 @@
               <i class="far fa-file-pdf"></i> 
             </a>
 
-            {#each pub.materials as material}
+            {#each pub.materials || [] as material}
               <a href={material.url} class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label={material.name}>
                 <i class="fas fa-{material.type}"></i> 
               </a>

@@ -3,6 +3,7 @@
   import { page } from '$app/state';
   import PubVideo from '$lib/components/PubVideo.svelte';
   import Bibtex from '$lib/components/Bibtex.svelte';
+  import { isMemberAuthor } from '$lib';
 
   let { data }: PageProps = $props();
 
@@ -57,7 +58,7 @@
   <div class="grid grid-cols-2 md:grid-cols-4 gap-2.5 mb-6">
     {#each data.authors as author}
       <a href={author.url} class="flex items-center gap-2 group">
-        {#if author.key}
+        {#if isMemberAuthor(author)}
           <img src={`/imgs/people/${author.key}.jpg`} alt={author.name} class="w-10 h-10 rounded-full shadow-md grayscale group-hover:grayscale-0 transition-all duration-300" />
         {:else}
           <div class="w-10 h-10 md:hidden"></div>

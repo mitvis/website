@@ -3,7 +3,7 @@ import type { PageLoad } from './$types';
 
 import { parsePub } from '$lib';
 
-export const load: PageLoad = async ({ params }) => {
+export const load: PageLoad = async ({ params }): Promise<SlugPageData> => {
   const slug = params.slug;
   try {
     const post = await import(`../${slug}.md`);

@@ -6,7 +6,11 @@ import themes from '$lib/data/research_themes.json';
 
 export const missionStatement = 'We use visualization as a petri dish to study intelligence augmentation: how can computation help amplify our cognition and creativity, while respecting our agency?';
 
-export function parsePub({default: content, metadata}) {
+export function isMemberAuthor(a: Author): a is MemberAuthor {
+	return !!(a as MemberAuthor).key;
+}
+
+export function parsePub({default: content, metadata}: {default: any; metadata: PublicationFrontmatter}) {
   const fullTitle = metadata.title;
   const title = fullTitle.split(':');
 
@@ -18,33 +22,35 @@ export function parsePub({default: content, metadata}) {
     subtitle: title[1]?.trim(),
     year: new Date(metadata.date).getUTCFullYear(),
     venueKey: metadata.venue,
-    venue: venues[metadata.venue],
+    venue: (venues as VenuesData)[metadata.venue],
     authors: metadata.authors.map((author) => ({
       ...author,
-      ...people[author.key]
+      ...(isMemberAuthor(author) ? (people as PeopleData)[author.key] : {})
     }))
   };
 }
 
-export async function getPubs() {
+export async function getPubs(): Promise<Publication[]> {
   const files = import.meta.glob('/src/routes/pubs/*.md');
 	const pubs = await Promise.all(
 		Object.entries(files).map(async ([path, resolver]) => {
       try {
-        const pub = await resolver();
+        const pub = await resolver() as {default: any; metadata: PublicationFrontmatter};
         const slug = path.slice(17, -3);
-        return {slug, ...parsePub(pub)};
+        const parsed = parsePub(pub);
+        return {slug, ...parsed};
       } catch (error) {
         console.error(error);
-        return {date: Date.now()};
+        return null;
       }
 		})
 	);
 
-  return pubs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const validPubs = pubs.filter((pub): pub is NonNullable<typeof pub> => pub !== null);
+  return validPubs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 };
 
-export async function getThemes() {
+export async function getThemes(): Promise<Theme[]> {
   return [themes[0], ..._.shuffle(themes.slice(1))];
 }
 
