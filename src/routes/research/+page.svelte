@@ -16,13 +16,13 @@
   });
 
   $effect(() => {
-    for (const pub of data.pubs) {
+    for (const pub of data.work) {
       index.add({
         id: pub.slug,
         title: pub.title,
         abstract: pub.abstract || '',
         authors: pub.authors.map((author: any) => author.name).join(' '),
-        venue: pub.venue?.full || pub.venueKey,
+        venue: pub.venue?.full || pub.venueKey || pub.venue,
       });
     }
   });
@@ -34,7 +34,7 @@
   });
 
   let pubs = $derived.by(() => {
-    let pubs = data.pubs;
+    let pubs = data.work;
     if (query) {
       const results = index.search(query);
       const resultSlugs = [...new Set(results.map(r => r.result).flat())];
@@ -84,7 +84,7 @@
 
     {#if query || filters.themes.length || filters.tags.length}
       <p class="text-xs text-stone-700 italic">
-        Showing {pubs.length} of {data.pubs.length} items
+        Showing {pubs.length} of {data.work.length} items
         <button onclick={() => {
           query = '';
           filters.themes = [];
@@ -132,7 +132,15 @@
       <div class="p-3 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:cursor-pointer transition-all duration-200 border-1 {pub.award ? 'bg-violet-50 border-violet-200 hover:bg-violet-100 hover:border-violet-300' : pub.feature ? 'bg-amber-500/10 border-amber-200 hover:bg-amber-400/18 hover:border-amber-300' : 'bg-white border-stone-200/50 hover:bg-stone-100/75 hover:border-stone-300'}">
         {#if pub.thumb !== false || pub.video}
           <div class="-mx-3 -mt-3 mb-2 z-10">
-            {#if pub.video && typeof pub.video === 'string'}
+            {#if pub.type === 'video'}
+              <Youtube id={pub.youtube} animations={false} --title-color="transparent" --title-shadow-color="transparent" --play-button="none">
+                {#snippet play_button()}
+                  <div class="w-full h-full flex items-center justify-center">
+                    <i class="fas fa-play text-white text-4xl text-shadow-lg"></i>
+                  </div>
+                {/snippet}
+              </Youtube>
+            {:else if pub.video && typeof pub.video === 'string'}
               <Youtube id={pub.video} animations={false} --title-color="transparent" --title-shadow-color="transparent" --play-button="none">
                 {#snippet play_button()}
                   <div class="w-full h-full flex items-center justify-center">
@@ -178,26 +186,32 @@
           </p>
 
           <div class="hidden" bind:textContent={pub.abstract} contenteditable="true">
-            {#if pub.stub !== false}
+            {#if pub.stub !== false && pub.type !== 'video'}
               <pub.content />
             {/if}
           </div>
 
           <p class="text-xs text-stone-400 mb-2">
-            <ShortVenue pub={pub} />
+            {#if pub.type === 'video'}
+              {pub.venue}, {new Date(pub.date).toLocaleString('en-US', { month: 'short' })} {pub.year}
+            {:else}
+              <ShortVenue pub={pub} />
+            {/if}
           </p>
 
-          <p>
-            <a href={`/pubs/${pub.slug}.pdf`} data-sveltekit-reload class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label="PDF Paper">
-              <i class="far fa-file-pdf"></i> 
-            </a>
-
-            {#each pub.materials || [] as material}
-              <a href={material.url} class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label={material.name}>
-                <i class="fas fa-{material.type}"></i> 
+          {#if pub.type !== 'video'}
+            <p>
+              <a href={`/pubs/${pub.slug}.pdf`} data-sveltekit-reload class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label="PDF Paper">
+                <i class="far fa-file-pdf"></i> 
               </a>
-            {/each}
-          </p>
+
+              {#each pub.materials || [] as material}
+                <a href={material.url} class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label={material.name}>
+                  <i class="fas fa-{material.type}"></i> 
+                </a>
+              {/each}
+            </p>
+          {/if}
         </div>
       </div>
     {/snippet}

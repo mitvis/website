@@ -1,0 +1,118 @@
+[ 
+  {
+    "youtube": "nFaAz_b05Ss",
+    "title": "Empowering Blind and Low-Vision People to Conduct Interactive Data Analysis",
+    "authors": [
+      {"key": "arvindsatya"}
+    ],
+    "date": "2025-05-01",
+    "venue": "MIT Ethics of Computing Research Symposium",
+    "themes": ["accessibility"]
+  },
+  {
+    "youtube": "-k4qZHkiS1Y",
+    "title": "UIST Vision: Intelligence as Agency",
+    "authors": [
+      {"key": "arvindsatya"}
+    ],
+    "date": "2024-10-14",
+    "venue": "ACM UIST",
+    "themes": ["tools", "convivial-interaction", "sociocultural-design"],
+    "feature": true
+  },
+  {
+    "youtube": "uWm4Mgf7kWY",
+    "title": "A Day in the Life of an MIT CSAIL PhD Student",
+    "authors": [
+      {"key": "dwootton"}
+    ],
+    "date": "2024-08-15",
+    "venue": "MIT CSAIL",
+    "themes": ["tools", "convivial-interaction"]
+  },
+  {
+    "youtube": "91h_et9lALg",
+    "title": "Data, Deception, and Design",
+    "authors": [
+      {"key": "arvindsatya"}
+    ],
+    "date": "2024-02-01",
+    "venue": "MIT Expanding Horizons in Computing",
+    "themes": ["sociocultural-design"]
+  },
+  {
+    "youtube": "QQRoiLH2kRs",
+    "title": "CSAIL Alliances Student Spotlight",
+    "authors": [
+      {"key": "jzong"}
+    ],
+    "date": "2023-09-18",
+    "venue": "MIT CSAIL",
+    "themes": ["accessibility"]
+  },
+  {
+    "youtube": "lNvPY8-FrvY",
+    "title": "Tomorrow's Designers, Designing Today",
+    "authors": [
+      {"key": "jzong"},
+      {"key": "arvindsatya"}
+    ],
+    "date": "2023-05-03",
+    "venue": "MIT Morningside Academy of Design",
+    "themes": ["accessibility"]
+  },
+  {
+    "youtube": "wZc1Rq5FtXc",
+    "title": "Intelligence Augmentation through the Lens of Interactive Data Visualization",
+    "authors": [
+      {"key": "arvindsatya"}
+    ],
+    "date": "2023-04-13",
+    "venue": "Stanford Human-Computer Interaction Seminar",
+    "themes": ["tools", "interpretability", "accessibility", "convivial-interaction", "sociocultural-design"],
+    "feature": true
+  },
+  {
+    "youtube": "_vGZD8DNs20",
+    "title": "MIT MAD 2023 Design Fellow",
+    "authors": [
+      {"key": "jzong"}
+    ],
+    "date": "2022-12-16",
+    "venue": "MIT Morningside Academy of Design",
+    "themes": ["accessibility"]
+  },
+  {
+    "youtube": "Fcp_LjLDFyY",
+    "title": "Keynote: From Tools to Toolkits: Towards Reusable, Composable, and Reliable Machine Learning Interpretability",
+    "authors": [
+      {"key": "arvindsatya"}
+    ],
+    "date": "2021-08-14",
+    "venue": "ACM KDD Visualization in Data Science (VDS) Workshop",
+    "themes": ["interpretability"],
+    "feature": true
+  },
+  {
+    "youtube": "-KCSsISPBa0",
+    "title": "Keynote: Towards Effective Interaction with Data Visualization",
+    "authors": [
+      {"key": "arvindsatya"}
+    ],
+    "date": "2020-06-19",
+    "venue": "ACM SIGMOD HILDA Workshop",
+    "themes": ["tools", "convivial-interaction"],
+    "feature": true
+  },
+  {
+    "youtube": "hHpyXWUfoxY",
+    "title": "Visualization: A Petri Dish for Intelligence Augmentation",
+    "authors": [
+      {"key": "arvindsatya"}
+    ],
+    "date": "2019-04-01",
+    "venue": "Harvard Radcliffe Institute",
+    "themes": ["tools", "interpretability", "convivial-interaction"],
+    "feature": true
+  }
+]

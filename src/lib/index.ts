@@ -10,6 +10,8 @@ export function isMemberAuthor(a: Author): a is MemberAuthor {
 	return !!(a as MemberAuthor).key;
 }
 
+export const sortByDate = (a: any, b: any) => new Date(b.date).getTime() - new Date(a.date).getTime();
+
 export function parsePub({default: content, metadata}: {default: any; metadata: PublicationFrontmatter}) {
   const fullTitle = metadata.title;
   const title = fullTitle.split(':');
@@ -47,7 +49,7 @@ export async function getPubs(): Promise<Publication[]> {
 	);
 
   const validPubs = pubs.filter((pub): pub is NonNullable<typeof pub> => pub !== null);
-  return validPubs.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  return validPubs.sort(sortByDate);
 };
 
 export async function getThemes(): Promise<Theme[]> {
