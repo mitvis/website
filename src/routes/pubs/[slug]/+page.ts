@@ -1,7 +1,7 @@
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
-import { parsePub } from '$lib';
+import { parsePub } from '$lib/index.svelte';
 
 export const load: PageLoad = async ({ params }): Promise<SlugPageData> => {
   const slug = params.slug;
@@ -9,10 +9,7 @@ export const load: PageLoad = async ({ params }): Promise<SlugPageData> => {
     const post = await import(`../${slug}.md`);
     return {
       slug,
-      ...parsePub(post),
-      seo: {
-        desc: post.content
-      }
+      ...parsePub(post)
     };
   } catch (e) {
     console.error(e);

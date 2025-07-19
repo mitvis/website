@@ -3,13 +3,19 @@
   import { page } from '$app/state';
   import PubVideo from '$lib/components/PubVideo.svelte';
   import Bibtex from '$lib/components/Bibtex.svelte';
-  import { isMemberAuthor } from '$lib';
+  import { isMemberAuthor, seo, siteName } from '$lib/index.svelte';
 
   let { data }: PageProps = $props();
 
   let slug = page.params.slug;
   let date = new Date(data.date);
   let html_available = (data.venue?.html === true || date >= new Date(data.venue?.html));
+  let abstract: string;
+
+  $effect(() => {
+    seo.title = `${data.fullTitle} | ${siteName}`;
+    seo.desc = abstract || '';
+  });
 </script>
 
 <svelte:head>
@@ -107,7 +113,7 @@
     <div class={`w-full ${data.teaser || data.videos ? 'md:w-1/2' : 'md:w-3/5'}`}>
       <h2 class="text-lg font-bold text-stone-700">Abstract</h2>
     
-      <div class="prose prose-stone-700 mb-4">
+      <div class="prose prose-stone-700 mb-4" bind:textContent={abstract} contenteditable="false">
         <data.content />
       </div>
 

@@ -7,6 +7,7 @@
   import type { PageProps } from './$types';
   import { goto } from '$app/navigation';
   import ShortVenue from '$lib/components/ShortVenue.svelte';
+  import { seo, missionStatement, siteName } from '$lib/index.svelte';
 
   let { data }: PageProps = $props();
 
@@ -25,6 +26,9 @@
         venue: pub.venue?.full || pub.venueKey || pub.venue,
       });
     }
+
+    seo.title = `Our Work | ${siteName}`;
+    seo.desc = missionStatement;
   });
 
   let query = $state('');
@@ -158,7 +162,10 @@
                 {/snippet}
               </Youtube>
             {:else}
-              <img src={`/imgs/thumbs/${pub.slug}.png`} alt={pub.fullTitle} class="w-full h-auto">
+              <a href={`/pubs/${pub.slug}`}>
+                <img src={`/imgs/thumbs/${pub.slug}.png`} 
+                alt={pub.fullTitle} class="w-full h-auto" />
+              </a>
             {/if}
           </div>
         {/if}

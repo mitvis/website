@@ -1,7 +1,8 @@
 <script lang="ts">
+  import _ from 'lodash';
   import type { PageProps } from './$types';
   import ShortVenue from '$lib/components/ShortVenue.svelte';
-  import _ from 'lodash';
+  import { seo, missionStatement, siteName } from '$lib/index.svelte';
 
   let { data }: PageProps = $props();
 
@@ -21,7 +22,12 @@
   const alumni = [
     ...people.filter((person) => person.alumni === true && (person.title.includes('PhD') || person.title.includes('Postdoc') || person.title.includes('Scientist'))),
     ...people.filter((person) => person.alumni === true && !(person.title.includes('PhD') || person.title.includes('Postdoc') || person.title.includes('Scientist'))),
-  ]
+  ];
+
+  $effect(() => {
+    seo.title = siteName;
+    seo.desc = missionStatement;
+  });
 </script>
 
 <p class="text-xl mb-2 text-stone-700">
