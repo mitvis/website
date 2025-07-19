@@ -76,6 +76,14 @@
       filters[type].push(key);
     }
   }
+
+  function gotoPub(pub: Publication) {
+    if (pub.type === 'video') {
+      window.location.href = `https://youtu.be/${pub.youtube}`;
+    } else {
+      goto(`/pubs/${pub.slug}`);
+    }
+  }
 </script>
 
 <div class="flex gap-2 border-b border-stone-200 pb-3 -mb-3">
@@ -169,8 +177,8 @@
             {/if}
           </div>
         {/if}
-        <div class="group" role="button" tabindex="0" onclick={() => goto(`/pubs/${pub.slug}`)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? goto(`/pubs/${pub.slug}`) : null}>
-          <a href={`/pubs/${pub.slug}`} class="block">
+        <div class="group" role="button" tabindex="0" onclick={() => gotoPub(pub)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? gotoPub(pub) : null}>
+          <a href={pub.type === 'video' ? `https://youtu.be/${pub.youtube}` : `/pubs/${pub.slug}`} class="block">
             <h4 class="text-md font-bold {pub.award ? 'text-violet-800' : 'text-amber-700'}">
               {#if pub.award}
                 <i class="fas fa-award mr-1"></i>
