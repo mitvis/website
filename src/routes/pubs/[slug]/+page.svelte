@@ -7,10 +7,12 @@
 
   let { data }: PageProps = $props();
 
-  let slug = page.params.slug;
+  const slug = $derived(page.params.slug);
   let date = new Date(data.date);
   let html_available = (data.venue?.html === true || date >= new Date(data.venue?.html));
   let abstract: string;
+  
+  let displayYear = data.venueKey === 'vis-full' ? data.year + 1 : data.year;
 
   $effect(() => {
     seo.title = `${data.fullTitle} | ${siteName}`;
@@ -47,7 +49,7 @@
     {#if data.preprint}
       {data.preprint.server}: {data.preprint.id}
     {:else}
-      {data.venue.full}, {data.year}
+      {data.venue.full}, {displayYear}
     {/if}
     {#if data.award}
       <span class="ml-2 py-1 px-2 text-xs bg-violet-50 border-1 border-violet-200 text-violet-800 rounded-md">
@@ -118,7 +120,7 @@
       </div>
 
       {#if data.teaser || data.videos}
-        <Bibtex venue={data.venue} pub={data} slug={slug} />
+        <Bibtex pub={data} slug={slug} displayYear={displayYear} />
       {/if}
     </div>
     <div class={`w-full mt-2 ${data.teaser || data.videos ? 'md:w-1/2' : 'md:w-2/5'} md:mt-0`}>
@@ -143,7 +145,7 @@
       {/if}
 
       {#if !data.teaser && !data.videos}
-        <Bibtex venue={data.venue} pub={data} slug={slug} />
+        <Bibtex pub={data} slug={slug} displayYear={displayYear} />
       {/if}
     </div>
   </div>

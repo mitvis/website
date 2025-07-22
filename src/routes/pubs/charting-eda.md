@@ -8,7 +8,7 @@ authors:
     affiliation: University of Colorado Boulder
   - key: arvindsatya
 venue: vis-full
-date: 2025-01-02
+date: 2024-10-16
 doi: 10.1109/TVCG.2024.3456217
 themes:
   - convivial-interaction

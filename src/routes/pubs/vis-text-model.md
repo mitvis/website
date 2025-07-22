@@ -5,7 +5,7 @@ authors:
   - key: lundgard
   - key: arvindsatya
 venue: vis-full
-date: 2022-01-01
+date: 2021-10-28
 doi: 10.1109/TVCG.2021.3114770
 image: /imgs/og/vis-text-model.png
 themes:

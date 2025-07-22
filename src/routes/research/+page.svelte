@@ -6,7 +6,7 @@
   
   import type { PageProps } from './$types';
   import { goto } from '$app/navigation';
-  import ShortVenue from '$lib/components/ShortVenue.svelte';
+
   import { seo, missionStatement, siteName } from '$lib/index.svelte';
 
   let { data }: PageProps = $props();
@@ -212,7 +212,7 @@
             {#if pub.type === 'video'}
               {pub.venue}, {new Date(pub.date).toLocaleString('en-US', { month: 'short' })} {pub.year}
             {:else}
-              <ShortVenue pub={pub} />
+              {pub.venue?.short} {pub.year}
             {/if}
           </p>
 

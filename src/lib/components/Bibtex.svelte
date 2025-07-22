@@ -1,6 +1,7 @@
 <script lang="ts">
-  let { venue, pub, slug } = $props();
+  let { pub, slug, displayYear } = $props();
 
+  let venue = pub.venue;
   let authors = pub.authors.map(author => author.name).join(' AND ');
   let bibtex: HTMLPreElement;
   let bibtex_content = $state('');
@@ -38,11 +39,11 @@
 </h3>
 
 <div class="text-xs bg-stone-100 rounded-md p-2 mb-4 overflow-x-auto">
-  <pre bind:this={bibtex}>@{venue.bibtex.type}&lbrace;{pub.year}-{slug}
+  <pre bind:this={bibtex}>@{venue.bibtex.type}&lbrace;{displayYear}-{slug}
   title = &lbrace;&lbrace;{escape(pub.title)}&rbrace;&rbrace;,
   author = &lbrace;{escape(authors)}&rbrace;,
   {venue.bibtex.venue} = &lbrace;{escape(venue.full)}&rbrace;,
-  year = &lbrace;{pub.year}&rbrace;,
+  year = &lbrace;{displayYear}&rbrace;,
   {#if pub.doi}doi = &lbrace;{pub.doi}&rbrace;,{/if}
   url = &lbrace;https://vis.csail.mit.edu/pubs/{slug}&rbrace;
 &rbrace;</pre>

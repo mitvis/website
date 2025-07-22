@@ -11,7 +11,7 @@ authors:
   - name: Melanie Tory
     affiliation: Northeastern University
 venue: vis-full
-date: 2024-01-01
+date: 2023-10-25
 doi: 10.1109/TVCG.2023.3327158
 themes:
   - convivial-interaction

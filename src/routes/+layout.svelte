@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/state';
 	import Header from '$lib/components/Header.svelte';
 	import Seo from '$lib/components/Seo.svelte';
 	import '../app.css';

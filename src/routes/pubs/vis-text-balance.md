@@ -11,7 +11,7 @@ authors:
   - name: Marti A. Hearst
     affiliation: UC Berkeley
 venue: vis-full
-date: 2023-01-01
+date: 2022-10-21
 doi: 10.1109/TVCG.2022.3209383
 tags:
   - empirical study
