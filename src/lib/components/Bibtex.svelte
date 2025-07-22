@@ -27,7 +27,6 @@
   $effect(() => {
     if (bibtex) {
       bibtex_content = bibtex.textContent ?? '';
-      console.log(bibtex_content);
     }
   });
 </script>

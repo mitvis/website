@@ -86,8 +86,8 @@
   }
 </script>
 
-<div class="flex gap-2 border-b border-stone-200 pb-3 -mb-3">
-  <div class="w-1/3 pr-5">
+<div class="block md:flex gap-2 border-b border-stone-200 pb-3 -mb-3">
+  <div class="w-full md:w-1/3 pr-5">
     <h3 class="text-2xl font-black text-stone-700">Our Work</h3>
 
     <input type="search" bind:value={query} 
@@ -106,28 +106,30 @@
     {/if}
   </div>
 
-  <div class="w-1/3">
-    <h4 class="text-sm font-bold text-stone-700 mb-1">Themes</h4>
+  <div class="w-full mt-5 md:mt-0 md:w-2/3 flex flex-row justify-between">
+    <div class="w-1/2">
+      <h4 class="text-sm font-bold text-stone-700 mb-1">Themes</h4>
 
-    {#each data.themes as theme}
-      <button onclick={() => toggleFilter('themes', theme.key)} 
-        class="block w-auto text-xs text-stone-700 cursor-pointer rounded-xl border-1 {filters.themes.includes(theme.key) ? 'bg-lime-100 border-lime-600/50' : 'bg-white border-stone-200'} hover:bg-stone-200/75 hover:border-stone-300 px-2 py-1 mr-2 mb-1 transition-all duration-200">
-        {theme.name} 
-        <span class="text-stone-400">({counts[theme.key]})</span>
-      </button>
-    {/each}
-  </div>
+      {#each data.themes as theme}
+        <button onclick={() => toggleFilter('themes', theme.key)} 
+          class="block w-auto text-xs text-stone-700 text-left cursor-pointer rounded-xl border-1 {filters.themes.includes(theme.key) ? 'bg-lime-100 border-lime-600/50' : 'bg-white border-stone-200'} hover:bg-stone-200/75 hover:border-stone-300 px-2 py-1 mr-2 mb-1 transition-all duration-200">
+          {theme.name} 
+          <span class="text-stone-400">({counts[theme.key]})</span>
+        </button>
+      {/each}
+    </div>
 
-  <div class="w-1/3">
-    <h4 class="text-sm font-bold text-stone-700 mb-1">Tags</h4>
+    <div class="w-1/2">
+      <h4 class="text-sm font-bold text-stone-700 mb-1">Tags</h4>
 
-    {#each data.tags as tag}
-      <button onclick={() => toggleFilter('tags', tag)} 
-        class="inline-block text-xs text-stone-700 capitalize cursor-pointer rounded-xl border-1 {filters.tags.includes(tag) ? 'bg-lime-100 border-lime-600/50' : 'bg-white border-stone-200'} hover:bg-stone-200/75 hover:border-stone-300 px-2 py-1 mr-2 mb-1 transition-all duration-200">
-        {tag}
-        <span class="text-stone-400">({counts[tag]})</span>
-      </button>
-    {/each}
+      {#each data.tags as tag}
+        <button onclick={() => toggleFilter('tags', tag)} 
+          class="inline-block text-xs text-stone-700 text-left capitalize cursor-pointer rounded-xl border-1 {filters.tags.includes(tag) ? 'bg-lime-100 border-lime-600/50' : 'bg-white border-stone-200'} hover:bg-stone-200/75 hover:border-stone-300 px-2 py-1 mr-2 mb-1 transition-all duration-200">
+          {tag}
+          <span class="text-stone-400">({counts[tag]})</span>
+        </button>
+      {/each}
+    </div>
   </div>
 </div>
 

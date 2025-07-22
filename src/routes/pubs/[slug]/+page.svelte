@@ -117,7 +117,7 @@
         <data.content />
       </div>
 
-      {#if data.teaser && data.videos}
+      {#if data.teaser || data.videos}
         <Bibtex venue={data.venue} pub={data} slug={slug} />
       {/if}
     </div>

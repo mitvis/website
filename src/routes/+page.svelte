@@ -34,8 +34,8 @@
   We use visualization as a petri dish to study <strong>intelligence augmentation</strong>: how can computation help amplify our cognition and creativity, while respecting our agency?
 </p>
 
-<div class="flex">
-  <div class="w-4/5 mr-7">
+<div class="md:flex">
+  <div class="w-full md:w-4/5 md:mr-7">
     <h2 class="text-xl font-black uppercase text-amber-600 mb-2 mt-4">Research Themes</h2>
 
     {#each data.themes as theme}
@@ -83,7 +83,7 @@
     {/each}
   </div>
 
-  <div class="w-1/5">
+  <div class="w-full md:w-1/5">
     <h2 class="text-xl font-black uppercase text-violet-700 mb-2 mt-4">News</h2>
 
     <div class="h-[225px] relative">
@@ -102,7 +102,7 @@
     <div class="sticky top-17">
       <h2 class="text-xl font-black uppercase text-lime-600 mb-2 mt-4">People</h2>
 
-    <div class="grid grid-cols-3 gap-0.5 w-full">
+    <div class="grid grid-cols-5 md:grid-cols-3 gap-0.5 w-full">
       {#each members as person}
         <a href={person.url} class="group relative">
           <img src={`/imgs/people/${person.kerberos}.jpg`} alt={person.name} class="rounded-xl opacity-80 group-hover:opacity-100 group-hover:shadow-sm" />
@@ -117,7 +117,7 @@
     <h3 class="text-sm font-bold text-lime-600 mb-2 mt-4">Alumni</h3>
 
     <div class="h-[200px] relative">
-      <div class="absolute inset-0 h-[200px] overflow-y-auto">
+      <div class="absolute inset-0 h-[200px] overflow-y-auto grid grid-cols-2 md:grid-cols-1 gap-0.5">
         {#each alumni as person}
           <a href={person.url} class="flex items-center mb-2 group bg-lime-50 border-1 border-lime-200 hover:border-lime-300 rounded-xl hover:shadow-sm px-2 py-1">
             <img src={`/imgs/people/${person.kerberos}.jpg`} alt={person.name} 

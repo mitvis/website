@@ -12,7 +12,7 @@
 	<Seo />
 </svelte:head>
 
-<div class="container mx-auto px-10">
+<div class="container mx-auto px-4 md:px-10">
 	<Header />
 	{@render children()}
 </div>
