@@ -683,7 +683,7 @@ materials:
           <figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_table">Table 4: </span>
             (Upper Subtable) Rankings [1=least useful, 4=most useful] of semantic content at each level of the model, for blind and sighted readers.
             The scale encodes the number of times a given level was assigned a given rank by a reader.
-            Dotted contour lines delineate Regions with a threshold equal to <math id="S5.T4.m2" class="ltx_Math" alttext="\mu+\frac{'{'}\sigma{'}'}{'{'}2{'}'}" display="inline"><mrow><mi>μ</mi><mo>+</mo><mfrac><mi>σ</mi><mn>2</mn></mfrac></mrow></math>, each labeled with a capital letter A – F.
+            Dotted contour lines delineate Regions with a threshold equal to <math id="S5.T4.m2" class="ltx_Math" alttext="\mu+\frac&lbrace;\sigma&rbrace;&lbrace;2&rbrace;" display="inline"><mrow><mi>μ</mi><mo>+</mo><mfrac><mi>σ</mi><mn>2</mn></mfrac></mrow></math>, each labeled with a capital letter A – F.
             (Lower Subtable)
             Shaded cells indicate significant ranking differences pair-wise between levels.
           </figcaption>
@@ -783,7 +783,7 @@ materials:
         <span class="ltx_tag ltx_tag_subsection">5.3 </span>Quantitative Results</h3>
       <div id="S5.SS3.p1" class="ltx_para">
         <p class="ltx_p">Quantitative results for the individual rankings (1,800 per blind and sighted reader groups) are summarized by the heatmaps in Table&nbsp;<a href="#S5.T4" title="Table 4 ‣ 5.2.2 Participant Demographics ‣ 5.2 Participants ‣ 5 Applying the Model: Evaluating the Effectiveness of Visualization Descriptions ‣ Accessible Visualization via Natural Language Descriptions: A Four-Level Model of Semantic Content" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a> (Upper Subtable), which aggregate the number of times a given content level was assigned a certain rank.
-          Dotted lines in both blind and sighted heatmaps delineate regions exceeding a threshold — calculated by taking the mean plus half a standard deviation (<math id="S5.SS3.p1.m1" class="ltx_Math" alttext="\mu+\frac{'{'}\sigma{'}'}{'{'}2{'}'}" display="inline"><mrow><mi>μ</mi><mo>+</mo><mfrac><mi>σ</mi><mn>2</mn></mfrac></mrow></math>) resulting in a value of 139 and 136, respectively — and are labeled with a capital letter A – F.</p>
+          Dotted lines in both blind and sighted heatmaps delineate regions exceeding a threshold — calculated by taking the mean plus half a standard deviation (<math id="S5.SS3.p1.m1" class="ltx_Math" alttext="\mu+\frac&lbrace;\sigma&rbrace;&lbrace;2&rbrace;" display="inline"><mrow><mi>μ</mi><mo>+</mo><mfrac><mi>σ</mi><mn>2</mn></mfrac></mrow></math>) resulting in a value of 139 and 136, respectively — and are labeled with a capital letter A – F.</p>
       </div>
       <div id="S5.SS3.p2" class="ltx_para">
         <p class="ltx_p">These results exhibit significant differences between reader groups.

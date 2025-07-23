@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+@import '$lib/css/LaTeXML.css';
+@import '$lib/css/prism-material-oceanic.css';
 
 @theme {
 	--font-sans: 'Cabin', system-ui, sans-serif;
@@ -15,5 +17,37 @@
 @layer base {
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .footnotes hr {
+    display: none;
+  }
+
+  .footnote-backref {
+    @apply ml-2;
+  }
+
+  span.ltx_tag.ltx_tag_section {
+    @apply inline-block mr-2 px-2 bg-stone-800 text-white;
+  }
+
+  span.ltx_tag.ltx_tag_subsection, span.ltx_tag.ltx_tag_subsubsection {
+    @apply inline-block mr-2;
+  }
+
+  .ltx_Math {
+    @apply font-mono;
+  }
+
+  figcaption {
+    @apply !text-left;
+  }
+}
+
+@layer utilities {
+  code::before, code::after {
+    content: '' !important;
   }
 }

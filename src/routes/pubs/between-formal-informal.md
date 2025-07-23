@@ -25,12 +25,15 @@ tags:
   </figure>
 </div>
 
-
 Programming is beautiful in its formalisms. Typed variables, function signatures, and compile-time checks create a world of certainty, where logic flows predictably, and errors are caught before they ever touch runtime.
 
 But the paradox is that *programming is never just writing code*. Before code takes shape, there's a messy process of thinking, exploring, and designing, which often happening outside the text editor [^1][^2]. We sketch ideas on whiteboards, draft flowcharts, browse GitHub issues, and watch YouTube tutorials. We rely on *informal representations,* which is imperfect, partial, and transient, to figure things out. This interplay between *formal code* and *informal representations* becomes especially stark in exploratory workflows, like *exploratory programming* or *exploratory data analysis*, where questions evolve as fast as answers. Yet, existing tools often treat these two worlds as separate: you can either **formalize informal representations** (through rigid transformations) or **embed informal artifacts into code;** but only in predefined and limited ways.
 
-> <img src="icons/idea.svg" alt="Idea Blob Icon" style="width: 24px; height: 24px; vertical-align: middle;"> What if our tools didn't force this split between formal and informal? What if they embraced the gray area between thought and code—a **semi-formal paradigm**.
+<blockquote>
+  <img src="icons/idea.svg" class="not-prose" alt="Idea Blob Icon" style="width: 24px; height: 24px; vertical-align: middle; float: left; margin-right: 5px;"> 
+
+  What if our tools didn't force this split between formal and informal? What if they embraced the gray area between thought and code—a **semi-formal paradigm**.
+</blockquote>
 
 One way to describe what we are visioning is an **alternative path to the** **semi-formal paradigm,** a middle ground that blends the rigor of code with the flexibility of evolving representations. Think of a computational notebook where LaTeX equations, code snippets, sketches, and visualizations coexist, interconnected, but not locked into formality until there're being used.
 
@@ -146,7 +149,7 @@ Consider a trip planning scenario where you have well-defined budget formulas al
 By contrast, you can capture ephemeral data (like sketches or images) in a freeform way, then iteratively add annotations for computation when needed. Meanwhile, your formal code can handle unknown attributes, calling on AI or user input if necessary. A workflow might be:
 
 1. **Capture Receipts**: You snap photos of each receipt. Initially, these are purely informal images.
-2. **Gradually Add Metadata:** Later, you or an automated tool tags each photo with attributes such as <span class='inline-code'>date</span>. The images now have partial structure.
+2. **Gradually Add Metadata:** Later, you or an automated tool tags each photo with attributes such as `date`. The images now have partial structure.
 3. **Reference Dynamic Attributes in Code:** In a semi-formal environment, you could write:
     
     ```tsx
@@ -156,9 +159,9 @@ By contrast, you can capture ephemeral data (like sketches or images) in a freef
     });
     ```
     
-    Here, <span class='inline-code'>@photos_taken</span> might already know some metadata (like <span class='inline-code'>metadata.date</span>) but can also defer other attributes (<span class='inline-code'>total_expense</span>) until they're provided.
+    Here, `@photos_taken` might already know some metadata (like `metadata.date`) but can also defer other attributes (`total_expense`) until they're provided.
     
-4. **Executing Semi-Formal Code:** If a particular <span class='inline-code'>date</span> is stored as "March 12, 2020," a strict environment might throw an error. A semi-formal setup defers the resolution until needed, possibly querying an LLM to parse it into <span class='inline-code'>'2020-03-12'</span>. Similar deferral applies if <span class='inline-code'>total_expense</span> is missing or in a different currency; the program flags only the problematic parts rather than failing entirely.
+4. **Executing Semi-Formal Code:** If a particular `date` is stored as "March 12, 2020," a strict environment might throw an error. A semi-formal setup defers the resolution until needed, possibly querying an LLM to parse it into `'2020-03-12'`. Similar deferral applies if `total_expense` is missing or in a different currency; the program flags only the problematic parts rather than failing entirely.
 
 ### Another Example: Brand Analysis
 
@@ -186,17 +189,17 @@ for patch, color in zip(boxplot['boxes'], [@image.color_palette[0], @image.color
   patch.set_facecolor(color)
 ```
 
-Now, your pricing analysis is color-coded: <span class='inline-code'>@image.color_palette[0]</span> for your brand, and <span class='inline-code'>@image.color_palette[-1]</span> for competitors.
+Now, your pricing analysis is color-coded: `@image.color_palette[0]` for your brand, and `@image.color_palette[-1]` for competitors.
 
 <iframe width="100%" height="464" src="https://www.youtube.com/embed/Ep30vJPqG2U" title="workshop demo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**[$\LaTeX$] Crafting Analytical Functions with LaTeX Annotations**
+**[$$\LaTeX$$] Crafting Analytical Functions with LaTeX Annotations**
 
 To tie together the pricing and aesthetic data, you decide to compute an Aesthetic-Price Score (APS)—a matrix used by the company that reflects how a product's visual impact relates to its cost. Rather than writing fully formal code, you begin with an informal LaTeX snippet:
 
-```
-$\mathrm{APS} = \frac{\mathrm{VisualImpact} \times \sin(\mathrm{BrandConsistency}) + e^{\,\mathrm{Trendiness}}}{\ln(\mathrm{Price} + 1)}$
-```
+$$
+\mathrm{APS} = \frac{\mathrm{VisualImpact} \times \sin(\mathrm{BrandConsistency}) + e^{\,\mathrm{Trendiness}}}{\ln(\mathrm{Price} + 1)}
+$$
 
 You then reuse this LaTeX expression as code:
 
@@ -209,7 +212,7 @@ score = APS(visual_impact=0.8, brand_consistency=1.2, trendiness=0.5, price=50)
 </video> -->
 <iframe width="100%" height="464" src="https://www.youtube.com/embed/ClVXkLhdFwY" title="workshop demo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-In this example, we combine informal representations—such as a web page, an image, and a LaTeX formula—and enrich them with attributes while allowing some to remain fuzzy or dynamic, like <span class='inline-code'>.products</span>. The exact data format of these dynamic attributes isn't determined until runtime (in this case, it infers the column name based on <span class='inline-code'>df_own</span>). This approach demonstrates how semi-formal representations, like <span class='inline-code'>url</span> (informal) combined with <span class='inline-code'>.products</span> (formal), can be integrated into formal code syntax.
+In this example, we combine informal representations—such as a web page, an image, and a LaTeX formula—and enrich them with attributes while allowing some to remain fuzzy or dynamic, like `.products`. The exact data format of these dynamic attributes isn't determined until runtime (in this case, it infers the column name based on `df_own`). This approach demonstrates how semi-formal representations, like `url` (informal) combined with `.products` (formal), can be integrated into formal code syntax.
 
 Oh, and of course, Ryan brand's APS outperforms the competitor.
 
@@ -274,10 +277,12 @@ Ultimately, the semi-formal paradigm isn't about eliminating complexity; it's ab
 Lastly, I am deeply grateful to **Josh Pollock** and **Arvind Satyanarayan** for their thoughtful mentorship and guidance, and to **Caroline Berger** for her invaluable involvement in our discussions. Their collective input helped shape the ideas and prototypes presented here.
 
 ## Full Demo
-<iframe width="100%" height="464" src="https://www.youtube.com/embed/RGHMT0jJSMA" title="workshop demo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="100%" height="464" class="mb-10" src="https://www.youtube.com/embed/RGHMT0jJSMA" title="workshop demo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## References
 
-[^1]: J. Walny, S. Carpendale, N. Henry Riche, G. Venolia and P. Fawcett, "Visual Thinking In Action: Visualizations As Used On Whiteboards," in *IEEE Transactions on Visualization and Computer Graphics*, vol. 17, no. 12, pp. 2508-2517, Dec. 2011, doi: 10.1109/TVCG.2011.251.
+[^1]: J. Walny, S. Carpendale, N. Henry Riche, G. Venolia and P. Fawcett, "Visual Thinking In Action: Visualizations As Used On Whiteboards," in *IEEE Transactions on Visualization and Computer Graphics*, vol. 17, no. 12, pp. 2508-2517, Dec. 2011, https://doi.org/10.1109/TVCG.2011.251.
 
 [^2]: Mauro Cherubini, Gina Venolia, Rob DeLine, and Amy J. Ko. 2007. Let's go to the whiteboard: how and why software developers use drawings. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '07). Association for Computing Machinery, New York, NY, USA, 557–566. https://doi.org/10.1145/1240624.1240714
 

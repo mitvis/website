@@ -31,10 +31,12 @@ materials:
     margin-top: 1em;
   }
   #vega-lite-animated-editor-gallery-section img {
+    display: inline-block;
     cursor: pointer;
     height: 100px;
     border: 1px solid #898D8D;
-    margin-right: 5px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   #vega-lite-animated-editor-gallery-section img:hover {
     border: 1px solid #F0B323;
@@ -105,15 +107,15 @@ function onEditorLoad() {
       These reflections highlight the key motivating role of in-the-wild examples, and identify three central tradeoffs: the language design process, the types of animated transitions supported, and how the systems model keyframes.</p>
 
       <section id="vega-lite-animated-editor-gallery-section">
-        <img src="gifs/bar.gif" onclick={() => goToAnimation('bar')} />
-        <img src="gifs/birds.gif" onclick={() => goToAnimation('birds')} />
-        <img src="gifs/bump.gif" onclick={() => goToAnimation('bump')} />
-        <img src="gifs/connected.gif" onclick={() => goToAnimation('connected')} />
-        <img src="gifs/dunkin.gif" onclick={() => goToAnimation('dunkin')} />
-        <img src="gifs/gapminder.gif" onclick={() => goToAnimation('gapminder')} />
-        <img src="gifs/hop.gif" onclick={() => goToAnimation('hop')} />
-        <img src="gifs/overview.gif" onclick={() => goToAnimation('overview')} />
-        <img src="gifs/stocks.gif" onclick={() => goToAnimation('stocks')} />
+        <img class="not-prose" src="gifs/bar.gif" onclick={() => goToAnimation('bar')} />
+        <img class="not-prose" src="gifs/birds.gif" onclick={() => goToAnimation('birds')} />
+        <img class="not-prose" src="gifs/bump.gif" onclick={() => goToAnimation('bump')} />
+        <img class="not-prose" src="gifs/connected.gif" onclick={() => goToAnimation('connected')} />
+        <img class="not-prose" src="gifs/dunkin.gif" onclick={() => goToAnimation('dunkin')} />
+        <img class="not-prose" src="gifs/gapminder.gif" onclick={() => goToAnimation('gapminder')} />
+        <img class="not-prose" src="gifs/hop.gif" onclick={() => goToAnimation('hop')} />
+        <img class="not-prose" src="gifs/overview.gif" onclick={() => goToAnimation('overview')} />
+        <img class="not-prose" src="gifs/stocks.gif" onclick={() => goToAnimation('stocks')} />
         <div style="font-style: italic;">
           Click on an example to open the Animated Vega-Lite editor.
         </div>

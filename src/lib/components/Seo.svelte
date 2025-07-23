@@ -5,6 +5,7 @@
   const slug = $derived(page.params.slug);
   const pathname = $derived(page.url.pathname);
   const thumb = $derived(page.data?.thumb);
+  const date = $derived(page.data?.date);
 </script>
 
 <title>{seo.title}</title>
@@ -27,6 +28,8 @@
   <meta property="og:image" content={`https://vis.csail.mit.edu/imgs/thumbs/${slug}.png`} />
   <meta property="og:image:width" content="600" />
   <meta property="og:image:height" content="315" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content={date} />
 {:else}
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="https://vis.csail.mit.edu/imgs/logo.png" />

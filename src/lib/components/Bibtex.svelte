@@ -44,7 +44,7 @@
   author = &lbrace;{escape(authors)}&rbrace;,
   {venue.bibtex.venue} = &lbrace;{escape(venue.full)}&rbrace;,
   year = &lbrace;{displayYear}&rbrace;,
-  {#if pub.doi}doi = &lbrace;{pub.doi}&rbrace;,{/if}
-  url = &lbrace;https://vis.csail.mit.edu/pubs/{slug}&rbrace;
+  {#if pub.doi}doi = &lbrace;{pub.doi}&rbrace;,
+  {/if}url = &lbrace;https://vis.csail.mit.edu/pubs/{slug}&rbrace;
 &rbrace;</pre>
 </div>
