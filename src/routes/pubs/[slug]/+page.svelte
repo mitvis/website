@@ -3,7 +3,7 @@
   import { page } from '$app/state';
   import ArticlePub from '$lib/components/ArticlePub.svelte';
   import StubPub from '$lib/components/StubPub.svelte';
-  import { isMemberAuthor, seo, siteName } from '$lib/index.svelte';
+  import { isMemberAuthor } from '$lib/index.svelte';
 
   let { data }: PageProps = $props();
 
@@ -11,10 +11,6 @@
   let date = new Date(data.date);
   let html_available = (data.venue?.html === true || date >= new Date(data.venue?.html));  
   let displayYear = data.venueKey === 'vis-full' ? data.year + 1 : data.year;
-
-  $effect(() => {
-    seo.title = `${data.fullTitle} | ${siteName}`;
-  });
 </script>
 
 <svelte:head>

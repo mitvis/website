@@ -45,7 +45,7 @@
           <p class="prose prose-sm prose-stone-700 prose-a:font-normal prose-a:italic prose-a:no-underline prose-a:hover:underline mb-2">{@html theme.desc}</p>
 
           <a href={theme.video_url}>
-            <video muted loop playsinline class="w-full h-auto rounded-md border-1 border-zinc-200">
+            <video autoplay muted loop playsinline class="w-full h-auto rounded-md border-1 border-zinc-200">
               <source src={`/videos/themes/${theme.key}.mp4`} type="video/mp4">
             </video>
           </a>
