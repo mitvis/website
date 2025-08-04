@@ -3,6 +3,7 @@
   import FlexSearch from 'flexsearch';
   import {Masonry} from 'svelte-bricks';
   import Youtube from 'svelte-youtube-embed';
+  import { onMount } from 'svelte';
   
   import type { PageProps } from './$types';
   import { goto } from '$app/navigation';
@@ -14,21 +15,6 @@
   const index = new FlexSearch.Document({
     index: ['title', 'abstract', 'authors', 'venue'],
     tokenize: 'forward'
-  });
-
-  $effect(() => {
-    for (const pub of data.work) {
-      index.add({
-        id: pub.slug,
-        title: pub.title,
-        abstract: pub.abstract || '',
-        authors: pub.authors.map((author: any) => author.name).join(' '),
-        venue: pub.venue?.full || pub.venueKey || pub.venue,
-      });
-    }
-
-    seo.title = `Our Work | ${siteName}`;
-    seo.desc = missionStatement;
   });
 
   let query = $state('');
@@ -77,6 +63,12 @@
     }
   }
 
+  function clearFilters() {
+    query = '';
+    filters.themes = [];
+    filters.tags = [];
+  }
+
   function gotoPub(pub: Publication) {
     if (pub.type === 'video') {
       window.location.href = `https://youtu.be/${pub.youtube}`;
@@ -84,6 +76,49 @@
       goto(`/pubs/${pub.slug}`);
     }
   }
+
+  let initializedFromHash = $state(false);
+
+  function parseHash() { 
+    initializedFromHash = true;   
+    const hash = window.location.hash.substring(1);
+    if (!hash) return;
+
+    const params = new URLSearchParams(hash);
+    for (const [key, value] of params.entries()) {
+      filters[`${key}s`].push(value);
+    }
+  }
+
+  function updateHash() {
+    if (filters.themes.length || filters.tags.length) {
+      window.history.replaceState(null, '', `#${[...filters.themes.map(t => `theme=${t}`), ...filters.tags.map(t => `tag=${t}`)].join('&')}`);
+    } else {
+      // Remove hash completely
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }
+
+  $effect(() => {
+    for (const pub of data.work) {
+      index.add({
+        id: pub.slug,
+        title: pub.title,
+        abstract: pub.abstract || '',
+        authors: pub.authors.map((author: any) => author.name).join(' '),
+        venue: pub.venue?.full || pub.venueKey || pub.venue,
+      });
+    }
+
+    if (initializedFromHash) {
+      updateHash();
+    } else {
+      parseHash();
+    }
+
+    seo.title = `Our Work | ${siteName}`;
+    seo.desc = missionStatement;
+  });
 </script>
 
 <div class="block md:flex gap-2 border-b border-stone-200 pb-3 -mb-3">
@@ -97,11 +132,7 @@
     {#if query || filters.themes.length || filters.tags.length}
       <p class="text-xs text-stone-700 italic">
         Showing {pubs.length} of {data.work.length} items
-        <button onclick={() => {
-          query = '';
-          filters.themes = [];
-          filters.tags = [];
-        }} class="text-xs text-stone-400 cursor-pointer">(Clear)</button>
+        <button onclick={clearFilters} class="text-xs text-stone-400 cursor-pointer">(Clear)</button>
       </p>
     {/if}
   </div>
@@ -167,6 +198,7 @@
                     slot="thumbnail"                    
                     src={`/imgs/thumbs/${pub.slug}.png`}
                     alt={pub.fullTitle}
+                    loading="lazy"
                     class="w-full h-auto"
                   />
                 {/snippet}
@@ -174,7 +206,7 @@
             {:else}
               <a href={`/pubs/${pub.slug}`}>
                 <img src={`/imgs/thumbs/${pub.slug}.png`} 
-                alt={pub.fullTitle} class="w-full h-auto" />
+                alt={pub.fullTitle} loading="lazy" class="w-full h-auto" />
               </a>
             {/if}
           </div>

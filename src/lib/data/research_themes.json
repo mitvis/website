@@ -2,8 +2,7 @@
   {
     "key": "tools",
     "name": "Visualization Authoring Tools",
-    "desc": "We develop [languages](/pubs/#tag=language&tag=visualization-design) and [systems](/pubs/#tag=system&tag=visualization-design) to make it easy for anyone to create common and custom interactive visualizations.",
-    "url": "/pubs/#tag=visualization-design",
+    "desc": "We develop [languages](/research/#theme=tools&tag=language) and [systems](/research/#theme=tools&tag=system) to make it easy for anyone to create common and custom interactive visualizations.",
     "video_url": "/pubs/lyra2",
     "people": [
       "arvindsatya",
@@ -27,7 +26,6 @@
     "key": "interpretability",
     "name": "Interpretability & Alignment",
     "desc": "We design [metrics](/pubs/shared-interest) and [interfaces](/pubs/knnviz) for [visually analyzing](/pubs/embedding-comparator/) ML models and for discovering how they [align with human expectations](/pubs/abstraction-alignment).",
-    "url": "/pubs/#tag=machine-learning-interpretability",
     "video_url": "/pubs/embedding-comparator",
     "people": [
       "arvindsatya",
@@ -45,7 +43,6 @@
     "key": "accessibility",
     "name": "Accessible Data Representations",
     "desc": "[Working with blind collaborators](/pubs/sociotechnical-vis-access), we co-design non-visual data displays via [alt](/pubs/vis-text-model) [text](/pubs/vistext), [screen readers](/pubs/rich-screen-reader-vis-experiences), and [tactile graphics](/pubs/tactile-vega-lite).",
-    "url": "/pubs/#tag=accessibility",
     "video_url": "/pubs/rich-screen-reader-vis-experiences",
     "people": [
       "arvindsatya",
@@ -66,7 +63,6 @@
     "key": "sociocultural-design",
     "name": "Sociocultural Design",
     "desc": "We study how visualizations and ML models function as social artifacts: signaling identities, [shaping norms](/pubs/cultural-interpretability), and [propagating misinformation](/pubs/viral-visualizations).",
-    "url": "/pubs/#tag=sociocultural-design",
     "video_url": "/pubs/viral-visualizations",
     "people": [
       "arvindsatya",
@@ -86,7 +82,6 @@
     "key": "convivial-interaction",
     "name": "Cognitively Convivial Interaction",
     "desc": "We prototype [novel interaction paradigms](/pubs/towards-convivial-info-space) that fluidly mix [structures](/pubs/between-formal-informal) and [semantics](/pubs/semi-formal-design-space) to offer more [malleable experiences](/pubs/varv).",
-    "url": "/pubs/#tag=convivial-interaction",
     "video_url": "/pubs/varv",
     "people": [
       "arvindsatya",

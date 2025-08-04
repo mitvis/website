@@ -41,7 +41,9 @@
       <div class="flex gap-4 bg-amber-500/10 border-1 border-amber-200 rounded-lg mb-7 p-4">
 
         <div class="w-1/2">
-          <h2 class="text-lg font-black text-amber-600">{theme.name}</h2>
+          <a href={`/research/#theme=${theme.key}`} class="hover:underline hover:decoration-amber-600">
+            <h2 class="text-lg font-black text-amber-600">{theme.name}</h2>
+          </a>
           <p class="prose prose-sm prose-stone-700 prose-a:font-normal prose-a:italic prose-a:no-underline prose-a:hover:underline mb-2">{@html theme.desc}</p>
 
           <a href={theme.video_url}>
