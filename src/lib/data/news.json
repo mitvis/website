@@ -1,5 +1,9 @@
 [
   {
+    "date": "2025-07-01",
+    "desc": "Arvind was promoted to Associate Professor (with tenure!)."
+  },
+  {
     "date": "2025-04-25",
     "desc": "It's a busy spring with a paper on [Cultural Interpretability](/pubs/cultural-interpretability/); [Pluto](/pubs/pluto/) at IUI; [Abstraction Alignment](/pubs/abstraction-alignment/) and [Tactile Vega-Lite](/pubs/tactile-vega-lite) at CHI; and an update on [semi-formal programming](/pubs/between-formal-informal/)."
   },

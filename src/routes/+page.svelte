@@ -119,7 +119,7 @@
       <div class="absolute inset-0 h-[200px] overflow-y-auto grid grid-cols-2 md:grid-cols-1 gap-0.5">
         {#each alumni as person}
           <a href={person.url} class="flex items-center mb-2 group bg-lime-50 border-1 border-lime-200 hover:border-lime-300 rounded-xl hover:shadow-sm px-2 py-1">
-            <img src={`/imgs/people/${person.kerberos}.jpg`} alt={person.name} 
+            <img src={`/imgs/people/${person.kerberos}.jpg`} alt={person.name} loading="lazy"
               class="w-1/6 rounded-xl object-scale-down mr-2 opacity-80 group-hover:opacity-100" />
 
             <div>
