@@ -3,26 +3,32 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - sveltekit
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          # ruby-version: 2.7 # Not needed with a .ruby-version file
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      - run: bundle exec jekyll build
-      - uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.REMOTE_HOST }}
-          username: ${{ secrets.REMOTE_USER }}
-          password: ${{ secrets.REMOTE_PASSWORD }}
-          proxy_host: ${{ secrets.JUMP_HOST }}
-          proxy_username: ${{ secrets.REMOTE_USER }}
-          proxy_password: ${{ secrets.REMOTE_PASSWORD }}
-          source: "_site/*"
-          target: "mitviswww/"
-          strip_components: 1
+          node-version: 24
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: csail-build
+          FOLDER: build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build: ({sha}) {msg}"
