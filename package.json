@@ -44,8 +44,10 @@
 		"prettier-plugin-tailwindcss": "^0.6.11",
 		"rehype-katex-svelte": "^1.2.0",
 		"rehype-slug": "^6.0.0",
+		"remark": "^15.0.1",
 		"remark-footnotes": "^2.0.0",
 		"remark-math": "^3.0.1",
+		"remark-preview": "^1.0.3",
 		"remark-table-of-contents": "^2.1.0",
 		"svelte": "^5.0.0",
 		"svelte-bricks": "^0.3.2",
@@ -54,6 +56,7 @@
 		"tailwindcss": "^4.0.0",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^8.20.0",
+		"unist-util-visit": "^5.0.0",
 		"vite": "^6.2.6",
 		"vite-plugin-devtools-json": "^0.3.0",
 		"vitest": "^3.2.3"

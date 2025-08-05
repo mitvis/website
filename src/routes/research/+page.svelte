@@ -3,12 +3,9 @@
   import FlexSearch from 'flexsearch';
   import {Masonry} from 'svelte-bricks';
   import Youtube from 'svelte-youtube-embed';
-  import { onMount } from 'svelte';
   
   import type { PageProps } from './$types';
   import { goto } from '$app/navigation';
-
-  import { seo, missionStatement, siteName } from '$lib/index.svelte';
 
   let { data }: PageProps = $props();
 
@@ -104,9 +101,9 @@
       index.add({
         id: pub.slug,
         title: pub.title,
-        abstract: pub.abstract || '',
+        abstract: pub.abstract ?? '',
         authors: pub.authors.map((author: any) => author.name).join(' '),
-        venue: pub.venue?.full || pub.venueKey || pub.venue,
+        venue: pub.venue?.full ?? pub.venueKey ?? pub.venue,
       });
     }
 
@@ -115,9 +112,6 @@
     } else {
       parseHash();
     }
-
-    seo.title = `Our Work | ${siteName}`;
-    seo.desc = missionStatement;
   });
 </script>
 
@@ -234,7 +228,7 @@
             {/each}
           </p>
 
-          <div class="hidden" bind:textContent={pub.abstract} contenteditable="true">
+          <div class="hidden" contenteditable="true">
             {#if pub.stub !== false && pub.type !== 'video'}
               <pub.content />
             {/if}

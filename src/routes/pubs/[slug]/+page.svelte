@@ -3,7 +3,7 @@
   import { page } from '$app/state';
   import ArticlePub from '$lib/components/ArticlePub.svelte';
   import StubPub from '$lib/components/StubPub.svelte';
-  import { isMemberAuthor } from '$lib/index.svelte';
+  import { isMemberAuthor } from '$lib';
 
   let { data }: PageProps = $props();
 

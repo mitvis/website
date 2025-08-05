@@ -1,6 +1,6 @@
 <script lang="ts">  
   import { page } from '$app/state';
-  import { seo, siteName } from '$lib/index.svelte';
+  import { seo, siteName } from '$lib';
 
   const slug = $derived(page.params.slug);
   const pathname = $derived(page.url.pathname);

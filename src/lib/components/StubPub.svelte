@@ -1,22 +1,15 @@
 <script lang="ts">
   import PubVideo from '$lib/components/PubVideo.svelte';
   import Bibtex from '$lib/components/Bibtex.svelte';
-  import { seo } from '$lib/index.svelte';
 
   let { data, displayYear, slug } = $props();
-
-  let abstract: string;
-
-  $effect(() => {
-    seo.desc = abstract || '';
-  });
 </script>
 
 <div class="md:flex gap-10">
   <div class={`w-full ${data.teaser || data.videos ? 'md:w-1/2' : 'md:w-3/5'}`}>
     <h2 class="text-lg font-bold text-stone-700">Abstract</h2>
   
-    <div class="prose prose-stone-700 mb-4" bind:textContent={abstract} contenteditable="false">
+    <div class="prose prose-stone-700 mb-4" contenteditable="false">
       <data.content />
     </div>
 

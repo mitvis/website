@@ -7,10 +7,10 @@ import themes from '$lib/data/research_themes.json';
 export const siteName = 'MIT Visualization Group';
 export const missionStatement = 'We use visualization as a petri dish to study intelligence augmentation: how can computation help amplify our cognition and creativity, while respecting our agency?';
 
-export const seo = $state({
+export const seo = {
   title: siteName,
   desc: missionStatement
-});
+};
 
 export function isMemberAuthor(a: Author): a is MemberAuthor {
 	return !!(a as MemberAuthor).key;

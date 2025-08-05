@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import type { PageLoad } from './$types';
-import { getPubs, getThemes, sortByDate } from '$lib/index.svelte';
+import { getPubs, getThemes, missionStatement, seo, siteName, sortByDate } from '$lib';
 import people from '$lib/data/people.json';
 import tags from '$lib/data/tags.json';
 import videosData from '$lib/data/videos.json';
@@ -31,6 +31,9 @@ export const load: PageLoad = async () => {
   }));
 
   const work = [...pubs, ...videos].sort(sortByDate);
+
+  seo.title = `Our Work | ${siteName}`;
+  seo.desc = missionStatement;
 
   return { 
     work, 

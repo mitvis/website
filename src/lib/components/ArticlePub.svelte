@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import PubVideo from '$lib/components/PubVideo.svelte';
   import Bibtex from '$lib/components/Bibtex.svelte';
-  import { seo, siteName } from '$lib/index.svelte';
+  import { seo, siteName } from '$lib';
   let { data, displayYear, slug } = $props();
 
   let abstract: string;

@@ -3,10 +3,13 @@ import { compile } from 'mdsvex';
 
 import news from '$lib/data/news.json';
 import people from '$lib/data/people.json';
-import { getThemesWithPubs, missionStatement } from '$lib/index.svelte';
+import { getThemesWithPubs, missionStatement, seo, siteName } from '$lib';
 
 export const load: PageLoad = async () => {
   const themes = await getThemesWithPubs();
+
+  seo.title = siteName;
+  seo.desc = missionStatement;
 
   return {
     seo: {

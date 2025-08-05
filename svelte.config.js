@@ -6,13 +6,19 @@ import remarkMath from 'remark-math';
 import { remarkTableOfContents } from 'remark-table-of-contents';
 import rehypeKatex from 'rehype-katex-svelte';
 import rehypeSlug from 'rehype-slug';
+import preview, {textFormatter} from 'remark-preview';
 
 const config = {
 	preprocess: [
 		vitePreprocess(), 
 		mdsvex({ 
 			extensions: ['.md'], 
-			remarkPlugins: [remarkFootnotes, remarkMath, remarkTableOfContents] ,
+			remarkPlugins: [
+				remarkFootnotes, 
+				remarkMath, 
+				remarkTableOfContents,
+				preview(textFormatter({ length: 2000, maxBlocks: 1}), {attribute: 'abstract'})
+			] ,
 			rehypePlugins: [rehypeKatex, rehypeSlug]
 		})
 	],
