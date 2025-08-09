@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import _ from 'lodash';
   import FlexSearch from 'flexsearch';
   import {Masonry} from 'svelte-bricks';
@@ -24,8 +25,8 @@
     let pubs = data.work;
     if (query) {
       const results = index.search(query);
-      const resultSlugs = [...new Set(results.map(r => r.result).flat())];
-      pubs = pubs.filter(pub => resultSlugs.includes(pub.slug));
+      const resultSlugs = new Set(results.map(r => r.result).flat());
+      pubs = pubs.filter(pub => resultSlugs.has(pub.slug));
     }
 
     if (filters.themes.length) pubs = pubs.filter(pub => filters.themes.every(theme => pub.themes?.includes(theme)));
@@ -51,6 +52,12 @@
 
     return counts;
   });
+
+  let timer: NodeJS.Timeout;
+  function debounceQuery(q: string) {
+    clearTimeout(timer);
+    timer = setTimeout(() => (query = q), 150);
+  }
 
   function toggleFilter(type: 'themes' | 'tags', key: string) {
     if (filters[type].includes(key)) {
@@ -97,6 +104,10 @@
   }
 
   $effect(() => {
+    if (initializedFromHash) updateHash();
+  });
+
+  onMount(() => {
     for (const pub of data.work) {
       index.add({
         id: pub.slug,
@@ -107,11 +118,7 @@
       });
     }
 
-    if (initializedFromHash) {
-      updateHash();
-    } else {
-      parseHash();
-    }
+    parseHash();
   });
 </script>
 
@@ -119,7 +126,8 @@
   <div class="w-full md:w-1/3 pr-5">
     <h3 class="text-2xl font-black text-stone-700">Our Work</h3>
 
-    <input type="search" bind:value={query} 
+    <input type="search"
+          oninput={(e) => debounceQuery(e.target.value)} 
           placeholder="Search title, abstract, or authors..."       
           class="my-2 block text-xs font-sans w-full rounded-md border-gray-300 shadow-xs focus:border-amber-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50" />
 
