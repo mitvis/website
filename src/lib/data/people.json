@@ -23,7 +23,9 @@
   "amyfox": {
     "name": "Amy Fox",
     "url": "https://madebyafox.github.io",
-    "title": "Postdoctoral Researcher"
+    "title": "Postdoctoral Researcher",
+    "alumni": true,
+    "next": "Faculty at UCSD CogSci"
   },
   "ahorvath": {
     "name": "Amber Horvath",
@@ -40,7 +42,9 @@
   "jzong": {
     "name": "Jonathan Zong",
     "url": "http://jonathanzong.com/",
-    "title": "PhD Researcher"
+    "title": "PhD Researcher",
+    "alumni": true,
+    "next": "Faculty at CU Boulder InfoSci"
   },
   "crystall": {
     "name": "Crystal Lee",
@@ -74,6 +78,11 @@
   "ryanyen2": {
     "name": "Ryan Yen",
     "url": "https://ryanyen2.github.io/",
+    "title": "PhD Researcher"
+  },
+  "ticha": {
+    "name": "Ticha Sethapakdi",
+    "url": "https://www.tichamelody.com/",
     "title": "PhD Researcher"
   },
   "jonsh": {
@@ -139,7 +148,8 @@
   },
   "sjzheng": {
     "name": "Sophia Zheng",
-    "title": "MEng Researcher"
+    "title": "MEng Researcher",
+    "alumni": true
   },
   "mattblanco": {
     "name": "Matt Blanco",
@@ -149,7 +159,8 @@
   },
   "meic1212": {
     "name": "Catherine Mei",
-    "title": "MEng Researcher"
+    "title": "MEng Researcher",
+    "alumni": true
   },
   "annieb22": {
     "name": "Annie Bryan",
@@ -219,7 +230,8 @@
   },
   "ljewel": {
     "name": "Lydia Patterson",
-    "title": "MEng Researcher"
+    "title": "MEng Researcher",
+    "alumni": true
   },
   "jwjang": {
     "name": "JiWoong (Joon) Jang",
@@ -267,10 +279,21 @@
     "url": "https://carolineberger.github.io/",
     "affiliation": "Aarhus University"
   },
+  "mattbl": {
+    "name": "Matt Beaudouin-Lafon",
+    "title": "Visiting PhD Researcher",
+    "url": "https://frenchmatt.com/"
+  },
+  "kamibrumi": {
+    "name": "Camelia Brumar",
+    "title": "Visiting PhD Researcher",
+    "url": "https://kamibrumi.github.io/"
+  },
   "hajas": {
     "name": "Daniel Hajas",
     "title": "Visiting Scientist",
     "affiliation": "University College London",
-    "url": "https://profiles.ucl.ac.uk/87472-daniel-hajas"
+    "url": "https://profiles.ucl.ac.uk/87472-daniel-hajas",
+    "alumni": true
   }
 } 

@@ -18,8 +18,8 @@
   const members = _.shuffle(people.filter((person) => person.alumni !== true));
 
   const alumni = [
-    ...people.filter((person) => person.alumni === true && (person.title.includes('PhD') || person.title.includes('Postdoc') || person.title.includes('Scientist'))),
-    ...people.filter((person) => person.alumni === true && !(person.title.includes('PhD') || person.title.includes('Postdoc') || person.title.includes('Scientist'))),
+    ..._.shuffle(people.filter((person) => person.alumni === true && (person.title.includes('PhD') || person.title.includes('Postdoc') || person.title.includes('Scientist')))),
+    ..._.shuffle(people.filter((person) => person.alumni === true && !(person.title.includes('PhD') || person.title.includes('Postdoc') || person.title.includes('Scientist')))),
   ];
 </script>
 
