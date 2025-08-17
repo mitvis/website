@@ -29,9 +29,9 @@ videos:
     - name: OpenVis 2016 Talk
       key: Y8Fp9z-9DWc
 materials:
-  - name: Project
+  - name: Website
     url: https://vega.github.io/vega
-    type: cube
+    type: desktop
   - name: Code
     url: https://github.com/vega/vega
     type: code

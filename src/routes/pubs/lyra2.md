@@ -19,7 +19,7 @@ videos:
 materials:
   - name: Live Demo
     url: https://vega.github.io/lyra
-    type: cube
+    type: desktop
   - name: Code
     url: https://github.com/vega/lyra
     type: code

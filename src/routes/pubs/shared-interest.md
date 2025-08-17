@@ -25,7 +25,7 @@ teaser: Examples of correctly and incorrectly classified images identified by sh
 materials:
   - name: Project Page
     url: http://shared-interest.csail.mit.edu/
-    type: folder-open
+    type: desktop
   - name: Computer Vision Demo
     url: http://shared-interest.csail.mit.edu/computer-vision
     type: cube

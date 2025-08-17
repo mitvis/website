@@ -21,7 +21,7 @@ teaser: Abstraction alignment measures human-AI alignment by comparing model beh
 materials:
   - name: Demo
     url: https://vis.mit.edu/abstraction-alignment/
-    type: cube
+    type: desktop
   - name: Code
     url: https://github.com/mitvis/abstraction-alignment
     type: code

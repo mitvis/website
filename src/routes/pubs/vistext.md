@@ -19,7 +19,7 @@ award: Outstanding Paper Award
 materials:
   - name: Dataset
     url: https://vis.csail.mit.edu/vistext/
-    type: cube
+    type: file-archive
   - name: Code
     url: https://github.com/mitvis/vistext
     type: code

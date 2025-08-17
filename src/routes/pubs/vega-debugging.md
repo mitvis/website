@@ -1,6 +1,5 @@
 ---
 title: Visual Debugging Techniques for Reactive Data Visualization
-featTitle: Visual Debugging Techniques
 authors:
   - name: Jane Hoffswell
     url: https://homes.cs.washington.edu/~jhoffs/

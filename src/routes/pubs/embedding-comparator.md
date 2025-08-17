@@ -24,7 +24,7 @@ tags:
 materials:
   - name: Live Demo
     url: http://vis.csail.mit.edu/embedding-comparator/
-    type: cube
+    type: desktop
   - name: Code
     url: https://github.com/mitvis/embedding-comparator
     type: code

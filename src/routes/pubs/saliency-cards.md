@@ -21,7 +21,7 @@ teaser: The saliency card for Grad-CAM. Saliency cards describe a saliency metho
 materials:
   - name: Saliency Card Repository
     url: https://github.com/mitvis/saliency-cards
-    type: cube
+    type: code
 videos:
   talk: T7PtxyqRADE
 

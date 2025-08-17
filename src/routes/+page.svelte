@@ -9,11 +9,7 @@
     ...person,
     firstname: person.name.split(' ')[0],
     lastname: person.name.split(' ')[1]
-  })).sort((a, b) => {
-    const nameA = a.lastname.toLowerCase();
-    const nameB = b.lastname.toLowerCase();
-    return nameA.localeCompare(nameB);
-  });
+  }));
 
   const members = _.shuffle(people.filter((person) => person.alumni !== true));
 
@@ -66,6 +62,9 @@
 
                   <p class="text-xs text-stone-400">
                     {pub.venue?.short} {pub.year}
+                    {#if pub.award}
+                    &middot;  <span class="text-violet-800 font-semibold">{pub.award}</span>
+                    {/if}
                   </p>
                 </a>
               {/each}

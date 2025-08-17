@@ -9,7 +9,7 @@
 
   const slug = $derived(page.params.slug);
   let date = new Date(data.date);
-  let html_available = (data.venue?.html === true || date >= new Date(data.venue?.html));  
+  let html_available = data.doi && (data.venue?.html === true || date >= new Date(data.venue?.html));  
   let displayYear = data.venueKey === 'vis-full' ? data.year + 1 : data.year;
 </script>
 

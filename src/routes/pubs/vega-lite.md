@@ -32,9 +32,9 @@ videos:
     - name: OpenVis 2017 Talk
       key: 9uaHRWj04D4
 materials:
-  - name: Project
+  - name: Website
     url: https://vega.github.io/vega-lite
-    type: cube
+    type: desktop
   - name: Code
     url: https://github.com/vega/vega-lite
     type: code

@@ -33,7 +33,7 @@ materials:
     type: file-archive
   - name: Olli (Open Source Library)
     url: https://mitvis.github.io/olli/
-    type: cube
+    type: deskto
 ---
 
 <article>

@@ -16,9 +16,9 @@ materials:
   - name: Poster
     url: /pubs/olli/poster.pdf
     type: file
-  - name: Olli website
+  - name: Olli Website
     url: https://mitvis.github.io/olli/
-    type: cube
+    type: desktop
   - name: Code
     url: https://github.com/mitvis/olli
     type: code

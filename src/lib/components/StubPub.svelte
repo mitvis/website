@@ -20,7 +20,7 @@
   <div class={`w-full mt-2 ${data.teaser || data.videos ? 'md:w-1/2' : 'md:w-2/5'} md:mt-0`}>
     {#if data.teaser}
       <div class="w-full p-2 border-1 border-stone-100 shadow-md rounded-md">
-        <img src={`/imgs/teasers/${slug}.png`} alt={data.fullTitle} />
+        <a href={`/imgs/teasers/${slug}.png`}><img src={`/imgs/teasers/${slug}.png`} alt={data.fullTitle} /></a>
         <p class="text-sm text-stone-400 mt-2">
           {data.teaser}
         </p>

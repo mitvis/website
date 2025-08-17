@@ -236,5 +236,15 @@
     },
     "html": true,
     "paywall": false
+  },
+  "assets": {
+    "short": "ASSETS",
+    "full": "ACM Computers and Accessibility (ASSETS)",
+    "bibtex": {
+      "type": "inproceedings",
+      "venue": "booktitle"
+    },
+    "html": "2023-03-01",
+    "paywall": false
   }
 }

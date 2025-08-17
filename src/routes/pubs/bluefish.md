@@ -26,9 +26,9 @@ videos:
   figure: DvLdAimGXNU
   talk: 27v-A18kiGw
 materials:
-  - name: Project
+  - name: Website
     url: https://bluefishjs.org
-    type: cube
+    type: desktop
   - name: Code
     url: https://github.com/bluefishjs/bluefish
     type: code
