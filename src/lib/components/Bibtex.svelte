@@ -40,7 +40,7 @@
 
 <div class="text-xs bg-stone-100 rounded-md p-2 mb-4 overflow-x-auto">
   <pre bind:this={bibtex}>@{venue.bibtex.type}&lbrace;{displayYear}-{slug}
-  title = &lbrace;&lbrace;{escape(pub.title)}&rbrace;&rbrace;,
+  title = &lbrace;&lbrace;{escape(pub.fullTitle)}&rbrace;&rbrace;,
   author = &lbrace;{escape(authors)}&rbrace;,
   {venue.bibtex.venue} = &lbrace;{escape(venue.full)}&rbrace;,
   year = &lbrace;{displayYear}&rbrace;,
