@@ -20,7 +20,7 @@
   {
     "key": "sociocultural-design",
     "name": "Sociocultural Design",
-    "desc": "We study how visualizations and ML models function as social artifacts: signaling identities, [shaping norms](/pubs/cultural-interpretability), and [propagating misinformation](/pubs/viral-visualizations).",
+    "desc": "We study how visualizations and ML models function as social artifacts: [signaling](/pubs/vibes/) [identities](/pubs/quantifying-vibes), [shaping norms](/pubs/cultural-interpretability), and [propagating misinformation](/pubs/viral-visualizations).",
     "video_url": "/pubs/viral-visualizations"
   },
   {
