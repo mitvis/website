@@ -1,4 +1,4 @@
-import{c as Z,g as K}from"./BnBT8HyA.js";function Q(S,z){return z.forEach(function(l){l&&typeof l!="string"&&!Array.isArray(l)&&Object.keys(l).forEach(function(u){if(u!=="default"&&!(u in S)){var c=Object.getOwnPropertyDescriptor(l,u);Object.defineProperty(S,u,c.get?c:{enumerable:!0,get:function(){return l[u]}})}})}),Object.freeze(S)}var W={exports:{}};(function(S){var z=typeof window<"u"?window:typeof WorkerGlobalScope<"u"&&self instanceof WorkerGlobalScope?self:{};/**
+import{c as Z,g as K}from"./BmFnYshV.js";function Q(S,z){return z.forEach(function(l){l&&typeof l!="string"&&!Array.isArray(l)&&Object.keys(l).forEach(function(u){if(u!=="default"&&!(u in S)){var c=Object.getOwnPropertyDescriptor(l,u);Object.defineProperty(S,u,c.get?c:{enumerable:!0,get:function(){return l[u]}})}})}),Object.freeze(S)}var W={exports:{}};(function(S){var z=typeof window<"u"?window:typeof WorkerGlobalScope<"u"&&self instanceof WorkerGlobalScope?self:{};/**
  * Prism: Lightweight, robust, elegant syntax highlighting
  *
  * @license MIT <https://opensource.org/licenses/MIT>
