@@ -49,7 +49,7 @@
 		"remark-math": "^3.0.1",
 		"remark-preview": "^1.0.3",
 		"remark-table-of-contents": "^2.1.0",
-		"svelte": "^5.0.0",
+		"svelte": "^5.53.0",
 		"svelte-bricks": "^0.3.2",
 		"svelte-check": "^4.0.0",
 		"svelte-youtube-embed": "^0.4.4",
