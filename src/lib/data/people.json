@@ -80,9 +80,9 @@
     "url": "https://ryanyen2.github.io/",
     "title": "PhD Researcher"
   },
-  "ticha": {
-    "name": "Ticha Sethapakdi",
-    "url": "https://www.tichamelody.com/",
+  "helenagv": {
+    "name": "Helena Vasconcelos",
+    "url": "https://helenavasc.com/",
     "title": "PhD Researcher"
   },
   "jonsh": {
@@ -259,19 +259,16 @@
     "affiliation": "IIT Kharagpur",
     "alumni": true
   },
-  "helenagv": {
-    "name": "Helena Vasconcelos",
-    "url": "https://helenavasc.com/",
-    "title": "Research Intern",
-    "affiliation": "Stanford University",
-    "alumni": true,
-    "next": "PhD Student at Harvard CS"
-  },
   "peck": {
     "name": "Evan Peck",
     "title": "Visiting Scientist",
     "url": "http://www.eg.bucknell.edu/~emp017",
     "alumni": true
+  },
+  "ticha": {
+    "name": "Ticha Sethapakdi",
+    "url": "https://www.tichamelody.com/",
+    "title": "Visiting PhD Researcher"
   },
   "berger": {
     "name": "Caroline Berger",
@@ -299,7 +296,8 @@
   "zdesimone": {
     "name": "Zoe De Simone",
     "url": "https://zoedesimone.github.io//",
-    "title": "PhD Researcher"
+    "title": "PhD Researcher",
+    "alumni": true
   },
   "arnavv": {
     "name": "Arnav Verma",

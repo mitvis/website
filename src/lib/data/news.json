@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-05-14",
+    "desc": "Huge congratulations to [Dr. Angie Boggust](https://angieboggust.com) for a [masterful defense](https://x.com/mitvis/status/2054993532549468562) of her thesis on \"Reconciling AI Representations and User Mental Models\""
+  },
+  {
+    "date": "2026-04-22",
+    "desc": "Two papers this spring: Angie's [Semantic Regexes](/pubs/semantic-regexes) will appear at ICLR, and Matt's [Belidor](/pubs/belidor/) will appear at CHI."
+  },
+  {
     "date": "2025-08-15",
     "desc": "It's going to be a jam-packed Fall with [Benthic](/pubs/benthic/) at ASSETS, [FabObscura](/pubs/fabobscura/) at UIST, and [GoFish](/pubs/gofish/), [Visualization Vibes](/pubs/vibes/), and (honorable-mention-winning!) [Quantifying Visualization Vibes](/pubs/quantifying-vibes/) at VIS!!"
   },

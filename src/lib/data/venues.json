@@ -246,5 +246,13 @@
     },
     "html": "2023-03-01",
     "paywall": false
+  },
+  "iclr": {
+    "short": "ICLR",
+    "full": "International Conference on Learning Representations",
+    "bibtex": {
+      "type": "inproceedings",
+      "venue": "booktitle"
+    }
   }
 }
