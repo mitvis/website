@@ -38,7 +38,7 @@
     <a href="/" class={path === '/' ? 'font-bold underline underline-offset-4 decoration-amber-500' : 'hover:text-zinc-400'}>Home</a>
     <span class="hidden md:inline">&middot;</span>
     <a href="/research" class={path.includes('/pubs') || path.includes('/research') ? 'font-bold underline underline-offset-4 decoration-amber-500' : 'hover:text-zinc-400'}>
-      <span class="hidden md:inline">Our&nbsp;</span>Work
+      Papers<span class="hidden md:inline">&nbsp;+ Talks</span>
     </a>
   </nav>
 </div>
