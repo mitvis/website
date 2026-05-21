@@ -274,7 +274,8 @@
     "name": "Caroline Berger",
     "title": "Visiting PhD Researcher",
     "url": "https://carolineberger.github.io/",
-    "affiliation": "Aarhus University"
+    "affiliation": "Aarhus University",
+    "alumni": true
   },
   "mattbl": {
     "name": "Matt Beaudouin-Lafon",
