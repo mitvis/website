@@ -6,7 +6,8 @@
   import Youtube from 'svelte-youtube-embed';
   
   import type { PageProps } from './$types';
-  import { goto } from '$app/navigation';
+  import { goto, pushState } from '$app/navigation';
+  import { page } from '$app/state';
 
   let { data }: PageProps = $props();
 
@@ -65,12 +66,14 @@
     } else {
       filters[type].push(key);
     }
+    syncHistory();
   }
 
   function clearFilters() {
     query = '';
     filters.themes = [];
     filters.tags = [];
+    syncHistory();
   }
 
   function gotoPub(pub: Publication) {
@@ -81,30 +84,36 @@
     }
   }
 
-  let initializedFromHash = $state(false);
-
-  function parseHash() { 
-    initializedFromHash = true;   
-    const hash = window.location.hash.substring(1);
+  function parseHash() {
+    filters.themes = [];
+    filters.tags = [];
+    const hash = location.hash.slice(1);
     if (!hash) return;
 
-    const params = new URLSearchParams(hash);
-    for (const [key, value] of params.entries()) {
+    for (const [key, value] of new URLSearchParams(hash)) {
       filters[`${key}s`].push(value);
     }
   }
 
-  function updateHash() {
-    if (filters.themes.length || filters.tags.length) {
-      window.history.replaceState(null, '', `#${[...filters.themes.map(t => `theme=${t}`), ...filters.tags.map(t => `tag=${t}`)].join('&')}`);
-    } else {
-      // Remove hash completely
-      window.history.replaceState(null, '', window.location.pathname + window.location.search);
-    }
+  function syncHistory() {
+    const parts = [
+      ...filters.themes.map((t) => `theme=${t}`),
+      ...filters.tags.map((t) => `tag=${t}`),
+    ];
+    const hash = parts.length ? `#${parts.join('&')}` : '';
+    const url = page.url.pathname + page.url.search + hash;
+    pushState(url, {
+      researchFilters: { themes: [...filters.themes], tags: [...filters.tags] },
+    });
   }
 
+  // Restore filters on back/forward (syncHistory is not called here)
   $effect(() => {
-    if (initializedFromHash) updateHash();
+    const rf = page.state.researchFilters;
+    if (!rf) return;
+    if (_.isEqual(rf.themes, filters.themes) && _.isEqual(rf.tags, filters.tags)) return;
+    filters.themes = rf.themes;
+    filters.tags = rf.tags;
   });
 
   onMount(() => {
@@ -118,7 +127,19 @@
       });
     }
 
-    parseHash();
+    if (page.state.researchFilters) {
+      filters.themes = page.state.researchFilters.themes;
+      filters.tags = page.state.researchFilters.tags;
+    } else {
+      parseHash();
+    }
+
+    // Initial landing has no researchFilters in history; restore from hash on back
+    const onPopState = () => {
+      if (!page.state.researchFilters) parseHash();
+    };
+    addEventListener('popstate', onPopState);
+    return () => removeEventListener('popstate', onPopState);
   });
 </script>
 
@@ -214,7 +235,7 @@
           </div>
         {/if}
         <div class="group" role="button" tabindex="0" onclick={() => gotoPub(pub)} onkeydown={(e) => e.key === 'Enter' || e.key === ' ' ? gotoPub(pub) : null}>
-          <a href={pub.type === 'video' ? `https://youtu.be/${pub.youtube}` : `/pubs/${pub.slug}`} class="block">
+          <a href={pub.type === 'video' ? `https://youtu.be/${pub.youtube}` : `/pubs/${pub.slug}`} onclick={(e) => e.stopPropagation()} class="block">
             <h4 class="text-md font-bold {pub.award ? 'text-violet-800' : 'text-amber-700'}">
               {#if pub.award}
                 <i class="fas fa-award mr-1"></i>
