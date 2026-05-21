@@ -5,7 +5,12 @@ declare global {
 		// interface Error {}
 		// interface Locals {}
 		// interface PageData {}
-		// interface PageState {}
+		interface PageState {
+			researchFilters?: {
+				themes: string[];
+				tags: string[];
+			};
+		}
 		// interface Platform {}
 	}
 
