@@ -143,7 +143,7 @@
     <div class="w-1/2">
       <h4 class="text-sm font-bold text-stone-700 mb-1">Themes</h4>
 
-      {#each data.themes as theme}
+      {#each data.themes as theme (theme.key)}
         <button onclick={() => toggleFilter('themes', theme.key)} 
           class="block w-auto text-xs text-stone-700 text-left cursor-pointer rounded-xl border-1 {filters.themes.includes(theme.key) ? 'bg-lime-100 border-lime-600/50' : 'bg-white border-stone-200'} hover:bg-stone-200/75 hover:border-stone-300 px-2 py-1 mr-2 mb-1 transition-all duration-200">
           {theme.name} 
@@ -155,7 +155,7 @@
     <div class="w-1/2">
       <h4 class="text-sm font-bold text-stone-700 mb-1">Tags</h4>
 
-      {#each data.tags as tag}
+      {#each data.tags as tag (tag)}
         <button onclick={() => toggleFilter('tags', tag)} 
           class="inline-block text-xs text-stone-700 text-left capitalize cursor-pointer rounded-xl border-1 {filters.tags.includes(tag) ? 'bg-lime-100 border-lime-600/50' : 'bg-white border-stone-200'} hover:bg-stone-200/75 hover:border-stone-300 px-2 py-1 mr-2 mb-1 transition-all duration-200">
           {tag}
@@ -166,7 +166,7 @@
   </div>
 </div>
 
-{#each years as year, i}
+{#each years as year (year)}
   <h3 class="text-xl font-black text-stone-700 mb-4 mt-10">{year}</h3>
 
   <Masonry 
@@ -231,7 +231,7 @@
           {/if}
 
           <p class="text-sm text-stone-600 my-2">
-            {#each pub.authors as author, i}
+            {#each pub.authors as author, i (i)}
                 {author.name}{#if author.equal}*{/if}{#if i < pub.authors.length - 1},&nbsp;{/if}
             {/each}
           </p>
@@ -252,12 +252,12 @@
 
           {#if pub.type !== 'video'}
             <p>
-              <a href={`/pubs/${pub.slug}.pdf`} data-sveltekit-reload class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label="PDF Paper">
+              <a href={`/pubs/${pub.slug}.pdf`} onclick={(e) => e.stopPropagation()} data-sveltekit-reload class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label="PDF Paper">
                 <i class="far fa-file-pdf"></i> 
               </a>
 
-              {#each pub.materials || [] as material}
-                <a href={material.url} class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label={material.name}>
+              {#each pub.materials || [] as material, i (i)}
+                <a href={material.url} onclick={(e) => e.stopPropagation()} class="text-md text-stone-400 {pub.award ? 'hover:text-violet-800' : 'hover:text-amber-700'} mr-2" aria-label={material.name}>
                   <i class="fas fa-{material.type}"></i> 
                 </a>
               {/each}
