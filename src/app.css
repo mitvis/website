@@ -18,6 +18,17 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
   }
+
+  /* Keep anchor targets clear of the sticky header (h-20 / md:h-14) */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+
+  @media (width >= 48rem) {
+    [id] {
+      scroll-margin-top: 4.5rem;
+    }
+  }
 }
 
 @layer components {
