@@ -30,6 +30,18 @@
   "ahorvath": {
     "name": "Amber Horvath",
     "url": "https://amberhorvath.com",
+    "title": "Postdoctoral Researcher",
+    "alumni": true,
+    "next": "Faculty at UVic CS"
+  },
+  "fygenson": {
+    "name": "Racquel Fygenson",
+    "url": "https://www.racquelfygenson.com",
+    "title": "Postdoctoral Researcher"
+  },
+  "yihaop": {
+    "name": "Yi-Hao Peng",
+    "url": "https://www.yihaopeng.tw",
     "title": "Postdoctoral Researcher"
   },
   "lundgard": {
@@ -63,7 +75,9 @@
   "aboggust": {
     "name": "Angie Boggust",
     "url": "http://angieboggust.com",
-    "title": "PhD Researcher"
+    "title": "PhD Researcher",
+    "alumni": true,
+    "next": "Research Scientist at Apple AIML"
   },
   "dwootton": {
     "name": "Dylan Wootton",
@@ -73,7 +87,8 @@
   "jopo": {
     "name": "Josh Pollock",
     "url": "https://joshmpollock.com/",
-    "title": "PhD Researcher"
+    "title": "PhD Researcher",
+    "alumni": true
   },
   "ryanyen2": {
     "name": "Ryan Yen",
@@ -109,7 +124,10 @@
   },
   "hbang": {
     "name": "Hyemin (Helen) Bang",
-    "title": "MEng Researcher"
+    "url" :"https://hyeminbang.com",
+    "title": "MEng Researcher",
+    "alumni": true,
+    "next": "PhD Student at MIT CSAIL"
   },
   "esefah": {
     "name": "Ebenezer \"EJ\" Sefah",
