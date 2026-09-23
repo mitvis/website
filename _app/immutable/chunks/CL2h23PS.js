@@ -1,0 +1,1 @@
+import{p as t}from"./jlJqL65l.js";const r={get data(){return t.data},get error(){return t.error},get params(){return t.params},get state(){return t.state},get status(){return t.status},get url(){return t.url}},a=r;export{a as p};
