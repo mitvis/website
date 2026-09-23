@@ -1,5 +1,15 @@
 [ 
   {
+    "youtube": "XDF8M4F0uos",
+    "title": "GoFish: A Grammar of More Graphics!",
+    "authors": [
+      {"key": "jopo"}
+    ],
+    "date": "2026-07-17",
+    "venue": "SciPy",
+    "themes": ["tools"]
+  },
+  {
     "youtube": "nFaAz_b05Ss",
     "title": "Empowering Blind and Low-Vision People to Conduct Interactive Data Analysis",
     "authors": [

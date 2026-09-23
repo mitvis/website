@@ -12,7 +12,6 @@ themes:
 tags:
   - empirical study
   - qualitative methods
-feature: true
 teaser: >
   A diagram of communication channels between a blind analyst reading a tactile chart and a sighted analyst reading a visualization, showing how tactile reading produces visual grounding evidence.
 ---
